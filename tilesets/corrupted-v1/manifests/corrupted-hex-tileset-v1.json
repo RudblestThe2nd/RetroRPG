@@ -1,0 +1,843 @@
+{
+  "pack": "corrupted-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "withered-grassland",
+      "name_tr": "Solmuş Çayır",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 0,
+      "image": "tiles/base/01-withered-grassland.png"
+    },
+    {
+      "id": "black-dead-soil",
+      "name_tr": "Kara Ölü Toprak",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 1,
+      "image": "tiles/base/02-black-dead-soil.png"
+    },
+    {
+      "id": "purple-corruption-veins",
+      "name_tr": "Mor Yozlaşma Damarları",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 2,
+      "image": "tiles/base/03-purple-corruption-veins.png"
+    },
+    {
+      "id": "crimson-corruption-veins",
+      "name_tr": "Kızıl Yozlaşma Damarları",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 3,
+      "image": "tiles/base/04-crimson-corruption-veins.png"
+    },
+    {
+      "id": "shadow-mire",
+      "name_tr": "Gölge Bataklığı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 4,
+      "image": "tiles/base/05-shadow-mire.png"
+    },
+    {
+      "id": "violet-void-pool",
+      "name_tr": "Mor Boşluk Havuzu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "void_travel",
+      "index": 5,
+      "image": "tiles/base/06-violet-void-pool.png"
+    },
+    {
+      "id": "twisted-black-forest",
+      "name_tr": "Bükülmüş Kara Orman",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 6,
+      "image": "tiles/base/07-twisted-black-forest.png"
+    },
+    {
+      "id": "whispering-dead-forest",
+      "name_tr": "Fısıldayan Ölü Orman",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 7,
+      "image": "tiles/base/08-whispering-dead-forest.png"
+    },
+    {
+      "id": "thorn-grove",
+      "name_tr": "Diken Korusu",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 8,
+      "image": "tiles/base/09-thorn-grove.png"
+    },
+    {
+      "id": "sinister-mushroom-field",
+      "name_tr": "Uğursuz Mantar Tarlası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 9,
+      "image": "tiles/base/10-sinister-mushroom-field.png"
+    },
+    {
+      "id": "bone-wasteland",
+      "name_tr": "Kemik Çoraklığı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 10,
+      "image": "tiles/base/11-bone-wasteland.png"
+    },
+    {
+      "id": "haunted-mist",
+      "name_tr": "Lanetli Sis",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 11,
+      "image": "tiles/base/12-haunted-mist.png"
+    },
+    {
+      "id": "corrupted-hill",
+      "name_tr": "Yozlaşmış Tepe",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 12,
+      "image": "tiles/base/13-corrupted-hill.png"
+    },
+    {
+      "id": "black-crystal-ridge",
+      "name_tr": "Kara Kristal Sırtı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 13,
+      "image": "tiles/base/14-black-crystal-ridge.png"
+    },
+    {
+      "id": "shadow-canyon",
+      "name_tr": "Gölge Kanyonu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "void_travel",
+      "index": 14,
+      "image": "tiles/base/15-shadow-canyon.png"
+    },
+    {
+      "id": "floating-shattered-rocks",
+      "name_tr": "Parçalanmış Uçan Kayalar",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 15,
+      "image": "tiles/base/16-floating-shattered-rocks.png"
+    },
+    {
+      "id": "abyss-cliff",
+      "name_tr": "Uçurum Boşluğu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "void_travel",
+      "index": 16,
+      "image": "tiles/base/17-abyss-cliff.png"
+    },
+    {
+      "id": "cursed-dark-lake",
+      "name_tr": "Lanetli Karanlık Göl",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 17,
+      "image": "tiles/base/18-cursed-dark-lake.png"
+    },
+    {
+      "id": "dark-storm-ground",
+      "name_tr": "Karanlık Fırtına Bölgesi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "corruption_resistance",
+      "index": 18,
+      "image": "tiles/base/19-dark-storm-ground.png"
+    },
+    {
+      "id": "open-void-rift",
+      "name_tr": "Açık Boşluk Yarığı",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "void_travel",
+      "index": 19,
+      "image": "tiles/base/20-open-void-rift.png"
+    },
+    {
+      "id": "corruption-spires",
+      "name_tr": "Yozlaşma Kuleleri",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "corruption_resistance",
+      "index": 20,
+      "image": "tiles/base/21-corruption-spires.png"
+    },
+    {
+      "id": "eye-growth-field",
+      "name_tr": "Göz Oluşumu Tarlası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "corruption_resistance",
+      "index": 21,
+      "image": "tiles/base/22-eye-growth-field.png"
+    },
+    {
+      "id": "corrupted-volcanic-edge",
+      "name_tr": "Lanetli Volkan Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 22,
+      "image": "tiles/base/23-corrupted-volcanic-edge.png"
+    },
+    {
+      "id": "corrupted-plains-edge",
+      "name_tr": "Lanetli Ova Geçişi",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 23,
+      "image": "tiles/base/24-corrupted-plains-edge.png"
+    },
+    {
+      "id": "road-straight-e-w",
+      "name_tr": "Lanetli Yol Düz E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 0,
+      "image": "tiles/connections/01-road-straight-e-w.png"
+    },
+    {
+      "id": "road-straight-ne-sw",
+      "name_tr": "Lanetli Yol Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 1,
+      "image": "tiles/connections/02-road-straight-ne-sw.png"
+    },
+    {
+      "id": "road-straight-nw-se",
+      "name_tr": "Lanetli Yol Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 2,
+      "image": "tiles/connections/03-road-straight-nw-se.png"
+    },
+    {
+      "id": "road-curve-e-se",
+      "name_tr": "Lanetli Yol Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 3,
+      "image": "tiles/connections/04-road-curve-e-se.png"
+    },
+    {
+      "id": "road-curve-se-sw",
+      "name_tr": "Lanetli Yol Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 4,
+      "image": "tiles/connections/05-road-curve-se-sw.png"
+    },
+    {
+      "id": "road-curve-sw-w",
+      "name_tr": "Lanetli Yol Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 5,
+      "image": "tiles/connections/06-road-curve-sw-w.png"
+    },
+    {
+      "id": "road-curve-w-nw",
+      "name_tr": "Lanetli Yol Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 6,
+      "image": "tiles/connections/07-road-curve-w-nw.png"
+    },
+    {
+      "id": "road-curve-nw-ne",
+      "name_tr": "Lanetli Yol Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 7,
+      "image": "tiles/connections/08-road-curve-nw-ne.png"
+    },
+    {
+      "id": "road-curve-ne-e",
+      "name_tr": "Lanetli Yol Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 8,
+      "image": "tiles/connections/09-road-curve-ne-e.png"
+    },
+    {
+      "id": "road-three-way-e-sw-nw",
+      "name_tr": "Lanetli Yol Üçlü E-SW-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 9,
+      "image": "tiles/connections/10-road-three-way-e-sw-nw.png"
+    },
+    {
+      "id": "road-three-way-w-ne-se",
+      "name_tr": "Lanetli Yol Üçlü W-NE-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 10,
+      "image": "tiles/connections/11-road-three-way-w-ne-se.png"
+    },
+    {
+      "id": "road-six-way",
+      "name_tr": "Lanetli Yol Altılı Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 11,
+      "image": "tiles/connections/12-road-six-way.png"
+    },
+    {
+      "id": "shadow-river-straight-e-w",
+      "name_tr": "Gölge Nehri Düz E-W",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 12,
+      "image": "tiles/connections/13-shadow-river-straight-e-w.png"
+    },
+    {
+      "id": "shadow-river-straight-ne-sw",
+      "name_tr": "Gölge Nehri Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 13,
+      "image": "tiles/connections/14-shadow-river-straight-ne-sw.png"
+    },
+    {
+      "id": "shadow-river-straight-nw-se",
+      "name_tr": "Gölge Nehri Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 14,
+      "image": "tiles/connections/15-shadow-river-straight-nw-se.png"
+    },
+    {
+      "id": "shadow-river-curve-e-se",
+      "name_tr": "Gölge Nehri Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 15,
+      "image": "tiles/connections/16-shadow-river-curve-e-se.png"
+    },
+    {
+      "id": "shadow-river-curve-se-sw",
+      "name_tr": "Gölge Nehri Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 16,
+      "image": "tiles/connections/17-shadow-river-curve-se-sw.png"
+    },
+    {
+      "id": "shadow-river-curve-sw-w",
+      "name_tr": "Gölge Nehri Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 17,
+      "image": "tiles/connections/18-shadow-river-curve-sw-w.png"
+    },
+    {
+      "id": "shadow-river-curve-w-nw",
+      "name_tr": "Gölge Nehri Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 18,
+      "image": "tiles/connections/19-shadow-river-curve-w-nw.png"
+    },
+    {
+      "id": "shadow-river-curve-nw-ne",
+      "name_tr": "Gölge Nehri Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 19,
+      "image": "tiles/connections/20-shadow-river-curve-nw-ne.png"
+    },
+    {
+      "id": "shadow-river-curve-ne-e",
+      "name_tr": "Gölge Nehri Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "rune_bridge_or_void_travel",
+      "index": 20,
+      "image": "tiles/connections/21-shadow-river-curve-ne-e.png"
+    },
+    {
+      "id": "rune-bridge-e-w",
+      "name_tr": "Rün Köprüsü E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 21,
+      "image": "tiles/connections/22-rune-bridge-e-w.png"
+    },
+    {
+      "id": "rune-bridge-ne-sw",
+      "name_tr": "Rün Köprüsü NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 22,
+      "image": "tiles/connections/23-rune-bridge-ne-sw.png"
+    },
+    {
+      "id": "rune-bridge-nw-se",
+      "name_tr": "Rün Köprüsü NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "corruption_resistance",
+      "index": 23,
+      "image": "tiles/connections/24-rune-bridge-nw-se.png"
+    },
+    {
+      "id": "cursed-village",
+      "name_tr": "Lanetli Köy",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 0,
+      "image": "tiles/poi/01-cursed-village.png"
+    },
+    {
+      "id": "fortified-dark-city",
+      "name_tr": "Tahkimli Karanlık Şehir",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 1,
+      "image": "tiles/poi/02-fortified-dark-city.png"
+    },
+    {
+      "id": "shadow-hunter-lodge",
+      "name_tr": "Gölge Avcısı Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 2,
+      "image": "tiles/poi/03-shadow-hunter-lodge.png"
+    },
+    {
+      "id": "survivor-camp",
+      "name_tr": "Hayatta Kalanlar Kampı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 3,
+      "image": "tiles/poi/04-survivor-camp.png"
+    },
+    {
+      "id": "black-crystal-quarry",
+      "name_tr": "Kara Kristal Ocağı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 4,
+      "image": "tiles/poi/05-black-crystal-quarry.png"
+    },
+    {
+      "id": "blighted-farmstead",
+      "name_tr": "Çürümüş Çiftlik",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 5,
+      "image": "tiles/poi/06-blighted-farmstead.png"
+    },
+    {
+      "id": "ruined-black-citadel",
+      "name_tr": "Yıkık Kara Kale",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 6,
+      "image": "tiles/poi/07-ruined-black-citadel.png"
+    },
+    {
+      "id": "eye-watchtower",
+      "name_tr": "Göz Gözetleme Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 7,
+      "image": "tiles/poi/08-eye-watchtower.png"
+    },
+    {
+      "id": "shadow-temple",
+      "name_tr": "Gölge Tapınağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 5,
+      "requires": "corruption_resistance",
+      "index": 8,
+      "image": "tiles/poi/09-shadow-temple.png"
+    },
+    {
+      "id": "eye-shrine",
+      "name_tr": "Göz Mabedi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 9,
+      "image": "tiles/poi/10-eye-shrine.png"
+    },
+    {
+      "id": "floating-dark-monoliths",
+      "name_tr": "Uçan Kara Monolitler",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 10,
+      "image": "tiles/poi/11-floating-dark-monoliths.png"
+    },
+    {
+      "id": "cursed-graveyard",
+      "name_tr": "Lanetli Mezarlık",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 11,
+      "image": "tiles/poi/12-cursed-graveyard.png"
+    },
+    {
+      "id": "void-cave",
+      "name_tr": "Boşluk Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 5,
+      "requires": "corruption_resistance",
+      "index": 12,
+      "image": "tiles/poi/13-void-cave.png"
+    },
+    {
+      "id": "black-crystal-mine",
+      "name_tr": "Kara Kristal Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 13,
+      "image": "tiles/poi/14-black-crystal-mine.png"
+    },
+    {
+      "id": "flesh-root-tunnel",
+      "name_tr": "Et ve Kök Tüneli",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 5,
+      "requires": "corruption_resistance",
+      "index": 14,
+      "image": "tiles/poi/15-flesh-root-tunnel.png"
+    },
+    {
+      "id": "abyss-grotto",
+      "name_tr": "Uçurum Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 15,
+      "image": "tiles/poi/16-abyss-grotto.png"
+    },
+    {
+      "id": "floating-rock-lift",
+      "name_tr": "Uçan Kaya Asansörü",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 16,
+      "image": "tiles/poi/17-floating-rock-lift.png"
+    },
+    {
+      "id": "ancient-eye-tree",
+      "name_tr": "Kadim Göz Ağacı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 17,
+      "image": "tiles/poi/18-ancient-eye-tree.png"
+    },
+    {
+      "id": "masked-cultist-camp",
+      "name_tr": "Maskeli Tarikat Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 18,
+      "image": "tiles/poi/19-masked-cultist-camp.png"
+    },
+    {
+      "id": "nightmare-beast-nest",
+      "name_tr": "Kâbus Yaratığı Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 5,
+      "requires": "corruption_resistance",
+      "index": 19,
+      "image": "tiles/poi/20-nightmare-beast-nest.png"
+    },
+    {
+      "id": "dark-witch-hut",
+      "name_tr": "Kara Cadı Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 20,
+      "image": "tiles/poi/21-dark-witch-hut.png"
+    },
+    {
+      "id": "black-signal-tower",
+      "name_tr": "Kara İşaret Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "corruption_resistance",
+      "index": 21,
+      "image": "tiles/poi/22-black-signal-tower.png"
+    },
+    {
+      "id": "eye-magic-portal",
+      "name_tr": "Göz Büyü Geçidi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 5,
+      "requires": "corruption_resistance",
+      "index": 22,
+      "image": "tiles/poi/23-eye-magic-portal.png"
+    },
+    {
+      "id": "watching-eye-tower",
+      "name_tr": "Gözetleyen Göz Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 5,
+      "requires": "corruption_resistance",
+      "index": 23,
+      "image": "tiles/poi/24-watching-eye-tower.png"
+    }
+  ]
+}

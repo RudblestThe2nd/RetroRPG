@@ -1,0 +1,659 @@
+{
+  "id": "biome-transition-masks-v1",
+  "tile_size": [
+    256,
+    256
+  ],
+  "orientation": "pointy-top",
+  "direction_bit_order": [
+    "e",
+    "se",
+    "sw",
+    "w",
+    "nw",
+    "ne"
+  ],
+  "runtime_rule": "Blend target biome over source biome using the selected mask alpha.",
+  "mask_count": 64,
+  "masks": [
+    {
+      "id": "transition-00",
+      "bits": 0,
+      "directions": [],
+      "file": "tiles/masks/00-transition-none.png"
+    },
+    {
+      "id": "transition-01",
+      "bits": 1,
+      "directions": [
+        "e"
+      ],
+      "file": "tiles/masks/01-transition-e.png"
+    },
+    {
+      "id": "transition-02",
+      "bits": 2,
+      "directions": [
+        "se"
+      ],
+      "file": "tiles/masks/02-transition-se.png"
+    },
+    {
+      "id": "transition-03",
+      "bits": 3,
+      "directions": [
+        "e",
+        "se"
+      ],
+      "file": "tiles/masks/03-transition-e-se.png"
+    },
+    {
+      "id": "transition-04",
+      "bits": 4,
+      "directions": [
+        "sw"
+      ],
+      "file": "tiles/masks/04-transition-sw.png"
+    },
+    {
+      "id": "transition-05",
+      "bits": 5,
+      "directions": [
+        "e",
+        "sw"
+      ],
+      "file": "tiles/masks/05-transition-e-sw.png"
+    },
+    {
+      "id": "transition-06",
+      "bits": 6,
+      "directions": [
+        "se",
+        "sw"
+      ],
+      "file": "tiles/masks/06-transition-se-sw.png"
+    },
+    {
+      "id": "transition-07",
+      "bits": 7,
+      "directions": [
+        "e",
+        "se",
+        "sw"
+      ],
+      "file": "tiles/masks/07-transition-e-se-sw.png"
+    },
+    {
+      "id": "transition-08",
+      "bits": 8,
+      "directions": [
+        "w"
+      ],
+      "file": "tiles/masks/08-transition-w.png"
+    },
+    {
+      "id": "transition-09",
+      "bits": 9,
+      "directions": [
+        "e",
+        "w"
+      ],
+      "file": "tiles/masks/09-transition-e-w.png"
+    },
+    {
+      "id": "transition-10",
+      "bits": 10,
+      "directions": [
+        "se",
+        "w"
+      ],
+      "file": "tiles/masks/10-transition-se-w.png"
+    },
+    {
+      "id": "transition-11",
+      "bits": 11,
+      "directions": [
+        "e",
+        "se",
+        "w"
+      ],
+      "file": "tiles/masks/11-transition-e-se-w.png"
+    },
+    {
+      "id": "transition-12",
+      "bits": 12,
+      "directions": [
+        "sw",
+        "w"
+      ],
+      "file": "tiles/masks/12-transition-sw-w.png"
+    },
+    {
+      "id": "transition-13",
+      "bits": 13,
+      "directions": [
+        "e",
+        "sw",
+        "w"
+      ],
+      "file": "tiles/masks/13-transition-e-sw-w.png"
+    },
+    {
+      "id": "transition-14",
+      "bits": 14,
+      "directions": [
+        "se",
+        "sw",
+        "w"
+      ],
+      "file": "tiles/masks/14-transition-se-sw-w.png"
+    },
+    {
+      "id": "transition-15",
+      "bits": 15,
+      "directions": [
+        "e",
+        "se",
+        "sw",
+        "w"
+      ],
+      "file": "tiles/masks/15-transition-e-se-sw-w.png"
+    },
+    {
+      "id": "transition-16",
+      "bits": 16,
+      "directions": [
+        "nw"
+      ],
+      "file": "tiles/masks/16-transition-nw.png"
+    },
+    {
+      "id": "transition-17",
+      "bits": 17,
+      "directions": [
+        "e",
+        "nw"
+      ],
+      "file": "tiles/masks/17-transition-e-nw.png"
+    },
+    {
+      "id": "transition-18",
+      "bits": 18,
+      "directions": [
+        "se",
+        "nw"
+      ],
+      "file": "tiles/masks/18-transition-se-nw.png"
+    },
+    {
+      "id": "transition-19",
+      "bits": 19,
+      "directions": [
+        "e",
+        "se",
+        "nw"
+      ],
+      "file": "tiles/masks/19-transition-e-se-nw.png"
+    },
+    {
+      "id": "transition-20",
+      "bits": 20,
+      "directions": [
+        "sw",
+        "nw"
+      ],
+      "file": "tiles/masks/20-transition-sw-nw.png"
+    },
+    {
+      "id": "transition-21",
+      "bits": 21,
+      "directions": [
+        "e",
+        "sw",
+        "nw"
+      ],
+      "file": "tiles/masks/21-transition-e-sw-nw.png"
+    },
+    {
+      "id": "transition-22",
+      "bits": 22,
+      "directions": [
+        "se",
+        "sw",
+        "nw"
+      ],
+      "file": "tiles/masks/22-transition-se-sw-nw.png"
+    },
+    {
+      "id": "transition-23",
+      "bits": 23,
+      "directions": [
+        "e",
+        "se",
+        "sw",
+        "nw"
+      ],
+      "file": "tiles/masks/23-transition-e-se-sw-nw.png"
+    },
+    {
+      "id": "transition-24",
+      "bits": 24,
+      "directions": [
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/24-transition-w-nw.png"
+    },
+    {
+      "id": "transition-25",
+      "bits": 25,
+      "directions": [
+        "e",
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/25-transition-e-w-nw.png"
+    },
+    {
+      "id": "transition-26",
+      "bits": 26,
+      "directions": [
+        "se",
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/26-transition-se-w-nw.png"
+    },
+    {
+      "id": "transition-27",
+      "bits": 27,
+      "directions": [
+        "e",
+        "se",
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/27-transition-e-se-w-nw.png"
+    },
+    {
+      "id": "transition-28",
+      "bits": 28,
+      "directions": [
+        "sw",
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/28-transition-sw-w-nw.png"
+    },
+    {
+      "id": "transition-29",
+      "bits": 29,
+      "directions": [
+        "e",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/29-transition-e-sw-w-nw.png"
+    },
+    {
+      "id": "transition-30",
+      "bits": 30,
+      "directions": [
+        "se",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/30-transition-se-sw-w-nw.png"
+    },
+    {
+      "id": "transition-31",
+      "bits": 31,
+      "directions": [
+        "e",
+        "se",
+        "sw",
+        "w",
+        "nw"
+      ],
+      "file": "tiles/masks/31-transition-e-se-sw-w-nw.png"
+    },
+    {
+      "id": "transition-32",
+      "bits": 32,
+      "directions": [
+        "ne"
+      ],
+      "file": "tiles/masks/32-transition-ne.png"
+    },
+    {
+      "id": "transition-33",
+      "bits": 33,
+      "directions": [
+        "e",
+        "ne"
+      ],
+      "file": "tiles/masks/33-transition-e-ne.png"
+    },
+    {
+      "id": "transition-34",
+      "bits": 34,
+      "directions": [
+        "se",
+        "ne"
+      ],
+      "file": "tiles/masks/34-transition-se-ne.png"
+    },
+    {
+      "id": "transition-35",
+      "bits": 35,
+      "directions": [
+        "e",
+        "se",
+        "ne"
+      ],
+      "file": "tiles/masks/35-transition-e-se-ne.png"
+    },
+    {
+      "id": "transition-36",
+      "bits": 36,
+      "directions": [
+        "sw",
+        "ne"
+      ],
+      "file": "tiles/masks/36-transition-sw-ne.png"
+    },
+    {
+      "id": "transition-37",
+      "bits": 37,
+      "directions": [
+        "e",
+        "sw",
+        "ne"
+      ],
+      "file": "tiles/masks/37-transition-e-sw-ne.png"
+    },
+    {
+      "id": "transition-38",
+      "bits": 38,
+      "directions": [
+        "se",
+        "sw",
+        "ne"
+      ],
+      "file": "tiles/masks/38-transition-se-sw-ne.png"
+    },
+    {
+      "id": "transition-39",
+      "bits": 39,
+      "directions": [
+        "e",
+        "se",
+        "sw",
+        "ne"
+      ],
+      "file": "tiles/masks/39-transition-e-se-sw-ne.png"
+    },
+    {
+      "id": "transition-40",
+      "bits": 40,
+      "directions": [
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/40-transition-w-ne.png"
+    },
+    {
+      "id": "transition-41",
+      "bits": 41,
+      "directions": [
+        "e",
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/41-transition-e-w-ne.png"
+    },
+    {
+      "id": "transition-42",
+      "bits": 42,
+      "directions": [
+        "se",
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/42-transition-se-w-ne.png"
+    },
+    {
+      "id": "transition-43",
+      "bits": 43,
+      "directions": [
+        "e",
+        "se",
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/43-transition-e-se-w-ne.png"
+    },
+    {
+      "id": "transition-44",
+      "bits": 44,
+      "directions": [
+        "sw",
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/44-transition-sw-w-ne.png"
+    },
+    {
+      "id": "transition-45",
+      "bits": 45,
+      "directions": [
+        "e",
+        "sw",
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/45-transition-e-sw-w-ne.png"
+    },
+    {
+      "id": "transition-46",
+      "bits": 46,
+      "directions": [
+        "se",
+        "sw",
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/46-transition-se-sw-w-ne.png"
+    },
+    {
+      "id": "transition-47",
+      "bits": 47,
+      "directions": [
+        "e",
+        "se",
+        "sw",
+        "w",
+        "ne"
+      ],
+      "file": "tiles/masks/47-transition-e-se-sw-w-ne.png"
+    },
+    {
+      "id": "transition-48",
+      "bits": 48,
+      "directions": [
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/48-transition-nw-ne.png"
+    },
+    {
+      "id": "transition-49",
+      "bits": 49,
+      "directions": [
+        "e",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/49-transition-e-nw-ne.png"
+    },
+    {
+      "id": "transition-50",
+      "bits": 50,
+      "directions": [
+        "se",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/50-transition-se-nw-ne.png"
+    },
+    {
+      "id": "transition-51",
+      "bits": 51,
+      "directions": [
+        "e",
+        "se",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/51-transition-e-se-nw-ne.png"
+    },
+    {
+      "id": "transition-52",
+      "bits": 52,
+      "directions": [
+        "sw",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/52-transition-sw-nw-ne.png"
+    },
+    {
+      "id": "transition-53",
+      "bits": 53,
+      "directions": [
+        "e",
+        "sw",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/53-transition-e-sw-nw-ne.png"
+    },
+    {
+      "id": "transition-54",
+      "bits": 54,
+      "directions": [
+        "se",
+        "sw",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/54-transition-se-sw-nw-ne.png"
+    },
+    {
+      "id": "transition-55",
+      "bits": 55,
+      "directions": [
+        "e",
+        "se",
+        "sw",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/55-transition-e-se-sw-nw-ne.png"
+    },
+    {
+      "id": "transition-56",
+      "bits": 56,
+      "directions": [
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/56-transition-w-nw-ne.png"
+    },
+    {
+      "id": "transition-57",
+      "bits": 57,
+      "directions": [
+        "e",
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/57-transition-e-w-nw-ne.png"
+    },
+    {
+      "id": "transition-58",
+      "bits": 58,
+      "directions": [
+        "se",
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/58-transition-se-w-nw-ne.png"
+    },
+    {
+      "id": "transition-59",
+      "bits": 59,
+      "directions": [
+        "e",
+        "se",
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/59-transition-e-se-w-nw-ne.png"
+    },
+    {
+      "id": "transition-60",
+      "bits": 60,
+      "directions": [
+        "sw",
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/60-transition-sw-w-nw-ne.png"
+    },
+    {
+      "id": "transition-61",
+      "bits": 61,
+      "directions": [
+        "e",
+        "sw",
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/61-transition-e-sw-w-nw-ne.png"
+    },
+    {
+      "id": "transition-62",
+      "bits": 62,
+      "directions": [
+        "se",
+        "sw",
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/62-transition-se-sw-w-nw-ne.png"
+    },
+    {
+      "id": "transition-63",
+      "bits": 63,
+      "directions": [
+        "e",
+        "se",
+        "sw",
+        "w",
+        "nw",
+        "ne"
+      ],
+      "file": "tiles/masks/63-transition-e-se-sw-w-nw-ne.png"
+    }
+  ]
+}

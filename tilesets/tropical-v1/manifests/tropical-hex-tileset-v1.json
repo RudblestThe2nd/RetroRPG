@@ -1,0 +1,843 @@
+{
+  "pack": "tropical-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "golden-beach",
+      "name_tr": "Altın Kumsal",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/base/01-golden-beach.png"
+    },
+    {
+      "id": "white-sand-beach",
+      "name_tr": "Beyaz Kum Plajı",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/base/02-white-sand-beach.png"
+    },
+    {
+      "id": "black-sand-beach",
+      "name_tr": "Siyah Volkanik Plaj",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/base/03-black-sand-beach.png"
+    },
+    {
+      "id": "coral-shoreline",
+      "name_tr": "Mercan Kıyısı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/base/04-coral-shoreline.png"
+    },
+    {
+      "id": "shallow-lagoon",
+      "name_tr": "Sığ Turkuaz Lagün",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "wading_or_boat",
+      "index": 4,
+      "image": "tiles/base/05-shallow-lagoon.png"
+    },
+    {
+      "id": "deep-tropical-water",
+      "name_tr": "Derin Tropik Su",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 5,
+      "image": "tiles/base/06-deep-tropical-water.png"
+    },
+    {
+      "id": "palm-grove",
+      "name_tr": "Palmiye Korusu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/base/07-palm-grove.png"
+    },
+    {
+      "id": "dense-tropical-jungle",
+      "name_tr": "Sık Tropik Orman",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/base/08-dense-tropical-jungle.png"
+    },
+    {
+      "id": "bamboo-grove",
+      "name_tr": "Bambu Korusu",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/base/09-bamboo-grove.png"
+    },
+    {
+      "id": "mangrove-roots",
+      "name_tr": "Mangrov Kökleri",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/base/10-mangrove-roots.png"
+    },
+    {
+      "id": "tropical-flower-field",
+      "name_tr": "Tropik Çiçeklik",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/base/11-tropical-flower-field.png"
+    },
+    {
+      "id": "jungle-clearing",
+      "name_tr": "Orman Açıklığı",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/base/12-jungle-clearing.png"
+    },
+    {
+      "id": "jungle-hill",
+      "name_tr": "Orman Tepesi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/base/13-jungle-hill.png"
+    },
+    {
+      "id": "limestone-karst-hills",
+      "name_tr": "Kireçtaşı Tepeleri",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/base/14-limestone-karst-hills.png"
+    },
+    {
+      "id": "coastal-cliff",
+      "name_tr": "Kıyı Uçurumu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/base/15-coastal-cliff.png"
+    },
+    {
+      "id": "jungle-canyon",
+      "name_tr": "Orman Kanyonu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/base/16-jungle-canyon.png"
+    },
+    {
+      "id": "waterfall-jungle",
+      "name_tr": "Şelaleli Orman",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/base/17-waterfall-jungle.png"
+    },
+    {
+      "id": "freshwater-cenote",
+      "name_tr": "Tatlı Su Cenotesi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/base/18-freshwater-cenote.png"
+    },
+    {
+      "id": "storm-soaked-ground",
+      "name_tr": "Fırtına Islaklığı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/base/19-storm-soaked-ground.png"
+    },
+    {
+      "id": "flooded-jungle",
+      "name_tr": "Su Basan Orman",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/base/20-flooded-jungle.png"
+    },
+    {
+      "id": "colorful-coral-reef",
+      "name_tr": "Renkli Mercan Resifi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "wading_or_boat",
+      "index": 20,
+      "image": "tiles/base/21-colorful-coral-reef.png"
+    },
+    {
+      "id": "shipwreck-beach",
+      "name_tr": "Gemi Enkazı Plajı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/base/22-shipwreck-beach.png"
+    },
+    {
+      "id": "tropical-forest-edge",
+      "name_tr": "Tropik Orman Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/base/23-tropical-forest-edge.png"
+    },
+    {
+      "id": "tropical-desert-edge",
+      "name_tr": "Tropik Çöl Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/base/24-tropical-desert-edge.png"
+    },
+    {
+      "id": "trail-straight-e-w",
+      "name_tr": "Orman Patikası Düz E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/connections/01-trail-straight-e-w.png"
+    },
+    {
+      "id": "trail-straight-ne-sw",
+      "name_tr": "Orman Patikası Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/connections/02-trail-straight-ne-sw.png"
+    },
+    {
+      "id": "trail-straight-nw-se",
+      "name_tr": "Orman Patikası Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/connections/03-trail-straight-nw-se.png"
+    },
+    {
+      "id": "trail-curve-e-se",
+      "name_tr": "Orman Patikası Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/connections/04-trail-curve-e-se.png"
+    },
+    {
+      "id": "trail-curve-se-sw",
+      "name_tr": "Orman Patikası Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/connections/05-trail-curve-se-sw.png"
+    },
+    {
+      "id": "trail-curve-sw-w",
+      "name_tr": "Orman Patikası Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/connections/06-trail-curve-sw-w.png"
+    },
+    {
+      "id": "trail-curve-w-nw",
+      "name_tr": "Orman Patikası Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/connections/07-trail-curve-w-nw.png"
+    },
+    {
+      "id": "trail-curve-nw-ne",
+      "name_tr": "Orman Patikası Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/connections/08-trail-curve-nw-ne.png"
+    },
+    {
+      "id": "trail-curve-ne-e",
+      "name_tr": "Orman Patikası Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/connections/09-trail-curve-ne-e.png"
+    },
+    {
+      "id": "trail-three-way-e-sw-nw",
+      "name_tr": "Orman Patikası Üçlü E-SW-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/connections/10-trail-three-way-e-sw-nw.png"
+    },
+    {
+      "id": "trail-three-way-w-ne-se",
+      "name_tr": "Orman Patikası Üçlü W-NE-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/connections/11-trail-three-way-w-ne-se.png"
+    },
+    {
+      "id": "trail-six-way",
+      "name_tr": "Orman Patikası Altılı Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/connections/12-trail-six-way.png"
+    },
+    {
+      "id": "river-straight-e-w",
+      "name_tr": "Tropik Nehir Düz E-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 12,
+      "image": "tiles/connections/13-river-straight-e-w.png"
+    },
+    {
+      "id": "river-straight-ne-sw",
+      "name_tr": "Tropik Nehir Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 13,
+      "image": "tiles/connections/14-river-straight-ne-sw.png"
+    },
+    {
+      "id": "river-straight-nw-se",
+      "name_tr": "Tropik Nehir Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 14,
+      "image": "tiles/connections/15-river-straight-nw-se.png"
+    },
+    {
+      "id": "river-curve-e-se",
+      "name_tr": "Tropik Nehir Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 15,
+      "image": "tiles/connections/16-river-curve-e-se.png"
+    },
+    {
+      "id": "river-curve-se-sw",
+      "name_tr": "Tropik Nehir Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 16,
+      "image": "tiles/connections/17-river-curve-se-sw.png"
+    },
+    {
+      "id": "river-curve-sw-w",
+      "name_tr": "Tropik Nehir Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 17,
+      "image": "tiles/connections/18-river-curve-sw-w.png"
+    },
+    {
+      "id": "river-curve-w-nw",
+      "name_tr": "Tropik Nehir Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 18,
+      "image": "tiles/connections/19-river-curve-w-nw.png"
+    },
+    {
+      "id": "river-curve-nw-ne",
+      "name_tr": "Tropik Nehir Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 19,
+      "image": "tiles/connections/20-river-curve-nw-ne.png"
+    },
+    {
+      "id": "river-curve-ne-e",
+      "name_tr": "Tropik Nehir Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat_or_bridge",
+      "index": 20,
+      "image": "tiles/connections/21-river-curve-ne-e.png"
+    },
+    {
+      "id": "rope-bridge-e-w",
+      "name_tr": "Halat Köprüsü E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/connections/22-rope-bridge-e-w.png"
+    },
+    {
+      "id": "rope-bridge-ne-sw",
+      "name_tr": "Halat Köprüsü NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/connections/23-rope-bridge-ne-sw.png"
+    },
+    {
+      "id": "rope-bridge-nw-se",
+      "name_tr": "Halat Köprüsü NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/connections/24-rope-bridge-nw-se.png"
+    },
+    {
+      "id": "fishing-village",
+      "name_tr": "Balıkçı Köyü",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/poi/01-fishing-village.png"
+    },
+    {
+      "id": "tropical-port-town",
+      "name_tr": "Tropik Liman Şehri",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/poi/02-tropical-port-town.png"
+    },
+    {
+      "id": "jungle-explorer-lodge",
+      "name_tr": "Orman Kâşifi Kulübesi",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/poi/03-jungle-explorer-lodge.png"
+    },
+    {
+      "id": "sailor-beach-camp",
+      "name_tr": "Denizci Sahil Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/poi/04-sailor-beach-camp.png"
+    },
+    {
+      "id": "fruit-plantation",
+      "name_tr": "Meyve Plantasyonu",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/poi/05-fruit-plantation.png"
+    },
+    {
+      "id": "island-farmstead",
+      "name_tr": "Ada Çiftliği",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/poi/06-island-farmstead.png"
+    },
+    {
+      "id": "overgrown-coastal-ruins",
+      "name_tr": "Bitkilerle Kaplı Kıyı Harabeleri",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/poi/07-overgrown-coastal-ruins.png"
+    },
+    {
+      "id": "island-lighthouse",
+      "name_tr": "Ada Deniz Feneri",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/poi/08-island-lighthouse.png"
+    },
+    {
+      "id": "jungle-temple",
+      "name_tr": "Orman Tapınağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/poi/09-jungle-temple.png"
+    },
+    {
+      "id": "tidal-shrine",
+      "name_tr": "Gelgit Mabedi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/poi/10-tidal-shrine.png"
+    },
+    {
+      "id": "carved-island-idols",
+      "name_tr": "Oyma Ada Putları",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/poi/11-carved-island-idols.png"
+    },
+    {
+      "id": "pirate-graveyard",
+      "name_tr": "Korsan Mezarlığı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/poi/12-pirate-graveyard.png"
+    },
+    {
+      "id": "sea-cave",
+      "name_tr": "Deniz Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/poi/13-sea-cave.png"
+    },
+    {
+      "id": "gemstone-mine",
+      "name_tr": "Değerli Taş Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/poi/14-gemstone-mine.png"
+    },
+    {
+      "id": "jungle-tunnel",
+      "name_tr": "Orman Tüneli",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/poi/15-jungle-tunnel.png"
+    },
+    {
+      "id": "waterfall-grotto",
+      "name_tr": "Şelale Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/poi/16-waterfall-grotto.png"
+    },
+    {
+      "id": "lagoon-dock",
+      "name_tr": "Lagün İskelesi",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/poi/17-lagoon-dock.png"
+    },
+    {
+      "id": "ancient-banyan",
+      "name_tr": "Kadim Banyan Ağacı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/poi/18-ancient-banyan.png"
+    },
+    {
+      "id": "pirate-fortress-camp",
+      "name_tr": "Korsan Kale Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/poi/19-pirate-fortress-camp.png"
+    },
+    {
+      "id": "sea-serpent-nest",
+      "name_tr": "Deniz Yılanı Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/poi/20-sea-serpent-nest.png"
+    },
+    {
+      "id": "island-witch-hut",
+      "name_tr": "Ada Cadısı Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/poi/21-island-witch-hut.png"
+    },
+    {
+      "id": "storm-signal-tower",
+      "name_tr": "Fırtına İşaret Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/poi/22-storm-signal-tower.png"
+    },
+    {
+      "id": "storm-magic-portal",
+      "name_tr": "Fırtına Büyü Geçidi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/poi/23-storm-magic-portal.png"
+    },
+    {
+      "id": "boss-island-citadel",
+      "name_tr": "Patron Ada Kalesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/poi/24-boss-island-citadel.png"
+    }
+  ]
+}

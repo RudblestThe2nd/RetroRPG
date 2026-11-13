@@ -1,0 +1,843 @@
+{
+  "pack": "snow-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "fresh-snowfield",
+      "name_tr": "Taze Kar Ovası",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/base/01-fresh-snowfield.png"
+    },
+    {
+      "id": "windblown-snow",
+      "name_tr": "Rüzgârlı Kar Ovası",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/base/02-windblown-snow.png"
+    },
+    {
+      "id": "deep-snowdrifts",
+      "name_tr": "Derin Kar Yığınları",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/base/03-deep-snowdrifts.png"
+    },
+    {
+      "id": "blue-icy-plain",
+      "name_tr": "Mavi Buz Düzlüğü",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 3,
+      "image": "tiles/base/04-blue-icy-plain.png"
+    },
+    {
+      "id": "frozen-lake",
+      "name_tr": "Donmuş Göl",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 4,
+      "image": "tiles/base/05-frozen-lake.png"
+    },
+    {
+      "id": "cracked-ice",
+      "name_tr": "Çatlak Buz",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "ice_travel",
+      "index": 5,
+      "image": "tiles/base/06-cracked-ice.png"
+    },
+    {
+      "id": "snowy-pine-grove",
+      "name_tr": "Karlı Çam Korusu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/base/07-snowy-pine-grove.png"
+    },
+    {
+      "id": "dense-taiga",
+      "name_tr": "Sık Tayga Ormanı",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/base/08-dense-taiga.png"
+    },
+    {
+      "id": "winter-birch-grove",
+      "name_tr": "Kış Huş Korusu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/base/09-winter-birch-grove.png"
+    },
+    {
+      "id": "dead-frozen-forest",
+      "name_tr": "Donmuş Ölü Orman",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/base/10-dead-frozen-forest.png"
+    },
+    {
+      "id": "frosted-meadow",
+      "name_tr": "Kırağılı Çayır",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/base/11-frosted-meadow.png"
+    },
+    {
+      "id": "tundra-scrub",
+      "name_tr": "Tundra Çalılığı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/base/12-tundra-scrub.png"
+    },
+    {
+      "id": "snowy-hill",
+      "name_tr": "Karlı Tepe",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/base/13-snowy-hill.png"
+    },
+    {
+      "id": "rocky-frozen-ridge",
+      "name_tr": "Donmuş Kayalık Sırt",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/base/14-rocky-frozen-ridge.png"
+    },
+    {
+      "id": "mountain-pass",
+      "name_tr": "Karlı Dağ Geçidi",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/base/15-mountain-pass.png"
+    },
+    {
+      "id": "great-glacier",
+      "name_tr": "Büyük Buzul",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 15,
+      "image": "tiles/base/16-great-glacier.png"
+    },
+    {
+      "id": "blue-ice-cliff",
+      "name_tr": "Mavi Buz Uçurumu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/base/17-blue-ice-cliff.png"
+    },
+    {
+      "id": "frozen-riverbed",
+      "name_tr": "Donmuş Nehir Yatağı",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/base/18-frozen-riverbed.png"
+    },
+    {
+      "id": "blizzard-ground",
+      "name_tr": "Tipi Bölgesi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/base/19-blizzard-ground.png"
+    },
+    {
+      "id": "avalanche-debris",
+      "name_tr": "Çığ Kalıntıları",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/base/20-avalanche-debris.png"
+    },
+    {
+      "id": "geothermal-spring",
+      "name_tr": "Jeotermal Kaynak",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/base/21-geothermal-spring.png"
+    },
+    {
+      "id": "ice-crystal-field",
+      "name_tr": "Buz Kristali Tarlası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/base/22-ice-crystal-field.png"
+    },
+    {
+      "id": "snow-forest-edge",
+      "name_tr": "Kar Orman Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/base/23-snow-forest-edge.png"
+    },
+    {
+      "id": "snow-coast-edge",
+      "name_tr": "Kar Kıyı Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "coastal_crossing",
+      "index": 23,
+      "image": "tiles/base/24-snow-coast-edge.png"
+    },
+    {
+      "id": "road-straight-e-w",
+      "name_tr": "Kar Yolu Düz E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/connections/01-road-straight-e-w.png"
+    },
+    {
+      "id": "road-straight-ne-sw",
+      "name_tr": "Kar Yolu Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/connections/02-road-straight-ne-sw.png"
+    },
+    {
+      "id": "road-straight-nw-se",
+      "name_tr": "Kar Yolu Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/connections/03-road-straight-nw-se.png"
+    },
+    {
+      "id": "road-curve-e-se",
+      "name_tr": "Kar Yolu Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/connections/04-road-curve-e-se.png"
+    },
+    {
+      "id": "road-curve-se-sw",
+      "name_tr": "Kar Yolu Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/connections/05-road-curve-se-sw.png"
+    },
+    {
+      "id": "road-curve-sw-w",
+      "name_tr": "Kar Yolu Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/connections/06-road-curve-sw-w.png"
+    },
+    {
+      "id": "road-curve-w-nw",
+      "name_tr": "Kar Yolu Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/connections/07-road-curve-w-nw.png"
+    },
+    {
+      "id": "road-curve-nw-ne",
+      "name_tr": "Kar Yolu Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/connections/08-road-curve-nw-ne.png"
+    },
+    {
+      "id": "road-curve-ne-e",
+      "name_tr": "Kar Yolu Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/connections/09-road-curve-ne-e.png"
+    },
+    {
+      "id": "road-three-way-e-sw-nw",
+      "name_tr": "Kar Yolu Üçlü E-SW-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/connections/10-road-three-way-e-sw-nw.png"
+    },
+    {
+      "id": "road-three-way-w-ne-se",
+      "name_tr": "Kar Yolu Üçlü W-NE-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/connections/11-road-three-way-w-ne-se.png"
+    },
+    {
+      "id": "road-six-way",
+      "name_tr": "Kar Yolu Altılı Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/connections/12-road-six-way.png"
+    },
+    {
+      "id": "stream-straight-e-w",
+      "name_tr": "Donmuş Akarsu Düz E-W",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 12,
+      "image": "tiles/connections/13-stream-straight-e-w.png"
+    },
+    {
+      "id": "stream-straight-ne-sw",
+      "name_tr": "Donmuş Akarsu Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 13,
+      "image": "tiles/connections/14-stream-straight-ne-sw.png"
+    },
+    {
+      "id": "stream-straight-nw-se",
+      "name_tr": "Donmuş Akarsu Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 14,
+      "image": "tiles/connections/15-stream-straight-nw-se.png"
+    },
+    {
+      "id": "stream-curve-e-se",
+      "name_tr": "Donmuş Akarsu Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 15,
+      "image": "tiles/connections/16-stream-curve-e-se.png"
+    },
+    {
+      "id": "stream-curve-se-sw",
+      "name_tr": "Donmuş Akarsu Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 16,
+      "image": "tiles/connections/17-stream-curve-se-sw.png"
+    },
+    {
+      "id": "stream-curve-sw-w",
+      "name_tr": "Donmuş Akarsu Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 17,
+      "image": "tiles/connections/18-stream-curve-sw-w.png"
+    },
+    {
+      "id": "stream-curve-w-nw",
+      "name_tr": "Donmuş Akarsu Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 18,
+      "image": "tiles/connections/19-stream-curve-w-nw.png"
+    },
+    {
+      "id": "stream-curve-nw-ne",
+      "name_tr": "Donmuş Akarsu Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 19,
+      "image": "tiles/connections/20-stream-curve-nw-ne.png"
+    },
+    {
+      "id": "stream-curve-ne-e",
+      "name_tr": "Donmuş Akarsu Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "ice_travel",
+      "index": 20,
+      "image": "tiles/connections/21-stream-curve-ne-e.png"
+    },
+    {
+      "id": "timber-bridge-e-w",
+      "name_tr": "Ahşap Köprü E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/connections/22-timber-bridge-e-w.png"
+    },
+    {
+      "id": "timber-bridge-ne-sw",
+      "name_tr": "Ahşap Köprü NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/connections/23-timber-bridge-ne-sw.png"
+    },
+    {
+      "id": "timber-bridge-nw-se",
+      "name_tr": "Ahşap Köprü NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/connections/24-timber-bridge-nw-se.png"
+    },
+    {
+      "id": "snow-village",
+      "name_tr": "Karlı Köy",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/poi/01-snow-village.png"
+    },
+    {
+      "id": "winter-trading-town",
+      "name_tr": "Kış Ticaret Kasabası",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/poi/02-winter-trading-town.png"
+    },
+    {
+      "id": "ranger-lodge",
+      "name_tr": "Korucu Kulübesi",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/poi/03-ranger-lodge.png"
+    },
+    {
+      "id": "trapper-camp",
+      "name_tr": "Kürk Avcısı Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/poi/04-trapper-camp.png"
+    },
+    {
+      "id": "northern-mining-camp",
+      "name_tr": "Kuzey Maden Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/poi/05-northern-mining-camp.png"
+    },
+    {
+      "id": "winter-farmstead",
+      "name_tr": "Kış Çiftliği",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/poi/06-winter-farmstead.png"
+    },
+    {
+      "id": "snow-buried-ruins",
+      "name_tr": "Kara Gömülü Harabeler",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/poi/07-snow-buried-ruins.png"
+    },
+    {
+      "id": "frozen-watchtower",
+      "name_tr": "Donmuş Gözetleme Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/poi/08-frozen-watchtower.png"
+    },
+    {
+      "id": "blue-ice-temple",
+      "name_tr": "Mavi Buz Tapınağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/poi/09-blue-ice-temple.png"
+    },
+    {
+      "id": "snow-shrine",
+      "name_tr": "Kar Mabedi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/poi/10-snow-shrine.png"
+    },
+    {
+      "id": "glowing-rune-stones",
+      "name_tr": "Parlayan Rün Taşları",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/poi/11-glowing-rune-stones.png"
+    },
+    {
+      "id": "frozen-graveyard",
+      "name_tr": "Donmuş Mezarlık",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/poi/12-frozen-graveyard.png"
+    },
+    {
+      "id": "blue-ice-cave",
+      "name_tr": "Mavi Buz Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/poi/13-blue-ice-cave.png"
+    },
+    {
+      "id": "winter-mine",
+      "name_tr": "Kış Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/poi/14-winter-mine.png"
+    },
+    {
+      "id": "glacier-crevasse",
+      "name_tr": "Buzul Yarığı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/poi/15-glacier-crevasse.png"
+    },
+    {
+      "id": "hot-spring-grotto",
+      "name_tr": "Sıcak Su Mağarası",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/poi/16-hot-spring-grotto.png"
+    },
+    {
+      "id": "frozen-dock",
+      "name_tr": "Donmuş İskele",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/poi/17-frozen-dock.png"
+    },
+    {
+      "id": "ancient-frost-tree",
+      "name_tr": "Kadim Kırağı Ağacı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/poi/18-ancient-frost-tree.png"
+    },
+    {
+      "id": "northern-raider-camp",
+      "name_tr": "Kuzey Akıncı Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/poi/19-northern-raider-camp.png"
+    },
+    {
+      "id": "yeti-nest",
+      "name_tr": "Yeti Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/poi/20-yeti-nest.png"
+    },
+    {
+      "id": "frost-witch-hut",
+      "name_tr": "Buz Cadısı Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/poi/21-frost-witch-hut.png"
+    },
+    {
+      "id": "signal-watchtower",
+      "name_tr": "İşaret Gözetleme Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/poi/22-signal-watchtower.png"
+    },
+    {
+      "id": "aurora-portal",
+      "name_tr": "Aurora Geçidi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/poi/23-aurora-portal.png"
+    },
+    {
+      "id": "black-ice-fortress",
+      "name_tr": "Kara Buz Kalesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/poi/24-black-ice-fortress.png"
+    }
+  ]
+}

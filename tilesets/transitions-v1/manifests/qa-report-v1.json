@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "mask_count": 64,
+  "sample_pair_count": 45,
+  "expected_masks": 64,
+  "expected_pairs": 45,
+  "errors": []
+}

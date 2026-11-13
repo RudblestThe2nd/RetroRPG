@@ -1,0 +1,843 @@
+{
+  "pack": "volcanic-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "ash-plain",
+      "name_tr": "Kül Ovası",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/base/01-ash-plain.png"
+    },
+    {
+      "id": "scorched-cracked-earth",
+      "name_tr": "Kavrulmuş Çatlak Toprak",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/base/02-scorched-cracked-earth.png"
+    },
+    {
+      "id": "black-basalt-field",
+      "name_tr": "Kara Bazalt Tarlası",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/base/03-black-basalt-field.png"
+    },
+    {
+      "id": "magma-crust",
+      "name_tr": "Magma Çatlaklı Kabuk",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/base/04-magma-crust.png"
+    },
+    {
+      "id": "small-lava-pool",
+      "name_tr": "Küçük Lav Havuzu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "fire_immunity",
+      "index": 4,
+      "image": "tiles/base/05-small-lava-pool.png"
+    },
+    {
+      "id": "vast-lava-lake",
+      "name_tr": "Büyük Lav Gölü",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "fire_immunity",
+      "index": 5,
+      "image": "tiles/base/06-vast-lava-lake.png"
+    },
+    {
+      "id": "smoking-vents",
+      "name_tr": "Dumanlı Volkan Bacaları",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "heat_protection",
+      "index": 6,
+      "image": "tiles/base/07-smoking-vents.png"
+    },
+    {
+      "id": "yellow-sulfur-field",
+      "name_tr": "Sarı Kükürt Alanı",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "heat_protection",
+      "index": 7,
+      "image": "tiles/base/08-yellow-sulfur-field.png"
+    },
+    {
+      "id": "obsidian-shard-field",
+      "name_tr": "Obsidyen Parça Tarlası",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "heat_protection",
+      "index": 8,
+      "image": "tiles/base/09-obsidian-shard-field.png"
+    },
+    {
+      "id": "charred-forest",
+      "name_tr": "Kömürleşmiş Orman",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/base/10-charred-forest.png"
+    },
+    {
+      "id": "dead-black-tree-grove",
+      "name_tr": "Kara Ölü Ağaç Korusu",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/base/11-dead-black-tree-grove.png"
+    },
+    {
+      "id": "glowing-ember-field",
+      "name_tr": "Kor Tarlası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/base/12-glowing-ember-field.png"
+    },
+    {
+      "id": "volcanic-hill",
+      "name_tr": "Volkanik Tepe",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/base/13-volcanic-hill.png"
+    },
+    {
+      "id": "basalt-ridge",
+      "name_tr": "Bazalt Sırtı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/base/14-basalt-ridge.png"
+    },
+    {
+      "id": "deep-lava-canyon",
+      "name_tr": "Derin Lav Kanyonu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "fire_immunity",
+      "index": 14,
+      "image": "tiles/base/15-deep-lava-canyon.png"
+    },
+    {
+      "id": "caldera-rim",
+      "name_tr": "Kaldera Kenarı",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 3,
+      "requires": "heat_protection",
+      "index": 15,
+      "image": "tiles/base/16-caldera-rim.png"
+    },
+    {
+      "id": "magma-waterfall-cliff",
+      "name_tr": "Magma Şelalesi Uçurumu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "fire_immunity",
+      "index": 16,
+      "image": "tiles/base/17-magma-waterfall-cliff.png"
+    },
+    {
+      "id": "volcanic-crater-lake",
+      "name_tr": "Volkanik Krater Gölü",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/base/18-volcanic-crater-lake.png"
+    },
+    {
+      "id": "eruption-debris",
+      "name_tr": "Patlama Kalıntıları",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/base/19-eruption-debris.png"
+    },
+    {
+      "id": "ash-storm-ground",
+      "name_tr": "Kül Fırtınası Bölgesi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/base/20-ash-storm-ground.png"
+    },
+    {
+      "id": "collapsed-lava-tubes",
+      "name_tr": "Çökmüş Lav Tünelleri",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/base/21-collapsed-lava-tubes.png"
+    },
+    {
+      "id": "black-glass-desert",
+      "name_tr": "Kara Cam Çölü",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/base/22-black-glass-desert.png"
+    },
+    {
+      "id": "volcanic-mountain-edge",
+      "name_tr": "Volkan Dağ Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/base/23-volcanic-mountain-edge.png"
+    },
+    {
+      "id": "volcanic-corrupted-edge",
+      "name_tr": "Volkan Lanetli Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/base/24-volcanic-corrupted-edge.png"
+    },
+    {
+      "id": "road-straight-e-w",
+      "name_tr": "Bazalt Yol Düz E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/connections/01-road-straight-e-w.png"
+    },
+    {
+      "id": "road-straight-ne-sw",
+      "name_tr": "Bazalt Yol Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/connections/02-road-straight-ne-sw.png"
+    },
+    {
+      "id": "road-straight-nw-se",
+      "name_tr": "Bazalt Yol Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/connections/03-road-straight-nw-se.png"
+    },
+    {
+      "id": "road-curve-e-se",
+      "name_tr": "Bazalt Yol Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/connections/04-road-curve-e-se.png"
+    },
+    {
+      "id": "road-curve-se-sw",
+      "name_tr": "Bazalt Yol Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/connections/05-road-curve-se-sw.png"
+    },
+    {
+      "id": "road-curve-sw-w",
+      "name_tr": "Bazalt Yol Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/connections/06-road-curve-sw-w.png"
+    },
+    {
+      "id": "road-curve-w-nw",
+      "name_tr": "Bazalt Yol Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/connections/07-road-curve-w-nw.png"
+    },
+    {
+      "id": "road-curve-nw-ne",
+      "name_tr": "Bazalt Yol Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/connections/08-road-curve-nw-ne.png"
+    },
+    {
+      "id": "road-curve-ne-e",
+      "name_tr": "Bazalt Yol Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/connections/09-road-curve-ne-e.png"
+    },
+    {
+      "id": "road-three-way-e-sw-nw",
+      "name_tr": "Bazalt Yol Üçlü E-SW-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/connections/10-road-three-way-e-sw-nw.png"
+    },
+    {
+      "id": "road-three-way-w-ne-se",
+      "name_tr": "Bazalt Yol Üçlü W-NE-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/connections/11-road-three-way-w-ne-se.png"
+    },
+    {
+      "id": "road-six-way",
+      "name_tr": "Bazalt Yol Altılı Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/connections/12-road-six-way.png"
+    },
+    {
+      "id": "lava-straight-e-w",
+      "name_tr": "Lav Nehri Düz E-W",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 12,
+      "image": "tiles/connections/13-lava-straight-e-w.png"
+    },
+    {
+      "id": "lava-straight-ne-sw",
+      "name_tr": "Lav Nehri Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 13,
+      "image": "tiles/connections/14-lava-straight-ne-sw.png"
+    },
+    {
+      "id": "lava-straight-nw-se",
+      "name_tr": "Lav Nehri Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 14,
+      "image": "tiles/connections/15-lava-straight-nw-se.png"
+    },
+    {
+      "id": "lava-curve-e-se",
+      "name_tr": "Lav Nehri Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 15,
+      "image": "tiles/connections/16-lava-curve-e-se.png"
+    },
+    {
+      "id": "lava-curve-se-sw",
+      "name_tr": "Lav Nehri Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 16,
+      "image": "tiles/connections/17-lava-curve-se-sw.png"
+    },
+    {
+      "id": "lava-curve-sw-w",
+      "name_tr": "Lav Nehri Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 17,
+      "image": "tiles/connections/18-lava-curve-sw-w.png"
+    },
+    {
+      "id": "lava-curve-w-nw",
+      "name_tr": "Lav Nehri Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 18,
+      "image": "tiles/connections/19-lava-curve-w-nw.png"
+    },
+    {
+      "id": "lava-curve-nw-ne",
+      "name_tr": "Lav Nehri Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 19,
+      "image": "tiles/connections/20-lava-curve-nw-ne.png"
+    },
+    {
+      "id": "lava-curve-ne-e",
+      "name_tr": "Lav Nehri Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_or_fire_immunity",
+      "index": 20,
+      "image": "tiles/connections/21-lava-curve-ne-e.png"
+    },
+    {
+      "id": "iron-bridge-e-w",
+      "name_tr": "Demir Köprü E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/connections/22-iron-bridge-e-w.png"
+    },
+    {
+      "id": "iron-bridge-ne-sw",
+      "name_tr": "Demir Köprü NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/connections/23-iron-bridge-ne-sw.png"
+    },
+    {
+      "id": "iron-bridge-nw-se",
+      "name_tr": "Demir Köprü NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/connections/24-iron-bridge-nw-se.png"
+    },
+    {
+      "id": "ash-village",
+      "name_tr": "Kül Köyü",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/poi/01-ash-village.png"
+    },
+    {
+      "id": "volcanic-town",
+      "name_tr": "Volkan Kenti",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/poi/02-volcanic-town.png"
+    },
+    {
+      "id": "master-forge-lodge",
+      "name_tr": "Usta Demirhane",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/poi/03-master-forge-lodge.png"
+    },
+    {
+      "id": "lava-miner-camp",
+      "name_tr": "Lav Madencisi Kampı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/poi/04-lava-miner-camp.png"
+    },
+    {
+      "id": "obsidian-quarry",
+      "name_tr": "Obsidyen Ocağı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/poi/05-obsidian-quarry.png"
+    },
+    {
+      "id": "sulfur-outpost",
+      "name_tr": "Kükürt Karakolu",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/poi/06-sulfur-outpost.png"
+    },
+    {
+      "id": "ruined-volcanic-citadel",
+      "name_tr": "Yıkık Volkan Kalesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/poi/07-ruined-volcanic-citadel.png"
+    },
+    {
+      "id": "lava-watchtower",
+      "name_tr": "Lav Gözetleme Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/poi/08-lava-watchtower.png"
+    },
+    {
+      "id": "fire-temple",
+      "name_tr": "Ateş Tapınağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/poi/09-fire-temple.png"
+    },
+    {
+      "id": "ember-shrine",
+      "name_tr": "Kor Mabedi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/poi/10-ember-shrine.png"
+    },
+    {
+      "id": "magma-rune-stones",
+      "name_tr": "Magma Rün Taşları",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/poi/11-magma-rune-stones.png"
+    },
+    {
+      "id": "burned-graveyard",
+      "name_tr": "Yanmış Mezarlık",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/poi/12-burned-graveyard.png"
+    },
+    {
+      "id": "lava-cave",
+      "name_tr": "Lav Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/poi/13-lava-cave.png"
+    },
+    {
+      "id": "obsidian-mine",
+      "name_tr": "Obsidyen Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/poi/14-obsidian-mine.png"
+    },
+    {
+      "id": "basalt-tunnel",
+      "name_tr": "Bazalt Tüneli",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/poi/15-basalt-tunnel.png"
+    },
+    {
+      "id": "magma-grotto",
+      "name_tr": "Magma Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/poi/16-magma-grotto.png"
+    },
+    {
+      "id": "iron-lift-station",
+      "name_tr": "Demir Asansör İstasyonu",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/poi/17-iron-lift-station.png"
+    },
+    {
+      "id": "ancient-volcanic-forge",
+      "name_tr": "Kadim Volkan Demirhanesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/poi/18-ancient-volcanic-forge.png"
+    },
+    {
+      "id": "fire-cultist-camp",
+      "name_tr": "Ateş Tarikatı Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/poi/19-fire-cultist-camp.png"
+    },
+    {
+      "id": "fire-drake-nest",
+      "name_tr": "Ateş Ejderi Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/poi/20-fire-drake-nest.png"
+    },
+    {
+      "id": "flame-witch-hut",
+      "name_tr": "Alev Cadısı Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/poi/21-flame-witch-hut.png"
+    },
+    {
+      "id": "eruption-beacon",
+      "name_tr": "Patlama İşaret Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/poi/22-eruption-beacon.png"
+    },
+    {
+      "id": "infernal-portal",
+      "name_tr": "Cehennem Geçidi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/poi/23-infernal-portal.png"
+    },
+    {
+      "id": "volcano-boss-citadel",
+      "name_tr": "Volkan Patron Kalesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/poi/24-volcano-boss-citadel.png"
+    }
+  ]
+}
