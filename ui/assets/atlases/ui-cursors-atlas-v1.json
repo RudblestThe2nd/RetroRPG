@@ -1,0 +1,341 @@
+{
+  "atlas": "ui-cursors-atlas-v1.png",
+  "sprites": {
+    "cursor-attack_f00": {
+      "x": 2,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-attack_f00.png"
+    },
+    "cursor-attack_f01": {
+      "x": 52,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-attack_f01.png"
+    },
+    "cursor-attack_f02": {
+      "x": 102,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-attack_f02.png"
+    },
+    "cursor-attack_f03": {
+      "x": 152,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-attack_f03.png"
+    },
+    "cursor-default_f00": {
+      "x": 202,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-default_f00.png"
+    },
+    "cursor-default_f01": {
+      "x": 252,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-default_f01.png"
+    },
+    "cursor-default_f02": {
+      "x": 302,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-default_f02.png"
+    },
+    "cursor-default_f03": {
+      "x": 352,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-default_f03.png"
+    },
+    "cursor-drag_f00": {
+      "x": 402,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-drag_f00.png"
+    },
+    "cursor-drag_f01": {
+      "x": 452,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-drag_f01.png"
+    },
+    "cursor-drag_f02": {
+      "x": 502,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-drag_f02.png"
+    },
+    "cursor-drag_f03": {
+      "x": 552,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-drag_f03.png"
+    },
+    "cursor-forbidden_f00": {
+      "x": 602,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-forbidden_f00.png"
+    },
+    "cursor-forbidden_f01": {
+      "x": 652,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-forbidden_f01.png"
+    },
+    "cursor-forbidden_f02": {
+      "x": 702,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-forbidden_f02.png"
+    },
+    "cursor-forbidden_f03": {
+      "x": 752,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-forbidden_f03.png"
+    },
+    "cursor-inspect_f00": {
+      "x": 802,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-inspect_f00.png"
+    },
+    "cursor-inspect_f01": {
+      "x": 852,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-inspect_f01.png"
+    },
+    "cursor-inspect_f02": {
+      "x": 902,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-inspect_f02.png"
+    },
+    "cursor-inspect_f03": {
+      "x": 952,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-inspect_f03.png"
+    },
+    "cursor-magic_f00": {
+      "x": 1002,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-magic_f00.png"
+    },
+    "cursor-magic_f01": {
+      "x": 1052,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-magic_f01.png"
+    },
+    "cursor-magic_f02": {
+      "x": 1102,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-magic_f02.png"
+    },
+    "cursor-magic_f03": {
+      "x": 1152,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-magic_f03.png"
+    },
+    "cursor-move_f00": {
+      "x": 1202,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-move_f00.png"
+    },
+    "cursor-move_f01": {
+      "x": 1252,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-move_f01.png"
+    },
+    "cursor-move_f02": {
+      "x": 1302,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-move_f02.png"
+    },
+    "cursor-move_f03": {
+      "x": 1352,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-move_f03.png"
+    },
+    "cursor-pickup_f00": {
+      "x": 1402,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pickup_f00.png"
+    },
+    "cursor-pickup_f01": {
+      "x": 1452,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pickup_f01.png"
+    },
+    "cursor-pickup_f02": {
+      "x": 1502,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pickup_f02.png"
+    },
+    "cursor-pickup_f03": {
+      "x": 1552,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pickup_f03.png"
+    },
+    "cursor-pointer_f00": {
+      "x": 1602,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pointer_f00.png"
+    },
+    "cursor-pointer_f01": {
+      "x": 1652,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pointer_f01.png"
+    },
+    "cursor-pointer_f02": {
+      "x": 1702,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pointer_f02.png"
+    },
+    "cursor-pointer_f03": {
+      "x": 1752,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-pointer_f03.png"
+    },
+    "cursor-ranged_f00": {
+      "x": 1802,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-ranged_f00.png"
+    },
+    "cursor-ranged_f01": {
+      "x": 1852,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-ranged_f01.png"
+    },
+    "cursor-ranged_f02": {
+      "x": 1902,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-ranged_f02.png"
+    },
+    "cursor-ranged_f03": {
+      "x": 1952,
+      "y": 2,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-ranged_f03.png"
+    },
+    "cursor-talk_f00": {
+      "x": 2,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-talk_f00.png"
+    },
+    "cursor-talk_f01": {
+      "x": 52,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-talk_f01.png"
+    },
+    "cursor-talk_f02": {
+      "x": 102,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-talk_f02.png"
+    },
+    "cursor-talk_f03": {
+      "x": 152,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-talk_f03.png"
+    },
+    "cursor-wait_f00": {
+      "x": 202,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-wait_f00.png"
+    },
+    "cursor-wait_f01": {
+      "x": 252,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-wait_f01.png"
+    },
+    "cursor-wait_f02": {
+      "x": 302,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-wait_f02.png"
+    },
+    "cursor-wait_f03": {
+      "x": 352,
+      "y": 52,
+      "width": 48,
+      "height": 48,
+      "source": "cursors/cursor-wait_f03.png"
+    }
+  }
+}

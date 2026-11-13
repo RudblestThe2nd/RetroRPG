@@ -1,0 +1,80 @@
+{
+  "pack": "core-game-screens",
+  "version": 1,
+  "target_resolution": [
+    800,
+    800
+  ],
+  "screens": [
+    {
+      "id": "combat-screen-v1",
+      "description": "Turn-based combat screen",
+      "source": "source-highres/combat-screen-v1.png",
+      "runtime": "runtime-800/combat-screen-v1.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "id": "inventory-screen-v1",
+      "description": "Inventory, equipment and item requirement screen",
+      "source": "source-highres/inventory-screen-v1.png",
+      "runtime": "runtime-800/inventory-screen-v1.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "id": "character-screen-v1",
+      "description": "Character sheet, attributes and skills screen",
+      "source": "source-highres/character-screen-v1.png",
+      "runtime": "runtime-800/character-screen-v1.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "id": "journal-screen-v1",
+      "description": "Quest journal and world notes screen",
+      "source": "source-highres/journal-screen-v1.png",
+      "runtime": "runtime-800/journal-screen-v1.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        800,
+        800
+      ]
+    },
+    {
+      "id": "camp-screen-v1",
+      "description": "Camp management and night event screen",
+      "source": "source-highres/camp-screen-v1.png",
+      "runtime": "runtime-800/camp-screen-v1.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "runtime_size": [
+        800,
+        800
+      ]
+    }
+  ]
+}

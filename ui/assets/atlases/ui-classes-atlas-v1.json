@@ -1,0 +1,453 @@
+{
+  "atlas": "ui-classes-atlas-v1.png",
+  "sprites": {
+    "class-artificer_disabled": {
+      "x": 2,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-artificer_disabled.png"
+    },
+    "class-artificer_hover": {
+      "x": 76,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-artificer_hover.png"
+    },
+    "class-artificer_normal": {
+      "x": 150,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-artificer_normal.png"
+    },
+    "class-artificer_pressed": {
+      "x": 224,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-artificer_pressed.png"
+    },
+    "class-barbarian_disabled": {
+      "x": 298,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-barbarian_disabled.png"
+    },
+    "class-barbarian_hover": {
+      "x": 372,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-barbarian_hover.png"
+    },
+    "class-barbarian_normal": {
+      "x": 446,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-barbarian_normal.png"
+    },
+    "class-barbarian_pressed": {
+      "x": 520,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-barbarian_pressed.png"
+    },
+    "class-bard_disabled": {
+      "x": 594,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-bard_disabled.png"
+    },
+    "class-bard_hover": {
+      "x": 668,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-bard_hover.png"
+    },
+    "class-bard_normal": {
+      "x": 742,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-bard_normal.png"
+    },
+    "class-bard_pressed": {
+      "x": 816,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-bard_pressed.png"
+    },
+    "class-cleric_disabled": {
+      "x": 890,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-cleric_disabled.png"
+    },
+    "class-cleric_hover": {
+      "x": 964,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-cleric_hover.png"
+    },
+    "class-cleric_normal": {
+      "x": 1038,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-cleric_normal.png"
+    },
+    "class-cleric_pressed": {
+      "x": 1112,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-cleric_pressed.png"
+    },
+    "class-druid_disabled": {
+      "x": 1186,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-druid_disabled.png"
+    },
+    "class-druid_hover": {
+      "x": 1260,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-druid_hover.png"
+    },
+    "class-druid_normal": {
+      "x": 1334,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-druid_normal.png"
+    },
+    "class-druid_pressed": {
+      "x": 1408,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-druid_pressed.png"
+    },
+    "class-fighter_disabled": {
+      "x": 1482,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-fighter_disabled.png"
+    },
+    "class-fighter_hover": {
+      "x": 1556,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-fighter_hover.png"
+    },
+    "class-fighter_normal": {
+      "x": 1630,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-fighter_normal.png"
+    },
+    "class-fighter_pressed": {
+      "x": 1704,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-fighter_pressed.png"
+    },
+    "class-knight_disabled": {
+      "x": 1778,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-knight_disabled.png"
+    },
+    "class-knight_hover": {
+      "x": 1852,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-knight_hover.png"
+    },
+    "class-knight_normal": {
+      "x": 1926,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-knight_normal.png"
+    },
+    "class-knight_pressed": {
+      "x": 2,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-knight_pressed.png"
+    },
+    "class-monk_disabled": {
+      "x": 76,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-monk_disabled.png"
+    },
+    "class-monk_hover": {
+      "x": 150,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-monk_hover.png"
+    },
+    "class-monk_normal": {
+      "x": 224,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-monk_normal.png"
+    },
+    "class-monk_pressed": {
+      "x": 298,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-monk_pressed.png"
+    },
+    "class-necromancer_disabled": {
+      "x": 372,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-necromancer_disabled.png"
+    },
+    "class-necromancer_hover": {
+      "x": 446,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-necromancer_hover.png"
+    },
+    "class-necromancer_normal": {
+      "x": 520,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-necromancer_normal.png"
+    },
+    "class-necromancer_pressed": {
+      "x": 594,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-necromancer_pressed.png"
+    },
+    "class-paladin_disabled": {
+      "x": 668,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-paladin_disabled.png"
+    },
+    "class-paladin_hover": {
+      "x": 742,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-paladin_hover.png"
+    },
+    "class-paladin_normal": {
+      "x": 816,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-paladin_normal.png"
+    },
+    "class-paladin_pressed": {
+      "x": 890,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-paladin_pressed.png"
+    },
+    "class-ranger_disabled": {
+      "x": 964,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-ranger_disabled.png"
+    },
+    "class-ranger_hover": {
+      "x": 1038,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-ranger_hover.png"
+    },
+    "class-ranger_normal": {
+      "x": 1112,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-ranger_normal.png"
+    },
+    "class-ranger_pressed": {
+      "x": 1186,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-ranger_pressed.png"
+    },
+    "class-rogue_disabled": {
+      "x": 1260,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-rogue_disabled.png"
+    },
+    "class-rogue_hover": {
+      "x": 1334,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-rogue_hover.png"
+    },
+    "class-rogue_normal": {
+      "x": 1408,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-rogue_normal.png"
+    },
+    "class-rogue_pressed": {
+      "x": 1482,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-rogue_pressed.png"
+    },
+    "class-shaman_disabled": {
+      "x": 1556,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-shaman_disabled.png"
+    },
+    "class-shaman_hover": {
+      "x": 1630,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-shaman_hover.png"
+    },
+    "class-shaman_normal": {
+      "x": 1704,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-shaman_normal.png"
+    },
+    "class-shaman_pressed": {
+      "x": 1778,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-shaman_pressed.png"
+    },
+    "class-sorcerer_disabled": {
+      "x": 1852,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-sorcerer_disabled.png"
+    },
+    "class-sorcerer_hover": {
+      "x": 1926,
+      "y": 76,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-sorcerer_hover.png"
+    },
+    "class-sorcerer_normal": {
+      "x": 2,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-sorcerer_normal.png"
+    },
+    "class-sorcerer_pressed": {
+      "x": 76,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-sorcerer_pressed.png"
+    },
+    "class-warlock_disabled": {
+      "x": 150,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-warlock_disabled.png"
+    },
+    "class-warlock_hover": {
+      "x": 224,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-warlock_hover.png"
+    },
+    "class-warlock_normal": {
+      "x": 298,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-warlock_normal.png"
+    },
+    "class-warlock_pressed": {
+      "x": 372,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-warlock_pressed.png"
+    },
+    "class-wizard_disabled": {
+      "x": 446,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-wizard_disabled.png"
+    },
+    "class-wizard_hover": {
+      "x": 520,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-wizard_hover.png"
+    },
+    "class-wizard_normal": {
+      "x": 594,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-wizard_normal.png"
+    },
+    "class-wizard_pressed": {
+      "x": 668,
+      "y": 150,
+      "width": 72,
+      "height": 72,
+      "source": "icons/classes/class-wizard_pressed.png"
+    }
+  }
+}

@@ -1,0 +1,3597 @@
+{
+  "pack": "retro-fantasy-ui",
+  "version": 1,
+  "target_canvas": [
+    800,
+    800
+  ],
+  "pixel_scale": 1,
+  "naming": "lowercase-kebab-case with _normal/_hover/_pressed/_disabled state suffix",
+  "interaction_states": [
+    "normal",
+    "hover",
+    "pressed",
+    "disabled"
+  ],
+  "recommended_press_animation_ms": [
+    70,
+    90,
+    70
+  ],
+  "atlases": [
+    "atlases/ui-controls-atlas-v1.png",
+    "atlases/ui-controls-atlas-v1.json",
+    "atlases/ui-frames-atlas-v1.png",
+    "atlases/ui-frames-atlas-v1.json",
+    "atlases/ui-system-atlas-v1.png",
+    "atlases/ui-system-atlas-v1.json",
+    "atlases/ui-classes-atlas-v1.png",
+    "atlases/ui-classes-atlas-v1.json",
+    "atlases/ui-races-atlas-v1.png",
+    "atlases/ui-races-atlas-v1.json",
+    "atlases/ui-status-atlas-v1.png",
+    "atlases/ui-status-atlas-v1.json",
+    "atlases/ui-cursors-atlas-v1.png",
+    "atlases/ui-cursors-atlas-v1.json",
+    "atlases/ui-input-atlas-v1.png",
+    "atlases/ui-input-atlas-v1.json"
+  ],
+  "assets": [
+    {
+      "id": "button-icon_disabled",
+      "path": "controls/buttons/icon/button-icon_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "button-icon_hover",
+      "path": "controls/buttons/icon/button-icon_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "button-icon_normal",
+      "path": "controls/buttons/icon/button-icon_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "button-icon_pressed",
+      "path": "controls/buttons/icon/button-icon_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "button-large_disabled",
+      "path": "controls/buttons/large/button-large_disabled.png",
+      "width": 256,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "button-large_hover",
+      "path": "controls/buttons/large/button-large_hover.png",
+      "width": 256,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "button-large_normal",
+      "path": "controls/buttons/large/button-large_normal.png",
+      "width": 256,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "button-large_pressed",
+      "path": "controls/buttons/large/button-large_pressed.png",
+      "width": 256,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "button-medium_disabled",
+      "path": "controls/buttons/medium/button-medium_disabled.png",
+      "width": 192,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "button-medium_hover",
+      "path": "controls/buttons/medium/button-medium_hover.png",
+      "width": 192,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "button-medium_normal",
+      "path": "controls/buttons/medium/button-medium_normal.png",
+      "width": 192,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "button-medium_pressed",
+      "path": "controls/buttons/medium/button-medium_pressed.png",
+      "width": 192,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "button-small_disabled",
+      "path": "controls/buttons/small/button-small_disabled.png",
+      "width": 128,
+      "height": 48,
+      "state": "disabled"
+    },
+    {
+      "id": "button-small_hover",
+      "path": "controls/buttons/small/button-small_hover.png",
+      "width": 128,
+      "height": 48,
+      "state": "hover"
+    },
+    {
+      "id": "button-small_normal",
+      "path": "controls/buttons/small/button-small_normal.png",
+      "width": 128,
+      "height": 48,
+      "state": "normal"
+    },
+    {
+      "id": "button-small_pressed",
+      "path": "controls/buttons/small/button-small_pressed.png",
+      "width": 128,
+      "height": 48,
+      "state": "pressed"
+    },
+    {
+      "id": "scrollbar-horizontal_disabled",
+      "path": "controls/scrollbars/horizontal/scrollbar-horizontal_disabled.png",
+      "width": 196,
+      "height": 28,
+      "state": "disabled"
+    },
+    {
+      "id": "scrollbar-horizontal_hover",
+      "path": "controls/scrollbars/horizontal/scrollbar-horizontal_hover.png",
+      "width": 196,
+      "height": 28,
+      "state": "hover"
+    },
+    {
+      "id": "scrollbar-horizontal_normal",
+      "path": "controls/scrollbars/horizontal/scrollbar-horizontal_normal.png",
+      "width": 196,
+      "height": 28,
+      "state": "normal"
+    },
+    {
+      "id": "scrollbar-horizontal_pressed",
+      "path": "controls/scrollbars/horizontal/scrollbar-horizontal_pressed.png",
+      "width": 196,
+      "height": 28,
+      "state": "pressed"
+    },
+    {
+      "id": "scrollbar-vertical_disabled",
+      "path": "controls/scrollbars/vertical/scrollbar-vertical_disabled.png",
+      "width": 28,
+      "height": 196,
+      "state": "disabled"
+    },
+    {
+      "id": "scrollbar-vertical_hover",
+      "path": "controls/scrollbars/vertical/scrollbar-vertical_hover.png",
+      "width": 28,
+      "height": 196,
+      "state": "hover"
+    },
+    {
+      "id": "scrollbar-vertical_normal",
+      "path": "controls/scrollbars/vertical/scrollbar-vertical_normal.png",
+      "width": 28,
+      "height": 196,
+      "state": "normal"
+    },
+    {
+      "id": "scrollbar-vertical_pressed",
+      "path": "controls/scrollbars/vertical/scrollbar-vertical_pressed.png",
+      "width": 28,
+      "height": 196,
+      "state": "pressed"
+    },
+    {
+      "id": "slot-ability_disabled",
+      "path": "controls/slots/ability/slot-ability_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "slot-ability_hover",
+      "path": "controls/slots/ability/slot-ability_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "slot-ability_normal",
+      "path": "controls/slots/ability/slot-ability_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "slot-ability_pressed",
+      "path": "controls/slots/ability/slot-ability_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "slot-equipment_disabled",
+      "path": "controls/slots/equipment/slot-equipment_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "slot-equipment_hover",
+      "path": "controls/slots/equipment/slot-equipment_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "slot-equipment_normal",
+      "path": "controls/slots/equipment/slot-equipment_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "slot-equipment_pressed",
+      "path": "controls/slots/equipment/slot-equipment_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "slot-item_disabled",
+      "path": "controls/slots/item/slot-item_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "slot-item_hover",
+      "path": "controls/slots/item/slot-item_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "slot-item_normal",
+      "path": "controls/slots/item/slot-item_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "slot-item_pressed",
+      "path": "controls/slots/item/slot-item_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "slot-portrait_disabled",
+      "path": "controls/slots/portrait/slot-portrait_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "slot-portrait_hover",
+      "path": "controls/slots/portrait/slot-portrait_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "slot-portrait_normal",
+      "path": "controls/slots/portrait/slot-portrait_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "slot-portrait_pressed",
+      "path": "controls/slots/portrait/slot-portrait_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "tab-primary_disabled",
+      "path": "controls/tabs/tab-primary_disabled.png",
+      "width": 176,
+      "height": 52,
+      "state": "disabled"
+    },
+    {
+      "id": "tab-primary_hover",
+      "path": "controls/tabs/tab-primary_hover.png",
+      "width": 176,
+      "height": 52,
+      "state": "hover"
+    },
+    {
+      "id": "tab-primary_normal",
+      "path": "controls/tabs/tab-primary_normal.png",
+      "width": 176,
+      "height": 52,
+      "state": "normal"
+    },
+    {
+      "id": "tab-primary_pressed",
+      "path": "controls/tabs/tab-primary_pressed.png",
+      "width": 176,
+      "height": 52,
+      "state": "pressed"
+    },
+    {
+      "id": "cursor-attack_f00",
+      "path": "cursors/cursor-attack_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-attack_f01",
+      "path": "cursors/cursor-attack_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-attack_f02",
+      "path": "cursors/cursor-attack_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-attack_f03",
+      "path": "cursors/cursor-attack_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-default_f00",
+      "path": "cursors/cursor-default_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-default_f01",
+      "path": "cursors/cursor-default_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-default_f02",
+      "path": "cursors/cursor-default_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-default_f03",
+      "path": "cursors/cursor-default_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-drag_f00",
+      "path": "cursors/cursor-drag_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-drag_f01",
+      "path": "cursors/cursor-drag_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-drag_f02",
+      "path": "cursors/cursor-drag_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-drag_f03",
+      "path": "cursors/cursor-drag_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-forbidden_f00",
+      "path": "cursors/cursor-forbidden_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-forbidden_f01",
+      "path": "cursors/cursor-forbidden_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-forbidden_f02",
+      "path": "cursors/cursor-forbidden_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-forbidden_f03",
+      "path": "cursors/cursor-forbidden_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-inspect_f00",
+      "path": "cursors/cursor-inspect_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-inspect_f01",
+      "path": "cursors/cursor-inspect_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-inspect_f02",
+      "path": "cursors/cursor-inspect_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-inspect_f03",
+      "path": "cursors/cursor-inspect_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-magic_f00",
+      "path": "cursors/cursor-magic_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-magic_f01",
+      "path": "cursors/cursor-magic_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-magic_f02",
+      "path": "cursors/cursor-magic_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-magic_f03",
+      "path": "cursors/cursor-magic_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-move_f00",
+      "path": "cursors/cursor-move_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-move_f01",
+      "path": "cursors/cursor-move_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-move_f02",
+      "path": "cursors/cursor-move_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-move_f03",
+      "path": "cursors/cursor-move_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pickup_f00",
+      "path": "cursors/cursor-pickup_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pickup_f01",
+      "path": "cursors/cursor-pickup_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pickup_f02",
+      "path": "cursors/cursor-pickup_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pickup_f03",
+      "path": "cursors/cursor-pickup_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pointer_f00",
+      "path": "cursors/cursor-pointer_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pointer_f01",
+      "path": "cursors/cursor-pointer_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pointer_f02",
+      "path": "cursors/cursor-pointer_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-pointer_f03",
+      "path": "cursors/cursor-pointer_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-ranged_f00",
+      "path": "cursors/cursor-ranged_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-ranged_f01",
+      "path": "cursors/cursor-ranged_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-ranged_f02",
+      "path": "cursors/cursor-ranged_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-ranged_f03",
+      "path": "cursors/cursor-ranged_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-talk_f00",
+      "path": "cursors/cursor-talk_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-talk_f01",
+      "path": "cursors/cursor-talk_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-talk_f02",
+      "path": "cursors/cursor-talk_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-talk_f03",
+      "path": "cursors/cursor-talk_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-wait_f00",
+      "path": "cursors/cursor-wait_f00.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-wait_f01",
+      "path": "cursors/cursor-wait_f01.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-wait_f02",
+      "path": "cursors/cursor-wait_f02.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "cursor-wait_f03",
+      "path": "cursors/cursor-wait_f03.png",
+      "width": 48,
+      "height": 48,
+      "state": null
+    },
+    {
+      "id": "modal-choice-large",
+      "path": "frames/modals/modal-choice-large.png",
+      "width": 560,
+      "height": 360,
+      "state": null
+    },
+    {
+      "id": "modal-confirmation-compact",
+      "path": "frames/modals/modal-confirmation-compact.png",
+      "width": 420,
+      "height": 240,
+      "state": null
+    },
+    {
+      "id": "modal-dialog-medium",
+      "path": "frames/modals/modal-dialog-medium.png",
+      "width": 480,
+      "height": 300,
+      "state": null
+    },
+    {
+      "id": "modal-warning",
+      "path": "frames/modals/modal-warning.png",
+      "width": 440,
+      "height": 260,
+      "state": null
+    },
+    {
+      "id": "panel-purple-header",
+      "path": "frames/panels/panel-purple-header.png",
+      "width": 420,
+      "height": 260,
+      "state": null
+    },
+    {
+      "id": "panel-square-stone",
+      "path": "frames/panels/panel-square-stone.png",
+      "width": 320,
+      "height": 320,
+      "state": null
+    },
+    {
+      "id": "panel-tall-stone",
+      "path": "frames/panels/panel-tall-stone.png",
+      "width": 288,
+      "height": 480,
+      "state": null
+    },
+    {
+      "id": "panel-wide-stone-wood",
+      "path": "frames/panels/panel-wide-stone-wood.png",
+      "width": 480,
+      "height": 288,
+      "state": null
+    },
+    {
+      "id": "tooltip-black-gold-small",
+      "path": "frames/tooltips/tooltip-black-gold-small.png",
+      "width": 300,
+      "height": 144,
+      "state": null
+    },
+    {
+      "id": "tooltip-item-detail-tall",
+      "path": "frames/tooltips/tooltip-item-detail-tall.png",
+      "width": 280,
+      "height": 400,
+      "state": null
+    },
+    {
+      "id": "tooltip-notification-wide",
+      "path": "frames/tooltips/tooltip-notification-wide.png",
+      "width": 420,
+      "height": 112,
+      "state": null
+    },
+    {
+      "id": "tooltip-parchment-medium",
+      "path": "frames/tooltips/tooltip-parchment-medium.png",
+      "width": 320,
+      "height": 176,
+      "state": null
+    },
+    {
+      "id": "class-artificer_disabled",
+      "path": "icons/classes/class-artificer_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-artificer_hover",
+      "path": "icons/classes/class-artificer_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-artificer_normal",
+      "path": "icons/classes/class-artificer_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-artificer_pressed",
+      "path": "icons/classes/class-artificer_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-barbarian_disabled",
+      "path": "icons/classes/class-barbarian_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-barbarian_hover",
+      "path": "icons/classes/class-barbarian_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-barbarian_normal",
+      "path": "icons/classes/class-barbarian_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-barbarian_pressed",
+      "path": "icons/classes/class-barbarian_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-bard_disabled",
+      "path": "icons/classes/class-bard_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-bard_hover",
+      "path": "icons/classes/class-bard_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-bard_normal",
+      "path": "icons/classes/class-bard_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-bard_pressed",
+      "path": "icons/classes/class-bard_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-cleric_disabled",
+      "path": "icons/classes/class-cleric_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-cleric_hover",
+      "path": "icons/classes/class-cleric_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-cleric_normal",
+      "path": "icons/classes/class-cleric_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-cleric_pressed",
+      "path": "icons/classes/class-cleric_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-druid_disabled",
+      "path": "icons/classes/class-druid_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-druid_hover",
+      "path": "icons/classes/class-druid_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-druid_normal",
+      "path": "icons/classes/class-druid_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-druid_pressed",
+      "path": "icons/classes/class-druid_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-fighter_disabled",
+      "path": "icons/classes/class-fighter_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-fighter_hover",
+      "path": "icons/classes/class-fighter_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-fighter_normal",
+      "path": "icons/classes/class-fighter_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-fighter_pressed",
+      "path": "icons/classes/class-fighter_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-knight_disabled",
+      "path": "icons/classes/class-knight_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-knight_hover",
+      "path": "icons/classes/class-knight_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-knight_normal",
+      "path": "icons/classes/class-knight_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-knight_pressed",
+      "path": "icons/classes/class-knight_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-monk_disabled",
+      "path": "icons/classes/class-monk_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-monk_hover",
+      "path": "icons/classes/class-monk_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-monk_normal",
+      "path": "icons/classes/class-monk_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-monk_pressed",
+      "path": "icons/classes/class-monk_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-necromancer_disabled",
+      "path": "icons/classes/class-necromancer_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-necromancer_hover",
+      "path": "icons/classes/class-necromancer_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-necromancer_normal",
+      "path": "icons/classes/class-necromancer_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-necromancer_pressed",
+      "path": "icons/classes/class-necromancer_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-paladin_disabled",
+      "path": "icons/classes/class-paladin_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-paladin_hover",
+      "path": "icons/classes/class-paladin_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-paladin_normal",
+      "path": "icons/classes/class-paladin_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-paladin_pressed",
+      "path": "icons/classes/class-paladin_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-ranger_disabled",
+      "path": "icons/classes/class-ranger_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-ranger_hover",
+      "path": "icons/classes/class-ranger_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-ranger_normal",
+      "path": "icons/classes/class-ranger_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-ranger_pressed",
+      "path": "icons/classes/class-ranger_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-rogue_disabled",
+      "path": "icons/classes/class-rogue_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-rogue_hover",
+      "path": "icons/classes/class-rogue_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-rogue_normal",
+      "path": "icons/classes/class-rogue_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-rogue_pressed",
+      "path": "icons/classes/class-rogue_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-shaman_disabled",
+      "path": "icons/classes/class-shaman_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-shaman_hover",
+      "path": "icons/classes/class-shaman_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-shaman_normal",
+      "path": "icons/classes/class-shaman_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-shaman_pressed",
+      "path": "icons/classes/class-shaman_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-sorcerer_disabled",
+      "path": "icons/classes/class-sorcerer_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-sorcerer_hover",
+      "path": "icons/classes/class-sorcerer_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-sorcerer_normal",
+      "path": "icons/classes/class-sorcerer_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-sorcerer_pressed",
+      "path": "icons/classes/class-sorcerer_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-warlock_disabled",
+      "path": "icons/classes/class-warlock_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-warlock_hover",
+      "path": "icons/classes/class-warlock_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-warlock_normal",
+      "path": "icons/classes/class-warlock_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-warlock_pressed",
+      "path": "icons/classes/class-warlock_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "class-wizard_disabled",
+      "path": "icons/classes/class-wizard_disabled.png",
+      "width": 72,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "class-wizard_hover",
+      "path": "icons/classes/class-wizard_hover.png",
+      "width": 72,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "class-wizard_normal",
+      "path": "icons/classes/class-wizard_normal.png",
+      "width": 72,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "class-wizard_pressed",
+      "path": "icons/classes/class-wizard_pressed.png",
+      "width": 72,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "race-custom_disabled",
+      "path": "icons/races/race-custom_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-custom_hover",
+      "path": "icons/races/race-custom_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-custom_normal",
+      "path": "icons/races/race-custom_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-custom_pressed",
+      "path": "icons/races/race-custom_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-dragonborn_disabled",
+      "path": "icons/races/race-dragonborn_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-dragonborn_hover",
+      "path": "icons/races/race-dragonborn_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-dragonborn_normal",
+      "path": "icons/races/race-dragonborn_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-dragonborn_pressed",
+      "path": "icons/races/race-dragonborn_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-drow_disabled",
+      "path": "icons/races/race-drow_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-drow_hover",
+      "path": "icons/races/race-drow_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-drow_normal",
+      "path": "icons/races/race-drow_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-drow_pressed",
+      "path": "icons/races/race-drow_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-dwarf_disabled",
+      "path": "icons/races/race-dwarf_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-dwarf_hover",
+      "path": "icons/races/race-dwarf_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-dwarf_normal",
+      "path": "icons/races/race-dwarf_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-dwarf_pressed",
+      "path": "icons/races/race-dwarf_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-elf_disabled",
+      "path": "icons/races/race-elf_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-elf_hover",
+      "path": "icons/races/race-elf_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-elf_normal",
+      "path": "icons/races/race-elf_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-elf_pressed",
+      "path": "icons/races/race-elf_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-githyanki_disabled",
+      "path": "icons/races/race-githyanki_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-githyanki_hover",
+      "path": "icons/races/race-githyanki_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-githyanki_normal",
+      "path": "icons/races/race-githyanki_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-githyanki_pressed",
+      "path": "icons/races/race-githyanki_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-gnome_disabled",
+      "path": "icons/races/race-gnome_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-gnome_hover",
+      "path": "icons/races/race-gnome_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-gnome_normal",
+      "path": "icons/races/race-gnome_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-gnome_pressed",
+      "path": "icons/races/race-gnome_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-half-elf_disabled",
+      "path": "icons/races/race-half-elf_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-half-elf_hover",
+      "path": "icons/races/race-half-elf_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-half-elf_normal",
+      "path": "icons/races/race-half-elf_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-half-elf_pressed",
+      "path": "icons/races/race-half-elf_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-half-orc_disabled",
+      "path": "icons/races/race-half-orc_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-half-orc_hover",
+      "path": "icons/races/race-half-orc_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-half-orc_normal",
+      "path": "icons/races/race-half-orc_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-half-orc_pressed",
+      "path": "icons/races/race-half-orc_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-halfling_disabled",
+      "path": "icons/races/race-halfling_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-halfling_hover",
+      "path": "icons/races/race-halfling_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-halfling_normal",
+      "path": "icons/races/race-halfling_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-halfling_pressed",
+      "path": "icons/races/race-halfling_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-human_disabled",
+      "path": "icons/races/race-human_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-human_hover",
+      "path": "icons/races/race-human_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-human_normal",
+      "path": "icons/races/race-human_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-human_pressed",
+      "path": "icons/races/race-human_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "race-tiefling_disabled",
+      "path": "icons/races/race-tiefling_disabled.png",
+      "width": 80,
+      "height": 80,
+      "state": "disabled"
+    },
+    {
+      "id": "race-tiefling_hover",
+      "path": "icons/races/race-tiefling_hover.png",
+      "width": 80,
+      "height": 80,
+      "state": "hover"
+    },
+    {
+      "id": "race-tiefling_normal",
+      "path": "icons/races/race-tiefling_normal.png",
+      "width": 80,
+      "height": 80,
+      "state": "normal"
+    },
+    {
+      "id": "race-tiefling_pressed",
+      "path": "icons/races/race-tiefling_pressed.png",
+      "width": 80,
+      "height": 80,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-armor_disabled",
+      "path": "icons/resources/resource-armor_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-armor_hover",
+      "path": "icons/resources/resource-armor_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-armor_normal",
+      "path": "icons/resources/resource-armor_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-armor_pressed",
+      "path": "icons/resources/resource-armor_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-danger_disabled",
+      "path": "icons/resources/resource-danger_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-danger_hover",
+      "path": "icons/resources/resource-danger_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-danger_normal",
+      "path": "icons/resources/resource-danger_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-danger_pressed",
+      "path": "icons/resources/resource-danger_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-day_disabled",
+      "path": "icons/resources/resource-day_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-day_hover",
+      "path": "icons/resources/resource-day_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-day_normal",
+      "path": "icons/resources/resource-day_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-day_pressed",
+      "path": "icons/resources/resource-day_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-energy_disabled",
+      "path": "icons/resources/resource-energy_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-energy_hover",
+      "path": "icons/resources/resource-energy_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-energy_normal",
+      "path": "icons/resources/resource-energy_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-energy_pressed",
+      "path": "icons/resources/resource-energy_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-experience_disabled",
+      "path": "icons/resources/resource-experience_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-experience_hover",
+      "path": "icons/resources/resource-experience_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-experience_normal",
+      "path": "icons/resources/resource-experience_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-experience_pressed",
+      "path": "icons/resources/resource-experience_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-food_disabled",
+      "path": "icons/resources/resource-food_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-food_hover",
+      "path": "icons/resources/resource-food_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-food_normal",
+      "path": "icons/resources/resource-food_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-food_pressed",
+      "path": "icons/resources/resource-food_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-gold_disabled",
+      "path": "icons/resources/resource-gold_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-gold_hover",
+      "path": "icons/resources/resource-gold_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-gold_normal",
+      "path": "icons/resources/resource-gold_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-gold_pressed",
+      "path": "icons/resources/resource-gold_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-health_disabled",
+      "path": "icons/resources/resource-health_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-health_hover",
+      "path": "icons/resources/resource-health_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-health_normal",
+      "path": "icons/resources/resource-health_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-health_pressed",
+      "path": "icons/resources/resource-health_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-movement_disabled",
+      "path": "icons/resources/resource-movement_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-movement_hover",
+      "path": "icons/resources/resource-movement_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-movement_normal",
+      "path": "icons/resources/resource-movement_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-movement_pressed",
+      "path": "icons/resources/resource-movement_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-time_disabled",
+      "path": "icons/resources/resource-time_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-time_hover",
+      "path": "icons/resources/resource-time_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-time_normal",
+      "path": "icons/resources/resource-time_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-time_pressed",
+      "path": "icons/resources/resource-time_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-weather_disabled",
+      "path": "icons/resources/resource-weather_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-weather_hover",
+      "path": "icons/resources/resource-weather_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-weather_normal",
+      "path": "icons/resources/resource-weather_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-weather_pressed",
+      "path": "icons/resources/resource-weather_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "resource-weight_disabled",
+      "path": "icons/resources/resource-weight_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "resource-weight_hover",
+      "path": "icons/resources/resource-weight_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "resource-weight_normal",
+      "path": "icons/resources/resource-weight_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "resource-weight_pressed",
+      "path": "icons/resources/resource-weight_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-armored_disabled",
+      "path": "icons/status_effects/status-armored_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-armored_hover",
+      "path": "icons/status_effects/status-armored_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-armored_normal",
+      "path": "icons/status_effects/status-armored_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-armored_pressed",
+      "path": "icons/status_effects/status-armored_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-bleeding_disabled",
+      "path": "icons/status_effects/status-bleeding_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-bleeding_hover",
+      "path": "icons/status_effects/status-bleeding_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-bleeding_normal",
+      "path": "icons/status_effects/status-bleeding_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-bleeding_pressed",
+      "path": "icons/status_effects/status-bleeding_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-blessed_disabled",
+      "path": "icons/status_effects/status-blessed_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-blessed_hover",
+      "path": "icons/status_effects/status-blessed_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-blessed_normal",
+      "path": "icons/status_effects/status-blessed_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-blessed_pressed",
+      "path": "icons/status_effects/status-blessed_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-blinded_disabled",
+      "path": "icons/status_effects/status-blinded_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-blinded_hover",
+      "path": "icons/status_effects/status-blinded_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-blinded_normal",
+      "path": "icons/status_effects/status-blinded_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-blinded_pressed",
+      "path": "icons/status_effects/status-blinded_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-burning_disabled",
+      "path": "icons/status_effects/status-burning_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-burning_hover",
+      "path": "icons/status_effects/status-burning_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-burning_normal",
+      "path": "icons/status_effects/status-burning_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-burning_pressed",
+      "path": "icons/status_effects/status-burning_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-charmed_disabled",
+      "path": "icons/status_effects/status-charmed_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-charmed_hover",
+      "path": "icons/status_effects/status-charmed_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-charmed_normal",
+      "path": "icons/status_effects/status-charmed_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-charmed_pressed",
+      "path": "icons/status_effects/status-charmed_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-concentrating_disabled",
+      "path": "icons/status_effects/status-concentrating_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-concentrating_hover",
+      "path": "icons/status_effects/status-concentrating_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-concentrating_normal",
+      "path": "icons/status_effects/status-concentrating_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-concentrating_pressed",
+      "path": "icons/status_effects/status-concentrating_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-cursed_disabled",
+      "path": "icons/status_effects/status-cursed_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-cursed_hover",
+      "path": "icons/status_effects/status-cursed_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-cursed_normal",
+      "path": "icons/status_effects/status-cursed_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-cursed_pressed",
+      "path": "icons/status_effects/status-cursed_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-exposed_disabled",
+      "path": "icons/status_effects/status-exposed_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-exposed_hover",
+      "path": "icons/status_effects/status-exposed_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-exposed_normal",
+      "path": "icons/status_effects/status-exposed_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-exposed_pressed",
+      "path": "icons/status_effects/status-exposed_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-frightened_disabled",
+      "path": "icons/status_effects/status-frightened_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-frightened_hover",
+      "path": "icons/status_effects/status-frightened_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-frightened_normal",
+      "path": "icons/status_effects/status-frightened_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-frightened_pressed",
+      "path": "icons/status_effects/status-frightened_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-frozen_disabled",
+      "path": "icons/status_effects/status-frozen_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-frozen_hover",
+      "path": "icons/status_effects/status-frozen_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-frozen_normal",
+      "path": "icons/status_effects/status-frozen_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-frozen_pressed",
+      "path": "icons/status_effects/status-frozen_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-haste_disabled",
+      "path": "icons/status_effects/status-haste_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-haste_hover",
+      "path": "icons/status_effects/status-haste_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-haste_normal",
+      "path": "icons/status_effects/status-haste_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-haste_pressed",
+      "path": "icons/status_effects/status-haste_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-invisible_disabled",
+      "path": "icons/status_effects/status-invisible_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-invisible_hover",
+      "path": "icons/status_effects/status-invisible_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-invisible_normal",
+      "path": "icons/status_effects/status-invisible_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-invisible_pressed",
+      "path": "icons/status_effects/status-invisible_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-poisoned_disabled",
+      "path": "icons/status_effects/status-poisoned_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-poisoned_hover",
+      "path": "icons/status_effects/status-poisoned_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-poisoned_normal",
+      "path": "icons/status_effects/status-poisoned_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-poisoned_pressed",
+      "path": "icons/status_effects/status-poisoned_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-regeneration_disabled",
+      "path": "icons/status_effects/status-regeneration_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-regeneration_hover",
+      "path": "icons/status_effects/status-regeneration_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-regeneration_normal",
+      "path": "icons/status_effects/status-regeneration_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-regeneration_pressed",
+      "path": "icons/status_effects/status-regeneration_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-rooted_disabled",
+      "path": "icons/status_effects/status-rooted_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-rooted_hover",
+      "path": "icons/status_effects/status-rooted_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-rooted_normal",
+      "path": "icons/status_effects/status-rooted_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-rooted_pressed",
+      "path": "icons/status_effects/status-rooted_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-shocked_disabled",
+      "path": "icons/status_effects/status-shocked_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-shocked_hover",
+      "path": "icons/status_effects/status-shocked_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-shocked_normal",
+      "path": "icons/status_effects/status-shocked_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-shocked_pressed",
+      "path": "icons/status_effects/status-shocked_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-silenced_disabled",
+      "path": "icons/status_effects/status-silenced_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-silenced_hover",
+      "path": "icons/status_effects/status-silenced_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-silenced_normal",
+      "path": "icons/status_effects/status-silenced_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-silenced_pressed",
+      "path": "icons/status_effects/status-silenced_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-sleeping_disabled",
+      "path": "icons/status_effects/status-sleeping_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-sleeping_hover",
+      "path": "icons/status_effects/status-sleeping_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-sleeping_normal",
+      "path": "icons/status_effects/status-sleeping_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-sleeping_pressed",
+      "path": "icons/status_effects/status-sleeping_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-slowed_disabled",
+      "path": "icons/status_effects/status-slowed_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-slowed_hover",
+      "path": "icons/status_effects/status-slowed_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-slowed_normal",
+      "path": "icons/status_effects/status-slowed_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-slowed_pressed",
+      "path": "icons/status_effects/status-slowed_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-strengthened_disabled",
+      "path": "icons/status_effects/status-strengthened_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-strengthened_hover",
+      "path": "icons/status_effects/status-strengthened_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-strengthened_normal",
+      "path": "icons/status_effects/status-strengthened_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-strengthened_pressed",
+      "path": "icons/status_effects/status-strengthened_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-stunned_disabled",
+      "path": "icons/status_effects/status-stunned_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-stunned_hover",
+      "path": "icons/status_effects/status-stunned_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-stunned_normal",
+      "path": "icons/status_effects/status-stunned_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-stunned_pressed",
+      "path": "icons/status_effects/status-stunned_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-weakened_disabled",
+      "path": "icons/status_effects/status-weakened_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-weakened_hover",
+      "path": "icons/status_effects/status-weakened_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-weakened_normal",
+      "path": "icons/status_effects/status-weakened_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-weakened_pressed",
+      "path": "icons/status_effects/status-weakened_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "status-wet_disabled",
+      "path": "icons/status_effects/status-wet_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "status-wet_hover",
+      "path": "icons/status_effects/status-wet_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "status-wet_normal",
+      "path": "icons/status_effects/status-wet_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "status-wet_pressed",
+      "path": "icons/status_effects/status-wet_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-delete_disabled",
+      "path": "icons/system/icon-delete_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-delete_hover",
+      "path": "icons/system/icon-delete_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-delete_normal",
+      "path": "icons/system/icon-delete_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-delete_pressed",
+      "path": "icons/system/icon-delete_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-drag_disabled",
+      "path": "icons/system/icon-drag_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-drag_hover",
+      "path": "icons/system/icon-drag_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-drag_normal",
+      "path": "icons/system/icon-drag_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-drag_pressed",
+      "path": "icons/system/icon-drag_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-help_disabled",
+      "path": "icons/system/icon-help_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-help_hover",
+      "path": "icons/system/icon-help_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-help_normal",
+      "path": "icons/system/icon-help_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-help_pressed",
+      "path": "icons/system/icon-help_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-info_disabled",
+      "path": "icons/system/icon-info_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-info_hover",
+      "path": "icons/system/icon-info_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-info_normal",
+      "path": "icons/system/icon-info_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-info_pressed",
+      "path": "icons/system/icon-info_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-invalid_disabled",
+      "path": "icons/system/icon-invalid_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-invalid_hover",
+      "path": "icons/system/icon-invalid_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-invalid_normal",
+      "path": "icons/system/icon-invalid_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-invalid_pressed",
+      "path": "icons/system/icon-invalid_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-lock_disabled",
+      "path": "icons/system/icon-lock_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-lock_hover",
+      "path": "icons/system/icon-lock_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-lock_normal",
+      "path": "icons/system/icon-lock_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-lock_pressed",
+      "path": "icons/system/icon-lock_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-pickup_disabled",
+      "path": "icons/system/icon-pickup_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-pickup_hover",
+      "path": "icons/system/icon-pickup_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-pickup_normal",
+      "path": "icons/system/icon-pickup_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-pickup_pressed",
+      "path": "icons/system/icon-pickup_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-save_disabled",
+      "path": "icons/system/icon-save_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-save_hover",
+      "path": "icons/system/icon-save_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-save_normal",
+      "path": "icons/system/icon-save_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-save_pressed",
+      "path": "icons/system/icon-save_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-sort_disabled",
+      "path": "icons/system/icon-sort_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-sort_hover",
+      "path": "icons/system/icon-sort_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-sort_normal",
+      "path": "icons/system/icon-sort_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-sort_pressed",
+      "path": "icons/system/icon-sort_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-unlock_disabled",
+      "path": "icons/system/icon-unlock_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-unlock_hover",
+      "path": "icons/system/icon-unlock_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-unlock_normal",
+      "path": "icons/system/icon-unlock_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-unlock_pressed",
+      "path": "icons/system/icon-unlock_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-valid_disabled",
+      "path": "icons/system/icon-valid_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-valid_hover",
+      "path": "icons/system/icon-valid_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-valid_normal",
+      "path": "icons/system/icon-valid_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-valid_pressed",
+      "path": "icons/system/icon-valid_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "icon-warning_disabled",
+      "path": "icons/system/icon-warning_disabled.png",
+      "width": 64,
+      "height": 64,
+      "state": "disabled"
+    },
+    {
+      "id": "icon-warning_hover",
+      "path": "icons/system/icon-warning_hover.png",
+      "width": 64,
+      "height": 64,
+      "state": "hover"
+    },
+    {
+      "id": "icon-warning_normal",
+      "path": "icons/system/icon-warning_normal.png",
+      "width": 64,
+      "height": 64,
+      "state": "normal"
+    },
+    {
+      "id": "icon-warning_pressed",
+      "path": "icons/system/icon-warning_pressed.png",
+      "width": 64,
+      "height": 64,
+      "state": "pressed"
+    },
+    {
+      "id": "key-a_disabled",
+      "path": "input/keyboard/key-a_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-a_hover",
+      "path": "input/keyboard/key-a_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-a_normal",
+      "path": "input/keyboard/key-a_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-a_pressed",
+      "path": "input/keyboard/key-a_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-alt_disabled",
+      "path": "input/keyboard/key-alt_disabled.png",
+      "width": 64,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-alt_hover",
+      "path": "input/keyboard/key-alt_hover.png",
+      "width": 64,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-alt_normal",
+      "path": "input/keyboard/key-alt_normal.png",
+      "width": 64,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-alt_pressed",
+      "path": "input/keyboard/key-alt_pressed.png",
+      "width": 64,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-camp_disabled",
+      "path": "input/keyboard/key-camp_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-camp_hover",
+      "path": "input/keyboard/key-camp_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-camp_normal",
+      "path": "input/keyboard/key-camp_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-camp_pressed",
+      "path": "input/keyboard/key-camp_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-character_disabled",
+      "path": "input/keyboard/key-character_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-character_hover",
+      "path": "input/keyboard/key-character_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-character_normal",
+      "path": "input/keyboard/key-character_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-character_pressed",
+      "path": "input/keyboard/key-character_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-ctrl_disabled",
+      "path": "input/keyboard/key-ctrl_disabled.png",
+      "width": 72,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-ctrl_hover",
+      "path": "input/keyboard/key-ctrl_hover.png",
+      "width": 72,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-ctrl_normal",
+      "path": "input/keyboard/key-ctrl_normal.png",
+      "width": 72,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-ctrl_pressed",
+      "path": "input/keyboard/key-ctrl_pressed.png",
+      "width": 72,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-d_disabled",
+      "path": "input/keyboard/key-d_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-d_hover",
+      "path": "input/keyboard/key-d_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-d_normal",
+      "path": "input/keyboard/key-d_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-d_pressed",
+      "path": "input/keyboard/key-d_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-down_disabled",
+      "path": "input/keyboard/key-down_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-down_hover",
+      "path": "input/keyboard/key-down_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-down_normal",
+      "path": "input/keyboard/key-down_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-down_pressed",
+      "path": "input/keyboard/key-down_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-enter_disabled",
+      "path": "input/keyboard/key-enter_disabled.png",
+      "width": 86,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-enter_hover",
+      "path": "input/keyboard/key-enter_hover.png",
+      "width": 86,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-enter_normal",
+      "path": "input/keyboard/key-enter_normal.png",
+      "width": 86,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-enter_pressed",
+      "path": "input/keyboard/key-enter_pressed.png",
+      "width": 86,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-escape_disabled",
+      "path": "input/keyboard/key-escape_disabled.png",
+      "width": 86,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-escape_hover",
+      "path": "input/keyboard/key-escape_hover.png",
+      "width": 86,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-escape_normal",
+      "path": "input/keyboard/key-escape_normal.png",
+      "width": 86,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-escape_pressed",
+      "path": "input/keyboard/key-escape_pressed.png",
+      "width": 86,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-inventory_disabled",
+      "path": "input/keyboard/key-inventory_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-inventory_hover",
+      "path": "input/keyboard/key-inventory_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-inventory_normal",
+      "path": "input/keyboard/key-inventory_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-inventory_pressed",
+      "path": "input/keyboard/key-inventory_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-journal_disabled",
+      "path": "input/keyboard/key-journal_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-journal_hover",
+      "path": "input/keyboard/key-journal_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-journal_normal",
+      "path": "input/keyboard/key-journal_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-journal_pressed",
+      "path": "input/keyboard/key-journal_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-left_disabled",
+      "path": "input/keyboard/key-left_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-left_hover",
+      "path": "input/keyboard/key-left_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-left_normal",
+      "path": "input/keyboard/key-left_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-left_pressed",
+      "path": "input/keyboard/key-left_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-right_disabled",
+      "path": "input/keyboard/key-right_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-right_hover",
+      "path": "input/keyboard/key-right_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-right_normal",
+      "path": "input/keyboard/key-right_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-right_pressed",
+      "path": "input/keyboard/key-right_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-s_disabled",
+      "path": "input/keyboard/key-s_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-s_hover",
+      "path": "input/keyboard/key-s_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-s_normal",
+      "path": "input/keyboard/key-s_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-s_pressed",
+      "path": "input/keyboard/key-s_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-shift_disabled",
+      "path": "input/keyboard/key-shift_disabled.png",
+      "width": 86,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-shift_hover",
+      "path": "input/keyboard/key-shift_hover.png",
+      "width": 86,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-shift_normal",
+      "path": "input/keyboard/key-shift_normal.png",
+      "width": 86,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-shift_pressed",
+      "path": "input/keyboard/key-shift_pressed.png",
+      "width": 86,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-space_disabled",
+      "path": "input/keyboard/key-space_disabled.png",
+      "width": 140,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-space_hover",
+      "path": "input/keyboard/key-space_hover.png",
+      "width": 140,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-space_normal",
+      "path": "input/keyboard/key-space_normal.png",
+      "width": 140,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-space_pressed",
+      "path": "input/keyboard/key-space_pressed.png",
+      "width": 140,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-tab_disabled",
+      "path": "input/keyboard/key-tab_disabled.png",
+      "width": 72,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-tab_hover",
+      "path": "input/keyboard/key-tab_hover.png",
+      "width": 72,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-tab_normal",
+      "path": "input/keyboard/key-tab_normal.png",
+      "width": 72,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-tab_pressed",
+      "path": "input/keyboard/key-tab_pressed.png",
+      "width": 72,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-up_disabled",
+      "path": "input/keyboard/key-up_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-up_hover",
+      "path": "input/keyboard/key-up_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-up_normal",
+      "path": "input/keyboard/key-up_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-up_pressed",
+      "path": "input/keyboard/key-up_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "key-w_disabled",
+      "path": "input/keyboard/key-w_disabled.png",
+      "width": 44,
+      "height": 44,
+      "state": "disabled"
+    },
+    {
+      "id": "key-w_hover",
+      "path": "input/keyboard/key-w_hover.png",
+      "width": 44,
+      "height": 44,
+      "state": "hover"
+    },
+    {
+      "id": "key-w_normal",
+      "path": "input/keyboard/key-w_normal.png",
+      "width": 44,
+      "height": 44,
+      "state": "normal"
+    },
+    {
+      "id": "key-w_pressed",
+      "path": "input/keyboard/key-w_pressed.png",
+      "width": 44,
+      "height": 44,
+      "state": "pressed"
+    },
+    {
+      "id": "mouse-left-click_disabled",
+      "path": "input/mouse/mouse-left-click_disabled.png",
+      "width": 56,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "mouse-left-click_hover",
+      "path": "input/mouse/mouse-left-click_hover.png",
+      "width": 56,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "mouse-left-click_normal",
+      "path": "input/mouse/mouse-left-click_normal.png",
+      "width": 56,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "mouse-left-click_pressed",
+      "path": "input/mouse/mouse-left-click_pressed.png",
+      "width": 56,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "mouse-middle-click_disabled",
+      "path": "input/mouse/mouse-middle-click_disabled.png",
+      "width": 56,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "mouse-middle-click_hover",
+      "path": "input/mouse/mouse-middle-click_hover.png",
+      "width": 56,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "mouse-middle-click_normal",
+      "path": "input/mouse/mouse-middle-click_normal.png",
+      "width": 56,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "mouse-middle-click_pressed",
+      "path": "input/mouse/mouse-middle-click_pressed.png",
+      "width": 56,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "mouse-move_disabled",
+      "path": "input/mouse/mouse-move_disabled.png",
+      "width": 56,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "mouse-move_hover",
+      "path": "input/mouse/mouse-move_hover.png",
+      "width": 56,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "mouse-move_normal",
+      "path": "input/mouse/mouse-move_normal.png",
+      "width": 56,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "mouse-move_pressed",
+      "path": "input/mouse/mouse-move_pressed.png",
+      "width": 56,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "mouse-right-click_disabled",
+      "path": "input/mouse/mouse-right-click_disabled.png",
+      "width": 56,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "mouse-right-click_hover",
+      "path": "input/mouse/mouse-right-click_hover.png",
+      "width": 56,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "mouse-right-click_normal",
+      "path": "input/mouse/mouse-right-click_normal.png",
+      "width": 56,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "mouse-right-click_pressed",
+      "path": "input/mouse/mouse-right-click_pressed.png",
+      "width": 56,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "mouse-wheel-down_disabled",
+      "path": "input/mouse/mouse-wheel-down_disabled.png",
+      "width": 56,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "mouse-wheel-down_hover",
+      "path": "input/mouse/mouse-wheel-down_hover.png",
+      "width": 56,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "mouse-wheel-down_normal",
+      "path": "input/mouse/mouse-wheel-down_normal.png",
+      "width": 56,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "mouse-wheel-down_pressed",
+      "path": "input/mouse/mouse-wheel-down_pressed.png",
+      "width": 56,
+      "height": 72,
+      "state": "pressed"
+    },
+    {
+      "id": "mouse-wheel-up_disabled",
+      "path": "input/mouse/mouse-wheel-up_disabled.png",
+      "width": 56,
+      "height": 72,
+      "state": "disabled"
+    },
+    {
+      "id": "mouse-wheel-up_hover",
+      "path": "input/mouse/mouse-wheel-up_hover.png",
+      "width": 56,
+      "height": 72,
+      "state": "hover"
+    },
+    {
+      "id": "mouse-wheel-up_normal",
+      "path": "input/mouse/mouse-wheel-up_normal.png",
+      "width": 56,
+      "height": 72,
+      "state": "normal"
+    },
+    {
+      "id": "mouse-wheel-up_pressed",
+      "path": "input/mouse/mouse-wheel-up_pressed.png",
+      "width": 56,
+      "height": 72,
+      "state": "pressed"
+    }
+  ]
+}

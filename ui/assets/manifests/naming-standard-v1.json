@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "language": "en",
+  "case": "lowercase",
+  "word_separator": "-",
+  "state_separator": "_",
+  "states": [
+    "normal",
+    "hover",
+    "pressed",
+    "disabled"
+  ],
+  "frame_pattern": "_f00",
+  "version_pattern": "-v1",
+  "examples": [
+    "button-large_normal.png",
+    "slot-item_pressed.png",
+    "status-burning_disabled.png",
+    "cursor-default_f00.png"
+  ]
+}

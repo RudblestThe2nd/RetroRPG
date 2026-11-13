@@ -1,0 +1,149 @@
+{
+  "image": "quest-relics-atlas-v1.png",
+  "sprites": {
+    "01-eye-tower-key": {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "02-eye-sigil": {
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "03-royal-seal": {
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "04-ancient-tablet": {
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "05-broken-black-crown": {
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "06-dragon-scale": {
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "07-phoenix-feather": {
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "08-moon-shard": {
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "09-sun-medallion": {
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "10-swamp-idol": {
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "11-glacier-rune": {
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "12-volcanic-core": {
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "13-storm-pearl": {
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "14-haunted-locket": {
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "15-cursed-mirror": {
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "16-celestial-compass": {
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "17-shadow-orb": {
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "18-forest-seed": {
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "19-desert-scarab": {
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "20-abyss-chain": {
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "21-sealed-letter": {
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "22-blood-contract": {
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "23-chained-grimoire": {
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "24-world-map-fragment": {
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    }
+  }
+}

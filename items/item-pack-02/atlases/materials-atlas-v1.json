@@ -1,0 +1,149 @@
+{
+  "image": "materials-atlas-v1.png",
+  "sprites": {
+    "01-firewood": {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "02-rough-stone": {
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "03-iron-ore": {
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "04-silver-ore": {
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "05-gold-ore": {
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "06-obsidian-shard": {
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "07-cured-leather": {
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "08-wolf-fur": {
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "09-linen-cloth": {
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "10-silk-bundle": {
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "11-monster-bone": {
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "12-beast-horn": {
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "13-eagle-feathers": {
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "14-healing-herbs": {
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "15-cave-mushrooms": {
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "16-venom-sac": {
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "17-crystal-dust": {
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "18-coal": {
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "19-salt-pouch": {
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "20-tree-resin": {
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "21-hemp-rope": {
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "22-brass-parts": {
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "23-empty-vial": {
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "24-blank-parchment": {
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    }
+  }
+}

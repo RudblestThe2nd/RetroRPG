@@ -1,0 +1,89 @@
+{
+  "atlas": "ui-frames-atlas-v1.png",
+  "sprites": {
+    "modal-choice-large": {
+      "x": 2,
+      "y": 2,
+      "width": 560,
+      "height": 360,
+      "source": "frames/modals/modal-choice-large.png"
+    },
+    "modal-confirmation-compact": {
+      "x": 564,
+      "y": 2,
+      "width": 420,
+      "height": 240,
+      "source": "frames/modals/modal-confirmation-compact.png"
+    },
+    "modal-dialog-medium": {
+      "x": 986,
+      "y": 2,
+      "width": 480,
+      "height": 300,
+      "source": "frames/modals/modal-dialog-medium.png"
+    },
+    "modal-warning": {
+      "x": 1468,
+      "y": 2,
+      "width": 440,
+      "height": 260,
+      "source": "frames/modals/modal-warning.png"
+    },
+    "panel-purple-header": {
+      "x": 2,
+      "y": 364,
+      "width": 420,
+      "height": 260,
+      "source": "frames/panels/panel-purple-header.png"
+    },
+    "panel-square-stone": {
+      "x": 424,
+      "y": 364,
+      "width": 320,
+      "height": 320,
+      "source": "frames/panels/panel-square-stone.png"
+    },
+    "panel-tall-stone": {
+      "x": 746,
+      "y": 364,
+      "width": 288,
+      "height": 480,
+      "source": "frames/panels/panel-tall-stone.png"
+    },
+    "panel-wide-stone-wood": {
+      "x": 1036,
+      "y": 364,
+      "width": 480,
+      "height": 288,
+      "source": "frames/panels/panel-wide-stone-wood.png"
+    },
+    "tooltip-black-gold-small": {
+      "x": 1518,
+      "y": 364,
+      "width": 300,
+      "height": 144,
+      "source": "frames/tooltips/tooltip-black-gold-small.png"
+    },
+    "tooltip-item-detail-tall": {
+      "x": 2,
+      "y": 846,
+      "width": 280,
+      "height": 400,
+      "source": "frames/tooltips/tooltip-item-detail-tall.png"
+    },
+    "tooltip-notification-wide": {
+      "x": 284,
+      "y": 846,
+      "width": 420,
+      "height": 112,
+      "source": "frames/tooltips/tooltip-notification-wide.png"
+    },
+    "tooltip-parchment-medium": {
+      "x": 706,
+      "y": 846,
+      "width": 320,
+      "height": 176,
+      "source": "frames/tooltips/tooltip-parchment-medium.png"
+    }
+  }
+}

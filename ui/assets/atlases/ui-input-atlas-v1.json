@@ -1,0 +1,705 @@
+{
+  "atlas": "ui-input-atlas-v1.png",
+  "sprites": {
+    "key-a_disabled": {
+      "x": 2,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-a_disabled.png"
+    },
+    "key-a_hover": {
+      "x": 48,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-a_hover.png"
+    },
+    "key-a_normal": {
+      "x": 94,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-a_normal.png"
+    },
+    "key-a_pressed": {
+      "x": 140,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-a_pressed.png"
+    },
+    "key-alt_disabled": {
+      "x": 186,
+      "y": 2,
+      "width": 64,
+      "height": 44,
+      "source": "input/keyboard/key-alt_disabled.png"
+    },
+    "key-alt_hover": {
+      "x": 252,
+      "y": 2,
+      "width": 64,
+      "height": 44,
+      "source": "input/keyboard/key-alt_hover.png"
+    },
+    "key-alt_normal": {
+      "x": 318,
+      "y": 2,
+      "width": 64,
+      "height": 44,
+      "source": "input/keyboard/key-alt_normal.png"
+    },
+    "key-alt_pressed": {
+      "x": 384,
+      "y": 2,
+      "width": 64,
+      "height": 44,
+      "source": "input/keyboard/key-alt_pressed.png"
+    },
+    "key-camp_disabled": {
+      "x": 450,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-camp_disabled.png"
+    },
+    "key-camp_hover": {
+      "x": 496,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-camp_hover.png"
+    },
+    "key-camp_normal": {
+      "x": 542,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-camp_normal.png"
+    },
+    "key-camp_pressed": {
+      "x": 588,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-camp_pressed.png"
+    },
+    "key-character_disabled": {
+      "x": 634,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-character_disabled.png"
+    },
+    "key-character_hover": {
+      "x": 680,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-character_hover.png"
+    },
+    "key-character_normal": {
+      "x": 726,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-character_normal.png"
+    },
+    "key-character_pressed": {
+      "x": 772,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-character_pressed.png"
+    },
+    "key-ctrl_disabled": {
+      "x": 818,
+      "y": 2,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-ctrl_disabled.png"
+    },
+    "key-ctrl_hover": {
+      "x": 892,
+      "y": 2,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-ctrl_hover.png"
+    },
+    "key-ctrl_normal": {
+      "x": 966,
+      "y": 2,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-ctrl_normal.png"
+    },
+    "key-ctrl_pressed": {
+      "x": 1040,
+      "y": 2,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-ctrl_pressed.png"
+    },
+    "key-d_disabled": {
+      "x": 1114,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-d_disabled.png"
+    },
+    "key-d_hover": {
+      "x": 1160,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-d_hover.png"
+    },
+    "key-d_normal": {
+      "x": 1206,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-d_normal.png"
+    },
+    "key-d_pressed": {
+      "x": 1252,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-d_pressed.png"
+    },
+    "key-down_disabled": {
+      "x": 1298,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-down_disabled.png"
+    },
+    "key-down_hover": {
+      "x": 1344,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-down_hover.png"
+    },
+    "key-down_normal": {
+      "x": 1390,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-down_normal.png"
+    },
+    "key-down_pressed": {
+      "x": 1436,
+      "y": 2,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-down_pressed.png"
+    },
+    "key-enter_disabled": {
+      "x": 1482,
+      "y": 2,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-enter_disabled.png"
+    },
+    "key-enter_hover": {
+      "x": 1570,
+      "y": 2,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-enter_hover.png"
+    },
+    "key-enter_normal": {
+      "x": 1658,
+      "y": 2,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-enter_normal.png"
+    },
+    "key-enter_pressed": {
+      "x": 1746,
+      "y": 2,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-enter_pressed.png"
+    },
+    "key-escape_disabled": {
+      "x": 1834,
+      "y": 2,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-escape_disabled.png"
+    },
+    "key-escape_hover": {
+      "x": 1922,
+      "y": 2,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-escape_hover.png"
+    },
+    "key-escape_normal": {
+      "x": 2,
+      "y": 48,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-escape_normal.png"
+    },
+    "key-escape_pressed": {
+      "x": 90,
+      "y": 48,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-escape_pressed.png"
+    },
+    "key-inventory_disabled": {
+      "x": 178,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-inventory_disabled.png"
+    },
+    "key-inventory_hover": {
+      "x": 224,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-inventory_hover.png"
+    },
+    "key-inventory_normal": {
+      "x": 270,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-inventory_normal.png"
+    },
+    "key-inventory_pressed": {
+      "x": 316,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-inventory_pressed.png"
+    },
+    "key-journal_disabled": {
+      "x": 362,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-journal_disabled.png"
+    },
+    "key-journal_hover": {
+      "x": 408,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-journal_hover.png"
+    },
+    "key-journal_normal": {
+      "x": 454,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-journal_normal.png"
+    },
+    "key-journal_pressed": {
+      "x": 500,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-journal_pressed.png"
+    },
+    "key-left_disabled": {
+      "x": 546,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-left_disabled.png"
+    },
+    "key-left_hover": {
+      "x": 592,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-left_hover.png"
+    },
+    "key-left_normal": {
+      "x": 638,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-left_normal.png"
+    },
+    "key-left_pressed": {
+      "x": 684,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-left_pressed.png"
+    },
+    "key-right_disabled": {
+      "x": 730,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-right_disabled.png"
+    },
+    "key-right_hover": {
+      "x": 776,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-right_hover.png"
+    },
+    "key-right_normal": {
+      "x": 822,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-right_normal.png"
+    },
+    "key-right_pressed": {
+      "x": 868,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-right_pressed.png"
+    },
+    "key-s_disabled": {
+      "x": 914,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-s_disabled.png"
+    },
+    "key-s_hover": {
+      "x": 960,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-s_hover.png"
+    },
+    "key-s_normal": {
+      "x": 1006,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-s_normal.png"
+    },
+    "key-s_pressed": {
+      "x": 1052,
+      "y": 48,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-s_pressed.png"
+    },
+    "key-shift_disabled": {
+      "x": 1098,
+      "y": 48,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-shift_disabled.png"
+    },
+    "key-shift_hover": {
+      "x": 1186,
+      "y": 48,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-shift_hover.png"
+    },
+    "key-shift_normal": {
+      "x": 1274,
+      "y": 48,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-shift_normal.png"
+    },
+    "key-shift_pressed": {
+      "x": 1362,
+      "y": 48,
+      "width": 86,
+      "height": 44,
+      "source": "input/keyboard/key-shift_pressed.png"
+    },
+    "key-space_disabled": {
+      "x": 1450,
+      "y": 48,
+      "width": 140,
+      "height": 44,
+      "source": "input/keyboard/key-space_disabled.png"
+    },
+    "key-space_hover": {
+      "x": 1592,
+      "y": 48,
+      "width": 140,
+      "height": 44,
+      "source": "input/keyboard/key-space_hover.png"
+    },
+    "key-space_normal": {
+      "x": 1734,
+      "y": 48,
+      "width": 140,
+      "height": 44,
+      "source": "input/keyboard/key-space_normal.png"
+    },
+    "key-space_pressed": {
+      "x": 1876,
+      "y": 48,
+      "width": 140,
+      "height": 44,
+      "source": "input/keyboard/key-space_pressed.png"
+    },
+    "key-tab_disabled": {
+      "x": 2,
+      "y": 94,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-tab_disabled.png"
+    },
+    "key-tab_hover": {
+      "x": 76,
+      "y": 94,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-tab_hover.png"
+    },
+    "key-tab_normal": {
+      "x": 150,
+      "y": 94,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-tab_normal.png"
+    },
+    "key-tab_pressed": {
+      "x": 224,
+      "y": 94,
+      "width": 72,
+      "height": 44,
+      "source": "input/keyboard/key-tab_pressed.png"
+    },
+    "key-up_disabled": {
+      "x": 298,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-up_disabled.png"
+    },
+    "key-up_hover": {
+      "x": 344,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-up_hover.png"
+    },
+    "key-up_normal": {
+      "x": 390,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-up_normal.png"
+    },
+    "key-up_pressed": {
+      "x": 436,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-up_pressed.png"
+    },
+    "key-w_disabled": {
+      "x": 482,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-w_disabled.png"
+    },
+    "key-w_hover": {
+      "x": 528,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-w_hover.png"
+    },
+    "key-w_normal": {
+      "x": 574,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-w_normal.png"
+    },
+    "key-w_pressed": {
+      "x": 620,
+      "y": 94,
+      "width": 44,
+      "height": 44,
+      "source": "input/keyboard/key-w_pressed.png"
+    },
+    "mouse-left-click_disabled": {
+      "x": 666,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-left-click_disabled.png"
+    },
+    "mouse-left-click_hover": {
+      "x": 724,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-left-click_hover.png"
+    },
+    "mouse-left-click_normal": {
+      "x": 782,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-left-click_normal.png"
+    },
+    "mouse-left-click_pressed": {
+      "x": 840,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-left-click_pressed.png"
+    },
+    "mouse-middle-click_disabled": {
+      "x": 898,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-middle-click_disabled.png"
+    },
+    "mouse-middle-click_hover": {
+      "x": 956,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-middle-click_hover.png"
+    },
+    "mouse-middle-click_normal": {
+      "x": 1014,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-middle-click_normal.png"
+    },
+    "mouse-middle-click_pressed": {
+      "x": 1072,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-middle-click_pressed.png"
+    },
+    "mouse-move_disabled": {
+      "x": 1130,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-move_disabled.png"
+    },
+    "mouse-move_hover": {
+      "x": 1188,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-move_hover.png"
+    },
+    "mouse-move_normal": {
+      "x": 1246,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-move_normal.png"
+    },
+    "mouse-move_pressed": {
+      "x": 1304,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-move_pressed.png"
+    },
+    "mouse-right-click_disabled": {
+      "x": 1362,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-right-click_disabled.png"
+    },
+    "mouse-right-click_hover": {
+      "x": 1420,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-right-click_hover.png"
+    },
+    "mouse-right-click_normal": {
+      "x": 1478,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-right-click_normal.png"
+    },
+    "mouse-right-click_pressed": {
+      "x": 1536,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-right-click_pressed.png"
+    },
+    "mouse-wheel-down_disabled": {
+      "x": 1594,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-down_disabled.png"
+    },
+    "mouse-wheel-down_hover": {
+      "x": 1652,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-down_hover.png"
+    },
+    "mouse-wheel-down_normal": {
+      "x": 1710,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-down_normal.png"
+    },
+    "mouse-wheel-down_pressed": {
+      "x": 1768,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-down_pressed.png"
+    },
+    "mouse-wheel-up_disabled": {
+      "x": 1826,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-up_disabled.png"
+    },
+    "mouse-wheel-up_hover": {
+      "x": 1884,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-up_hover.png"
+    },
+    "mouse-wheel-up_normal": {
+      "x": 1942,
+      "y": 94,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-up_normal.png"
+    },
+    "mouse-wheel-up_pressed": {
+      "x": 2,
+      "y": 168,
+      "width": 56,
+      "height": 72,
+      "source": "input/mouse/mouse-wheel-up_pressed.png"
+    }
+  }
+}
