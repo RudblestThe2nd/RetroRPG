@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://retro-rpg.local/schemas/game-data-v1.schema.json",
+  "title": "Retro RPG temel içerik tanımları",
+  "type": "object",
+  "required": ["version", "races", "classes", "subclasses", "backgrounds", "biomes", "items"],
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "races": { "$ref": "#/$defs/idNameArray" },
+    "classes": { "$ref": "#/$defs/idNameArray" },
+    "backgrounds": { "$ref": "#/$defs/idNameArray" },
+    "biomes": { "$ref": "#/$defs/idNameArray" },
+    "subclasses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "parentClassId"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "name": { "type": "string", "minLength": 1 },
+          "parentClassId": { "$ref": "#/$defs/id" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "value", "damageDie"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "name": { "type": "string", "minLength": 1 },
+          "type": { "enum": ["weapon", "armor", "consumable", "quest-item"] },
+          "value": { "type": "integer", "minimum": 0 },
+          "damageDie": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "idNameArray": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "name": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

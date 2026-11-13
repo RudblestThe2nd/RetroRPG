@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "races": [
+    { "id": "human", "name": "İnsan" },
+    { "id": "elf", "name": "Elf" },
+    { "id": "dwarf", "name": "Cüce" },
+    { "id": "halfling", "name": "Buçukluk" },
+    { "id": "gnome", "name": "Gnom" },
+    { "id": "half-elf", "name": "Yarı Elf" },
+    { "id": "drow", "name": "Drow" },
+    { "id": "half-orc", "name": "Yarı Ork" },
+    { "id": "tiefling", "name": "Tiefling" },
+    { "id": "dragonborn", "name": "Dragonborn" },
+    { "id": "githyanki", "name": "Githyanki" }
+  ],
+  "classes": [
+    { "id": "barbarian", "name": "Barbar" }, { "id": "bard", "name": "Ozan" },
+    { "id": "cleric", "name": "Ruhban" }, { "id": "druid", "name": "Druid" },
+    { "id": "fighter", "name": "Savaşçı" }, { "id": "monk", "name": "Keşiş" },
+    { "id": "paladin", "name": "Paladin" }, { "id": "ranger", "name": "Korucu" },
+    { "id": "rogue", "name": "Düzenbaz" }, { "id": "sorcerer", "name": "Büyücü" },
+    { "id": "warlock", "name": "Cadı Avcısı" }, { "id": "wizard", "name": "Sihirbaz" }
+  ],
+  "subclasses": [
+    { "id": "berserker", "name": "Vahşi Savaşçı", "parentClassId": "barbarian" },
+    { "id": "totem-warrior", "name": "Totem Savaşçısı", "parentClassId": "barbarian" },
+    { "id": "lore-bard", "name": "Bilgi Ozanı", "parentClassId": "bard" },
+    { "id": "valor-bard", "name": "Cesaret Ozanı", "parentClassId": "bard" },
+    { "id": "life-cleric", "name": "Yaşam Ruhbanı", "parentClassId": "cleric" },
+    { "id": "war-cleric", "name": "Savaş Ruhbanı", "parentClassId": "cleric" },
+    { "id": "land-druid", "name": "Toprak Druid'i", "parentClassId": "druid" },
+    { "id": "moon-druid", "name": "Ay Druid'i", "parentClassId": "druid" },
+    { "id": "champion", "name": "Şampiyon", "parentClassId": "fighter" },
+    { "id": "battle-master", "name": "Savaş Ustası", "parentClassId": "fighter" },
+    { "id": "open-hand", "name": "Açık El", "parentClassId": "monk" },
+    { "id": "shadow-monk", "name": "Gölge Keşişi", "parentClassId": "monk" },
+    { "id": "devotion-paladin", "name": "Adanmışlık Paladini", "parentClassId": "paladin" },
+    { "id": "vengeance-paladin", "name": "İntikam Paladini", "parentClassId": "paladin" },
+    { "id": "hunter", "name": "Avcı", "parentClassId": "ranger" },
+    { "id": "beast-master", "name": "Canavar Ustası", "parentClassId": "ranger" },
+    { "id": "thief", "name": "Hırsız", "parentClassId": "rogue" },
+    { "id": "assassin", "name": "Suikastçı", "parentClassId": "rogue" },
+    { "id": "wild-magic", "name": "Vahşi Büyü", "parentClassId": "sorcerer" },
+    { "id": "draconic-bloodline", "name": "Ejder Soyu", "parentClassId": "sorcerer" },
+    { "id": "fiend-pact", "name": "İblis Paktı", "parentClassId": "warlock" },
+    { "id": "great-old-one", "name": "Kadim Varlık", "parentClassId": "warlock" },
+    { "id": "evocation", "name": "Çağırma Okulu", "parentClassId": "wizard" },
+    { "id": "abjuration", "name": "Koruma Okulu", "parentClassId": "wizard" }
+  ],
+  "backgrounds": [
+    { "id": "village-child", "name": "Köy Çocuğu" }, { "id": "city-orphan", "name": "Şehir Yetimi" },
+    { "id": "noble-family", "name": "Soylu Aile" }, { "id": "soldier-family", "name": "Asker Ailesi" },
+    { "id": "temple-student", "name": "Tapınak Öğrencisi" }, { "id": "wandering-merchant", "name": "Gezgin Tüccar" }
+  ],
+  "biomes": [
+    { "id": "forest", "name": "Orman" }, { "id": "swamp", "name": "Bataklık" },
+    { "id": "desert", "name": "Çöl" }, { "id": "snow", "name": "Kar" },
+    { "id": "mountain", "name": "Dağ" }, { "id": "tropical", "name": "Tropik" },
+    { "id": "volcanic", "name": "Volkanik" }, { "id": "corrupted", "name": "Bozulmuş" },
+    { "id": "underground", "name": "Yeraltı" }, { "id": "plains", "name": "Ova" }
+  ],
+  "items": [
+    { "id": "dagger", "name": "Hançer", "type": "weapon", "value": 8, "damageDie": 4 },
+    { "id": "rapier", "name": "İnce Kılıç", "type": "weapon", "value": 20, "damageDie": 8 },
+    { "id": "mace", "name": "Topuz", "type": "weapon", "value": 12, "damageDie": 6 },
+    { "id": "warhammer", "name": "Savaş Çekici", "type": "weapon", "value": 18, "damageDie": 8 },
+    { "id": "greatsword", "name": "Büyük Kılıç", "type": "weapon", "value": 30, "damageDie": 12 },
+    { "id": "light-crossbow", "name": "Hafif Arbalet", "type": "weapon", "value": 25, "damageDie": 8 }
+  ]
+}

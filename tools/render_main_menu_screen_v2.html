@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=800, initial-scale=1">
+  <style>
+    @font-face {
+      font-family: "MenuPixel";
+      src: url("file:///C:/Windows/Fonts/consolab.ttf") format("truetype");
+      font-weight: 700;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      width: 800px;
+      height: 800px;
+      margin: 0;
+      overflow: hidden;
+      background: #080a10;
+    }
+
+    .screen {
+      position: relative;
+      width: 800px;
+      height: 800px;
+      background-image: url("../assets/final-production-v3/ui/screens/runtime-800/main-menu-background-pixel-v2.png");
+      background-size: 800px 800px;
+      background-repeat: no-repeat;
+      image-rendering: pixelated;
+    }
+
+    .title {
+      position: absolute;
+      top: 42px;
+      left: 62px;
+      color: #f5d890;
+      font: 700 31px/1 "MenuPixel", Consolas, monospace;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 0 #1a1023, -1px -1px 0 #6e481d;
+    }
+
+    .logo {
+      position: absolute;
+      top: 118px;
+      left: 350px;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      image-rendering: pixelated;
+      filter: drop-shadow(0 5px 0 rgba(0, 0, 0, .65));
+    }
+
+    .menu {
+      position: absolute;
+      top: 268px;
+      left: 252px;
+      width: 296px;
+      display: grid;
+      gap: 17px;
+    }
+
+    .button {
+      position: relative;
+      width: 296px;
+      height: 82px;
+      background-image: url("../ui/assets/controls/buttons/large/button-large_normal.png");
+      background-size: 296px 82px;
+      background-repeat: no-repeat;
+      image-rendering: pixelated;
+      color: #fff0c4;
+      font: 700 20px/82px "MenuPixel", Consolas, monospace;
+      text-align: center;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 0 #27142f;
+    }
+
+    .button.selected::before,
+    .button.selected::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+    }
+
+    .button.selected::before {
+      left: -18px;
+      border-right: 12px solid #e7a82d;
+    }
+
+    .button.selected::after {
+      right: -18px;
+      border-left: 12px solid #e7a82d;
+    }
+  </style>
+</head>
+<body>
+  <main class="screen" aria-label="Ana menü">
+    <div class="title">ANA MENÜ</div>
+    <img class="logo" src="../assets/final-production-v1/ui/logo/game-logo-mark-v1.png" alt="">
+    <section class="menu">
+      <div class="button selected">YENİ OYUN</div>
+      <div class="button">DEVAM ET</div>
+      <div class="button">OYUN YÜKLE</div>
+      <div class="button">AYARLAR</div>
+      <div class="button">ÇIKIŞ</div>
+    </section>
+  </main>
+</body>
+</html>
