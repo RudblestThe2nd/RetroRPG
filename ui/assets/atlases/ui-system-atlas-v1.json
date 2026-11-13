@@ -1,0 +1,677 @@
+{
+  "atlas": "ui-system-atlas-v1.png",
+  "sprites": {
+    "resource-armor_disabled": {
+      "x": 2,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-armor_disabled.png"
+    },
+    "resource-armor_hover": {
+      "x": 68,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-armor_hover.png"
+    },
+    "resource-armor_normal": {
+      "x": 134,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-armor_normal.png"
+    },
+    "resource-armor_pressed": {
+      "x": 200,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-armor_pressed.png"
+    },
+    "resource-danger_disabled": {
+      "x": 266,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-danger_disabled.png"
+    },
+    "resource-danger_hover": {
+      "x": 332,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-danger_hover.png"
+    },
+    "resource-danger_normal": {
+      "x": 398,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-danger_normal.png"
+    },
+    "resource-danger_pressed": {
+      "x": 464,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-danger_pressed.png"
+    },
+    "resource-day_disabled": {
+      "x": 530,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-day_disabled.png"
+    },
+    "resource-day_hover": {
+      "x": 596,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-day_hover.png"
+    },
+    "resource-day_normal": {
+      "x": 662,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-day_normal.png"
+    },
+    "resource-day_pressed": {
+      "x": 728,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-day_pressed.png"
+    },
+    "resource-energy_disabled": {
+      "x": 794,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-energy_disabled.png"
+    },
+    "resource-energy_hover": {
+      "x": 860,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-energy_hover.png"
+    },
+    "resource-energy_normal": {
+      "x": 926,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-energy_normal.png"
+    },
+    "resource-energy_pressed": {
+      "x": 992,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-energy_pressed.png"
+    },
+    "resource-experience_disabled": {
+      "x": 1058,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-experience_disabled.png"
+    },
+    "resource-experience_hover": {
+      "x": 1124,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-experience_hover.png"
+    },
+    "resource-experience_normal": {
+      "x": 1190,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-experience_normal.png"
+    },
+    "resource-experience_pressed": {
+      "x": 1256,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-experience_pressed.png"
+    },
+    "resource-food_disabled": {
+      "x": 1322,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-food_disabled.png"
+    },
+    "resource-food_hover": {
+      "x": 1388,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-food_hover.png"
+    },
+    "resource-food_normal": {
+      "x": 1454,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-food_normal.png"
+    },
+    "resource-food_pressed": {
+      "x": 1520,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-food_pressed.png"
+    },
+    "resource-gold_disabled": {
+      "x": 1586,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-gold_disabled.png"
+    },
+    "resource-gold_hover": {
+      "x": 1652,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-gold_hover.png"
+    },
+    "resource-gold_normal": {
+      "x": 1718,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-gold_normal.png"
+    },
+    "resource-gold_pressed": {
+      "x": 1784,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-gold_pressed.png"
+    },
+    "resource-health_disabled": {
+      "x": 1850,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-health_disabled.png"
+    },
+    "resource-health_hover": {
+      "x": 1916,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-health_hover.png"
+    },
+    "resource-health_normal": {
+      "x": 1982,
+      "y": 2,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-health_normal.png"
+    },
+    "resource-health_pressed": {
+      "x": 2,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-health_pressed.png"
+    },
+    "resource-movement_disabled": {
+      "x": 68,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-movement_disabled.png"
+    },
+    "resource-movement_hover": {
+      "x": 134,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-movement_hover.png"
+    },
+    "resource-movement_normal": {
+      "x": 200,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-movement_normal.png"
+    },
+    "resource-movement_pressed": {
+      "x": 266,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-movement_pressed.png"
+    },
+    "resource-time_disabled": {
+      "x": 332,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-time_disabled.png"
+    },
+    "resource-time_hover": {
+      "x": 398,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-time_hover.png"
+    },
+    "resource-time_normal": {
+      "x": 464,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-time_normal.png"
+    },
+    "resource-time_pressed": {
+      "x": 530,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-time_pressed.png"
+    },
+    "resource-weather_disabled": {
+      "x": 596,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weather_disabled.png"
+    },
+    "resource-weather_hover": {
+      "x": 662,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weather_hover.png"
+    },
+    "resource-weather_normal": {
+      "x": 728,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weather_normal.png"
+    },
+    "resource-weather_pressed": {
+      "x": 794,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weather_pressed.png"
+    },
+    "resource-weight_disabled": {
+      "x": 860,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weight_disabled.png"
+    },
+    "resource-weight_hover": {
+      "x": 926,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weight_hover.png"
+    },
+    "resource-weight_normal": {
+      "x": 992,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weight_normal.png"
+    },
+    "resource-weight_pressed": {
+      "x": 1058,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/resources/resource-weight_pressed.png"
+    },
+    "icon-delete_disabled": {
+      "x": 1124,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-delete_disabled.png"
+    },
+    "icon-delete_hover": {
+      "x": 1190,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-delete_hover.png"
+    },
+    "icon-delete_normal": {
+      "x": 1256,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-delete_normal.png"
+    },
+    "icon-delete_pressed": {
+      "x": 1322,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-delete_pressed.png"
+    },
+    "icon-drag_disabled": {
+      "x": 1388,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-drag_disabled.png"
+    },
+    "icon-drag_hover": {
+      "x": 1454,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-drag_hover.png"
+    },
+    "icon-drag_normal": {
+      "x": 1520,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-drag_normal.png"
+    },
+    "icon-drag_pressed": {
+      "x": 1586,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-drag_pressed.png"
+    },
+    "icon-help_disabled": {
+      "x": 1652,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-help_disabled.png"
+    },
+    "icon-help_hover": {
+      "x": 1718,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-help_hover.png"
+    },
+    "icon-help_normal": {
+      "x": 1784,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-help_normal.png"
+    },
+    "icon-help_pressed": {
+      "x": 1850,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-help_pressed.png"
+    },
+    "icon-info_disabled": {
+      "x": 1916,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-info_disabled.png"
+    },
+    "icon-info_hover": {
+      "x": 1982,
+      "y": 68,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-info_hover.png"
+    },
+    "icon-info_normal": {
+      "x": 2,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-info_normal.png"
+    },
+    "icon-info_pressed": {
+      "x": 68,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-info_pressed.png"
+    },
+    "icon-invalid_disabled": {
+      "x": 134,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-invalid_disabled.png"
+    },
+    "icon-invalid_hover": {
+      "x": 200,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-invalid_hover.png"
+    },
+    "icon-invalid_normal": {
+      "x": 266,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-invalid_normal.png"
+    },
+    "icon-invalid_pressed": {
+      "x": 332,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-invalid_pressed.png"
+    },
+    "icon-lock_disabled": {
+      "x": 398,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-lock_disabled.png"
+    },
+    "icon-lock_hover": {
+      "x": 464,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-lock_hover.png"
+    },
+    "icon-lock_normal": {
+      "x": 530,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-lock_normal.png"
+    },
+    "icon-lock_pressed": {
+      "x": 596,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-lock_pressed.png"
+    },
+    "icon-pickup_disabled": {
+      "x": 662,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-pickup_disabled.png"
+    },
+    "icon-pickup_hover": {
+      "x": 728,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-pickup_hover.png"
+    },
+    "icon-pickup_normal": {
+      "x": 794,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-pickup_normal.png"
+    },
+    "icon-pickup_pressed": {
+      "x": 860,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-pickup_pressed.png"
+    },
+    "icon-save_disabled": {
+      "x": 926,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-save_disabled.png"
+    },
+    "icon-save_hover": {
+      "x": 992,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-save_hover.png"
+    },
+    "icon-save_normal": {
+      "x": 1058,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-save_normal.png"
+    },
+    "icon-save_pressed": {
+      "x": 1124,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-save_pressed.png"
+    },
+    "icon-sort_disabled": {
+      "x": 1190,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-sort_disabled.png"
+    },
+    "icon-sort_hover": {
+      "x": 1256,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-sort_hover.png"
+    },
+    "icon-sort_normal": {
+      "x": 1322,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-sort_normal.png"
+    },
+    "icon-sort_pressed": {
+      "x": 1388,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-sort_pressed.png"
+    },
+    "icon-unlock_disabled": {
+      "x": 1454,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-unlock_disabled.png"
+    },
+    "icon-unlock_hover": {
+      "x": 1520,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-unlock_hover.png"
+    },
+    "icon-unlock_normal": {
+      "x": 1586,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-unlock_normal.png"
+    },
+    "icon-unlock_pressed": {
+      "x": 1652,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-unlock_pressed.png"
+    },
+    "icon-valid_disabled": {
+      "x": 1718,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-valid_disabled.png"
+    },
+    "icon-valid_hover": {
+      "x": 1784,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-valid_hover.png"
+    },
+    "icon-valid_normal": {
+      "x": 1850,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-valid_normal.png"
+    },
+    "icon-valid_pressed": {
+      "x": 1916,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-valid_pressed.png"
+    },
+    "icon-warning_disabled": {
+      "x": 1982,
+      "y": 134,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-warning_disabled.png"
+    },
+    "icon-warning_hover": {
+      "x": 2,
+      "y": 200,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-warning_hover.png"
+    },
+    "icon-warning_normal": {
+      "x": 68,
+      "y": 200,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-warning_normal.png"
+    },
+    "icon-warning_pressed": {
+      "x": 134,
+      "y": 200,
+      "width": 64,
+      "height": 64,
+      "source": "icons/system/icon-warning_pressed.png"
+    }
+  }
+}

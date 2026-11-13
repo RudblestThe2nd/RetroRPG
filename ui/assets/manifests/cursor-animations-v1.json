@@ -1,0 +1,158 @@
+{
+  "default": {
+    "frames": [
+      "cursors/cursor-default_f00.png",
+      "cursors/cursor-default_f01.png",
+      "cursors/cursor-default_f02.png",
+      "cursors/cursor-default_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      2,
+      2
+    ]
+  },
+  "pointer": {
+    "frames": [
+      "cursors/cursor-pointer_f00.png",
+      "cursors/cursor-pointer_f01.png",
+      "cursors/cursor-pointer_f02.png",
+      "cursors/cursor-pointer_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "inspect": {
+    "frames": [
+      "cursors/cursor-inspect_f00.png",
+      "cursors/cursor-inspect_f01.png",
+      "cursors/cursor-inspect_f02.png",
+      "cursors/cursor-inspect_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "move": {
+    "frames": [
+      "cursors/cursor-move_f00.png",
+      "cursors/cursor-move_f01.png",
+      "cursors/cursor-move_f02.png",
+      "cursors/cursor-move_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "attack": {
+    "frames": [
+      "cursors/cursor-attack_f00.png",
+      "cursors/cursor-attack_f01.png",
+      "cursors/cursor-attack_f02.png",
+      "cursors/cursor-attack_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "ranged": {
+    "frames": [
+      "cursors/cursor-ranged_f00.png",
+      "cursors/cursor-ranged_f01.png",
+      "cursors/cursor-ranged_f02.png",
+      "cursors/cursor-ranged_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "magic": {
+    "frames": [
+      "cursors/cursor-magic_f00.png",
+      "cursors/cursor-magic_f01.png",
+      "cursors/cursor-magic_f02.png",
+      "cursors/cursor-magic_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "pickup": {
+    "frames": [
+      "cursors/cursor-pickup_f00.png",
+      "cursors/cursor-pickup_f01.png",
+      "cursors/cursor-pickup_f02.png",
+      "cursors/cursor-pickup_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "drag": {
+    "frames": [
+      "cursors/cursor-drag_f00.png",
+      "cursors/cursor-drag_f01.png",
+      "cursors/cursor-drag_f02.png",
+      "cursors/cursor-drag_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "forbidden": {
+    "frames": [
+      "cursors/cursor-forbidden_f00.png",
+      "cursors/cursor-forbidden_f01.png",
+      "cursors/cursor-forbidden_f02.png",
+      "cursors/cursor-forbidden_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "talk": {
+    "frames": [
+      "cursors/cursor-talk_f00.png",
+      "cursors/cursor-talk_f01.png",
+      "cursors/cursor-talk_f02.png",
+      "cursors/cursor-talk_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  },
+  "wait": {
+    "frames": [
+      "cursors/cursor-wait_f00.png",
+      "cursors/cursor-wait_f01.png",
+      "cursors/cursor-wait_f02.png",
+      "cursors/cursor-wait_f03.png"
+    ],
+    "frame_duration_ms": 90,
+    "hotspot": [
+      24,
+      24
+    ]
+  }
+}

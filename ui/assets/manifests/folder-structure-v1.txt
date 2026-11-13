@@ -1,0 +1,37 @@
+assets/
+├── controls/
+│   ├── buttons/
+│   │   ├── small/
+│   │   ├── medium/
+│   │   ├── large/
+│   │   └── icon/
+│   ├── tabs/
+│   ├── scrollbars/
+│   │   ├── vertical/
+│   │   └── horizontal/
+│   └── slots/
+│       ├── item/
+│       ├── equipment/
+│       ├── ability/
+│       └── portrait/
+├── frames/
+│   ├── panels/
+│   ├── modals/
+│   └── tooltips/
+├── icons/
+│   ├── system/
+│   ├── resources/
+│   ├── classes/
+│   ├── races/
+│   └── status_effects/
+├── cursors/
+├── input/
+│   ├── keyboard/
+│   └── mouse/
+├── animations/previews/
+├── atlases/
+├── manifests/
+├── previews/
+└── source/
+    ├── imagegen/
+    └── scripts/

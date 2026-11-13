@@ -1,0 +1,341 @@
+{
+  "atlas": "ui-races-atlas-v1.png",
+  "sprites": {
+    "race-custom_disabled": {
+      "x": 2,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-custom_disabled.png"
+    },
+    "race-custom_hover": {
+      "x": 84,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-custom_hover.png"
+    },
+    "race-custom_normal": {
+      "x": 166,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-custom_normal.png"
+    },
+    "race-custom_pressed": {
+      "x": 248,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-custom_pressed.png"
+    },
+    "race-dragonborn_disabled": {
+      "x": 330,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dragonborn_disabled.png"
+    },
+    "race-dragonborn_hover": {
+      "x": 412,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dragonborn_hover.png"
+    },
+    "race-dragonborn_normal": {
+      "x": 494,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dragonborn_normal.png"
+    },
+    "race-dragonborn_pressed": {
+      "x": 576,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dragonborn_pressed.png"
+    },
+    "race-drow_disabled": {
+      "x": 658,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-drow_disabled.png"
+    },
+    "race-drow_hover": {
+      "x": 740,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-drow_hover.png"
+    },
+    "race-drow_normal": {
+      "x": 822,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-drow_normal.png"
+    },
+    "race-drow_pressed": {
+      "x": 904,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-drow_pressed.png"
+    },
+    "race-dwarf_disabled": {
+      "x": 986,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dwarf_disabled.png"
+    },
+    "race-dwarf_hover": {
+      "x": 1068,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dwarf_hover.png"
+    },
+    "race-dwarf_normal": {
+      "x": 1150,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dwarf_normal.png"
+    },
+    "race-dwarf_pressed": {
+      "x": 1232,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-dwarf_pressed.png"
+    },
+    "race-elf_disabled": {
+      "x": 1314,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-elf_disabled.png"
+    },
+    "race-elf_hover": {
+      "x": 1396,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-elf_hover.png"
+    },
+    "race-elf_normal": {
+      "x": 1478,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-elf_normal.png"
+    },
+    "race-elf_pressed": {
+      "x": 1560,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-elf_pressed.png"
+    },
+    "race-githyanki_disabled": {
+      "x": 1642,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-githyanki_disabled.png"
+    },
+    "race-githyanki_hover": {
+      "x": 1724,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-githyanki_hover.png"
+    },
+    "race-githyanki_normal": {
+      "x": 1806,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-githyanki_normal.png"
+    },
+    "race-githyanki_pressed": {
+      "x": 1888,
+      "y": 2,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-githyanki_pressed.png"
+    },
+    "race-gnome_disabled": {
+      "x": 2,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-gnome_disabled.png"
+    },
+    "race-gnome_hover": {
+      "x": 84,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-gnome_hover.png"
+    },
+    "race-gnome_normal": {
+      "x": 166,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-gnome_normal.png"
+    },
+    "race-gnome_pressed": {
+      "x": 248,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-gnome_pressed.png"
+    },
+    "race-half-elf_disabled": {
+      "x": 330,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-elf_disabled.png"
+    },
+    "race-half-elf_hover": {
+      "x": 412,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-elf_hover.png"
+    },
+    "race-half-elf_normal": {
+      "x": 494,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-elf_normal.png"
+    },
+    "race-half-elf_pressed": {
+      "x": 576,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-elf_pressed.png"
+    },
+    "race-half-orc_disabled": {
+      "x": 658,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-orc_disabled.png"
+    },
+    "race-half-orc_hover": {
+      "x": 740,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-orc_hover.png"
+    },
+    "race-half-orc_normal": {
+      "x": 822,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-orc_normal.png"
+    },
+    "race-half-orc_pressed": {
+      "x": 904,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-half-orc_pressed.png"
+    },
+    "race-halfling_disabled": {
+      "x": 986,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-halfling_disabled.png"
+    },
+    "race-halfling_hover": {
+      "x": 1068,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-halfling_hover.png"
+    },
+    "race-halfling_normal": {
+      "x": 1150,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-halfling_normal.png"
+    },
+    "race-halfling_pressed": {
+      "x": 1232,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-halfling_pressed.png"
+    },
+    "race-human_disabled": {
+      "x": 1314,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-human_disabled.png"
+    },
+    "race-human_hover": {
+      "x": 1396,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-human_hover.png"
+    },
+    "race-human_normal": {
+      "x": 1478,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-human_normal.png"
+    },
+    "race-human_pressed": {
+      "x": 1560,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-human_pressed.png"
+    },
+    "race-tiefling_disabled": {
+      "x": 1642,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-tiefling_disabled.png"
+    },
+    "race-tiefling_hover": {
+      "x": 1724,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-tiefling_hover.png"
+    },
+    "race-tiefling_normal": {
+      "x": 1806,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-tiefling_normal.png"
+    },
+    "race-tiefling_pressed": {
+      "x": 1888,
+      "y": 84,
+      "width": 80,
+      "height": 80,
+      "source": "icons/races/race-tiefling_pressed.png"
+    }
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "atlas": "ui-controls-atlas-v1.png",
+  "sprites": {
+    "button-icon_disabled": {
+      "x": 2,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "controls/buttons/icon/button-icon_disabled.png"
+    },
+    "button-icon_hover": {
+      "x": 76,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "controls/buttons/icon/button-icon_hover.png"
+    },
+    "button-icon_normal": {
+      "x": 150,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "controls/buttons/icon/button-icon_normal.png"
+    },
+    "button-icon_pressed": {
+      "x": 224,
+      "y": 2,
+      "width": 72,
+      "height": 72,
+      "source": "controls/buttons/icon/button-icon_pressed.png"
+    },
+    "button-large_disabled": {
+      "x": 298,
+      "y": 2,
+      "width": 256,
+      "height": 72,
+      "source": "controls/buttons/large/button-large_disabled.png"
+    },
+    "button-large_hover": {
+      "x": 556,
+      "y": 2,
+      "width": 256,
+      "height": 72,
+      "source": "controls/buttons/large/button-large_hover.png"
+    },
+    "button-large_normal": {
+      "x": 814,
+      "y": 2,
+      "width": 256,
+      "height": 72,
+      "source": "controls/buttons/large/button-large_normal.png"
+    },
+    "button-large_pressed": {
+      "x": 1072,
+      "y": 2,
+      "width": 256,
+      "height": 72,
+      "source": "controls/buttons/large/button-large_pressed.png"
+    },
+    "button-medium_disabled": {
+      "x": 1330,
+      "y": 2,
+      "width": 192,
+      "height": 64,
+      "source": "controls/buttons/medium/button-medium_disabled.png"
+    },
+    "button-medium_hover": {
+      "x": 1524,
+      "y": 2,
+      "width": 192,
+      "height": 64,
+      "source": "controls/buttons/medium/button-medium_hover.png"
+    },
+    "button-medium_normal": {
+      "x": 1718,
+      "y": 2,
+      "width": 192,
+      "height": 64,
+      "source": "controls/buttons/medium/button-medium_normal.png"
+    },
+    "button-medium_pressed": {
+      "x": 2,
+      "y": 76,
+      "width": 192,
+      "height": 64,
+      "source": "controls/buttons/medium/button-medium_pressed.png"
+    },
+    "button-small_disabled": {
+      "x": 196,
+      "y": 76,
+      "width": 128,
+      "height": 48,
+      "source": "controls/buttons/small/button-small_disabled.png"
+    },
+    "button-small_hover": {
+      "x": 326,
+      "y": 76,
+      "width": 128,
+      "height": 48,
+      "source": "controls/buttons/small/button-small_hover.png"
+    },
+    "button-small_normal": {
+      "x": 456,
+      "y": 76,
+      "width": 128,
+      "height": 48,
+      "source": "controls/buttons/small/button-small_normal.png"
+    },
+    "button-small_pressed": {
+      "x": 586,
+      "y": 76,
+      "width": 128,
+      "height": 48,
+      "source": "controls/buttons/small/button-small_pressed.png"
+    },
+    "scrollbar-horizontal_disabled": {
+      "x": 716,
+      "y": 76,
+      "width": 196,
+      "height": 28,
+      "source": "controls/scrollbars/horizontal/scrollbar-horizontal_disabled.png"
+    },
+    "scrollbar-horizontal_hover": {
+      "x": 914,
+      "y": 76,
+      "width": 196,
+      "height": 28,
+      "source": "controls/scrollbars/horizontal/scrollbar-horizontal_hover.png"
+    },
+    "scrollbar-horizontal_normal": {
+      "x": 1112,
+      "y": 76,
+      "width": 196,
+      "height": 28,
+      "source": "controls/scrollbars/horizontal/scrollbar-horizontal_normal.png"
+    },
+    "scrollbar-horizontal_pressed": {
+      "x": 1310,
+      "y": 76,
+      "width": 196,
+      "height": 28,
+      "source": "controls/scrollbars/horizontal/scrollbar-horizontal_pressed.png"
+    },
+    "scrollbar-vertical_disabled": {
+      "x": 1508,
+      "y": 76,
+      "width": 28,
+      "height": 196,
+      "source": "controls/scrollbars/vertical/scrollbar-vertical_disabled.png"
+    },
+    "scrollbar-vertical_hover": {
+      "x": 1538,
+      "y": 76,
+      "width": 28,
+      "height": 196,
+      "source": "controls/scrollbars/vertical/scrollbar-vertical_hover.png"
+    },
+    "scrollbar-vertical_normal": {
+      "x": 1568,
+      "y": 76,
+      "width": 28,
+      "height": 196,
+      "source": "controls/scrollbars/vertical/scrollbar-vertical_normal.png"
+    },
+    "scrollbar-vertical_pressed": {
+      "x": 1598,
+      "y": 76,
+      "width": 28,
+      "height": 196,
+      "source": "controls/scrollbars/vertical/scrollbar-vertical_pressed.png"
+    },
+    "slot-ability_disabled": {
+      "x": 1628,
+      "y": 76,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/ability/slot-ability_disabled.png"
+    },
+    "slot-ability_hover": {
+      "x": 1710,
+      "y": 76,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/ability/slot-ability_hover.png"
+    },
+    "slot-ability_normal": {
+      "x": 1792,
+      "y": 76,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/ability/slot-ability_normal.png"
+    },
+    "slot-ability_pressed": {
+      "x": 1874,
+      "y": 76,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/ability/slot-ability_pressed.png"
+    },
+    "slot-equipment_disabled": {
+      "x": 1956,
+      "y": 76,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/equipment/slot-equipment_disabled.png"
+    },
+    "slot-equipment_hover": {
+      "x": 2,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/equipment/slot-equipment_hover.png"
+    },
+    "slot-equipment_normal": {
+      "x": 84,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/equipment/slot-equipment_normal.png"
+    },
+    "slot-equipment_pressed": {
+      "x": 166,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/equipment/slot-equipment_pressed.png"
+    },
+    "slot-item_disabled": {
+      "x": 248,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/item/slot-item_disabled.png"
+    },
+    "slot-item_hover": {
+      "x": 330,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/item/slot-item_hover.png"
+    },
+    "slot-item_normal": {
+      "x": 412,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/item/slot-item_normal.png"
+    },
+    "slot-item_pressed": {
+      "x": 494,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/item/slot-item_pressed.png"
+    },
+    "slot-portrait_disabled": {
+      "x": 576,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/portrait/slot-portrait_disabled.png"
+    },
+    "slot-portrait_hover": {
+      "x": 658,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/portrait/slot-portrait_hover.png"
+    },
+    "slot-portrait_normal": {
+      "x": 740,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/portrait/slot-portrait_normal.png"
+    },
+    "slot-portrait_pressed": {
+      "x": 822,
+      "y": 274,
+      "width": 80,
+      "height": 80,
+      "source": "controls/slots/portrait/slot-portrait_pressed.png"
+    },
+    "tab-primary_disabled": {
+      "x": 904,
+      "y": 274,
+      "width": 176,
+      "height": 52,
+      "source": "controls/tabs/tab-primary_disabled.png"
+    },
+    "tab-primary_hover": {
+      "x": 1082,
+      "y": 274,
+      "width": 176,
+      "height": 52,
+      "source": "controls/tabs/tab-primary_hover.png"
+    },
+    "tab-primary_normal": {
+      "x": 1260,
+      "y": 274,
+      "width": 176,
+      "height": 52,
+      "source": "controls/tabs/tab-primary_normal.png"
+    },
+    "tab-primary_pressed": {
+      "x": 1438,
+      "y": 274,
+      "width": 176,
+      "height": 52,
+      "source": "controls/tabs/tab-primary_pressed.png"
+    }
+  }
+}
