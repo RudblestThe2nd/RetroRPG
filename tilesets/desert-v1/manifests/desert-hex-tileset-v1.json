@@ -1,0 +1,843 @@
+{
+  "pack": "desert-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "golden-dunes",
+      "name_tr": "Altın Kum Tepeleri",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/base/01-golden-dunes.png"
+    },
+    {
+      "id": "pale-dunes",
+      "name_tr": "Soluk Kum Tepeleri",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/base/02-pale-dunes.png"
+    },
+    {
+      "id": "red-dunes",
+      "name_tr": "Kızıl Kum Tepeleri",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/base/03-red-dunes.png"
+    },
+    {
+      "id": "wind-rippled-dunes",
+      "name_tr": "Rüzgâr İzli Kumlar",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/base/04-wind-rippled-dunes.png"
+    },
+    {
+      "id": "gravel-plain",
+      "name_tr": "Çakıllı Düzlük",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/base/05-gravel-plain.png"
+    },
+    {
+      "id": "cracked-earth",
+      "name_tr": "Çatlamış Toprak",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/base/06-cracked-earth.png"
+    },
+    {
+      "id": "dry-scrubland",
+      "name_tr": "Kuru Çalılık",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/base/07-dry-scrubland.png"
+    },
+    {
+      "id": "cactus-field",
+      "name_tr": "Kaktüs Tarlası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/base/08-cactus-field.png"
+    },
+    {
+      "id": "thorn-scrub",
+      "name_tr": "Dikenli Çalılık",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/base/09-thorn-scrub.png"
+    },
+    {
+      "id": "acacia-grove",
+      "name_tr": "Akasya Korusu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/base/10-acacia-grove.png"
+    },
+    {
+      "id": "palm-oasis",
+      "name_tr": "Palmiye Vahası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/base/11-palm-oasis.png"
+    },
+    {
+      "id": "white-salt-flat",
+      "name_tr": "Beyaz Tuz Düzlüğü",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/base/12-white-salt-flat.png"
+    },
+    {
+      "id": "rocky-mesa",
+      "name_tr": "Kayalık Masa Dağı",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/base/13-rocky-mesa.png"
+    },
+    {
+      "id": "sandstone-outcrop",
+      "name_tr": "Kumtaşı Çıkıntısı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/base/14-sandstone-outcrop.png"
+    },
+    {
+      "id": "red-canyon",
+      "name_tr": "Kızıl Kanyon",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/base/15-red-canyon.png"
+    },
+    {
+      "id": "desert-hill",
+      "name_tr": "Çöl Tepesi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/base/16-desert-hill.png"
+    },
+    {
+      "id": "cliff-plateau",
+      "name_tr": "Uçurum Platosu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/base/17-cliff-plateau.png"
+    },
+    {
+      "id": "dry-riverbed",
+      "name_tr": "Kurumuş Nehir Yatağı",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/base/18-dry-riverbed.png"
+    },
+    {
+      "id": "quicksand",
+      "name_tr": "Batak Kum",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/base/19-quicksand.png"
+    },
+    {
+      "id": "dusty-basin",
+      "name_tr": "Tozlu Çanak",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/base/20-dusty-basin.png"
+    },
+    {
+      "id": "scorched-earth",
+      "name_tr": "Kavrulmuş Toprak",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/base/21-scorched-earth.png"
+    },
+    {
+      "id": "obsidian-field",
+      "name_tr": "Obsidyen Tarlası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/base/22-obsidian-field.png"
+    },
+    {
+      "id": "desert-coast-edge",
+      "name_tr": "Çöl Kıyı Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "coastal_crossing",
+      "index": 22,
+      "image": "tiles/base/23-desert-coast-edge.png"
+    },
+    {
+      "id": "desert-mountain-edge",
+      "name_tr": "Çöl Dağ Geçişi",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/base/24-desert-mountain-edge.png"
+    },
+    {
+      "id": "road-straight-e-w",
+      "name_tr": "Kervan Yolu Düz E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/connections/01-road-straight-e-w.png"
+    },
+    {
+      "id": "road-straight-ne-sw",
+      "name_tr": "Kervan Yolu Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/connections/02-road-straight-ne-sw.png"
+    },
+    {
+      "id": "road-straight-nw-se",
+      "name_tr": "Kervan Yolu Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/connections/03-road-straight-nw-se.png"
+    },
+    {
+      "id": "road-curve-e-se",
+      "name_tr": "Kervan Yolu Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/connections/04-road-curve-e-se.png"
+    },
+    {
+      "id": "road-curve-se-sw",
+      "name_tr": "Kervan Yolu Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/connections/05-road-curve-se-sw.png"
+    },
+    {
+      "id": "road-curve-sw-w",
+      "name_tr": "Kervan Yolu Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/connections/06-road-curve-sw-w.png"
+    },
+    {
+      "id": "road-curve-w-nw",
+      "name_tr": "Kervan Yolu Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/connections/07-road-curve-w-nw.png"
+    },
+    {
+      "id": "road-curve-nw-ne",
+      "name_tr": "Kervan Yolu Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/connections/08-road-curve-nw-ne.png"
+    },
+    {
+      "id": "road-curve-ne-e",
+      "name_tr": "Kervan Yolu Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/connections/09-road-curve-ne-e.png"
+    },
+    {
+      "id": "road-three-way-e-sw-nw",
+      "name_tr": "Kervan Yolu Üçlü E-SW-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/connections/10-road-three-way-e-sw-nw.png"
+    },
+    {
+      "id": "road-three-way-w-ne-se",
+      "name_tr": "Kervan Yolu Üçlü W-NE-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/connections/11-road-three-way-w-ne-se.png"
+    },
+    {
+      "id": "road-six-way",
+      "name_tr": "Kervan Yolu Altılı Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/connections/12-road-six-way.png"
+    },
+    {
+      "id": "wadi-straight-e-w",
+      "name_tr": "Vadi Düz E-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 12,
+      "image": "tiles/connections/13-wadi-straight-e-w.png"
+    },
+    {
+      "id": "wadi-straight-ne-sw",
+      "name_tr": "Vadi Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 13,
+      "image": "tiles/connections/14-wadi-straight-ne-sw.png"
+    },
+    {
+      "id": "wadi-straight-nw-se",
+      "name_tr": "Vadi Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 14,
+      "image": "tiles/connections/15-wadi-straight-nw-se.png"
+    },
+    {
+      "id": "wadi-curve-e-se",
+      "name_tr": "Vadi Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 15,
+      "image": "tiles/connections/16-wadi-curve-e-se.png"
+    },
+    {
+      "id": "wadi-curve-se-sw",
+      "name_tr": "Vadi Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 16,
+      "image": "tiles/connections/17-wadi-curve-se-sw.png"
+    },
+    {
+      "id": "wadi-curve-sw-w",
+      "name_tr": "Vadi Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 17,
+      "image": "tiles/connections/18-wadi-curve-sw-w.png"
+    },
+    {
+      "id": "wadi-curve-w-nw",
+      "name_tr": "Vadi Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 18,
+      "image": "tiles/connections/19-wadi-curve-w-nw.png"
+    },
+    {
+      "id": "wadi-curve-nw-ne",
+      "name_tr": "Vadi Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 19,
+      "image": "tiles/connections/20-wadi-curve-nw-ne.png"
+    },
+    {
+      "id": "wadi-curve-ne-e",
+      "name_tr": "Vadi Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_wading",
+      "index": 20,
+      "image": "tiles/connections/21-wadi-curve-ne-e.png"
+    },
+    {
+      "id": "stone-bridge-e-w",
+      "name_tr": "Taş Köprü E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/connections/22-stone-bridge-e-w.png"
+    },
+    {
+      "id": "stone-bridge-ne-sw",
+      "name_tr": "Taş Köprü NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/connections/23-stone-bridge-ne-sw.png"
+    },
+    {
+      "id": "stone-bridge-nw-se",
+      "name_tr": "Taş Köprü NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/connections/24-stone-bridge-nw-se.png"
+    },
+    {
+      "id": "adobe-village",
+      "name_tr": "Kerpiç Köy",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/poi/01-adobe-village.png"
+    },
+    {
+      "id": "desert-trading-city",
+      "name_tr": "Çöl Ticaret Şehri",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/poi/02-desert-trading-city.png"
+    },
+    {
+      "id": "caravanserai",
+      "name_tr": "Kervansaray",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/poi/03-caravanserai.png"
+    },
+    {
+      "id": "nomad-camp",
+      "name_tr": "Göçebe Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/poi/04-nomad-camp.png"
+    },
+    {
+      "id": "oasis-camp",
+      "name_tr": "Vaha Kampı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/poi/05-oasis-camp.png"
+    },
+    {
+      "id": "date-farmstead",
+      "name_tr": "Hurma Çiftliği",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/poi/06-date-farmstead.png"
+    },
+    {
+      "id": "buried-ruins",
+      "name_tr": "Gömülü Harabeler",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/poi/07-buried-ruins.png"
+    },
+    {
+      "id": "ruined-watchtower",
+      "name_tr": "Yıkık Çöl Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/poi/08-ruined-watchtower.png"
+    },
+    {
+      "id": "sun-temple",
+      "name_tr": "Güneş Tapınağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/poi/09-sun-temple.png"
+    },
+    {
+      "id": "desert-shrine",
+      "name_tr": "Çöl Mabedi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/poi/10-desert-shrine.png"
+    },
+    {
+      "id": "ancient-obelisks",
+      "name_tr": "Kadim Dikilitaşlar",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/poi/11-ancient-obelisks.png"
+    },
+    {
+      "id": "desert-graveyard",
+      "name_tr": "Çöl Mezarlığı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/poi/12-desert-graveyard.png"
+    },
+    {
+      "id": "cave-entrance",
+      "name_tr": "Kumtaşı Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/poi/13-cave-entrance.png"
+    },
+    {
+      "id": "desert-mine",
+      "name_tr": "Çöl Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/poi/14-desert-mine.png"
+    },
+    {
+      "id": "sealed-royal-tomb",
+      "name_tr": "Mühürlü Kraliyet Mezarı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/poi/15-sealed-royal-tomb.png"
+    },
+    {
+      "id": "hidden-spring-grotto",
+      "name_tr": "Gizli Kaynak Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/poi/16-hidden-spring-grotto.png"
+    },
+    {
+      "id": "ancient-well",
+      "name_tr": "Kadim Kuyu",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/poi/17-ancient-well.png"
+    },
+    {
+      "id": "colossal-fossil",
+      "name_tr": "Dev Fosil",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/poi/18-colossal-fossil.png"
+    },
+    {
+      "id": "bandit-camp",
+      "name_tr": "Haydut Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/poi/19-bandit-camp.png"
+    },
+    {
+      "id": "sandworm-nest",
+      "name_tr": "Kum Kurdu Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/poi/20-sandworm-nest.png"
+    },
+    {
+      "id": "hermit-hut",
+      "name_tr": "Çöl Münzevisi Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/poi/21-hermit-hut.png"
+    },
+    {
+      "id": "frontier-watchtower",
+      "name_tr": "Sınır Gözetleme Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/poi/22-frontier-watchtower.png"
+    },
+    {
+      "id": "magic-portal",
+      "name_tr": "Çöl Büyü Geçidi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/poi/23-magic-portal.png"
+    },
+    {
+      "id": "boss-arena",
+      "name_tr": "Patron Arenası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/poi/24-boss-arena.png"
+    }
+  ]
+}

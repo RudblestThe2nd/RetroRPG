@@ -1,0 +1,843 @@
+{
+  "pack": "underground-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "limestone-cavern-floor",
+      "name_tr": "Kireçtaşı Mağara Zemini",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 0,
+      "image": "tiles/base/01-limestone-cavern-floor.png"
+    },
+    {
+      "id": "dark-stone-cavern-floor",
+      "name_tr": "Karanlık Taş Mağara Zemini",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 1,
+      "image": "tiles/base/02-dark-stone-cavern-floor.png"
+    },
+    {
+      "id": "wet-cave-floor",
+      "name_tr": "Islak Mağara Zemini",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 2,
+      "image": "tiles/base/03-wet-cave-floor.png"
+    },
+    {
+      "id": "mossy-cavern",
+      "name_tr": "Yosunlu Mağara",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 3,
+      "image": "tiles/base/04-mossy-cavern.png"
+    },
+    {
+      "id": "blue-crystal-ground",
+      "name_tr": "Mavi Kristal Alanı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 4,
+      "image": "tiles/base/05-blue-crystal-ground.png"
+    },
+    {
+      "id": "purple-crystal-ground",
+      "name_tr": "Mor Kristal Alanı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 5,
+      "image": "tiles/base/06-purple-crystal-ground.png"
+    },
+    {
+      "id": "stalagmite-field",
+      "name_tr": "Dikit Tarlası",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 6,
+      "image": "tiles/base/07-stalagmite-field.png"
+    },
+    {
+      "id": "giant-mushroom-cavern",
+      "name_tr": "Dev Mantar Mağarası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 7,
+      "image": "tiles/base/08-giant-mushroom-cavern.png"
+    },
+    {
+      "id": "fungus-grove",
+      "name_tr": "Yeraltı Mantar Korusu",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 8,
+      "image": "tiles/base/09-fungus-grove.png"
+    },
+    {
+      "id": "bone-strewn-cave",
+      "name_tr": "Kemikli Mağara",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 9,
+      "image": "tiles/base/10-bone-strewn-cave.png"
+    },
+    {
+      "id": "ancient-carved-floor",
+      "name_tr": "Kadim Oyma Zemin",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 10,
+      "image": "tiles/base/11-ancient-carved-floor.png"
+    },
+    {
+      "id": "collapsed-rubble-chamber",
+      "name_tr": "Çökmüş Taş Odası",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 11,
+      "image": "tiles/base/12-collapsed-rubble-chamber.png"
+    },
+    {
+      "id": "underground-lake",
+      "name_tr": "Yeraltı Gölü",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_flight_or_boat",
+      "index": 12,
+      "image": "tiles/base/13-underground-lake.png"
+    },
+    {
+      "id": "black-abyss-pool",
+      "name_tr": "Kara Uçurum Havuzu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_flight_or_boat",
+      "index": 13,
+      "image": "tiles/base/14-black-abyss-pool.png"
+    },
+    {
+      "id": "lava-cave-floor",
+      "name_tr": "Lavlı Mağara Zemini",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "fire_immunity",
+      "index": 14,
+      "image": "tiles/base/15-lava-cave-floor.png"
+    },
+    {
+      "id": "sulfur-cavern",
+      "name_tr": "Kükürtlü Mağara",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 15,
+      "image": "tiles/base/16-sulfur-cavern.png"
+    },
+    {
+      "id": "crystal-ridge",
+      "name_tr": "Kristal Sırtı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 16,
+      "image": "tiles/base/17-crystal-ridge.png"
+    },
+    {
+      "id": "subterranean-canyon",
+      "name_tr": "Yeraltı Kanyonu",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_flight_or_boat",
+      "index": 17,
+      "image": "tiles/base/18-subterranean-canyon.png"
+    },
+    {
+      "id": "bottomless-chasm",
+      "name_tr": "Dipsiz Yarık",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 4,
+      "requires": "bridge_flight_or_boat",
+      "index": 18,
+      "image": "tiles/base/19-bottomless-chasm.png"
+    },
+    {
+      "id": "underground-waterfall-basin",
+      "name_tr": "Yeraltı Şelalesi Havzası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 19,
+      "image": "tiles/base/20-underground-waterfall-basin.png"
+    },
+    {
+      "id": "misty-cavern",
+      "name_tr": "Sisli Mağara",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 20,
+      "image": "tiles/base/21-misty-cavern.png"
+    },
+    {
+      "id": "magical-geode-chamber",
+      "name_tr": "Büyülü Jeot Odası",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 21,
+      "image": "tiles/base/22-magical-geode-chamber.png"
+    },
+    {
+      "id": "mountain-cave-transition",
+      "name_tr": "Dağ Mağara Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 22,
+      "image": "tiles/base/23-mountain-cave-transition.png"
+    },
+    {
+      "id": "corrupted-cave-transition",
+      "name_tr": "Lanetli Mağara Geçişi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 23,
+      "image": "tiles/base/24-corrupted-cave-transition.png"
+    },
+    {
+      "id": "road-straight-n-s",
+      "name_tr": "Mağara Yolu Düz N-S",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 0,
+      "image": "tiles/connections/01-road-straight-n-s.png"
+    },
+    {
+      "id": "road-straight-ne-sw",
+      "name_tr": "Mağara Yolu Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 1,
+      "image": "tiles/connections/02-road-straight-ne-sw.png"
+    },
+    {
+      "id": "road-straight-nw-se",
+      "name_tr": "Mağara Yolu Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 2,
+      "image": "tiles/connections/03-road-straight-nw-se.png"
+    },
+    {
+      "id": "road-curve-n-se",
+      "name_tr": "Mağara Yolu Dönüş N-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 3,
+      "image": "tiles/connections/04-road-curve-n-se.png"
+    },
+    {
+      "id": "road-curve-n-sw",
+      "name_tr": "Mağara Yolu Dönüş N-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 4,
+      "image": "tiles/connections/05-road-curve-n-sw.png"
+    },
+    {
+      "id": "road-three-way",
+      "name_tr": "Mağara Yolu Üçlü Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 5,
+      "image": "tiles/connections/06-road-three-way.png"
+    },
+    {
+      "id": "road-four-way",
+      "name_tr": "Mağara Yolu Dörtlü Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 6,
+      "image": "tiles/connections/07-road-four-way.png"
+    },
+    {
+      "id": "rail-straight-n-s",
+      "name_tr": "Maden Rayı Düz N-S",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 7,
+      "image": "tiles/connections/08-rail-straight-n-s.png"
+    },
+    {
+      "id": "rail-straight-ne-sw",
+      "name_tr": "Maden Rayı Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 8,
+      "image": "tiles/connections/09-rail-straight-ne-sw.png"
+    },
+    {
+      "id": "rail-straight-nw-se",
+      "name_tr": "Maden Rayı Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 9,
+      "image": "tiles/connections/10-rail-straight-nw-se.png"
+    },
+    {
+      "id": "rail-curve",
+      "name_tr": "Maden Rayı Dönüş",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 10,
+      "image": "tiles/connections/11-rail-curve.png"
+    },
+    {
+      "id": "rail-junction",
+      "name_tr": "Maden Rayı Kavşağı",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 11,
+      "image": "tiles/connections/12-rail-junction.png"
+    },
+    {
+      "id": "river-straight-n-s",
+      "name_tr": "Yeraltı Nehri Düz N-S",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "boat_or_bridge",
+      "index": 12,
+      "image": "tiles/connections/13-river-straight-n-s.png"
+    },
+    {
+      "id": "river-straight-ne-sw",
+      "name_tr": "Yeraltı Nehri Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "boat_or_bridge",
+      "index": 13,
+      "image": "tiles/connections/14-river-straight-ne-sw.png"
+    },
+    {
+      "id": "river-straight-nw-se",
+      "name_tr": "Yeraltı Nehri Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "boat_or_bridge",
+      "index": 14,
+      "image": "tiles/connections/15-river-straight-nw-se.png"
+    },
+    {
+      "id": "river-bend",
+      "name_tr": "Yeraltı Nehri Dönüş",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "boat_or_bridge",
+      "index": 15,
+      "image": "tiles/connections/16-river-bend.png"
+    },
+    {
+      "id": "river-fork",
+      "name_tr": "Yeraltı Nehri Çatalı",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "boat_or_bridge",
+      "index": 16,
+      "image": "tiles/connections/17-river-fork.png"
+    },
+    {
+      "id": "river-confluence",
+      "name_tr": "Yeraltı Nehri Birleşimi",
+      "category": "connections",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 3,
+      "requires": "boat_or_bridge",
+      "index": 17,
+      "image": "tiles/connections/18-river-confluence.png"
+    },
+    {
+      "id": "stone-river-bridge",
+      "name_tr": "Taş Nehir Köprüsü",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 18,
+      "image": "tiles/connections/19-stone-river-bridge.png"
+    },
+    {
+      "id": "rope-chasm-bridge",
+      "name_tr": "Halat Uçurum Köprüsü",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 19,
+      "image": "tiles/connections/20-rope-chasm-bridge.png"
+    },
+    {
+      "id": "ancient-rune-bridge",
+      "name_tr": "Kadim Rün Köprüsü",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 20,
+      "image": "tiles/connections/21-ancient-rune-bridge.png"
+    },
+    {
+      "id": "wooden-mine-bridge",
+      "name_tr": "Ahşap Maden Köprüsü",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 21,
+      "image": "tiles/connections/22-wooden-mine-bridge.png"
+    },
+    {
+      "id": "lava-bridge",
+      "name_tr": "Lav Köprüsü",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 22,
+      "image": "tiles/connections/23-lava-bridge.png"
+    },
+    {
+      "id": "crystal-bridge",
+      "name_tr": "Kristal Köprü",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 2,
+      "requires": "light_source",
+      "index": 23,
+      "image": "tiles/connections/24-crystal-bridge.png"
+    },
+    {
+      "id": "dwarven-mining-camp",
+      "name_tr": "Cüce Madenci Kampı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 0,
+      "image": "tiles/poi/01-dwarven-mining-camp.png"
+    },
+    {
+      "id": "subterranean-village",
+      "name_tr": "Yeraltı Köyü",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 1,
+      "image": "tiles/poi/02-subterranean-village.png"
+    },
+    {
+      "id": "underground-trading-post",
+      "name_tr": "Yeraltı Ticaret Noktası",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 2,
+      "image": "tiles/poi/03-underground-trading-post.png"
+    },
+    {
+      "id": "mushroom-folk-settlement",
+      "name_tr": "Mantar Halkı Yerleşimi",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 3,
+      "image": "tiles/poi/04-mushroom-folk-settlement.png"
+    },
+    {
+      "id": "abandoned-miners-camp",
+      "name_tr": "Terk Edilmiş Madenci Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 4,
+      "image": "tiles/poi/05-abandoned-miners-camp.png"
+    },
+    {
+      "id": "crystal-prospectors-camp",
+      "name_tr": "Kristal Arayıcıları Kampı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 5,
+      "image": "tiles/poi/06-crystal-prospectors-camp.png"
+    },
+    {
+      "id": "ancient-dwarven-city-gate",
+      "name_tr": "Kadim Cüce Şehri Kapısı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 6,
+      "image": "tiles/poi/07-ancient-dwarven-city-gate.png"
+    },
+    {
+      "id": "ruined-underground-fortress",
+      "name_tr": "Yıkık Yeraltı Kalesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 7,
+      "image": "tiles/poi/08-ruined-underground-fortress.png"
+    },
+    {
+      "id": "deep-temple",
+      "name_tr": "Derin Tapınak",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 8,
+      "image": "tiles/poi/09-deep-temple.png"
+    },
+    {
+      "id": "forgotten-shrine",
+      "name_tr": "Unutulmuş Mabet",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 9,
+      "image": "tiles/poi/10-forgotten-shrine.png"
+    },
+    {
+      "id": "underground-graveyard",
+      "name_tr": "Yeraltı Mezarlığı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 10,
+      "image": "tiles/poi/11-underground-graveyard.png"
+    },
+    {
+      "id": "prison-dungeon-entrance",
+      "name_tr": "Zindan Hapishanesi Girişi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "light_source",
+      "index": 11,
+      "image": "tiles/poi/12-prison-dungeon-entrance.png"
+    },
+    {
+      "id": "active-mine-entrance",
+      "name_tr": "Etkin Maden Girişi",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 12,
+      "image": "tiles/poi/13-active-mine-entrance.png"
+    },
+    {
+      "id": "crystal-mine",
+      "name_tr": "Kristal Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 13,
+      "image": "tiles/poi/14-crystal-mine.png"
+    },
+    {
+      "id": "flooded-tunnel-entrance",
+      "name_tr": "Su Basmış Tünel",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 14,
+      "image": "tiles/poi/15-flooded-tunnel-entrance.png"
+    },
+    {
+      "id": "lava-tunnel-entrance",
+      "name_tr": "Lav Tüneli",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "light_source",
+      "index": 15,
+      "image": "tiles/poi/16-lava-tunnel-entrance.png"
+    },
+    {
+      "id": "giant-mushroom-hollow",
+      "name_tr": "Dev Mantar Oyuğu",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 16,
+      "image": "tiles/poi/17-giant-mushroom-hollow.png"
+    },
+    {
+      "id": "hidden-smuggler-cave",
+      "name_tr": "Gizli Kaçakçı Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 17,
+      "image": "tiles/poi/18-hidden-smuggler-cave.png"
+    },
+    {
+      "id": "spider-nest",
+      "name_tr": "Örümcek Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "light_source",
+      "index": 18,
+      "image": "tiles/poi/19-spider-nest.png"
+    },
+    {
+      "id": "goblin-cave-camp",
+      "name_tr": "Goblin Mağara Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "light_source",
+      "index": 19,
+      "image": "tiles/poi/20-goblin-cave-camp.png"
+    },
+    {
+      "id": "deep-monster-lair",
+      "name_tr": "Derin Canavar İni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "light_source",
+      "index": 20,
+      "image": "tiles/poi/21-deep-monster-lair.png"
+    },
+    {
+      "id": "underground-wizard-laboratory",
+      "name_tr": "Yeraltı Büyücü Laboratuvarı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": "light_source",
+      "index": 21,
+      "image": "tiles/poi/22-underground-wizard-laboratory.png"
+    },
+    {
+      "id": "sealed-ancient-vault",
+      "name_tr": "Mühürlü Kadim Kasa",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 4,
+      "requires": "light_source",
+      "index": 22,
+      "image": "tiles/poi/23-sealed-ancient-vault.png"
+    },
+    {
+      "id": "crystal-dragon-boss-chamber",
+      "name_tr": "Kristal Ejder Patron Odası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 5,
+      "requires": "light_source",
+      "index": 23,
+      "image": "tiles/poi/24-crystal-dragon-boss-chamber.png"
+    }
+  ]
+}

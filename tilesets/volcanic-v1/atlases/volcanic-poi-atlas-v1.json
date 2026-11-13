@@ -1,0 +1,149 @@
+{
+  "image": "volcanic-poi-atlas-v1.png",
+  "sprites": {
+    "01-ash-village": {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "02-volcanic-town": {
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "03-master-forge-lodge": {
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "04-lava-miner-camp": {
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "05-obsidian-quarry": {
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "06-sulfur-outpost": {
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "07-ruined-volcanic-citadel": {
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "08-lava-watchtower": {
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "09-fire-temple": {
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "10-ember-shrine": {
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "11-magma-rune-stones": {
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "12-burned-graveyard": {
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "13-lava-cave": {
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "14-obsidian-mine": {
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "15-basalt-tunnel": {
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "16-magma-grotto": {
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "17-iron-lift-station": {
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "18-ancient-volcanic-forge": {
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "19-fire-cultist-camp": {
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "20-fire-drake-nest": {
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "21-flame-witch-hut": {
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "22-eruption-beacon": {
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "23-infernal-portal": {
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "24-volcano-boss-citadel": {
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    }
+  }
+}

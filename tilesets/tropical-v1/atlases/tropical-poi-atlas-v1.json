@@ -1,0 +1,149 @@
+{
+  "image": "tropical-poi-atlas-v1.png",
+  "sprites": {
+    "01-fishing-village": {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "02-tropical-port-town": {
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "03-jungle-explorer-lodge": {
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "04-sailor-beach-camp": {
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "05-fruit-plantation": {
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "06-island-farmstead": {
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "07-overgrown-coastal-ruins": {
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "08-island-lighthouse": {
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "09-jungle-temple": {
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "10-tidal-shrine": {
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "11-carved-island-idols": {
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "12-pirate-graveyard": {
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "13-sea-cave": {
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "14-gemstone-mine": {
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "15-jungle-tunnel": {
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "16-waterfall-grotto": {
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "17-lagoon-dock": {
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "18-ancient-banyan": {
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "19-pirate-fortress-camp": {
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "20-sea-serpent-nest": {
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "21-island-witch-hut": {
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "22-storm-signal-tower": {
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "23-storm-magic-portal": {
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "24-boss-island-citadel": {
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    }
+  }
+}

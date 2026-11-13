@@ -1,0 +1,149 @@
+{
+  "image": "forest-poi-atlas-v1.png",
+  "sprites": {
+    "01-tiny-village": {
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "02-woodland-town": {
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "03-ranger-lodge": {
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "04-hunter-camp": {
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "05-lumber-camp": {
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "06-forest-farmstead": {
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    "07-mossy-ruins": {
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "08-ruined-watchtower": {
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "09-ancient-temple": {
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "10-roadside-shrine": {
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "11-ritual-stones": {
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "12-old-graveyard": {
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    "13-cave-entrance": {
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "14-mine-entrance": {
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "15-root-tunnel": {
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "16-waterfall-grotto": {
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "17-pond-dock": {
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "18-ancient-tree": {
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    "19-bandit-camp": {
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "20-monster-nest": {
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "21-witch-hut": {
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "22-forest-watchtower": {
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "23-magic-circle": {
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    "24-boss-clearing": {
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    }
+  }
+}

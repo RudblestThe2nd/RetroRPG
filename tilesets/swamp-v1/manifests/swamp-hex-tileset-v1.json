@@ -1,0 +1,843 @@
+{
+  "pack": "swamp-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "muddy-clearing",
+      "name_tr": "Çamurlu Açıklık",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/base/01-muddy-clearing.png"
+    },
+    {
+      "id": "wet-grass",
+      "name_tr": "Islak Çimen",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/base/02-wet-grass.png"
+    },
+    {
+      "id": "shallow-swamp-water",
+      "name_tr": "Sığ Bataklık Suyu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "wading_or_boat",
+      "index": 2,
+      "image": "tiles/base/03-shallow-swamp-water.png"
+    },
+    {
+      "id": "deep-dark-water",
+      "name_tr": "Derin Karanlık Su",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/base/04-deep-dark-water.png"
+    },
+    {
+      "id": "lily-pad-pond",
+      "name_tr": "Nilüfer Göleti",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": "wading_or_boat",
+      "index": 4,
+      "image": "tiles/base/05-lily-pad-pond.png"
+    },
+    {
+      "id": "dense-reed-marsh",
+      "name_tr": "Sık Sazlık",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/base/06-dense-reed-marsh.png"
+    },
+    {
+      "id": "mangrove-roots",
+      "name_tr": "Mangrov Kökleri",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/base/07-mangrove-roots.png"
+    },
+    {
+      "id": "cypress-grove",
+      "name_tr": "Servi Korusu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/base/08-cypress-grove.png"
+    },
+    {
+      "id": "dead-tree-marsh",
+      "name_tr": "Ölü Ağaç Bataklığı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/base/09-dead-tree-marsh.png"
+    },
+    {
+      "id": "dense-swamp-forest",
+      "name_tr": "Sık Bataklık Ormanı",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/base/10-dense-swamp-forest.png"
+    },
+    {
+      "id": "misty-mire",
+      "name_tr": "Sisli Bataklık",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/base/11-misty-mire.png"
+    },
+    {
+      "id": "poisoned-green-bog",
+      "name_tr": "Zehirli Yeşil Bataklık",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/base/12-poisoned-green-bog.png"
+    },
+    {
+      "id": "peat-moss-ground",
+      "name_tr": "Turba Yosunu",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/base/13-peat-moss-ground.png"
+    },
+    {
+      "id": "giant-fungus-bog",
+      "name_tr": "Dev Mantar Bataklığı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/base/14-giant-fungus-bog.png"
+    },
+    {
+      "id": "firefly-marsh",
+      "name_tr": "Ateşböceği Bataklığı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/base/15-firefly-marsh.png"
+    },
+    {
+      "id": "bubbling-mud-pools",
+      "name_tr": "Kaynayan Çamur Havuzları",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/base/16-bubbling-mud-pools.png"
+    },
+    {
+      "id": "quicksand-mire",
+      "name_tr": "Balçık Tuzağı",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/base/17-quicksand-mire.png"
+    },
+    {
+      "id": "flooded-forest",
+      "name_tr": "Su Basan Orman",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/base/18-flooded-forest.png"
+    },
+    {
+      "id": "swamp-hill",
+      "name_tr": "Bataklık Tepesi",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/base/19-swamp-hill.png"
+    },
+    {
+      "id": "rocky-islet",
+      "name_tr": "Kayalık Adacık",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/base/20-rocky-islet.png"
+    },
+    {
+      "id": "dark-sinkhole",
+      "name_tr": "Karanlık Düden",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/base/21-dark-sinkhole.png"
+    },
+    {
+      "id": "sulfur-springs",
+      "name_tr": "Kükürt Kaynakları",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/base/22-sulfur-springs.png"
+    },
+    {
+      "id": "forest-swamp-edge",
+      "name_tr": "Orman Bataklık Geçişi",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/base/23-forest-swamp-edge.png"
+    },
+    {
+      "id": "burned-marsh",
+      "name_tr": "Yanmış Bataklık",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/base/24-burned-marsh.png"
+    },
+    {
+      "id": "trail-straight-e-w",
+      "name_tr": "Patika Düz E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/connections/01-trail-straight-e-w.png"
+    },
+    {
+      "id": "trail-straight-ne-sw",
+      "name_tr": "Patika Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/connections/02-trail-straight-ne-sw.png"
+    },
+    {
+      "id": "trail-straight-nw-se",
+      "name_tr": "Patika Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/connections/03-trail-straight-nw-se.png"
+    },
+    {
+      "id": "trail-curve-e-se",
+      "name_tr": "Patika Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/connections/04-trail-curve-e-se.png"
+    },
+    {
+      "id": "trail-curve-se-sw",
+      "name_tr": "Patika Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/connections/05-trail-curve-se-sw.png"
+    },
+    {
+      "id": "trail-curve-sw-w",
+      "name_tr": "Patika Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/connections/06-trail-curve-sw-w.png"
+    },
+    {
+      "id": "trail-curve-w-nw",
+      "name_tr": "Patika Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/connections/07-trail-curve-w-nw.png"
+    },
+    {
+      "id": "trail-curve-nw-ne",
+      "name_tr": "Patika Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/connections/08-trail-curve-nw-ne.png"
+    },
+    {
+      "id": "trail-curve-ne-e",
+      "name_tr": "Patika Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/connections/09-trail-curve-ne-e.png"
+    },
+    {
+      "id": "trail-three-way-e-sw-nw",
+      "name_tr": "Patika Üçlü E-SW-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/connections/10-trail-three-way-e-sw-nw.png"
+    },
+    {
+      "id": "trail-three-way-w-ne-se",
+      "name_tr": "Patika Üçlü W-NE-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/connections/11-trail-three-way-w-ne-se.png"
+    },
+    {
+      "id": "trail-six-way",
+      "name_tr": "Patika Altılı Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/connections/12-trail-six-way.png"
+    },
+    {
+      "id": "channel-straight-e-w",
+      "name_tr": "Kanal Düz E-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 12,
+      "image": "tiles/connections/13-channel-straight-e-w.png"
+    },
+    {
+      "id": "channel-straight-ne-sw",
+      "name_tr": "Kanal Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 13,
+      "image": "tiles/connections/14-channel-straight-ne-sw.png"
+    },
+    {
+      "id": "channel-straight-nw-se",
+      "name_tr": "Kanal Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 14,
+      "image": "tiles/connections/15-channel-straight-nw-se.png"
+    },
+    {
+      "id": "channel-curve-e-se",
+      "name_tr": "Kanal Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 15,
+      "image": "tiles/connections/16-channel-curve-e-se.png"
+    },
+    {
+      "id": "channel-curve-se-sw",
+      "name_tr": "Kanal Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 16,
+      "image": "tiles/connections/17-channel-curve-se-sw.png"
+    },
+    {
+      "id": "channel-curve-sw-w",
+      "name_tr": "Kanal Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 17,
+      "image": "tiles/connections/18-channel-curve-sw-w.png"
+    },
+    {
+      "id": "channel-curve-w-nw",
+      "name_tr": "Kanal Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 18,
+      "image": "tiles/connections/19-channel-curve-w-nw.png"
+    },
+    {
+      "id": "channel-curve-nw-ne",
+      "name_tr": "Kanal Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 19,
+      "image": "tiles/connections/20-channel-curve-nw-ne.png"
+    },
+    {
+      "id": "channel-curve-ne-e",
+      "name_tr": "Kanal Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "boat",
+      "index": 20,
+      "image": "tiles/connections/21-channel-curve-ne-e.png"
+    },
+    {
+      "id": "boardwalk-e-w",
+      "name_tr": "Ahşap Geçit E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/connections/22-boardwalk-e-w.png"
+    },
+    {
+      "id": "boardwalk-ne-sw",
+      "name_tr": "Ahşap Geçit NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/connections/23-boardwalk-ne-sw.png"
+    },
+    {
+      "id": "boardwalk-nw-se",
+      "name_tr": "Ahşap Geçit NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/connections/24-boardwalk-nw-se.png"
+    },
+    {
+      "id": "stilt-village",
+      "name_tr": "Kazık Köyü",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/poi/01-stilt-village.png"
+    },
+    {
+      "id": "swamp-trading-town",
+      "name_tr": "Bataklık Ticaret Kasabası",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/poi/02-swamp-trading-town.png"
+    },
+    {
+      "id": "ferryman-hut",
+      "name_tr": "Kayıkçı Kulübesi",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/poi/03-ferryman-hut.png"
+    },
+    {
+      "id": "herbalist-hut",
+      "name_tr": "Şifacı Kulübesi",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/poi/04-herbalist-hut.png"
+    },
+    {
+      "id": "fishing-camp",
+      "name_tr": "Balıkçı Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/poi/05-fishing-camp.png"
+    },
+    {
+      "id": "reed-farmstead",
+      "name_tr": "Sazlık Çiftliği",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/poi/06-reed-farmstead.png"
+    },
+    {
+      "id": "sunken-ruins",
+      "name_tr": "Batık Harabeler",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/poi/07-sunken-ruins.png"
+    },
+    {
+      "id": "drowned-watchtower",
+      "name_tr": "Suya Gömülmüş Kule",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/poi/08-drowned-watchtower.png"
+    },
+    {
+      "id": "serpent-temple",
+      "name_tr": "Yılan Tapınağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/poi/09-serpent-temple.png"
+    },
+    {
+      "id": "bog-shrine",
+      "name_tr": "Bataklık Mabedi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/poi/10-bog-shrine.png"
+    },
+    {
+      "id": "ritual-stone-circle",
+      "name_tr": "Ritüel Taş Çemberi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/poi/11-ritual-stone-circle.png"
+    },
+    {
+      "id": "flooded-graveyard",
+      "name_tr": "Su Basan Mezarlık",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/poi/12-flooded-graveyard.png"
+    },
+    {
+      "id": "cave-entrance",
+      "name_tr": "Mağara Girişi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/poi/13-cave-entrance.png"
+    },
+    {
+      "id": "abandoned-peat-mine",
+      "name_tr": "Terk Edilmiş Turba Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/poi/14-abandoned-peat-mine.png"
+    },
+    {
+      "id": "giant-root-hollow",
+      "name_tr": "Dev Kök Oyuğu",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/poi/15-giant-root-hollow.png"
+    },
+    {
+      "id": "hidden-swamp-grotto",
+      "name_tr": "Gizli Bataklık Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/poi/16-hidden-swamp-grotto.png"
+    },
+    {
+      "id": "wooden-dock",
+      "name_tr": "Ahşap İskele",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/poi/17-wooden-dock.png"
+    },
+    {
+      "id": "ancient-cypress",
+      "name_tr": "Kadim Servi Ağacı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/poi/18-ancient-cypress.png"
+    },
+    {
+      "id": "bandit-raft-camp",
+      "name_tr": "Haydut Sal Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/poi/19-bandit-raft-camp.png"
+    },
+    {
+      "id": "hydra-nest",
+      "name_tr": "Hidra Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/poi/20-hydra-nest.png"
+    },
+    {
+      "id": "witch-hut",
+      "name_tr": "Cadı Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/poi/21-witch-hut.png"
+    },
+    {
+      "id": "raised-watchtower",
+      "name_tr": "Yükseltilmiş Gözetleme Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/poi/22-raised-watchtower.png"
+    },
+    {
+      "id": "poison-altar",
+      "name_tr": "Zehir Sunağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/poi/23-poison-altar.png"
+    },
+    {
+      "id": "boss-island",
+      "name_tr": "Patron Adası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/poi/24-boss-island.png"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "static_count": 32,
+  "animation_count": 6,
+  "expected_static": 32,
+  "expected_animations": 6,
+  "errors": []
+}

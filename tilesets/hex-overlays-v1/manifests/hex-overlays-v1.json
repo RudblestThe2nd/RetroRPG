@@ -1,0 +1,211 @@
+{
+  "id": "hex-overlays-v1",
+  "tile_size": [
+    256,
+    256
+  ],
+  "orientation": "pointy-top",
+  "static_count": 32,
+  "animation_count": 6,
+  "static": [
+    {
+      "id": "unexplored",
+      "category": "exploration",
+      "file": "static/01-unexplored.png"
+    },
+    {
+      "id": "fog-of-war",
+      "category": "exploration",
+      "file": "static/02-fog-of-war.png"
+    },
+    {
+      "id": "explored-out-of-sight",
+      "category": "exploration",
+      "file": "static/03-explored-out-of-sight.png"
+    },
+    {
+      "id": "recently-revealed",
+      "category": "exploration",
+      "file": "static/04-recently-revealed.png"
+    },
+    {
+      "id": "fog-edge-e",
+      "category": "exploration",
+      "file": "static/05-fog-edge-e.png"
+    },
+    {
+      "id": "fog-edge-se",
+      "category": "exploration",
+      "file": "static/06-fog-edge-se.png"
+    },
+    {
+      "id": "fog-edge-sw",
+      "category": "exploration",
+      "file": "static/07-fog-edge-sw.png"
+    },
+    {
+      "id": "fog-edge-w",
+      "category": "exploration",
+      "file": "static/08-fog-edge-w.png"
+    },
+    {
+      "id": "fog-edge-nw",
+      "category": "exploration",
+      "file": "static/09-fog-edge-nw.png"
+    },
+    {
+      "id": "fog-edge-ne",
+      "category": "exploration",
+      "file": "static/10-fog-edge-ne.png"
+    },
+    {
+      "id": "selected",
+      "category": "state",
+      "file": "static/11-selected.png"
+    },
+    {
+      "id": "hovered",
+      "category": "state",
+      "file": "static/12-hovered.png"
+    },
+    {
+      "id": "locked",
+      "category": "state",
+      "file": "static/13-locked.png"
+    },
+    {
+      "id": "danger",
+      "category": "state",
+      "file": "static/14-danger.png"
+    },
+    {
+      "id": "quest-main",
+      "category": "state",
+      "file": "static/15-quest-main.png"
+    },
+    {
+      "id": "quest-side",
+      "category": "state",
+      "file": "static/16-quest-side.png"
+    },
+    {
+      "id": "player-location",
+      "category": "state",
+      "file": "static/17-player-location.png"
+    },
+    {
+      "id": "route-start",
+      "category": "state",
+      "file": "static/18-route-start.png"
+    },
+    {
+      "id": "route-step",
+      "category": "state",
+      "file": "static/19-route-step.png"
+    },
+    {
+      "id": "route-end",
+      "category": "state",
+      "file": "static/20-route-end.png"
+    },
+    {
+      "id": "reachable",
+      "category": "state",
+      "file": "static/21-reachable.png"
+    },
+    {
+      "id": "unreachable",
+      "category": "state",
+      "file": "static/22-unreachable.png"
+    },
+    {
+      "id": "movement-range",
+      "category": "state",
+      "file": "static/23-movement-range.png"
+    },
+    {
+      "id": "enemy-occupied",
+      "category": "state",
+      "file": "static/24-enemy-occupied.png"
+    },
+    {
+      "id": "ally-occupied",
+      "category": "state",
+      "file": "static/25-ally-occupied.png"
+    },
+    {
+      "id": "random-encounter",
+      "category": "state",
+      "file": "static/26-random-encounter.png"
+    },
+    {
+      "id": "camp-available",
+      "category": "state",
+      "file": "static/27-camp-available.png"
+    },
+    {
+      "id": "settlement-discovered",
+      "category": "state",
+      "file": "static/28-settlement-discovered.png"
+    },
+    {
+      "id": "loot-available",
+      "category": "state",
+      "file": "static/29-loot-available.png"
+    },
+    {
+      "id": "boss-location",
+      "category": "state",
+      "file": "static/30-boss-location.png"
+    },
+    {
+      "id": "objective-complete",
+      "category": "state",
+      "file": "static/31-objective-complete.png"
+    },
+    {
+      "id": "travel-blocked",
+      "category": "state",
+      "file": "static/32-travel-blocked.png"
+    }
+  ],
+  "animated": [
+    {
+      "id": "selected-pulse",
+      "frames": 8,
+      "file": "animated/selected-pulse-v1.gif"
+    },
+    {
+      "id": "quest-main-pulse",
+      "frames": 8,
+      "file": "animated/quest-main-pulse-v1.gif"
+    },
+    {
+      "id": "danger-pulse",
+      "frames": 8,
+      "file": "animated/danger-pulse-v1.gif"
+    },
+    {
+      "id": "player-location-pulse",
+      "frames": 8,
+      "file": "animated/player-location-pulse-v1.gif"
+    },
+    {
+      "id": "route-step-pulse",
+      "frames": 8,
+      "file": "animated/route-step-pulse-v1.gif"
+    },
+    {
+      "id": "fog-drift",
+      "frames": 8,
+      "file": "animated/fog-drift-v1.gif"
+    }
+  ],
+  "draw_order": [
+    "terrain",
+    "exploration",
+    "route",
+    "state",
+    "player"
+  ]
+}

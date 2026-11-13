@@ -1,0 +1,843 @@
+{
+  "pack": "mountain-hex-tileset",
+  "version": 1,
+  "orientation": "pointy-top",
+  "tile_canvas": [
+    256,
+    256
+  ],
+  "hex_visual_bounds": [
+    17,
+    0,
+    239,
+    255
+  ],
+  "hex_points": [
+    [
+      128,
+      0
+    ],
+    [
+      239,
+      64
+    ],
+    [
+      239,
+      192
+    ],
+    [
+      128,
+      255
+    ],
+    [
+      17,
+      192
+    ],
+    [
+      17,
+      64
+    ]
+  ],
+  "recommended_layout": {
+    "hex_width": 222,
+    "hex_height": 256,
+    "horizontal_step": 222,
+    "vertical_step": 192,
+    "odd_row_offset_x": 111
+  },
+  "tile_count": 72,
+  "tiles": [
+    {
+      "id": "grassy-foothills",
+      "name_tr": "Çimenli Dağ Etekleri",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/base/01-grassy-foothills.png"
+    },
+    {
+      "id": "rocky-foothills",
+      "name_tr": "Kayalık Dağ Etekleri",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/base/02-rocky-foothills.png"
+    },
+    {
+      "id": "low-granite-ridge",
+      "name_tr": "Alçak Granit Sırt",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/base/03-low-granite-ridge.png"
+    },
+    {
+      "id": "high-jagged-ridge",
+      "name_tr": "Yüksek Sivri Sırt",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 3,
+      "image": "tiles/base/04-high-jagged-ridge.png"
+    },
+    {
+      "id": "steep-granite-slope",
+      "name_tr": "Dik Granit Yamaç",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 4,
+      "image": "tiles/base/05-steep-granite-slope.png"
+    },
+    {
+      "id": "loose-scree-field",
+      "name_tr": "Gevşek Moloz Yamaç",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 5,
+      "image": "tiles/base/06-loose-scree-field.png"
+    },
+    {
+      "id": "pine-mountains",
+      "name_tr": "Çam Kaplı Dağlar",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/base/07-pine-mountains.png"
+    },
+    {
+      "id": "alpine-meadow",
+      "name_tr": "Alp Çayırı",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/base/08-alpine-meadow.png"
+    },
+    {
+      "id": "cloud-forest-ridge",
+      "name_tr": "Sisli Dağ Ormanı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/base/09-cloud-forest-ridge.png"
+    },
+    {
+      "id": "snow-capped-peaks",
+      "name_tr": "Karlı Zirveler",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 9,
+      "image": "tiles/base/10-snow-capped-peaks.png"
+    },
+    {
+      "id": "bare-stone-peaks",
+      "name_tr": "Çıplak Taş Zirveler",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 10,
+      "image": "tiles/base/11-bare-stone-peaks.png"
+    },
+    {
+      "id": "twin-peaks",
+      "name_tr": "İkiz Zirveler",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 11,
+      "image": "tiles/base/12-twin-peaks.png"
+    },
+    {
+      "id": "mountain-pass",
+      "name_tr": "Dağ Geçidi",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/base/13-mountain-pass.png"
+    },
+    {
+      "id": "red-rock-canyon",
+      "name_tr": "Kızıl Kaya Kanyonu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/base/14-red-rock-canyon.png"
+    },
+    {
+      "id": "sheer-cliff-top",
+      "name_tr": "Dik Uçurum Tepesi",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/base/15-sheer-cliff-top.png"
+    },
+    {
+      "id": "dark-ravine",
+      "name_tr": "Karanlık Yar",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/base/16-dark-ravine.png"
+    },
+    {
+      "id": "waterfall-cliff",
+      "name_tr": "Şelaleli Uçurum",
+      "category": "base",
+      "movement_cost": 99,
+      "passable": false,
+      "danger": 2,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/base/17-waterfall-cliff.png"
+    },
+    {
+      "id": "alpine-lake",
+      "name_tr": "Alp Gölü",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 2,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/base/18-alpine-lake.png"
+    },
+    {
+      "id": "collapsed-landslide",
+      "name_tr": "Heyelan Kalıntıları",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/base/19-collapsed-landslide.png"
+    },
+    {
+      "id": "avalanche-path",
+      "name_tr": "Çığ Yolu",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/base/20-avalanche-path.png"
+    },
+    {
+      "id": "windswept-summit",
+      "name_tr": "Rüzgârlı Zirve",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 20,
+      "image": "tiles/base/21-windswept-summit.png"
+    },
+    {
+      "id": "black-obsidian-ridge",
+      "name_tr": "Kara Obsidyen Sırtı",
+      "category": "base",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/base/22-black-obsidian-ridge.png"
+    },
+    {
+      "id": "mountain-forest-edge",
+      "name_tr": "Dağ Orman Geçişi",
+      "category": "base",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/base/23-mountain-forest-edge.png"
+    },
+    {
+      "id": "mountain-snow-edge",
+      "name_tr": "Dağ Kar Geçişi",
+      "category": "base",
+      "movement_cost": 3,
+      "passable": true,
+      "danger": 2,
+      "requires": "climbing_gear",
+      "index": 23,
+      "image": "tiles/base/24-mountain-snow-edge.png"
+    },
+    {
+      "id": "road-straight-e-w",
+      "name_tr": "Dağ Yolu Düz E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/connections/01-road-straight-e-w.png"
+    },
+    {
+      "id": "road-straight-ne-sw",
+      "name_tr": "Dağ Yolu Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/connections/02-road-straight-ne-sw.png"
+    },
+    {
+      "id": "road-straight-nw-se",
+      "name_tr": "Dağ Yolu Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/connections/03-road-straight-nw-se.png"
+    },
+    {
+      "id": "road-curve-e-se",
+      "name_tr": "Dağ Yolu Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/connections/04-road-curve-e-se.png"
+    },
+    {
+      "id": "road-curve-se-sw",
+      "name_tr": "Dağ Yolu Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/connections/05-road-curve-se-sw.png"
+    },
+    {
+      "id": "road-curve-sw-w",
+      "name_tr": "Dağ Yolu Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/connections/06-road-curve-sw-w.png"
+    },
+    {
+      "id": "road-curve-w-nw",
+      "name_tr": "Dağ Yolu Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/connections/07-road-curve-w-nw.png"
+    },
+    {
+      "id": "road-curve-nw-ne",
+      "name_tr": "Dağ Yolu Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/connections/08-road-curve-nw-ne.png"
+    },
+    {
+      "id": "road-curve-ne-e",
+      "name_tr": "Dağ Yolu Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/connections/09-road-curve-ne-e.png"
+    },
+    {
+      "id": "road-three-way-e-sw-nw",
+      "name_tr": "Dağ Yolu Üçlü E-SW-NW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/connections/10-road-three-way-e-sw-nw.png"
+    },
+    {
+      "id": "road-three-way-w-ne-se",
+      "name_tr": "Dağ Yolu Üçlü W-NE-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/connections/11-road-three-way-w-ne-se.png"
+    },
+    {
+      "id": "road-six-way",
+      "name_tr": "Dağ Yolu Altılı Kavşak",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/connections/12-road-six-way.png"
+    },
+    {
+      "id": "river-straight-e-w",
+      "name_tr": "Dağ Nehri Düz E-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 12,
+      "image": "tiles/connections/13-river-straight-e-w.png"
+    },
+    {
+      "id": "river-straight-ne-sw",
+      "name_tr": "Dağ Nehri Düz NE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 13,
+      "image": "tiles/connections/14-river-straight-ne-sw.png"
+    },
+    {
+      "id": "river-straight-nw-se",
+      "name_tr": "Dağ Nehri Düz NW-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 14,
+      "image": "tiles/connections/15-river-straight-nw-se.png"
+    },
+    {
+      "id": "river-curve-e-se",
+      "name_tr": "Dağ Nehri Dönüş E-SE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 15,
+      "image": "tiles/connections/16-river-curve-e-se.png"
+    },
+    {
+      "id": "river-curve-se-sw",
+      "name_tr": "Dağ Nehri Dönüş SE-SW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 16,
+      "image": "tiles/connections/17-river-curve-se-sw.png"
+    },
+    {
+      "id": "river-curve-sw-w",
+      "name_tr": "Dağ Nehri Dönüş SW-W",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 17,
+      "image": "tiles/connections/18-river-curve-sw-w.png"
+    },
+    {
+      "id": "river-curve-w-nw",
+      "name_tr": "Dağ Nehri Dönüş W-NW",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 18,
+      "image": "tiles/connections/19-river-curve-w-nw.png"
+    },
+    {
+      "id": "river-curve-nw-ne",
+      "name_tr": "Dağ Nehri Dönüş NW-NE",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 19,
+      "image": "tiles/connections/20-river-curve-nw-ne.png"
+    },
+    {
+      "id": "river-curve-ne-e",
+      "name_tr": "Dağ Nehri Dönüş NE-E",
+      "category": "connections",
+      "movement_cost": 3,
+      "passable": false,
+      "danger": 2,
+      "requires": "bridge_or_climbing_gear",
+      "index": 20,
+      "image": "tiles/connections/21-river-curve-ne-e.png"
+    },
+    {
+      "id": "bridge-e-w",
+      "name_tr": "Dağ Köprüsü E-W",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/connections/22-bridge-e-w.png"
+    },
+    {
+      "id": "bridge-ne-sw",
+      "name_tr": "Dağ Köprüsü NE-SW",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/connections/23-bridge-ne-sw.png"
+    },
+    {
+      "id": "bridge-nw-se",
+      "name_tr": "Dağ Köprüsü NW-SE",
+      "category": "connections",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/connections/24-bridge-nw-se.png"
+    },
+    {
+      "id": "mountain-village",
+      "name_tr": "Dağ Köyü",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 0,
+      "image": "tiles/poi/01-mountain-village.png"
+    },
+    {
+      "id": "mountain-trading-town",
+      "name_tr": "Dağ Ticaret Kasabası",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 1,
+      "image": "tiles/poi/02-mountain-trading-town.png"
+    },
+    {
+      "id": "cliffside-monastery",
+      "name_tr": "Uçurum Manastırı",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 2,
+      "image": "tiles/poi/03-cliffside-monastery.png"
+    },
+    {
+      "id": "shepherd-camp",
+      "name_tr": "Çoban Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 3,
+      "image": "tiles/poi/04-shepherd-camp.png"
+    },
+    {
+      "id": "stone-quarry-camp",
+      "name_tr": "Taş Ocağı Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 4,
+      "image": "tiles/poi/05-stone-quarry-camp.png"
+    },
+    {
+      "id": "alpine-farmstead",
+      "name_tr": "Alp Çiftliği",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 5,
+      "image": "tiles/poi/06-alpine-farmstead.png"
+    },
+    {
+      "id": "ruined-hill-fort",
+      "name_tr": "Yıkık Tepe Kalesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 6,
+      "image": "tiles/poi/07-ruined-hill-fort.png"
+    },
+    {
+      "id": "ruined-watchtower",
+      "name_tr": "Yıkık Dağ Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 7,
+      "image": "tiles/poi/08-ruined-watchtower.png"
+    },
+    {
+      "id": "sky-temple",
+      "name_tr": "Gökyüzü Tapınağı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 8,
+      "image": "tiles/poi/09-sky-temple.png"
+    },
+    {
+      "id": "summit-shrine",
+      "name_tr": "Zirve Mabedi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 9,
+      "image": "tiles/poi/10-summit-shrine.png"
+    },
+    {
+      "id": "ancient-standing-stones",
+      "name_tr": "Kadim Dikili Taşlar",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 10,
+      "image": "tiles/poi/11-ancient-standing-stones.png"
+    },
+    {
+      "id": "mountain-graveyard",
+      "name_tr": "Dağ Mezarlığı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 11,
+      "image": "tiles/poi/12-mountain-graveyard.png"
+    },
+    {
+      "id": "granite-cave",
+      "name_tr": "Granit Mağarası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 12,
+      "image": "tiles/poi/13-granite-cave.png"
+    },
+    {
+      "id": "mountain-mine",
+      "name_tr": "Dağ Madeni",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 13,
+      "image": "tiles/poi/14-mountain-mine.png"
+    },
+    {
+      "id": "fortified-tunnel",
+      "name_tr": "Tahkimli Dağ Tüneli",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 14,
+      "image": "tiles/poi/15-fortified-tunnel.png"
+    },
+    {
+      "id": "waterfall-grotto",
+      "name_tr": "Şelale Mağarası",
+      "category": "poi",
+      "movement_cost": 1,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 15,
+      "image": "tiles/poi/16-waterfall-grotto.png"
+    },
+    {
+      "id": "alpine-lake-dock",
+      "name_tr": "Alp Gölü İskelesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 16,
+      "image": "tiles/poi/17-alpine-lake-dock.png"
+    },
+    {
+      "id": "giant-eagle-eyrie",
+      "name_tr": "Dev Kartal Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 17,
+      "image": "tiles/poi/18-giant-eagle-eyrie.png"
+    },
+    {
+      "id": "bandit-fortress-camp",
+      "name_tr": "Haydut Kale Kampı",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 18,
+      "image": "tiles/poi/19-bandit-fortress-camp.png"
+    },
+    {
+      "id": "wyvern-nest",
+      "name_tr": "Wyvern Yuvası",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 19,
+      "image": "tiles/poi/20-wyvern-nest.png"
+    },
+    {
+      "id": "mountain-hermit-hut",
+      "name_tr": "Dağ Münzevisi Kulübesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 20,
+      "image": "tiles/poi/21-mountain-hermit-hut.png"
+    },
+    {
+      "id": "beacon-watchtower",
+      "name_tr": "İşaret Kulesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 1,
+      "requires": null,
+      "index": 21,
+      "image": "tiles/poi/22-beacon-watchtower.png"
+    },
+    {
+      "id": "sky-magic-portal",
+      "name_tr": "Gökyüzü Büyü Geçidi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 22,
+      "image": "tiles/poi/23-sky-magic-portal.png"
+    },
+    {
+      "id": "summit-boss-citadel",
+      "name_tr": "Zirve Patron Kalesi",
+      "category": "poi",
+      "movement_cost": 2,
+      "passable": true,
+      "danger": 3,
+      "requires": null,
+      "index": 23,
+      "image": "tiles/poi/24-summit-boss-citadel.png"
+    }
+  ]
+}
