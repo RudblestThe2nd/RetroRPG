@@ -1,0 +1,441 @@
+{
+  "id": "ranger-outfit-animation-layers-v1",
+  "class": "ranger",
+  "class_name_tr": "Korucu",
+  "frame_size": [
+    256,
+    256
+  ],
+  "frame_count": 24,
+  "genders": [
+    "male",
+    "female"
+  ],
+  "actions": [
+    "walk",
+    "attack",
+    "cast"
+  ],
+  "directions": [
+    "front",
+    "right",
+    "back",
+    "left"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "runtime_note": "Composite over the normalized base-body frame using the bottom-center anchor, before held weapons and spell VFX.",
+  "atlas": "atlases/ranger-outfit-animation-layers-atlas-v1.png",
+  "frames": [
+    {
+      "id": "ranger-male-walk-front",
+      "class": "ranger",
+      "gender": "male",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/male/walk/ranger-male-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-walk-right",
+      "class": "ranger",
+      "gender": "male",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/male/walk/ranger-male-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-walk-back",
+      "class": "ranger",
+      "gender": "male",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/male/walk/ranger-male-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-walk-left",
+      "class": "ranger",
+      "gender": "male",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/male/walk/ranger-male-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-attack-front",
+      "class": "ranger",
+      "gender": "male",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/male/attack/ranger-male-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-attack-right",
+      "class": "ranger",
+      "gender": "male",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/male/attack/ranger-male-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-attack-back",
+      "class": "ranger",
+      "gender": "male",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/male/attack/ranger-male-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-attack-left",
+      "class": "ranger",
+      "gender": "male",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/male/attack/ranger-male-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-cast-front",
+      "class": "ranger",
+      "gender": "male",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/male/cast/ranger-male-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-cast-right",
+      "class": "ranger",
+      "gender": "male",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/male/cast/ranger-male-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-cast-back",
+      "class": "ranger",
+      "gender": "male",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/male/cast/ranger-male-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-male-cast-left",
+      "class": "ranger",
+      "gender": "male",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/male/cast/ranger-male-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-walk-front",
+      "class": "ranger",
+      "gender": "female",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/female/walk/ranger-female-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-walk-right",
+      "class": "ranger",
+      "gender": "female",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/female/walk/ranger-female-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-walk-back",
+      "class": "ranger",
+      "gender": "female",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/female/walk/ranger-female-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-walk-left",
+      "class": "ranger",
+      "gender": "female",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/female/walk/ranger-female-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-attack-front",
+      "class": "ranger",
+      "gender": "female",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/female/attack/ranger-female-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-attack-right",
+      "class": "ranger",
+      "gender": "female",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/female/attack/ranger-female-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-attack-back",
+      "class": "ranger",
+      "gender": "female",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/female/attack/ranger-female-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-attack-left",
+      "class": "ranger",
+      "gender": "female",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/female/attack/ranger-female-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-cast-front",
+      "class": "ranger",
+      "gender": "female",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/female/cast/ranger-female-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-cast-right",
+      "class": "ranger",
+      "gender": "female",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/female/cast/ranger-female-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-cast-back",
+      "class": "ranger",
+      "gender": "female",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/female/cast/ranger-female-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "ranger-female-cast-left",
+      "class": "ranger",
+      "gender": "female",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/female/cast/ranger-female-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    }
+  ]
+}

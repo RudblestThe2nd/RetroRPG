@@ -1,0 +1,420 @@
+{
+  "id": "tropical-enemy-pack-v1",
+  "biome": "tropical",
+  "enemy_count": 12,
+  "pose_count": 2,
+  "sprite_count": 24,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "enemies": [
+    "jungle-panther",
+    "venom-frog",
+    "giant-centipede",
+    "constrictor-serpent",
+    "tribal-raider",
+    "thorn-hunter",
+    "carnivorous-plant",
+    "jungle-zombie",
+    "vine-beast",
+    "feathered-serpent",
+    "poison-shaman",
+    "temple-guardian"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/tropical-enemies-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "tropical-jungle-panther-idle",
+      "biome": "tropical",
+      "enemy": "jungle-panther",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/jungle-panther/tropical-jungle-panther-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-venom-frog-idle",
+      "biome": "tropical",
+      "enemy": "venom-frog",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/venom-frog/tropical-venom-frog-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-giant-centipede-idle",
+      "biome": "tropical",
+      "enemy": "giant-centipede",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/giant-centipede/tropical-giant-centipede-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-constrictor-serpent-idle",
+      "biome": "tropical",
+      "enemy": "constrictor-serpent",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/constrictor-serpent/tropical-constrictor-serpent-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-tribal-raider-idle",
+      "biome": "tropical",
+      "enemy": "tribal-raider",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/tribal-raider/tropical-tribal-raider-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-thorn-hunter-idle",
+      "biome": "tropical",
+      "enemy": "thorn-hunter",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/thorn-hunter/tropical-thorn-hunter-idle-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-jungle-panther-attack",
+      "biome": "tropical",
+      "enemy": "jungle-panther",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/jungle-panther/tropical-jungle-panther-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-venom-frog-attack",
+      "biome": "tropical",
+      "enemy": "venom-frog",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/venom-frog/tropical-venom-frog-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-giant-centipede-attack",
+      "biome": "tropical",
+      "enemy": "giant-centipede",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/giant-centipede/tropical-giant-centipede-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-constrictor-serpent-attack",
+      "biome": "tropical",
+      "enemy": "constrictor-serpent",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/constrictor-serpent/tropical-constrictor-serpent-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-tribal-raider-attack",
+      "biome": "tropical",
+      "enemy": "tribal-raider",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/tribal-raider/tropical-tribal-raider-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-thorn-hunter-attack",
+      "biome": "tropical",
+      "enemy": "thorn-hunter",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/thorn-hunter/tropical-thorn-hunter-attack-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-carnivorous-plant-idle",
+      "biome": "tropical",
+      "enemy": "carnivorous-plant",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/carnivorous-plant/tropical-carnivorous-plant-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-jungle-zombie-idle",
+      "biome": "tropical",
+      "enemy": "jungle-zombie",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/jungle-zombie/tropical-jungle-zombie-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-vine-beast-idle",
+      "biome": "tropical",
+      "enemy": "vine-beast",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/vine-beast/tropical-vine-beast-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-feathered-serpent-idle",
+      "biome": "tropical",
+      "enemy": "feathered-serpent",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/feathered-serpent/tropical-feathered-serpent-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-poison-shaman-idle",
+      "biome": "tropical",
+      "enemy": "poison-shaman",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/poison-shaman/tropical-poison-shaman-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-temple-guardian-idle",
+      "biome": "tropical",
+      "enemy": "temple-guardian",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/temple-guardian/tropical-temple-guardian-idle-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-carnivorous-plant-attack",
+      "biome": "tropical",
+      "enemy": "carnivorous-plant",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/carnivorous-plant/tropical-carnivorous-plant-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-jungle-zombie-attack",
+      "biome": "tropical",
+      "enemy": "jungle-zombie",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/jungle-zombie/tropical-jungle-zombie-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-vine-beast-attack",
+      "biome": "tropical",
+      "enemy": "vine-beast",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/vine-beast/tropical-vine-beast-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-feathered-serpent-attack",
+      "biome": "tropical",
+      "enemy": "feathered-serpent",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/feathered-serpent/tropical-feathered-serpent-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-poison-shaman-attack",
+      "biome": "tropical",
+      "enemy": "poison-shaman",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/poison-shaman/tropical-poison-shaman-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "tropical-temple-guardian-attack",
+      "biome": "tropical",
+      "enemy": "temple-guardian",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/temple-guardian/tropical-temple-guardian-attack-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}

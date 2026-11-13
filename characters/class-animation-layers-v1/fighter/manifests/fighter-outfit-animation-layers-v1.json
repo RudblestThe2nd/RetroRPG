@@ -1,0 +1,441 @@
+{
+  "id": "fighter-outfit-animation-layers-v1",
+  "class": "fighter",
+  "class_name_tr": "Savaşçı",
+  "frame_size": [
+    256,
+    256
+  ],
+  "frame_count": 24,
+  "genders": [
+    "male",
+    "female"
+  ],
+  "actions": [
+    "walk",
+    "attack",
+    "cast"
+  ],
+  "directions": [
+    "front",
+    "right",
+    "back",
+    "left"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "runtime_note": "Composite over the normalized base-body frame using the bottom-center anchor, before held weapons and spell VFX.",
+  "atlas": "atlases/fighter-outfit-animation-layers-atlas-v1.png",
+  "frames": [
+    {
+      "id": "fighter-male-walk-front",
+      "class": "fighter",
+      "gender": "male",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/male/walk/fighter-male-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-walk-right",
+      "class": "fighter",
+      "gender": "male",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/male/walk/fighter-male-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-walk-back",
+      "class": "fighter",
+      "gender": "male",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/male/walk/fighter-male-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-walk-left",
+      "class": "fighter",
+      "gender": "male",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/male/walk/fighter-male-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-attack-front",
+      "class": "fighter",
+      "gender": "male",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/male/attack/fighter-male-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-attack-right",
+      "class": "fighter",
+      "gender": "male",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/male/attack/fighter-male-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-attack-back",
+      "class": "fighter",
+      "gender": "male",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/male/attack/fighter-male-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-attack-left",
+      "class": "fighter",
+      "gender": "male",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/male/attack/fighter-male-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-cast-front",
+      "class": "fighter",
+      "gender": "male",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/male/cast/fighter-male-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-cast-right",
+      "class": "fighter",
+      "gender": "male",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/male/cast/fighter-male-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-cast-back",
+      "class": "fighter",
+      "gender": "male",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/male/cast/fighter-male-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-male-cast-left",
+      "class": "fighter",
+      "gender": "male",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/male/cast/fighter-male-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-walk-front",
+      "class": "fighter",
+      "gender": "female",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/female/walk/fighter-female-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-walk-right",
+      "class": "fighter",
+      "gender": "female",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/female/walk/fighter-female-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-walk-back",
+      "class": "fighter",
+      "gender": "female",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/female/walk/fighter-female-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-walk-left",
+      "class": "fighter",
+      "gender": "female",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/female/walk/fighter-female-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-attack-front",
+      "class": "fighter",
+      "gender": "female",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/female/attack/fighter-female-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-attack-right",
+      "class": "fighter",
+      "gender": "female",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/female/attack/fighter-female-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-attack-back",
+      "class": "fighter",
+      "gender": "female",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/female/attack/fighter-female-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-attack-left",
+      "class": "fighter",
+      "gender": "female",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/female/attack/fighter-female-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-cast-front",
+      "class": "fighter",
+      "gender": "female",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/female/cast/fighter-female-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-cast-right",
+      "class": "fighter",
+      "gender": "female",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/female/cast/fighter-female-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-cast-back",
+      "class": "fighter",
+      "gender": "female",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/female/cast/fighter-female-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "fighter-female-cast-left",
+      "class": "fighter",
+      "gender": "female",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/female/cast/fighter-female-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    }
+  ]
+}

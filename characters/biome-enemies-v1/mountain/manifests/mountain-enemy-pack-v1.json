@@ -1,0 +1,420 @@
+{
+  "id": "mountain-enemy-pack-v1",
+  "biome": "mountain",
+  "enemy_count": 12,
+  "pose_count": 2,
+  "sprite_count": 24,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "enemies": [
+    "cliff-goat",
+    "rock-viper",
+    "giant-eagle",
+    "harpy-raider",
+    "mountain-bandit",
+    "stone-goblin",
+    "cave-bear",
+    "gargoyle",
+    "rock-elemental",
+    "armored-ogre",
+    "storm-shaman",
+    "peak-troll"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/mountain-enemies-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "mountain-cliff-goat-idle",
+      "biome": "mountain",
+      "enemy": "cliff-goat",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/cliff-goat/mountain-cliff-goat-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-rock-viper-idle",
+      "biome": "mountain",
+      "enemy": "rock-viper",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/rock-viper/mountain-rock-viper-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-giant-eagle-idle",
+      "biome": "mountain",
+      "enemy": "giant-eagle",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/giant-eagle/mountain-giant-eagle-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-harpy-raider-idle",
+      "biome": "mountain",
+      "enemy": "harpy-raider",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/harpy-raider/mountain-harpy-raider-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-mountain-bandit-idle",
+      "biome": "mountain",
+      "enemy": "mountain-bandit",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/mountain-bandit/mountain-mountain-bandit-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-stone-goblin-idle",
+      "biome": "mountain",
+      "enemy": "stone-goblin",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/stone-goblin/mountain-stone-goblin-idle-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-cliff-goat-attack",
+      "biome": "mountain",
+      "enemy": "cliff-goat",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/cliff-goat/mountain-cliff-goat-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-rock-viper-attack",
+      "biome": "mountain",
+      "enemy": "rock-viper",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/rock-viper/mountain-rock-viper-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-giant-eagle-attack",
+      "biome": "mountain",
+      "enemy": "giant-eagle",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/giant-eagle/mountain-giant-eagle-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-harpy-raider-attack",
+      "biome": "mountain",
+      "enemy": "harpy-raider",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/harpy-raider/mountain-harpy-raider-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-mountain-bandit-attack",
+      "biome": "mountain",
+      "enemy": "mountain-bandit",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/mountain-bandit/mountain-mountain-bandit-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-stone-goblin-attack",
+      "biome": "mountain",
+      "enemy": "stone-goblin",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/stone-goblin/mountain-stone-goblin-attack-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-cave-bear-idle",
+      "biome": "mountain",
+      "enemy": "cave-bear",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/cave-bear/mountain-cave-bear-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-gargoyle-idle",
+      "biome": "mountain",
+      "enemy": "gargoyle",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/gargoyle/mountain-gargoyle-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-rock-elemental-idle",
+      "biome": "mountain",
+      "enemy": "rock-elemental",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/rock-elemental/mountain-rock-elemental-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-armored-ogre-idle",
+      "biome": "mountain",
+      "enemy": "armored-ogre",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/armored-ogre/mountain-armored-ogre-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-storm-shaman-idle",
+      "biome": "mountain",
+      "enemy": "storm-shaman",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/storm-shaman/mountain-storm-shaman-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-peak-troll-idle",
+      "biome": "mountain",
+      "enemy": "peak-troll",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/peak-troll/mountain-peak-troll-idle-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-cave-bear-attack",
+      "biome": "mountain",
+      "enemy": "cave-bear",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/cave-bear/mountain-cave-bear-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-gargoyle-attack",
+      "biome": "mountain",
+      "enemy": "gargoyle",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/gargoyle/mountain-gargoyle-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-rock-elemental-attack",
+      "biome": "mountain",
+      "enemy": "rock-elemental",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/rock-elemental/mountain-rock-elemental-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-armored-ogre-attack",
+      "biome": "mountain",
+      "enemy": "armored-ogre",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/armored-ogre/mountain-armored-ogre-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-storm-shaman-attack",
+      "biome": "mountain",
+      "enemy": "storm-shaman",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/storm-shaman/mountain-storm-shaman-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "mountain-peak-troll-attack",
+      "biome": "mountain",
+      "enemy": "peak-troll",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/peak-troll/mountain-peak-troll-attack-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}

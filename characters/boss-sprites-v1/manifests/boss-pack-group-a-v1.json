@@ -1,0 +1,390 @@
+{
+  "id": "boss-pack-group-a-v1",
+  "group": "group-a",
+  "biomes": [
+    "forest",
+    "swamp",
+    "desert",
+    "snow",
+    "mountain"
+  ],
+  "boss_count": 10,
+  "sprite_count": 20,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/bosses-group-a-transparent-atlas-v1.png",
+  "bosses": {
+    "forest": {
+      "mini": "briar-matriarch",
+      "main": "ancient-hollow-king"
+    },
+    "swamp": {
+      "mini": "plague-toad-regent",
+      "main": "mire-hydra-queen"
+    },
+    "desert": {
+      "mini": "scarab-warlord",
+      "main": "sunken-pharaoh"
+    },
+    "snow": {
+      "mini": "frosthorn-chieftain",
+      "main": "white-maw-titan"
+    },
+    "mountain": {
+      "mini": "stormclaw-matriarch",
+      "main": "living-peak-colossus"
+    }
+  },
+  "sprites": [
+    {
+      "id": "forest-briar-matriarch-idle",
+      "biome": "forest",
+      "boss": "briar-matriarch",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/forest/briar-matriarch/forest-briar-matriarch-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "swamp-plague-toad-regent-idle",
+      "biome": "swamp",
+      "boss": "plague-toad-regent",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/swamp/plague-toad-regent/swamp-plague-toad-regent-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "desert-scarab-warlord-idle",
+      "biome": "desert",
+      "boss": "scarab-warlord",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/desert/scarab-warlord/desert-scarab-warlord-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "snow-frosthorn-chieftain-idle",
+      "biome": "snow",
+      "boss": "frosthorn-chieftain",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/snow/frosthorn-chieftain/snow-frosthorn-chieftain-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "mountain-stormclaw-matriarch-idle",
+      "biome": "mountain",
+      "boss": "stormclaw-matriarch",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/mountain/stormclaw-matriarch/mountain-stormclaw-matriarch-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "forest-briar-matriarch-attack",
+      "biome": "forest",
+      "boss": "briar-matriarch",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/forest/briar-matriarch/forest-briar-matriarch-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "swamp-plague-toad-regent-attack",
+      "biome": "swamp",
+      "boss": "plague-toad-regent",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/swamp/plague-toad-regent/swamp-plague-toad-regent-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "desert-scarab-warlord-attack",
+      "biome": "desert",
+      "boss": "scarab-warlord",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/desert/scarab-warlord/desert-scarab-warlord-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "snow-frosthorn-chieftain-attack",
+      "biome": "snow",
+      "boss": "frosthorn-chieftain",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/snow/frosthorn-chieftain/snow-frosthorn-chieftain-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "mountain-stormclaw-matriarch-attack",
+      "biome": "mountain",
+      "boss": "stormclaw-matriarch",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/mountain/stormclaw-matriarch/mountain-stormclaw-matriarch-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "forest-ancient-hollow-king-idle",
+      "biome": "forest",
+      "boss": "ancient-hollow-king",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/forest/ancient-hollow-king/forest-ancient-hollow-king-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "swamp-mire-hydra-queen-idle",
+      "biome": "swamp",
+      "boss": "mire-hydra-queen",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/swamp/mire-hydra-queen/swamp-mire-hydra-queen-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "desert-sunken-pharaoh-idle",
+      "biome": "desert",
+      "boss": "sunken-pharaoh",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/desert/sunken-pharaoh/desert-sunken-pharaoh-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "snow-white-maw-titan-idle",
+      "biome": "snow",
+      "boss": "white-maw-titan",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/snow/white-maw-titan/snow-white-maw-titan-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "mountain-living-peak-colossus-idle",
+      "biome": "mountain",
+      "boss": "living-peak-colossus",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/mountain/living-peak-colossus/mountain-living-peak-colossus-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "forest-ancient-hollow-king-attack",
+      "biome": "forest",
+      "boss": "ancient-hollow-king",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/forest/ancient-hollow-king/forest-ancient-hollow-king-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "swamp-mire-hydra-queen-attack",
+      "biome": "swamp",
+      "boss": "mire-hydra-queen",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/swamp/mire-hydra-queen/swamp-mire-hydra-queen-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "desert-sunken-pharaoh-attack",
+      "biome": "desert",
+      "boss": "sunken-pharaoh",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/desert/sunken-pharaoh/desert-sunken-pharaoh-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "snow-white-maw-titan-attack",
+      "biome": "snow",
+      "boss": "white-maw-titan",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/snow/white-maw-titan/snow-white-maw-titan-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "mountain-living-peak-colossus-attack",
+      "biome": "mountain",
+      "boss": "living-peak-colossus",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/mountain/living-peak-colossus/mountain-living-peak-colossus-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    }
+  ]
+}

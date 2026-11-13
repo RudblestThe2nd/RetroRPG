@@ -1,0 +1,33 @@
+{
+  "id": "biome-enemies-v1",
+  "version": 1,
+  "status": "complete",
+  "style": "retro-1990s-crpg-pixel-art",
+  "sprite_size": [256, 256],
+  "pivot": [128, 238],
+  "poses": ["idle", "attack"],
+  "target_biome_count": 10,
+  "target_enemy_count": 120,
+  "target_sprite_count": 240,
+  "completed_biomes": [
+    "forest",
+    "swamp",
+    "desert",
+    "snow",
+    "mountain",
+    "tropical",
+    "volcanic",
+    "corrupted",
+    "underground",
+    "plains"
+  ],
+  "remaining_biomes": [],
+  "completed_enemy_count": 120,
+  "completed_sprite_count": 240,
+  "qa": {
+    "checked_sprite_count": 240,
+    "failed_sprite_count": 0,
+    "status": "pass"
+  },
+  "story_content_included": false
+}

@@ -1,0 +1,4448 @@
+{
+  "id": "map-tokens-v1",
+  "status": "complete",
+  "token_size": [
+    96,
+    96
+  ],
+  "pivot": [
+    48,
+    48
+  ],
+  "counts": {
+    "players": 22,
+    "npcs": 48,
+    "enemies": 120,
+    "mini_bosses": 10,
+    "main_bosses": 10
+  },
+  "total_tokens": 210,
+  "atlases": [
+    "atlases/player-tokens-atlas-v1.png",
+    "atlases/npc-tokens-atlas-v1.png",
+    "atlases/boss-tokens-atlas-v1.png",
+    "atlases/enemy-tokens-forest-atlas-v1.png",
+    "atlases/enemy-tokens-swamp-atlas-v1.png",
+    "atlases/enemy-tokens-desert-atlas-v1.png",
+    "atlases/enemy-tokens-snow-atlas-v1.png",
+    "atlases/enemy-tokens-mountain-atlas-v1.png",
+    "atlases/enemy-tokens-tropical-atlas-v1.png",
+    "atlases/enemy-tokens-volcanic-atlas-v1.png",
+    "atlases/enemy-tokens-corrupted-atlas-v1.png",
+    "atlases/enemy-tokens-underground-atlas-v1.png",
+    "atlases/enemy-tokens-plains-atlas-v1.png"
+  ],
+  "preview": "previews/map-tokens-v1-preview.png",
+  "tokens": [
+    {
+      "id": "player-dragonborn-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-dragonborn-female-token-v1.png",
+      "source": "face-variants-v1/dragonborn/portraits/female/dragonborn-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "player-dragonborn-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-dragonborn-male-token-v1.png",
+      "source": "face-variants-v1/dragonborn/portraits/male/dragonborn-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "player-drow-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-drow-female-token-v1.png",
+      "source": "face-variants-v1/drow/portraits/female/drow-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "player-drow-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-drow-male-token-v1.png",
+      "source": "face-variants-v1/drow/portraits/male/drow-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "player-dwarf-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-dwarf-female-token-v1.png",
+      "source": "face-variants-v1/dwarf/portraits/female/dwarf-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "player-dwarf-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-dwarf-male-token-v1.png",
+      "source": "face-variants-v1/dwarf/portraits/male/dwarf-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "player-elf-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-elf-female-token-v1.png",
+      "source": "face-variants-v1/elf/portraits/female/elf-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "player-elf-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-elf-male-token-v1.png",
+      "source": "face-variants-v1/elf/portraits/male/elf-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "player-githyanki-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-githyanki-female-token-v1.png",
+      "source": "face-variants-v1/githyanki/portraits/female/githyanki-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "player-githyanki-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-githyanki-male-token-v1.png",
+      "source": "face-variants-v1/githyanki/portraits/male/githyanki-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "player-gnome-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-gnome-female-token-v1.png",
+      "source": "face-variants-v1/gnome/portraits/female/gnome-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "player-gnome-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-gnome-male-token-v1.png",
+      "source": "face-variants-v1/gnome/portraits/male/gnome-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "player-half-elf-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-half-elf-female-token-v1.png",
+      "source": "face-variants-v1/half-elf/portraits/female/half-elf-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "player-half-elf-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-half-elf-male-token-v1.png",
+      "source": "face-variants-v1/half-elf/portraits/male/half-elf-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "player-half-orc-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-half-orc-female-token-v1.png",
+      "source": "face-variants-v1/half-orc/portraits/female/half-orc-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "player-half-orc-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-half-orc-male-token-v1.png",
+      "source": "face-variants-v1/half-orc/portraits/male/half-orc-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "player-halfling-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-halfling-female-token-v1.png",
+      "source": "face-variants-v1/halfling/portraits/female/halfling-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "player-halfling-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-halfling-male-token-v1.png",
+      "source": "face-variants-v1/halfling/portraits/male/halfling-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": "player-human-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-human-female-token-v1.png",
+      "source": "face-variants-v1/human/portraits/female/human-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "player-human-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-human-male-token-v1.png",
+      "source": "face-variants-v1/human/portraits/male/human-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "player-tiefling-female",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-tiefling-female-token-v1.png",
+      "source": "face-variants-v1/tiefling/portraits/female/tiefling-female-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "player-tiefling-male",
+      "category": "players",
+      "token_class": "player",
+      "biome": null,
+      "file": "tokens/players/player-tiefling-male-token-v1.png",
+      "source": "face-variants-v1/tiefling/portraits/male/tiefling-male-face-01-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/player-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "civilian-dockworker-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-dockworker-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-dockworker-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "civilian-entertainer-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-entertainer-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-entertainer-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "civilian-household-servant-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-household-servant-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-household-servant-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "civilian-minor-noble-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-minor-noble-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-minor-noble-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "civilian-pilgrim-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-pilgrim-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-pilgrim-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "civilian-refugee-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-refugee-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-refugee-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "civilian-stablehand-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-stablehand-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-stablehand-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "civilian-street-vendor-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-street-vendor-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-street-vendor-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        7,
+        0
+      ]
+    },
+    {
+      "id": "civilian-traveler-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-traveler-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-traveler-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "civilian-villager-adult-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-villager-adult-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-villager-adult-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "civilian-villager-elder-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-villager-elder-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-villager-elder-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "civilian-villager-young-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-villager-young-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/female/civilian-villager-young-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "civilian-dockworker-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-dockworker-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-dockworker-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "civilian-entertainer-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-entertainer-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-entertainer-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "civilian-household-servant-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-household-servant-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-household-servant-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "civilian-minor-noble-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-minor-noble-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-minor-noble-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        7,
+        1
+      ]
+    },
+    {
+      "id": "civilian-pilgrim-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-pilgrim-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-pilgrim-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "civilian-refugee-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-refugee-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-refugee-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "civilian-stablehand-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-stablehand-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-stablehand-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "civilian-street-vendor-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-street-vendor-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-street-vendor-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "civilian-traveler-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-traveler-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-traveler-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "civilian-villager-adult-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-villager-adult-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-villager-adult-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": "civilian-villager-elder-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-villager-elder-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-villager-elder-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        6,
+        2
+      ]
+    },
+    {
+      "id": "civilian-villager-young-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/civilian-villager-young-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/civilian/male/civilian-villager-young-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        7,
+        2
+      ]
+    },
+    {
+      "id": "profession-blacksmith-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-blacksmith-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-blacksmith-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "profession-carpenter-artisan-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-carpenter-artisan-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-carpenter-artisan-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "profession-courier-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-courier-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-courier-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "profession-farmer-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-farmer-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-farmer-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "profession-fisher-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-fisher-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-fisher-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "profession-healer-apothecary-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-healer-apothecary-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-healer-apothecary-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": "profession-innkeeper-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-innkeeper-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-innkeeper-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        6,
+        3
+      ]
+    },
+    {
+      "id": "profession-merchant-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-merchant-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-merchant-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        7,
+        3
+      ]
+    },
+    {
+      "id": "profession-miner-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-miner-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-miner-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "profession-priest-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-priest-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-priest-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "profession-scholar-scribe-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-scholar-scribe-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-scholar-scribe-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "profession-town-guard-female",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-town-guard-female-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/female/profession-town-guard-female-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "profession-blacksmith-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-blacksmith-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-blacksmith-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "profession-carpenter-artisan-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-carpenter-artisan-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-carpenter-artisan-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        4
+      ]
+    },
+    {
+      "id": "profession-courier-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-courier-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-courier-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        6,
+        4
+      ]
+    },
+    {
+      "id": "profession-farmer-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-farmer-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-farmer-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        7,
+        4
+      ]
+    },
+    {
+      "id": "profession-fisher-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-fisher-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-fisher-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "profession-healer-apothecary-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-healer-apothecary-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-healer-apothecary-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "profession-innkeeper-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-innkeeper-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-innkeeper-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "profession-merchant-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-merchant-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-merchant-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "profession-miner-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-miner-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-miner-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "profession-priest-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-priest-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-priest-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "profession-scholar-scribe-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-scholar-scribe-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-scholar-scribe-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "profession-town-guard-male",
+      "category": "npcs",
+      "token_class": "npc",
+      "biome": null,
+      "file": "tokens/npcs/profession-town-guard-male-token-v1.png",
+      "source": "npc-sprites-v1/sprites/profession/male/profession-town-guard-male-npc-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/npc-tokens-atlas-v1.png",
+      "atlas_cell": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "enemy-forest-ancient-bark-brute",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-ancient-bark-brute-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/ancient-bark-brute/forest-ancient-bark-brute-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-forest-bandit-scout",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-bandit-scout-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/bandit-scout/forest-bandit-scout-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-forest-corrupted-dryad",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-corrupted-dryad-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/corrupted-dryad/forest-corrupted-dryad-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-forest-dire-boar",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-dire-boar-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/dire-boar/forest-dire-boar-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-forest-fungal-crawler",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-fungal-crawler-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/fungal-crawler/forest-fungal-crawler-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-forest-giant-spider",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-giant-spider-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/giant-spider/forest-giant-spider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-forest-horned-forest-bear",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-horned-forest-bear-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/horned-forest-bear/forest-horned-forest-bear-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-forest-root-cultist",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-root-cultist-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/root-cultist/forest-root-cultist-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-forest-sapling-guardian",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-sapling-guardian-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/sapling-guardian/forest-sapling-guardian-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-forest-thorn-goblin",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-thorn-goblin-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/thorn-goblin/forest-thorn-goblin-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-forest-vine-wraith",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-vine-wraith-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/vine-wraith/forest-vine-wraith-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-forest-wolf",
+      "category": "enemies/forest",
+      "token_class": "enemy",
+      "biome": "forest",
+      "file": "tokens/enemies/forest/enemy-forest-wolf-token-v1.png",
+      "source": "biome-enemies-v1/forest/sprites/wolf/forest-wolf-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-forest-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-swamp-bog-leech",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-bog-leech-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/bog-leech/swamp-bog-leech-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-swamp-bog-wraith",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-bog-wraith-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/bog-wraith/swamp-bog-wraith-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-swamp-fungus-brute",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-fungus-brute-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/fungus-brute/swamp-fungus-brute-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-swamp-giant-toad",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-giant-toad-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/giant-toad/swamp-giant-toad-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-swamp-marsh-serpent",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-marsh-serpent-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/marsh-serpent/swamp-marsh-serpent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-swamp-mire-goblin",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-mire-goblin-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/mire-goblin/swamp-mire-goblin-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-swamp-moss-troll",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-moss-troll-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/moss-troll/swamp-moss-troll-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-swamp-mud-elemental",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-mud-elemental-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/mud-elemental/swamp-mud-elemental-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-swamp-plague-zombie",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-plague-zombie-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/plague-zombie/swamp-plague-zombie-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-swamp-reed-stalker",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-reed-stalker-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/reed-stalker/swamp-reed-stalker-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-swamp-swamp-crocodile",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-swamp-crocodile-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/swamp-crocodile/swamp-swamp-crocodile-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-swamp-swamp-witch",
+      "category": "enemies/swamp",
+      "token_class": "enemy",
+      "biome": "swamp",
+      "file": "tokens/enemies/swamp/enemy-swamp-swamp-witch-token-v1.png",
+      "source": "biome-enemies-v1/swamp/sprites/swamp-witch/swamp-swamp-witch-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-swamp-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-desert-desert-ghoul",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-desert-ghoul-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/desert-ghoul/desert-desert-ghoul-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-desert-dune-bandit",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-dune-bandit-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/dune-bandit/desert-dune-bandit-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-desert-dune-jackal",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-dune-jackal-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/dune-jackal/desert-dune-jackal-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-desert-dune-ogre",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-dune-ogre-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/dune-ogre/desert-dune-ogre-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-desert-dust-skeleton",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-dust-skeleton-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/dust-skeleton/desert-dust-skeleton-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-desert-giant-scorpion",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-giant-scorpion-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/giant-scorpion/desert-giant-scorpion-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-desert-mummy-guardian",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-mummy-guardian-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/mummy-guardian/desert-mummy-guardian-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-desert-razor-vulture",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-razor-vulture-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/razor-vulture/desert-razor-vulture-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-desert-sand-elemental",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-sand-elemental-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/sand-elemental/desert-sand-elemental-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-desert-sand-serpent",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-sand-serpent-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/sand-serpent/desert-sand-serpent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-desert-scarab-husk",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-scarab-husk-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/scarab-husk/desert-scarab-husk-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-desert-tomb-raider",
+      "category": "enemies/desert",
+      "token_class": "enemy",
+      "biome": "desert",
+      "file": "tokens/enemies/desert/enemy-desert-tomb-raider-token-v1.png",
+      "source": "biome-enemies-v1/desert/sprites/tomb-raider/desert-tomb-raider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-desert-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-snow-armored-ice-troll",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-armored-ice-troll-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/armored-ice-troll/snow-armored-ice-troll-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-snow-blizzard-elemental",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-blizzard-elemental-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/blizzard-elemental/snow-blizzard-elemental-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-snow-frost-golem",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-frost-golem-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/frost-golem/snow-frost-golem-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-snow-frost-wolf",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-frost-wolf-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/frost-wolf/snow-frost-wolf-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-snow-frozen-corpse",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-frozen-corpse-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/frozen-corpse/snow-frozen-corpse-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-snow-glacial-serpent",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-glacial-serpent-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/glacial-serpent/snow-glacial-serpent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-snow-horned-yeti",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-horned-yeti-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/horned-yeti/snow-horned-yeti-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-snow-ice-spider",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-ice-spider-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/ice-spider/snow-ice-spider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-snow-ice-wraith",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-ice-wraith-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/ice-wraith/snow-ice-wraith-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-snow-snow-stalker",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-snow-stalker-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/snow-stalker/snow-snow-stalker-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-snow-tundra-raider",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-tundra-raider-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/tundra-raider/snow-tundra-raider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-snow-winter-witch",
+      "category": "enemies/snow",
+      "token_class": "enemy",
+      "biome": "snow",
+      "file": "tokens/enemies/snow/enemy-snow-winter-witch-token-v1.png",
+      "source": "biome-enemies-v1/snow/sprites/winter-witch/snow-winter-witch-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-snow-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-mountain-armored-ogre",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-armored-ogre-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/armored-ogre/mountain-armored-ogre-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-mountain-cave-bear",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-cave-bear-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/cave-bear/mountain-cave-bear-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-mountain-cliff-goat",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-cliff-goat-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/cliff-goat/mountain-cliff-goat-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-mountain-gargoyle",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-gargoyle-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/gargoyle/mountain-gargoyle-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-mountain-giant-eagle",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-giant-eagle-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/giant-eagle/mountain-giant-eagle-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-mountain-harpy-raider",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-harpy-raider-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/harpy-raider/mountain-harpy-raider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-mountain-mountain-bandit",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-mountain-bandit-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/mountain-bandit/mountain-mountain-bandit-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-mountain-peak-troll",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-peak-troll-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/peak-troll/mountain-peak-troll-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-mountain-rock-elemental",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-rock-elemental-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/rock-elemental/mountain-rock-elemental-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-mountain-rock-viper",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-rock-viper-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/rock-viper/mountain-rock-viper-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-mountain-stone-goblin",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-stone-goblin-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/stone-goblin/mountain-stone-goblin-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-mountain-storm-shaman",
+      "category": "enemies/mountain",
+      "token_class": "enemy",
+      "biome": "mountain",
+      "file": "tokens/enemies/mountain/enemy-mountain-storm-shaman-token-v1.png",
+      "source": "biome-enemies-v1/mountain/sprites/storm-shaman/mountain-storm-shaman-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-mountain-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-tropical-carnivorous-plant",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-carnivorous-plant-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/carnivorous-plant/tropical-carnivorous-plant-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-tropical-constrictor-serpent",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-constrictor-serpent-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/constrictor-serpent/tropical-constrictor-serpent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-tropical-feathered-serpent",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-feathered-serpent-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/feathered-serpent/tropical-feathered-serpent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-tropical-giant-centipede",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-giant-centipede-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/giant-centipede/tropical-giant-centipede-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-tropical-jungle-panther",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-jungle-panther-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/jungle-panther/tropical-jungle-panther-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-tropical-jungle-zombie",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-jungle-zombie-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/jungle-zombie/tropical-jungle-zombie-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-tropical-poison-shaman",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-poison-shaman-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/poison-shaman/tropical-poison-shaman-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-tropical-temple-guardian",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-temple-guardian-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/temple-guardian/tropical-temple-guardian-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-tropical-thorn-hunter",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-thorn-hunter-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/thorn-hunter/tropical-thorn-hunter-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-tropical-tribal-raider",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-tribal-raider-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/tribal-raider/tropical-tribal-raider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-tropical-venom-frog",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-venom-frog-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/venom-frog/tropical-venom-frog-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-tropical-vine-beast",
+      "category": "enemies/tropical",
+      "token_class": "enemy",
+      "biome": "tropical",
+      "file": "tokens/enemies/tropical/enemy-tropical-vine-beast-token-v1.png",
+      "source": "biome-enemies-v1/tropical/sprites/vine-beast/tropical-vine-beast-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-tropical-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-volcanic-ash-hound",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-ash-hound-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/ash-hound/volcanic-ash-hound-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-volcanic-ash-raider",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-ash-raider-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/ash-raider/volcanic-ash-raider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-volcanic-charred-skeleton",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-charred-skeleton-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/charred-skeleton/volcanic-charred-skeleton-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-volcanic-cinder-bat",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-cinder-bat-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/cinder-bat/volcanic-cinder-bat-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-volcanic-fire-cultist",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-fire-cultist-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/fire-cultist/volcanic-fire-cultist-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-volcanic-flame-shaman",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-flame-shaman-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/flame-shaman/volcanic-flame-shaman-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-volcanic-lava-beetle",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-lava-beetle-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/lava-beetle/volcanic-lava-beetle-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-volcanic-lava-troll",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-lava-troll-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/lava-troll/volcanic-lava-troll-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-volcanic-magma-elemental",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-magma-elemental-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/magma-elemental/volcanic-magma-elemental-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-volcanic-magma-serpent",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-magma-serpent-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/magma-serpent/volcanic-magma-serpent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-volcanic-obsidian-golem",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-obsidian-golem-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/obsidian-golem/volcanic-obsidian-golem-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-volcanic-smoke-wraith",
+      "category": "enemies/volcanic",
+      "token_class": "enemy",
+      "biome": "volcanic",
+      "file": "tokens/enemies/volcanic/enemy-volcanic-smoke-wraith-token-v1.png",
+      "source": "biome-enemies-v1/volcanic/sprites/smoke-wraith/volcanic-smoke-wraith-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-volcanic-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-corrupted-abyssal-abomination",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-abyssal-abomination-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/abyssal-abomination/corrupted-abyssal-abomination-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-corrupted-corrupted-knight",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-corrupted-knight-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/corrupted-knight/corrupted-corrupted-knight-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-corrupted-crystal-mutant",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-crystal-mutant-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/crystal-mutant/corrupted-crystal-mutant-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-corrupted-eye-stalker",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-eye-stalker-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/eye-stalker/corrupted-eye-stalker-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-corrupted-flesh-vine",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-flesh-vine-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/flesh-vine/corrupted-flesh-vine-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-corrupted-many-eyed-brute",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-many-eyed-brute-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/many-eyed-brute/corrupted-many-eyed-brute-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-corrupted-nightmare-wraith",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-nightmare-wraith-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/nightmare-wraith/corrupted-nightmare-wraith-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-corrupted-plague-oracle",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-plague-oracle-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/plague-oracle/corrupted-plague-oracle-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-corrupted-shadow-cultist",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-shadow-cultist-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/shadow-cultist/corrupted-shadow-cultist-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-corrupted-twisted-hound",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-twisted-hound-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/twisted-hound/corrupted-twisted-hound-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-corrupted-void-elemental",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-void-elemental-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/void-elemental/corrupted-void-elemental-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-corrupted-void-rat",
+      "category": "enemies/corrupted",
+      "token_class": "enemy",
+      "biome": "corrupted",
+      "file": "tokens/enemies/corrupted/enemy-corrupted-void-rat-token-v1.png",
+      "source": "biome-enemies-v1/corrupted/sprites/void-rat/corrupted-void-rat-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-corrupted-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-underground-blind-lizard",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-blind-lizard-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/blind-lizard/underground-blind-lizard-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-underground-cave-rat",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-cave-rat-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/cave-rat/underground-cave-rat-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-underground-cave-spider",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-cave-spider-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/cave-spider/underground-cave-spider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-underground-cave-troll",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-cave-troll-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/cave-troll/underground-cave-troll-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-underground-crystal-beetle",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-crystal-beetle-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/crystal-beetle/underground-crystal-beetle-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-underground-deep-cultist",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-deep-cultist-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/deep-cultist/underground-deep-cultist-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-underground-fungal-thrall",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-fungal-thrall-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/fungal-thrall/underground-fungal-thrall-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-underground-giant-centipede",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-giant-centipede-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/giant-centipede/underground-giant-centipede-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-underground-shadow-stalker",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-shadow-stalker-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/shadow-stalker/underground-shadow-stalker-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-underground-stone-golem",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-stone-golem-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/stone-golem/underground-stone-golem-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-underground-subterranean-horror",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-subterranean-horror-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/subterranean-horror/underground-subterranean-horror-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-underground-tunnel-goblin",
+      "category": "enemies/underground",
+      "token_class": "enemy",
+      "biome": "underground",
+      "file": "tokens/enemies/underground/enemy-underground-tunnel-goblin-token-v1.png",
+      "source": "biome-enemies-v1/underground/sprites/tunnel-goblin/underground-tunnel-goblin-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-underground-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "enemy-plains-charging-boar",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-charging-boar-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/charging-boar/plains-charging-boar-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "enemy-plains-field-zombie",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-field-zombie-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/field-zombie/plains-field-zombie-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "enemy-plains-giant-hawk",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-giant-hawk-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/giant-hawk/plains-giant-hawk-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "enemy-plains-grass-serpent",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-grass-serpent-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/grass-serpent/plains-grass-serpent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "enemy-plains-hay-elemental",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-hay-elemental-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/hay-elemental/plains-hay-elemental-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "enemy-plains-highway-bandit",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-highway-bandit-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/highway-bandit/plains-highway-bandit-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "enemy-plains-plains-raider",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-plains-raider-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/plains-raider/plains-plains-raider-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "enemy-plains-scarecrow-husk",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-scarecrow-husk-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/scarecrow-husk/plains-scarecrow-husk-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "enemy-plains-storm-brute",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-storm-brute-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/storm-brute/plains-storm-brute-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "enemy-plains-war-ogre",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-war-ogre-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/war-ogre/plains-war-ogre-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "enemy-plains-wild-dog",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-wild-dog-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/wild-dog/plains-wild-dog-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "enemy-plains-wind-wraith",
+      "category": "enemies/plains",
+      "token_class": "enemy",
+      "biome": "plains",
+      "file": "tokens/enemies/plains/enemy-plains-wind-wraith-token-v1.png",
+      "source": "biome-enemies-v1/plains/sprites/wind-wraith/plains-wind-wraith-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/enemy-tokens-plains-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "boss-corrupted-abyssal-crown",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "corrupted",
+      "file": "tokens/bosses/boss-corrupted-abyssal-crown-token-v1.png",
+      "source": "boss-sprites-v1/sprites/corrupted/abyssal-crown/corrupted-abyssal-crown-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "boss-corrupted-eye-bishop",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "corrupted",
+      "file": "tokens/bosses/boss-corrupted-eye-bishop-token-v1.png",
+      "source": "boss-sprites-v1/sprites/corrupted/eye-bishop/corrupted-eye-bishop-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "boss-desert-scarab-warlord",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "desert",
+      "file": "tokens/bosses/boss-desert-scarab-warlord-token-v1.png",
+      "source": "boss-sprites-v1/sprites/desert/scarab-warlord/desert-scarab-warlord-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "boss-desert-sunken-pharaoh",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "desert",
+      "file": "tokens/bosses/boss-desert-sunken-pharaoh-token-v1.png",
+      "source": "boss-sprites-v1/sprites/desert/sunken-pharaoh/desert-sunken-pharaoh-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "boss-forest-ancient-hollow-king",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "forest",
+      "file": "tokens/bosses/boss-forest-ancient-hollow-king-token-v1.png",
+      "source": "boss-sprites-v1/sprites/forest/ancient-hollow-king/forest-ancient-hollow-king-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "boss-forest-briar-matriarch",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "forest",
+      "file": "tokens/bosses/boss-forest-briar-matriarch-token-v1.png",
+      "source": "boss-sprites-v1/sprites/forest/briar-matriarch/forest-briar-matriarch-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "boss-mountain-living-peak-colossus",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "mountain",
+      "file": "tokens/bosses/boss-mountain-living-peak-colossus-token-v1.png",
+      "source": "boss-sprites-v1/sprites/mountain/living-peak-colossus/mountain-living-peak-colossus-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "boss-mountain-stormclaw-matriarch",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "mountain",
+      "file": "tokens/bosses/boss-mountain-stormclaw-matriarch-token-v1.png",
+      "source": "boss-sprites-v1/sprites/mountain/stormclaw-matriarch/mountain-stormclaw-matriarch-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "boss-plains-tempest-giant",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "plains",
+      "file": "tokens/bosses/boss-plains-tempest-giant-token-v1.png",
+      "source": "boss-sprites-v1/sprites/plains/tempest-giant/plains-tempest-giant-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "boss-plains-warband-khan",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "plains",
+      "file": "tokens/bosses/boss-plains-warband-khan-token-v1.png",
+      "source": "boss-sprites-v1/sprites/plains/warband-khan/plains-warband-khan-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "boss-snow-frosthorn-chieftain",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "snow",
+      "file": "tokens/bosses/boss-snow-frosthorn-chieftain-token-v1.png",
+      "source": "boss-sprites-v1/sprites/snow/frosthorn-chieftain/snow-frosthorn-chieftain-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "boss-snow-white-maw-titan",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "snow",
+      "file": "tokens/bosses/boss-snow-white-maw-titan-token-v1.png",
+      "source": "boss-sprites-v1/sprites/snow/white-maw-titan/snow-white-maw-titan-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "boss-swamp-mire-hydra-queen",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "swamp",
+      "file": "tokens/bosses/boss-swamp-mire-hydra-queen-token-v1.png",
+      "source": "boss-sprites-v1/sprites/swamp/mire-hydra-queen/swamp-mire-hydra-queen-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "boss-swamp-plague-toad-regent",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "swamp",
+      "file": "tokens/bosses/boss-swamp-plague-toad-regent-token-v1.png",
+      "source": "boss-sprites-v1/sprites/swamp/plague-toad-regent/swamp-plague-toad-regent-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "boss-tropical-blood-orchid-queen",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "tropical",
+      "file": "tokens/bosses/boss-tropical-blood-orchid-queen-token-v1.png",
+      "source": "boss-sprites-v1/sprites/tropical/blood-orchid-queen/tropical-blood-orchid-queen-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "boss-tropical-sun-temple-behemoth",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "tropical",
+      "file": "tokens/bosses/boss-tropical-sun-temple-behemoth-token-v1.png",
+      "source": "boss-sprites-v1/sprites/tropical/sun-temple-behemoth/tropical-sun-temple-behemoth-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "boss-underground-crystal-broodmother",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "underground",
+      "file": "tokens/bosses/boss-underground-crystal-broodmother-token-v1.png",
+      "source": "boss-sprites-v1/sprites/underground/crystal-broodmother/underground-crystal-broodmother-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "boss-underground-deepstone-leviathan",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "underground",
+      "file": "tokens/bosses/boss-underground-deepstone-leviathan-token-v1.png",
+      "source": "boss-sprites-v1/sprites/underground/deepstone-leviathan/underground-deepstone-leviathan-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "boss-volcanic-cinder-wyrm",
+      "category": "bosses",
+      "token_class": "mini-boss",
+      "biome": "volcanic",
+      "file": "tokens/bosses/boss-volcanic-cinder-wyrm-token-v1.png",
+      "source": "boss-sprites-v1/sprites/volcanic/cinder-wyrm/volcanic-cinder-wyrm-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "boss-volcanic-heart-of-caldera-titan",
+      "category": "bosses",
+      "token_class": "main-boss",
+      "biome": "volcanic",
+      "file": "tokens/bosses/boss-volcanic-heart-of-caldera-titan-token-v1.png",
+      "source": "boss-sprites-v1/sprites/volcanic/heart-of-caldera-titan/volcanic-heart-of-caldera-titan-idle-v1.png",
+      "size": [
+        96,
+        96
+      ],
+      "pivot": [
+        48,
+        48
+      ],
+      "atlas": "atlases/boss-tokens-atlas-v1.png",
+      "atlas_cell": [
+        4,
+        3
+      ]
+    }
+  ]
+}

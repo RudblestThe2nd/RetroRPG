@@ -1,0 +1,420 @@
+{
+  "id": "underground-enemy-pack-v1",
+  "biome": "underground",
+  "enemy_count": 12,
+  "pose_count": 2,
+  "sprite_count": 24,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "enemies": [
+    "cave-rat",
+    "giant-centipede",
+    "cave-spider",
+    "blind-lizard",
+    "tunnel-goblin",
+    "fungal-thrall",
+    "crystal-beetle",
+    "shadow-stalker",
+    "cave-troll",
+    "stone-golem",
+    "deep-cultist",
+    "subterranean-horror"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/underground-enemies-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "underground-cave-rat-idle",
+      "biome": "underground",
+      "enemy": "cave-rat",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/cave-rat/underground-cave-rat-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-giant-centipede-idle",
+      "biome": "underground",
+      "enemy": "giant-centipede",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/giant-centipede/underground-giant-centipede-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-cave-spider-idle",
+      "biome": "underground",
+      "enemy": "cave-spider",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/cave-spider/underground-cave-spider-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-blind-lizard-idle",
+      "biome": "underground",
+      "enemy": "blind-lizard",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/blind-lizard/underground-blind-lizard-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-tunnel-goblin-idle",
+      "biome": "underground",
+      "enemy": "tunnel-goblin",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/tunnel-goblin/underground-tunnel-goblin-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-fungal-thrall-idle",
+      "biome": "underground",
+      "enemy": "fungal-thrall",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/fungal-thrall/underground-fungal-thrall-idle-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-cave-rat-attack",
+      "biome": "underground",
+      "enemy": "cave-rat",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/cave-rat/underground-cave-rat-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-giant-centipede-attack",
+      "biome": "underground",
+      "enemy": "giant-centipede",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/giant-centipede/underground-giant-centipede-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-cave-spider-attack",
+      "biome": "underground",
+      "enemy": "cave-spider",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/cave-spider/underground-cave-spider-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-blind-lizard-attack",
+      "biome": "underground",
+      "enemy": "blind-lizard",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/blind-lizard/underground-blind-lizard-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-tunnel-goblin-attack",
+      "biome": "underground",
+      "enemy": "tunnel-goblin",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/tunnel-goblin/underground-tunnel-goblin-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-fungal-thrall-attack",
+      "biome": "underground",
+      "enemy": "fungal-thrall",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/fungal-thrall/underground-fungal-thrall-attack-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-crystal-beetle-idle",
+      "biome": "underground",
+      "enemy": "crystal-beetle",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/crystal-beetle/underground-crystal-beetle-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-shadow-stalker-idle",
+      "biome": "underground",
+      "enemy": "shadow-stalker",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/shadow-stalker/underground-shadow-stalker-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-cave-troll-idle",
+      "biome": "underground",
+      "enemy": "cave-troll",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/cave-troll/underground-cave-troll-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-stone-golem-idle",
+      "biome": "underground",
+      "enemy": "stone-golem",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/stone-golem/underground-stone-golem-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-deep-cultist-idle",
+      "biome": "underground",
+      "enemy": "deep-cultist",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/deep-cultist/underground-deep-cultist-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-subterranean-horror-idle",
+      "biome": "underground",
+      "enemy": "subterranean-horror",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/subterranean-horror/underground-subterranean-horror-idle-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-crystal-beetle-attack",
+      "biome": "underground",
+      "enemy": "crystal-beetle",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/crystal-beetle/underground-crystal-beetle-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-shadow-stalker-attack",
+      "biome": "underground",
+      "enemy": "shadow-stalker",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/shadow-stalker/underground-shadow-stalker-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-cave-troll-attack",
+      "biome": "underground",
+      "enemy": "cave-troll",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/cave-troll/underground-cave-troll-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-stone-golem-attack",
+      "biome": "underground",
+      "enemy": "stone-golem",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/stone-golem/underground-stone-golem-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-deep-cultist-attack",
+      "biome": "underground",
+      "enemy": "deep-cultist",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/deep-cultist/underground-deep-cultist-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "underground-subterranean-horror-attack",
+      "biome": "underground",
+      "enemy": "subterranean-horror",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/subterranean-horror/underground-subterranean-horror-attack-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}

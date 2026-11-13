@@ -1,0 +1,420 @@
+{
+  "id": "desert-enemy-pack-v1",
+  "biome": "desert",
+  "enemy_count": 12,
+  "pose_count": 2,
+  "sprite_count": 24,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "enemies": [
+    "giant-scorpion",
+    "dune-jackal",
+    "razor-vulture",
+    "sand-serpent",
+    "dune-bandit",
+    "tomb-raider",
+    "dust-skeleton",
+    "scarab-husk",
+    "desert-ghoul",
+    "sand-elemental",
+    "mummy-guardian",
+    "dune-ogre"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/desert-enemies-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "desert-giant-scorpion-idle",
+      "biome": "desert",
+      "enemy": "giant-scorpion",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/giant-scorpion/desert-giant-scorpion-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dune-jackal-idle",
+      "biome": "desert",
+      "enemy": "dune-jackal",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/dune-jackal/desert-dune-jackal-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-razor-vulture-idle",
+      "biome": "desert",
+      "enemy": "razor-vulture",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/razor-vulture/desert-razor-vulture-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-sand-serpent-idle",
+      "biome": "desert",
+      "enemy": "sand-serpent",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/sand-serpent/desert-sand-serpent-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dune-bandit-idle",
+      "biome": "desert",
+      "enemy": "dune-bandit",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/dune-bandit/desert-dune-bandit-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-tomb-raider-idle",
+      "biome": "desert",
+      "enemy": "tomb-raider",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/tomb-raider/desert-tomb-raider-idle-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-giant-scorpion-attack",
+      "biome": "desert",
+      "enemy": "giant-scorpion",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/giant-scorpion/desert-giant-scorpion-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dune-jackal-attack",
+      "biome": "desert",
+      "enemy": "dune-jackal",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/dune-jackal/desert-dune-jackal-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-razor-vulture-attack",
+      "biome": "desert",
+      "enemy": "razor-vulture",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/razor-vulture/desert-razor-vulture-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-sand-serpent-attack",
+      "biome": "desert",
+      "enemy": "sand-serpent",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/sand-serpent/desert-sand-serpent-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dune-bandit-attack",
+      "biome": "desert",
+      "enemy": "dune-bandit",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/dune-bandit/desert-dune-bandit-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-tomb-raider-attack",
+      "biome": "desert",
+      "enemy": "tomb-raider",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/tomb-raider/desert-tomb-raider-attack-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dust-skeleton-idle",
+      "biome": "desert",
+      "enemy": "dust-skeleton",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/dust-skeleton/desert-dust-skeleton-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-scarab-husk-idle",
+      "biome": "desert",
+      "enemy": "scarab-husk",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/scarab-husk/desert-scarab-husk-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-desert-ghoul-idle",
+      "biome": "desert",
+      "enemy": "desert-ghoul",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/desert-ghoul/desert-desert-ghoul-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-sand-elemental-idle",
+      "biome": "desert",
+      "enemy": "sand-elemental",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/sand-elemental/desert-sand-elemental-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-mummy-guardian-idle",
+      "biome": "desert",
+      "enemy": "mummy-guardian",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/mummy-guardian/desert-mummy-guardian-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dune-ogre-idle",
+      "biome": "desert",
+      "enemy": "dune-ogre",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/dune-ogre/desert-dune-ogre-idle-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dust-skeleton-attack",
+      "biome": "desert",
+      "enemy": "dust-skeleton",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/dust-skeleton/desert-dust-skeleton-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-scarab-husk-attack",
+      "biome": "desert",
+      "enemy": "scarab-husk",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/scarab-husk/desert-scarab-husk-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-desert-ghoul-attack",
+      "biome": "desert",
+      "enemy": "desert-ghoul",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/desert-ghoul/desert-desert-ghoul-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-sand-elemental-attack",
+      "biome": "desert",
+      "enemy": "sand-elemental",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/sand-elemental/desert-sand-elemental-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-mummy-guardian-attack",
+      "biome": "desert",
+      "enemy": "mummy-guardian",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/mummy-guardian/desert-mummy-guardian-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "desert-dune-ogre-attack",
+      "biome": "desert",
+      "enemy": "dune-ogre",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/dune-ogre/desert-dune-ogre-attack-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}

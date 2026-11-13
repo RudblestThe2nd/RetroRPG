@@ -1,0 +1,33 @@
+{
+  "id": "story-boss-sprites-v1",
+  "status": "complete",
+  "sprite_size": [256, 256],
+  "pivot": [128, 240],
+  "collision_profile": "huge",
+  "sprites": [
+    {
+      "id": "vaelor-bas-haritaci-idle",
+      "form": "first",
+      "pose": "idle",
+      "file": "sprites/vaelor/vaelor-bas-haritaci-idle-v1.png"
+    },
+    {
+      "id": "vaelor-bas-haritaci-attack",
+      "form": "first",
+      "pose": "attack",
+      "file": "sprites/vaelor/vaelor-bas-haritaci-attack-v1.png"
+    },
+    {
+      "id": "vaelor-kader-gozu-idle",
+      "form": "final",
+      "pose": "idle",
+      "file": "sprites/vaelor/vaelor-kader-gozu-idle-v1.png"
+    },
+    {
+      "id": "vaelor-kader-gozu-attack",
+      "form": "final",
+      "pose": "attack",
+      "file": "sprites/vaelor/vaelor-kader-gozu-attack-v1.png"
+    }
+  ]
+}

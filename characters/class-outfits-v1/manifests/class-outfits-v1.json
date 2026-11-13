@@ -1,0 +1,440 @@
+{
+  "id": "class-outfits-v1",
+  "classes": [
+    "barbarian",
+    "bard",
+    "cleric",
+    "druid",
+    "fighter",
+    "monk",
+    "paladin",
+    "ranger",
+    "rogue",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "genders": [
+    "male",
+    "female"
+  ],
+  "sprite_size": [
+    256,
+    256
+  ],
+  "count": 24,
+  "sprites": [
+    {
+      "class": "barbarian",
+      "class_name_tr": "Barbar",
+      "gender": "male",
+      "file": "sprites/barbarian/barbarian-male-outfit-baseline-v1.png",
+      "source_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "class": "bard",
+      "class_name_tr": "Ozan",
+      "gender": "male",
+      "file": "sprites/bard/bard-male-outfit-baseline-v1.png",
+      "source_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "class": "cleric",
+      "class_name_tr": "Ruhban",
+      "gender": "male",
+      "file": "sprites/cleric/cleric-male-outfit-baseline-v1.png",
+      "source_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "class": "druid",
+      "class_name_tr": "Druid",
+      "gender": "male",
+      "file": "sprites/druid/druid-male-outfit-baseline-v1.png",
+      "source_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "class": "fighter",
+      "class_name_tr": "Savaşçı",
+      "gender": "male",
+      "file": "sprites/fighter/fighter-male-outfit-baseline-v1.png",
+      "source_cell": [
+        4,
+        0
+      ]
+    },
+    {
+      "class": "monk",
+      "class_name_tr": "Keşiş",
+      "gender": "male",
+      "file": "sprites/monk/monk-male-outfit-baseline-v1.png",
+      "source_cell": [
+        5,
+        0
+      ]
+    },
+    {
+      "class": "barbarian",
+      "class_name_tr": "Barbar",
+      "gender": "female",
+      "file": "sprites/barbarian/barbarian-female-outfit-baseline-v1.png",
+      "source_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "class": "bard",
+      "class_name_tr": "Ozan",
+      "gender": "female",
+      "file": "sprites/bard/bard-female-outfit-baseline-v1.png",
+      "source_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "class": "cleric",
+      "class_name_tr": "Ruhban",
+      "gender": "female",
+      "file": "sprites/cleric/cleric-female-outfit-baseline-v1.png",
+      "source_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "class": "druid",
+      "class_name_tr": "Druid",
+      "gender": "female",
+      "file": "sprites/druid/druid-female-outfit-baseline-v1.png",
+      "source_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "class": "fighter",
+      "class_name_tr": "Savaşçı",
+      "gender": "female",
+      "file": "sprites/fighter/fighter-female-outfit-baseline-v1.png",
+      "source_cell": [
+        4,
+        1
+      ]
+    },
+    {
+      "class": "monk",
+      "class_name_tr": "Keşiş",
+      "gender": "female",
+      "file": "sprites/monk/monk-female-outfit-baseline-v1.png",
+      "source_cell": [
+        5,
+        1
+      ]
+    },
+    {
+      "class": "paladin",
+      "class_name_tr": "Paladin",
+      "gender": "male",
+      "file": "sprites/paladin/paladin-male-outfit-baseline-v1.png",
+      "source_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "class": "ranger",
+      "class_name_tr": "Korucu",
+      "gender": "male",
+      "file": "sprites/ranger/ranger-male-outfit-baseline-v1.png",
+      "source_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "class": "rogue",
+      "class_name_tr": "Haydut",
+      "gender": "male",
+      "file": "sprites/rogue/rogue-male-outfit-baseline-v1.png",
+      "source_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "class": "sorcerer",
+      "class_name_tr": "Büyü Kaynaklı",
+      "gender": "male",
+      "file": "sprites/sorcerer/sorcerer-male-outfit-baseline-v1.png",
+      "source_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "class": "warlock",
+      "class_name_tr": "Antlaşmalı Büyücü",
+      "gender": "male",
+      "file": "sprites/warlock/warlock-male-outfit-baseline-v1.png",
+      "source_cell": [
+        4,
+        2
+      ]
+    },
+    {
+      "class": "wizard",
+      "class_name_tr": "Sihirbaz",
+      "gender": "male",
+      "file": "sprites/wizard/wizard-male-outfit-baseline-v1.png",
+      "source_cell": [
+        5,
+        2
+      ]
+    },
+    {
+      "class": "paladin",
+      "class_name_tr": "Paladin",
+      "gender": "female",
+      "file": "sprites/paladin/paladin-female-outfit-baseline-v1.png",
+      "source_cell": [
+        0,
+        3
+      ]
+    },
+    {
+      "class": "ranger",
+      "class_name_tr": "Korucu",
+      "gender": "female",
+      "file": "sprites/ranger/ranger-female-outfit-baseline-v1.png",
+      "source_cell": [
+        1,
+        3
+      ]
+    },
+    {
+      "class": "rogue",
+      "class_name_tr": "Haydut",
+      "gender": "female",
+      "file": "sprites/rogue/rogue-female-outfit-baseline-v1.png",
+      "source_cell": [
+        2,
+        3
+      ]
+    },
+    {
+      "class": "sorcerer",
+      "class_name_tr": "Büyü Kaynaklı",
+      "gender": "female",
+      "file": "sprites/sorcerer/sorcerer-female-outfit-baseline-v1.png",
+      "source_cell": [
+        3,
+        3
+      ]
+    },
+    {
+      "class": "warlock",
+      "class_name_tr": "Antlaşmalı Büyücü",
+      "gender": "female",
+      "file": "sprites/warlock/warlock-female-outfit-baseline-v1.png",
+      "source_cell": [
+        4,
+        3
+      ]
+    },
+    {
+      "class": "wizard",
+      "class_name_tr": "Sihirbaz",
+      "gender": "female",
+      "file": "sprites/wizard/wizard-female-outfit-baseline-v1.png",
+      "source_cell": [
+        5,
+        3
+      ]
+    }
+  ],
+  "atlas": "sheets/class-outfits-transparent-atlas-v1.png",
+  "atlas_entries": [
+    {
+      "id": "barbarian-male",
+      "x": 0,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "bard-male",
+      "x": 256,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "cleric-male",
+      "x": 512,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "druid-male",
+      "x": 768,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "fighter-male",
+      "x": 1024,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "monk-male",
+      "x": 1280,
+      "y": 0,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "barbarian-female",
+      "x": 0,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "bard-female",
+      "x": 256,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "cleric-female",
+      "x": 512,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "druid-female",
+      "x": 768,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "fighter-female",
+      "x": 1024,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "monk-female",
+      "x": 1280,
+      "y": 256,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "paladin-male",
+      "x": 0,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "ranger-male",
+      "x": 256,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "rogue-male",
+      "x": 512,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "sorcerer-male",
+      "x": 768,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "warlock-male",
+      "x": 1024,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "wizard-male",
+      "x": 1280,
+      "y": 512,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "paladin-female",
+      "x": 0,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "ranger-female",
+      "x": 256,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "rogue-female",
+      "x": 512,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "sorcerer-female",
+      "x": 768,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "warlock-female",
+      "x": 1024,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "wizard-female",
+      "x": 1280,
+      "y": 768,
+      "width": 256,
+      "height": 256
+    }
+  ],
+  "note": "Concept baselines for class identity. Runtime animation equipment layers still use anchor profiles."
+}

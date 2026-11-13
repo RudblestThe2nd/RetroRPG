@@ -1,0 +1,398 @@
+{
+  "id": "profession-npc-sprites-v1",
+  "pack": "profession",
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "count": 24,
+  "roles": [
+    "merchant",
+    "blacksmith",
+    "innkeeper",
+    "healer-apothecary",
+    "town-guard",
+    "farmer",
+    "fisher",
+    "miner",
+    "scholar-scribe",
+    "priest",
+    "carpenter-artisan",
+    "courier"
+  ],
+  "genders": [
+    "male",
+    "female"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/profession-npc-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "profession-merchant-male",
+      "pack": "profession",
+      "role": "merchant",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-merchant-male-npc-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-blacksmith-male",
+      "pack": "profession",
+      "role": "blacksmith",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-blacksmith-male-npc-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-innkeeper-male",
+      "pack": "profession",
+      "role": "innkeeper",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-innkeeper-male-npc-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-healer-apothecary-male",
+      "pack": "profession",
+      "role": "healer-apothecary",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-healer-apothecary-male-npc-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-town-guard-male",
+      "pack": "profession",
+      "role": "town-guard",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-town-guard-male-npc-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-farmer-male",
+      "pack": "profession",
+      "role": "farmer",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-farmer-male-npc-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-fisher-male",
+      "pack": "profession",
+      "role": "fisher",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-fisher-male-npc-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-miner-male",
+      "pack": "profession",
+      "role": "miner",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-miner-male-npc-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-scholar-scribe-male",
+      "pack": "profession",
+      "role": "scholar-scribe",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-scholar-scribe-male-npc-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-priest-male",
+      "pack": "profession",
+      "role": "priest",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-priest-male-npc-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-carpenter-artisan-male",
+      "pack": "profession",
+      "role": "carpenter-artisan",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-carpenter-artisan-male-npc-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-courier-male",
+      "pack": "profession",
+      "role": "courier",
+      "gender": "male",
+      "file": "sprites/profession/male/profession-courier-male-npc-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-merchant-female",
+      "pack": "profession",
+      "role": "merchant",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-merchant-female-npc-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-blacksmith-female",
+      "pack": "profession",
+      "role": "blacksmith",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-blacksmith-female-npc-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-innkeeper-female",
+      "pack": "profession",
+      "role": "innkeeper",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-innkeeper-female-npc-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-healer-apothecary-female",
+      "pack": "profession",
+      "role": "healer-apothecary",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-healer-apothecary-female-npc-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-town-guard-female",
+      "pack": "profession",
+      "role": "town-guard",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-town-guard-female-npc-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-farmer-female",
+      "pack": "profession",
+      "role": "farmer",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-farmer-female-npc-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-fisher-female",
+      "pack": "profession",
+      "role": "fisher",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-fisher-female-npc-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-miner-female",
+      "pack": "profession",
+      "role": "miner",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-miner-female-npc-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-scholar-scribe-female",
+      "pack": "profession",
+      "role": "scholar-scribe",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-scholar-scribe-female-npc-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-priest-female",
+      "pack": "profession",
+      "role": "priest",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-priest-female-npc-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-carpenter-artisan-female",
+      "pack": "profession",
+      "role": "carpenter-artisan",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-carpenter-artisan-female-npc-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "profession-courier-female",
+      "pack": "profession",
+      "role": "courier",
+      "gender": "female",
+      "file": "sprites/profession/female/profession-courier-female-npc-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}

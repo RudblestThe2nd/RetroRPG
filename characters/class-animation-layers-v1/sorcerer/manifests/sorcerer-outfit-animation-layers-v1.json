@@ -1,0 +1,441 @@
+{
+  "id": "sorcerer-outfit-animation-layers-v1",
+  "class": "sorcerer",
+  "class_name_tr": "Büyü Kaynaklı",
+  "frame_size": [
+    256,
+    256
+  ],
+  "frame_count": 24,
+  "genders": [
+    "male",
+    "female"
+  ],
+  "actions": [
+    "walk",
+    "attack",
+    "cast"
+  ],
+  "directions": [
+    "front",
+    "right",
+    "back",
+    "left"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "runtime_note": "Composite over the normalized base-body frame using the bottom-center anchor, before held weapons and spell VFX.",
+  "atlas": "atlases/sorcerer-outfit-animation-layers-atlas-v1.png",
+  "frames": [
+    {
+      "id": "sorcerer-male-walk-front",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/male/walk/sorcerer-male-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-walk-right",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/male/walk/sorcerer-male-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-walk-back",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/male/walk/sorcerer-male-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-walk-left",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/male/walk/sorcerer-male-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-attack-front",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/male/attack/sorcerer-male-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-attack-right",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/male/attack/sorcerer-male-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-attack-back",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/male/attack/sorcerer-male-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-attack-left",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/male/attack/sorcerer-male-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-cast-front",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/male/cast/sorcerer-male-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-cast-right",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/male/cast/sorcerer-male-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-cast-back",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/male/cast/sorcerer-male-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-male-cast-left",
+      "class": "sorcerer",
+      "gender": "male",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/male/cast/sorcerer-male-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-walk-front",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/female/walk/sorcerer-female-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-walk-right",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/female/walk/sorcerer-female-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-walk-back",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/female/walk/sorcerer-female-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-walk-left",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/female/walk/sorcerer-female-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-attack-front",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/female/attack/sorcerer-female-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-attack-right",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/female/attack/sorcerer-female-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-attack-back",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/female/attack/sorcerer-female-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-attack-left",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/female/attack/sorcerer-female-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-cast-front",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/female/cast/sorcerer-female-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-cast-right",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/female/cast/sorcerer-female-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-cast-back",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/female/cast/sorcerer-female-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "sorcerer-female-cast-left",
+      "class": "sorcerer",
+      "gender": "female",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/female/cast/sorcerer-female-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    }
+  ]
+}

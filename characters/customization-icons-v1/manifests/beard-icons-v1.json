@@ -1,0 +1,401 @@
+{
+  "id": "beard-customization-icons-v1",
+  "title": "Facial Hair",
+  "category": "beard",
+  "icon_size": [
+    128,
+    128
+  ],
+  "count": 24,
+  "source_alpha_extrema": [
+    0,
+    253
+  ],
+  "icons": [
+    {
+      "id": "beard-01",
+      "category": "beard",
+      "variant": 1,
+      "file": "icons/beard/beard-01-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-02",
+      "category": "beard",
+      "variant": 2,
+      "file": "icons/beard/beard-02-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-03",
+      "category": "beard",
+      "variant": 3,
+      "file": "icons/beard/beard-03-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-04",
+      "category": "beard",
+      "variant": 4,
+      "file": "icons/beard/beard-04-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "atlas_rect": [
+        384,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-05",
+      "category": "beard",
+      "variant": 5,
+      "file": "icons/beard/beard-05-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-06",
+      "category": "beard",
+      "variant": 6,
+      "file": "icons/beard/beard-06-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "atlas_rect": [
+        640,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-07",
+      "category": "beard",
+      "variant": 7,
+      "file": "icons/beard/beard-07-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "atlas_rect": [
+        0,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-08",
+      "category": "beard",
+      "variant": 8,
+      "file": "icons/beard/beard-08-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "atlas_rect": [
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-09",
+      "category": "beard",
+      "variant": 9,
+      "file": "icons/beard/beard-09-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "atlas_rect": [
+        256,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-10",
+      "category": "beard",
+      "variant": 10,
+      "file": "icons/beard/beard-10-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "atlas_rect": [
+        384,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-11",
+      "category": "beard",
+      "variant": 11,
+      "file": "icons/beard/beard-11-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "atlas_rect": [
+        512,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-12",
+      "category": "beard",
+      "variant": 12,
+      "file": "icons/beard/beard-12-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "atlas_rect": [
+        640,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-13",
+      "category": "beard",
+      "variant": 13,
+      "file": "icons/beard/beard-13-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "atlas_rect": [
+        0,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-14",
+      "category": "beard",
+      "variant": 14,
+      "file": "icons/beard/beard-14-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "atlas_rect": [
+        128,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-15",
+      "category": "beard",
+      "variant": 15,
+      "file": "icons/beard/beard-15-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "atlas_rect": [
+        256,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-16",
+      "category": "beard",
+      "variant": 16,
+      "file": "icons/beard/beard-16-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "atlas_rect": [
+        384,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-17",
+      "category": "beard",
+      "variant": 17,
+      "file": "icons/beard/beard-17-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "atlas_rect": [
+        512,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-18",
+      "category": "beard",
+      "variant": 18,
+      "file": "icons/beard/beard-18-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "atlas_rect": [
+        640,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-19",
+      "category": "beard",
+      "variant": 19,
+      "file": "icons/beard/beard-19-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "atlas_rect": [
+        0,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-20",
+      "category": "beard",
+      "variant": 20,
+      "file": "icons/beard/beard-20-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "atlas_rect": [
+        128,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-21",
+      "category": "beard",
+      "variant": 21,
+      "file": "icons/beard/beard-21-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "atlas_rect": [
+        256,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-22",
+      "category": "beard",
+      "variant": 22,
+      "file": "icons/beard/beard-22-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "atlas_rect": [
+        384,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-23",
+      "category": "beard",
+      "variant": 23,
+      "file": "icons/beard/beard-23-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "atlas_rect": [
+        512,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "beard-24",
+      "category": "beard",
+      "variant": 24,
+      "file": "icons/beard/beard-24-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "atlas_rect": [
+        640,
+        384,
+        128,
+        128
+      ]
+    }
+  ],
+  "atlas": "atlases/beard-icons-transparent-atlas-v1.png"
+}

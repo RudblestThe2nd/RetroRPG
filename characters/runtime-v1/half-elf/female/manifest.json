@@ -1,0 +1,2740 @@
+{
+  "Version": "runtime-v1",
+  "Race": "half-elf",
+  "Gender": "female",
+  "SourcePath": "C:\\Users\\VECTUS\\Documents\\pc\\game_design\\characters\\production\\atlases\\half-elf\\female\\half-elf-female-animation-atlas-v1.png",
+  "CellWidth": 256,
+  "CellHeight": 256,
+  "Frames": [
+    {
+      "Id": "idle-south-00",
+      "SourceIndex": 0,
+      "SourceRow": 0,
+      "Animation": 0,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 400,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 20,
+        "Y": 17,
+        "Width": 83,
+        "Height": 196
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/idle/south/00.png"
+    },
+    {
+      "Id": "idle-east-00",
+      "SourceIndex": 1,
+      "SourceRow": 0,
+      "Animation": 0,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 400,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 106,
+        "Y": 18,
+        "Width": 63,
+        "Height": 195
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/idle/east/00.png"
+    },
+    {
+      "Id": "idle-north-00",
+      "SourceIndex": 2,
+      "SourceRow": 0,
+      "Animation": 0,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 400,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 186,
+        "Y": 18,
+        "Width": 85,
+        "Height": 195
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/idle/north/00.png"
+    },
+    {
+      "Id": "idle-west-00",
+      "SourceIndex": 3,
+      "SourceRow": 0,
+      "Animation": 0,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 400,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 285,
+        "Y": 18,
+        "Width": 64,
+        "Height": 195
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/idle/west/00.png"
+    },
+    {
+      "Id": "walk-south-00",
+      "SourceIndex": 4,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 405,
+        "Y": 17,
+        "Width": 80,
+        "Height": 197
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/south/00.png"
+    },
+    {
+      "Id": "walk-east-00",
+      "SourceIndex": 5,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 484,
+        "Y": 17,
+        "Width": 66,
+        "Height": 195
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/east/00.png"
+    },
+    {
+      "Id": "walk-north-00",
+      "SourceIndex": 6,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 563,
+        "Y": 18,
+        "Width": 83,
+        "Height": 197
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/north/00.png"
+    },
+    {
+      "Id": "walk-west-00",
+      "SourceIndex": 7,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 658,
+        "Y": 18,
+        "Width": 63,
+        "Height": 195
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/west/00.png"
+    },
+    {
+      "Id": "walk-south-01",
+      "SourceIndex": 8,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 0,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 757,
+        "Y": 16,
+        "Width": 83,
+        "Height": 198
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/south/01.png"
+    },
+    {
+      "Id": "walk-east-01",
+      "SourceIndex": 9,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 1,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 834,
+        "Y": 17,
+        "Width": 82,
+        "Height": 196
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/east/01.png"
+    },
+    {
+      "Id": "walk-north-01",
+      "SourceIndex": 10,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 2,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 918,
+        "Y": 18,
+        "Width": 85,
+        "Height": 198
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/north/01.png"
+    },
+    {
+      "Id": "walk-west-01",
+      "SourceIndex": 11,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 3,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 994,
+        "Y": 17,
+        "Width": 82,
+        "Height": 197
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/west/01.png"
+    },
+    {
+      "Id": "walk-south-02",
+      "SourceIndex": 12,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 0,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 1144,
+        "Y": 17,
+        "Width": 89,
+        "Height": 197
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/south/02.png"
+    },
+    {
+      "Id": "walk-east-02",
+      "SourceIndex": 13,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 1,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 1224,
+        "Y": 17,
+        "Width": 80,
+        "Height": 196
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/east/02.png"
+    },
+    {
+      "Id": "walk-north-02",
+      "SourceIndex": 14,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 2,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 1311,
+        "Y": 17,
+        "Width": 84,
+        "Height": 196
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/north/02.png"
+    },
+    {
+      "Id": "walk-west-02",
+      "SourceIndex": 15,
+      "SourceRow": 0,
+      "Animation": 1,
+      "Direction": 3,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 1398,
+        "Y": 17,
+        "Width": 89,
+        "Height": 196
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/walk/west/02.png"
+    },
+    {
+      "Id": "attack-south-00",
+      "SourceIndex": 16,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 16,
+        "Y": 223,
+        "Width": 88,
+        "Height": 184
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/south/00.png"
+    },
+    {
+      "Id": "attack-east-00",
+      "SourceIndex": 17,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 97,
+        "Y": 222,
+        "Width": 99,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/east/00.png"
+    },
+    {
+      "Id": "attack-north-00",
+      "SourceIndex": 18,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 188,
+        "Y": 225,
+        "Width": 92,
+        "Height": 184
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/north/00.png"
+    },
+    {
+      "Id": "attack-west-00",
+      "SourceIndex": 19,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 264,
+        "Y": 224,
+        "Width": 106,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/west/00.png"
+    },
+    {
+      "Id": "attack-south-01",
+      "SourceIndex": 20,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 0,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 367,
+        "Y": 224,
+        "Width": 101,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/south/01.png"
+    },
+    {
+      "Id": "attack-east-01",
+      "SourceIndex": 21,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 1,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 465,
+        "Y": 222,
+        "Width": 102,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/east/01.png"
+    },
+    {
+      "Id": "attack-north-01",
+      "SourceIndex": 22,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 2,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 557,
+        "Y": 223,
+        "Width": 108,
+        "Height": 184
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/north/01.png"
+    },
+    {
+      "Id": "attack-west-01",
+      "SourceIndex": 23,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 3,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 645,
+        "Y": 223,
+        "Width": 107,
+        "Height": 183
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/west/01.png"
+    },
+    {
+      "Id": "attack-south-02",
+      "SourceIndex": 24,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 0,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 752,
+        "Y": 222,
+        "Width": 89,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/south/02.png"
+    },
+    {
+      "Id": "attack-east-02",
+      "SourceIndex": 25,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 1,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 829,
+        "Y": 223,
+        "Width": 108,
+        "Height": 184
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/east/02.png"
+    },
+    {
+      "Id": "attack-north-02",
+      "SourceIndex": 26,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 2,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 922,
+        "Y": 224,
+        "Width": 103,
+        "Height": 181
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/north/02.png"
+    },
+    {
+      "Id": "attack-west-02",
+      "SourceIndex": 27,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 3,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1007,
+        "Y": 224,
+        "Width": 105,
+        "Height": 181
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/west/02.png"
+    },
+    {
+      "Id": "attack-south-03",
+      "SourceIndex": 28,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 0,
+      "AnimationFrame": 3,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1122,
+        "Y": 222,
+        "Width": 102,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/south/03.png"
+    },
+    {
+      "Id": "attack-east-03",
+      "SourceIndex": 29,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 1,
+      "AnimationFrame": 3,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1218,
+        "Y": 222,
+        "Width": 81,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/east/03.png"
+    },
+    {
+      "Id": "attack-north-03",
+      "SourceIndex": 30,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 2,
+      "AnimationFrame": 3,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1309,
+        "Y": 223,
+        "Width": 119,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/north/03.png"
+    },
+    {
+      "Id": "attack-west-03",
+      "SourceIndex": 31,
+      "SourceRow": 1,
+      "Animation": 2,
+      "Direction": 3,
+      "AnimationFrame": 3,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1408,
+        "Y": 223,
+        "Width": 106,
+        "Height": 182
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/attack/west/03.png"
+    },
+    {
+      "Id": "defend-south-00",
+      "SourceIndex": 32,
+      "SourceRow": 2,
+      "Animation": 4,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 47,
+        "Y": 421,
+        "Width": 98,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/defend/south/00.png"
+    },
+    {
+      "Id": "defend-east-00",
+      "SourceIndex": 33,
+      "SourceRow": 2,
+      "Animation": 4,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 148,
+        "Y": 419,
+        "Width": 79,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/defend/east/00.png"
+    },
+    {
+      "Id": "defend-north-00",
+      "SourceIndex": 34,
+      "SourceRow": 2,
+      "Animation": 4,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 230,
+        "Y": 421,
+        "Width": 89,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/defend/north/00.png"
+    },
+    {
+      "Id": "defend-west-00",
+      "SourceIndex": 35,
+      "SourceRow": 2,
+      "Animation": 4,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 327,
+        "Y": 420,
+        "Width": 77,
+        "Height": 187
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/defend/west/00.png"
+    },
+    {
+      "Id": "cast-south-00",
+      "SourceIndex": 36,
+      "SourceRow": 2,
+      "Animation": 3,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 460,
+        "Y": 420,
+        "Width": 104,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/cast/south/00.png"
+    },
+    {
+      "Id": "cast-east-00",
+      "SourceIndex": 37,
+      "SourceRow": 2,
+      "Animation": 3,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 560,
+        "Y": 420,
+        "Width": 99,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/cast/east/00.png"
+    },
+    {
+      "Id": "cast-north-00",
+      "SourceIndex": 38,
+      "SourceRow": 2,
+      "Animation": 3,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 651,
+        "Y": 421,
+        "Width": 91,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/cast/north/00.png"
+    },
+    {
+      "Id": "cast-west-00",
+      "SourceIndex": 39,
+      "SourceRow": 2,
+      "Animation": 3,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 738,
+        "Y": 421,
+        "Width": 108,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/cast/west/00.png"
+    },
+    {
+      "Id": "hit-south-00",
+      "SourceIndex": 40,
+      "SourceRow": 2,
+      "Animation": 5,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 906,
+        "Y": 420,
+        "Width": 94,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/hit/south/00.png"
+    },
+    {
+      "Id": "hit-east-00",
+      "SourceIndex": 41,
+      "SourceRow": 2,
+      "Animation": 5,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1001,
+        "Y": 421,
+        "Width": 92,
+        "Height": 187
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/hit/east/00.png"
+    },
+    {
+      "Id": "hit-north-00",
+      "SourceIndex": 42,
+      "SourceRow": 2,
+      "Animation": 5,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1090,
+        "Y": 420,
+        "Width": 89,
+        "Height": 186
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/hit/north/00.png"
+    },
+    {
+      "Id": "hit-west-00",
+      "SourceIndex": 43,
+      "SourceRow": 2,
+      "Animation": 5,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1186,
+        "Y": 421,
+        "Width": 108,
+        "Height": 185
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/hit/west/00.png"
+    },
+    {
+      "Id": "death-south-00",
+      "SourceIndex": 44,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 42,
+        "Y": 617,
+        "Width": 93,
+        "Height": 180
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/south/00.png"
+    },
+    {
+      "Id": "death-east-00",
+      "SourceIndex": 45,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 133,
+        "Y": 619,
+        "Width": 119,
+        "Height": 167
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/east/00.png"
+    },
+    {
+      "Id": "death-north-00",
+      "SourceIndex": 46,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 257,
+        "Y": 616,
+        "Width": 93,
+        "Height": 176
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/north/00.png"
+    },
+    {
+      "Id": "death-west-00",
+      "SourceIndex": 47,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 358,
+        "Y": 616,
+        "Width": 86,
+        "Height": 174
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/west/00.png"
+    },
+    {
+      "Id": "death-south-01",
+      "SourceIndex": 48,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 0,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 467,
+        "Y": 649,
+        "Width": 96,
+        "Height": 125
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/south/01.png"
+    },
+    {
+      "Id": "death-east-01",
+      "SourceIndex": 49,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 1,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 570,
+        "Y": 682,
+        "Width": 96,
+        "Height": 94
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/east/01.png"
+    },
+    {
+      "Id": "death-north-01",
+      "SourceIndex": 50,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 2,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 664,
+        "Y": 694,
+        "Width": 159,
+        "Height": 81
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/north/01.png"
+    },
+    {
+      "Id": "death-west-01",
+      "SourceIndex": 51,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 3,
+      "AnimationFrame": 1,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 817,
+        "Y": 719,
+        "Width": 128,
+        "Height": 68
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/west/01.png"
+    },
+    {
+      "Id": "death-south-02",
+      "SourceIndex": 52,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 0,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 921,
+        "Y": 617,
+        "Width": 78,
+        "Height": 179
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/south/02.png"
+    },
+    {
+      "Id": "death-east-02",
+      "SourceIndex": 53,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 1,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1010,
+        "Y": 623,
+        "Width": 87,
+        "Height": 173
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/east/02.png"
+    },
+    {
+      "Id": "death-north-02",
+      "SourceIndex": 54,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 2,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1107,
+        "Y": 617,
+        "Width": 87,
+        "Height": 180
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/north/02.png"
+    },
+    {
+      "Id": "death-west-02",
+      "SourceIndex": 55,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 3,
+      "AnimationFrame": 2,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1205,
+        "Y": 617,
+        "Width": 68,
+        "Height": 179
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/west/02.png"
+    },
+    {
+      "Id": "death-south-03",
+      "SourceIndex": 56,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 0,
+      "AnimationFrame": 3,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1272,
+        "Y": 667,
+        "Width": 78,
+        "Height": 130
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/south/03.png"
+    },
+    {
+      "Id": "death-east-03",
+      "SourceIndex": 57,
+      "SourceRow": 3,
+      "Animation": 6,
+      "Direction": 1,
+      "AnimationFrame": 3,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1347,
+        "Y": 706,
+        "Width": 175,
+        "Height": 62
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/death/east/03.png"
+    },
+    {
+      "Id": "talk-south-00",
+      "SourceIndex": 58,
+      "SourceRow": 4,
+      "Animation": 7,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 7,
+        "Y": 807,
+        "Width": 113,
+        "Height": 189
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/talk/south/00.png"
+    },
+    {
+      "Id": "talk-east-00",
+      "SourceIndex": 59,
+      "SourceRow": 4,
+      "Animation": 7,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 123,
+        "Y": 807,
+        "Width": 99,
+        "Height": 190
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/talk/east/00.png"
+    },
+    {
+      "Id": "talk-north-00",
+      "SourceIndex": 60,
+      "SourceRow": 4,
+      "Animation": 7,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 229,
+        "Y": 807,
+        "Width": 88,
+        "Height": 190
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/talk/north/00.png"
+    },
+    {
+      "Id": "talk-west-00",
+      "SourceIndex": 61,
+      "SourceRow": 4,
+      "Animation": 7,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": true,
+      "SourceRectangle": {
+        "X": 318,
+        "Y": 807,
+        "Width": 90,
+        "Height": 190
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/talk/west/00.png"
+    },
+    {
+      "Id": "sit-south-00",
+      "SourceIndex": 62,
+      "SourceRow": 4,
+      "Animation": 8,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 503,
+        "Y": 841,
+        "Width": 106,
+        "Height": 139
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/sit/south/00.png"
+    },
+    {
+      "Id": "sit-east-00",
+      "SourceIndex": 63,
+      "SourceRow": 4,
+      "Animation": 8,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 616,
+        "Y": 840,
+        "Width": 102,
+        "Height": 133
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/sit/east/00.png"
+    },
+    {
+      "Id": "sit-north-00",
+      "SourceIndex": 64,
+      "SourceRow": 4,
+      "Animation": 8,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 714,
+        "Y": 841,
+        "Width": 105,
+        "Height": 132
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/sit/north/00.png"
+    },
+    {
+      "Id": "sit-west-00",
+      "SourceIndex": 65,
+      "SourceRow": 4,
+      "Animation": 8,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 813,
+        "Y": 841,
+        "Width": 105,
+        "Height": 132
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/sit/west/00.png"
+    },
+    {
+      "Id": "useitem-south-00",
+      "SourceIndex": 66,
+      "SourceRow": 4,
+      "Animation": 9,
+      "Direction": 0,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1009,
+        "Y": 807,
+        "Width": 95,
+        "Height": 191
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/useitem/south/00.png"
+    },
+    {
+      "Id": "useitem-east-00",
+      "SourceIndex": 67,
+      "SourceRow": 4,
+      "Animation": 9,
+      "Direction": 1,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1102,
+        "Y": 810,
+        "Width": 79,
+        "Height": 188
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/useitem/east/00.png"
+    },
+    {
+      "Id": "useitem-north-00",
+      "SourceIndex": 68,
+      "SourceRow": 4,
+      "Animation": 9,
+      "Direction": 2,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1182,
+        "Y": 807,
+        "Width": 88,
+        "Height": 190
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/useitem/north/00.png"
+    },
+    {
+      "Id": "useitem-west-00",
+      "SourceIndex": 69,
+      "SourceRow": 4,
+      "Animation": 9,
+      "Direction": 3,
+      "AnimationFrame": 0,
+      "DurationMs": 120,
+      "Loop": false,
+      "SourceRectangle": {
+        "X": 1275,
+        "Y": 808,
+        "Width": 85,
+        "Height": 189
+      },
+      "Pivot": {
+        "X": 128,
+        "Y": 230
+      },
+      "Anchors": {
+        "main-hand": {
+          "X": 166,
+          "Y": 142
+        },
+        "off-hand": {
+          "X": 90,
+          "Y": 142
+        },
+        "head": {
+          "X": 128,
+          "Y": 62
+        },
+        "feet": {
+          "X": 128,
+          "Y": 230
+        }
+      },
+      "RuntimePath": "half-elf/female/useitem/west/00.png"
+    }
+  ]
+}

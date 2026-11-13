@@ -1,0 +1,401 @@
+{
+  "id": "skin-tone-customization-icons-v1",
+  "title": "Skin Tones",
+  "category": "skin-tone",
+  "icon_size": [
+    128,
+    128
+  ],
+  "count": 24,
+  "source_alpha_extrema": [
+    0,
+    255
+  ],
+  "icons": [
+    {
+      "id": "skin-tone-01",
+      "category": "skin-tone",
+      "variant": 1,
+      "file": "icons/skin-tone/skin-tone-01-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-02",
+      "category": "skin-tone",
+      "variant": 2,
+      "file": "icons/skin-tone/skin-tone-02-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-03",
+      "category": "skin-tone",
+      "variant": 3,
+      "file": "icons/skin-tone/skin-tone-03-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-04",
+      "category": "skin-tone",
+      "variant": 4,
+      "file": "icons/skin-tone/skin-tone-04-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "atlas_rect": [
+        384,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-05",
+      "category": "skin-tone",
+      "variant": 5,
+      "file": "icons/skin-tone/skin-tone-05-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-06",
+      "category": "skin-tone",
+      "variant": 6,
+      "file": "icons/skin-tone/skin-tone-06-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "atlas_rect": [
+        640,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-07",
+      "category": "skin-tone",
+      "variant": 7,
+      "file": "icons/skin-tone/skin-tone-07-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "atlas_rect": [
+        0,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-08",
+      "category": "skin-tone",
+      "variant": 8,
+      "file": "icons/skin-tone/skin-tone-08-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "atlas_rect": [
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-09",
+      "category": "skin-tone",
+      "variant": 9,
+      "file": "icons/skin-tone/skin-tone-09-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "atlas_rect": [
+        256,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-10",
+      "category": "skin-tone",
+      "variant": 10,
+      "file": "icons/skin-tone/skin-tone-10-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "atlas_rect": [
+        384,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-11",
+      "category": "skin-tone",
+      "variant": 11,
+      "file": "icons/skin-tone/skin-tone-11-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "atlas_rect": [
+        512,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-12",
+      "category": "skin-tone",
+      "variant": 12,
+      "file": "icons/skin-tone/skin-tone-12-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "atlas_rect": [
+        640,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-13",
+      "category": "skin-tone",
+      "variant": 13,
+      "file": "icons/skin-tone/skin-tone-13-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "atlas_rect": [
+        0,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-14",
+      "category": "skin-tone",
+      "variant": 14,
+      "file": "icons/skin-tone/skin-tone-14-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "atlas_rect": [
+        128,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-15",
+      "category": "skin-tone",
+      "variant": 15,
+      "file": "icons/skin-tone/skin-tone-15-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "atlas_rect": [
+        256,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-16",
+      "category": "skin-tone",
+      "variant": 16,
+      "file": "icons/skin-tone/skin-tone-16-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "atlas_rect": [
+        384,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-17",
+      "category": "skin-tone",
+      "variant": 17,
+      "file": "icons/skin-tone/skin-tone-17-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "atlas_rect": [
+        512,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-18",
+      "category": "skin-tone",
+      "variant": 18,
+      "file": "icons/skin-tone/skin-tone-18-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "atlas_rect": [
+        640,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-19",
+      "category": "skin-tone",
+      "variant": 19,
+      "file": "icons/skin-tone/skin-tone-19-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "atlas_rect": [
+        0,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-20",
+      "category": "skin-tone",
+      "variant": 20,
+      "file": "icons/skin-tone/skin-tone-20-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "atlas_rect": [
+        128,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-21",
+      "category": "skin-tone",
+      "variant": 21,
+      "file": "icons/skin-tone/skin-tone-21-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "atlas_rect": [
+        256,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-22",
+      "category": "skin-tone",
+      "variant": 22,
+      "file": "icons/skin-tone/skin-tone-22-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "atlas_rect": [
+        384,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-23",
+      "category": "skin-tone",
+      "variant": 23,
+      "file": "icons/skin-tone/skin-tone-23-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "atlas_rect": [
+        512,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "skin-tone-24",
+      "category": "skin-tone",
+      "variant": 24,
+      "file": "icons/skin-tone/skin-tone-24-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "atlas_rect": [
+        640,
+        384,
+        128,
+        128
+      ]
+    }
+  ],
+  "atlas": "atlases/skin-tone-icons-transparent-atlas-v1.png"
+}

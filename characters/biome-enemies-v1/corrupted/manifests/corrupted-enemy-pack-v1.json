@@ -1,0 +1,420 @@
+{
+  "id": "corrupted-enemy-pack-v1",
+  "biome": "corrupted",
+  "enemy_count": 12,
+  "pose_count": 2,
+  "sprite_count": 24,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "enemies": [
+    "void-rat",
+    "eye-stalker",
+    "twisted-hound",
+    "corrupted-knight",
+    "shadow-cultist",
+    "flesh-vine",
+    "nightmare-wraith",
+    "crystal-mutant",
+    "void-elemental",
+    "many-eyed-brute",
+    "plague-oracle",
+    "abyssal-abomination"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/corrupted-enemies-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "corrupted-void-rat-idle",
+      "biome": "corrupted",
+      "enemy": "void-rat",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/void-rat/corrupted-void-rat-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-eye-stalker-idle",
+      "biome": "corrupted",
+      "enemy": "eye-stalker",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/eye-stalker/corrupted-eye-stalker-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-twisted-hound-idle",
+      "biome": "corrupted",
+      "enemy": "twisted-hound",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/twisted-hound/corrupted-twisted-hound-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-corrupted-knight-idle",
+      "biome": "corrupted",
+      "enemy": "corrupted-knight",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/corrupted-knight/corrupted-corrupted-knight-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-shadow-cultist-idle",
+      "biome": "corrupted",
+      "enemy": "shadow-cultist",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/shadow-cultist/corrupted-shadow-cultist-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-flesh-vine-idle",
+      "biome": "corrupted",
+      "enemy": "flesh-vine",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/flesh-vine/corrupted-flesh-vine-idle-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-void-rat-attack",
+      "biome": "corrupted",
+      "enemy": "void-rat",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/void-rat/corrupted-void-rat-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-eye-stalker-attack",
+      "biome": "corrupted",
+      "enemy": "eye-stalker",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/eye-stalker/corrupted-eye-stalker-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-twisted-hound-attack",
+      "biome": "corrupted",
+      "enemy": "twisted-hound",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/twisted-hound/corrupted-twisted-hound-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-corrupted-knight-attack",
+      "biome": "corrupted",
+      "enemy": "corrupted-knight",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/corrupted-knight/corrupted-corrupted-knight-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-shadow-cultist-attack",
+      "biome": "corrupted",
+      "enemy": "shadow-cultist",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/shadow-cultist/corrupted-shadow-cultist-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-flesh-vine-attack",
+      "biome": "corrupted",
+      "enemy": "flesh-vine",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/flesh-vine/corrupted-flesh-vine-attack-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-nightmare-wraith-idle",
+      "biome": "corrupted",
+      "enemy": "nightmare-wraith",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/nightmare-wraith/corrupted-nightmare-wraith-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-crystal-mutant-idle",
+      "biome": "corrupted",
+      "enemy": "crystal-mutant",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/crystal-mutant/corrupted-crystal-mutant-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-void-elemental-idle",
+      "biome": "corrupted",
+      "enemy": "void-elemental",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/void-elemental/corrupted-void-elemental-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-many-eyed-brute-idle",
+      "biome": "corrupted",
+      "enemy": "many-eyed-brute",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/many-eyed-brute/corrupted-many-eyed-brute-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-plague-oracle-idle",
+      "biome": "corrupted",
+      "enemy": "plague-oracle",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/plague-oracle/corrupted-plague-oracle-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-abyssal-abomination-idle",
+      "biome": "corrupted",
+      "enemy": "abyssal-abomination",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/abyssal-abomination/corrupted-abyssal-abomination-idle-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-nightmare-wraith-attack",
+      "biome": "corrupted",
+      "enemy": "nightmare-wraith",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/nightmare-wraith/corrupted-nightmare-wraith-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-crystal-mutant-attack",
+      "biome": "corrupted",
+      "enemy": "crystal-mutant",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/crystal-mutant/corrupted-crystal-mutant-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-void-elemental-attack",
+      "biome": "corrupted",
+      "enemy": "void-elemental",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/void-elemental/corrupted-void-elemental-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-many-eyed-brute-attack",
+      "biome": "corrupted",
+      "enemy": "many-eyed-brute",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/many-eyed-brute/corrupted-many-eyed-brute-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-plague-oracle-attack",
+      "biome": "corrupted",
+      "enemy": "plague-oracle",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/plague-oracle/corrupted-plague-oracle-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "corrupted-abyssal-abomination-attack",
+      "biome": "corrupted",
+      "enemy": "abyssal-abomination",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/abyssal-abomination/corrupted-abyssal-abomination-attack-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}
