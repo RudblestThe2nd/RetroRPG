@@ -1,0 +1,247 @@
+{
+  "id": "extended-weapons-directions-v1",
+  "status": "complete",
+  "animation_note": "Direction layers are final assets. Idle and attack motion is applied by code using anchor transforms.",
+  "weapons": [
+    {
+      "id": "dagger-south",
+      "weapon": "dagger",
+      "direction": "south",
+      "file": "equipment/weapons-extended/runtime-256/dagger/south/dagger-south-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "dagger-west",
+      "weapon": "dagger",
+      "direction": "west",
+      "file": "equipment/weapons-extended/runtime-256/dagger/west/dagger-west-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "dagger-east",
+      "weapon": "dagger",
+      "direction": "east",
+      "file": "equipment/weapons-extended/runtime-256/dagger/east/dagger-east-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "dagger-north",
+      "weapon": "dagger",
+      "direction": "north",
+      "file": "equipment/weapons-extended/runtime-256/dagger/north/dagger-north-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "rapier-south",
+      "weapon": "rapier",
+      "direction": "south",
+      "file": "equipment/weapons-extended/runtime-256/rapier/south/rapier-south-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "rapier-west",
+      "weapon": "rapier",
+      "direction": "west",
+      "file": "equipment/weapons-extended/runtime-256/rapier/west/rapier-west-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "rapier-east",
+      "weapon": "rapier",
+      "direction": "east",
+      "file": "equipment/weapons-extended/runtime-256/rapier/east/rapier-east-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "rapier-north",
+      "weapon": "rapier",
+      "direction": "north",
+      "file": "equipment/weapons-extended/runtime-256/rapier/north/rapier-north-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "mace-south",
+      "weapon": "mace",
+      "direction": "south",
+      "file": "equipment/weapons-extended/runtime-256/mace/south/mace-south-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "mace-west",
+      "weapon": "mace",
+      "direction": "west",
+      "file": "equipment/weapons-extended/runtime-256/mace/west/mace-west-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "mace-east",
+      "weapon": "mace",
+      "direction": "east",
+      "file": "equipment/weapons-extended/runtime-256/mace/east/mace-east-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "mace-north",
+      "weapon": "mace",
+      "direction": "north",
+      "file": "equipment/weapons-extended/runtime-256/mace/north/mace-north-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "warhammer-south",
+      "weapon": "warhammer",
+      "direction": "south",
+      "file": "equipment/weapons-extended/runtime-256/warhammer/south/warhammer-south-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "warhammer-west",
+      "weapon": "warhammer",
+      "direction": "west",
+      "file": "equipment/weapons-extended/runtime-256/warhammer/west/warhammer-west-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "warhammer-east",
+      "weapon": "warhammer",
+      "direction": "east",
+      "file": "equipment/weapons-extended/runtime-256/warhammer/east/warhammer-east-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "warhammer-north",
+      "weapon": "warhammer",
+      "direction": "north",
+      "file": "equipment/weapons-extended/runtime-256/warhammer/north/warhammer-north-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "greatsword-south",
+      "weapon": "greatsword",
+      "direction": "south",
+      "file": "equipment/weapons-extended/runtime-256/greatsword/south/greatsword-south-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "greatsword-west",
+      "weapon": "greatsword",
+      "direction": "west",
+      "file": "equipment/weapons-extended/runtime-256/greatsword/west/greatsword-west-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "greatsword-east",
+      "weapon": "greatsword",
+      "direction": "east",
+      "file": "equipment/weapons-extended/runtime-256/greatsword/east/greatsword-east-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "greatsword-north",
+      "weapon": "greatsword",
+      "direction": "north",
+      "file": "equipment/weapons-extended/runtime-256/greatsword/north/greatsword-north-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "light-crossbow-south",
+      "weapon": "light-crossbow",
+      "direction": "south",
+      "file": "equipment/weapons-extended/runtime-256/light-crossbow/south/light-crossbow-south-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "light-crossbow-west",
+      "weapon": "light-crossbow",
+      "direction": "west",
+      "file": "equipment/weapons-extended/runtime-256/light-crossbow/west/light-crossbow-west-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "light-crossbow-east",
+      "weapon": "light-crossbow",
+      "direction": "east",
+      "file": "equipment/weapons-extended/runtime-256/light-crossbow/east/light-crossbow-east-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "light-crossbow-north",
+      "weapon": "light-crossbow",
+      "direction": "north",
+      "file": "equipment/weapons-extended/runtime-256/light-crossbow/north/light-crossbow-north-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    }
+  ]
+}

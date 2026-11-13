@@ -1,0 +1,39 @@
+{
+  "id": "final-production-v1",
+  "status": "complete",
+  "story_assets_included": false,
+  "summary": {
+    "equipment": {
+      "weapon_frames": 96,
+      "wearable_frames": 384,
+      "dropped_loot": 150,
+      "anchor_profiles": 22
+    },
+    "scenes": {
+      "routes": 54,
+      "interiors": 12,
+      "combat": 10,
+      "weather": 50,
+      "props": 24,
+      "camps": 4,
+      "biome_concepts": 2
+    },
+    "effects": {
+      "frames": 112,
+      "animations": 20
+    },
+    "ui": {
+      "screens": 15,
+      "icons": 120,
+      "logo": 1
+    },
+    "maps": {
+      "isometric_world_map": 1
+    }
+  },
+  "visual_file_count": 1062,
+  "qa": {
+    "status": "pass",
+    "errors": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "final-production-v2",
+  "status": "complete",
+  "asset_policy": "All files are production game assets, not concepts or temporary placeholders.",
+  "combat_scope": "Simple d20 roll system, not a complete tabletop rules implementation.",
+  "summary": {
+    "dice": {
+      "icons": 6,
+      "d20_frames": 8,
+      "animations": 1
+    },
+    "combat_indicators": {
+      "icons": 12
+    },
+    "enemy_death_effect": {
+      "frames": 8,
+      "animations": 1
+    },
+    "extended_weapons": {
+      "weapon_types": 6,
+      "direction_layers": 24
+    },
+    "combat_screen": {
+      "screens": 2,
+      "selected": "ui/screens/runtime-800/combat-screen-simple-d20-v1.png",
+      "resolution": [
+        800,
+        800
+      ]
+    }
+  },
+  "qa": {
+    "status": "pass",
+    "checked_png": 71,
+    "errors": []
+  }
+}

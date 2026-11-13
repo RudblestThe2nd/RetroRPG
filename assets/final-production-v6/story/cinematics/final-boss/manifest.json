@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "assetType": "story-cinematic-sequences",
+  "canvas": { "width": 800, "height": 800 },
+  "playerPresentation": "featureless-black-silhouette",
+  "sequences": [
+    {
+      "id": "tower-fall-v1",
+      "folder": "01-tower-fall-v1",
+      "fps": 3,
+      "loop": false,
+      "frames": [
+        "tower-fall-frame-00-v1.png",
+        "tower-fall-frame-01-v1.png",
+        "tower-fall-frame-02-v1.png",
+        "tower-fall-frame-03-v1.png",
+        "tower-fall-frame-04-v1.png",
+        "tower-fall-frame-05-v1.png"
+      ],
+      "preview": "tower-fall-preview-v1.gif"
+    },
+    {
+      "id": "rider-revival-v1",
+      "folder": "02-rider-revival-v1",
+      "fps": 2,
+      "loop": false,
+      "frames": [
+        "rider-revival-frame-00-v1.png",
+        "rider-revival-frame-01-v1.png",
+        "rider-revival-frame-02-v1.png",
+        "rider-revival-frame-03-v1.png"
+      ],
+      "preview": "rider-revival-preview-v1.gif"
+    },
+    {
+      "id": "fatebreaker-return-v1",
+      "folder": "03-fatebreaker-return-v1",
+      "fps": 2,
+      "loop": false,
+      "frames": [
+        "fatebreaker-return-frame-00-v1.png",
+        "fatebreaker-return-frame-01-v1.png",
+        "fatebreaker-return-frame-02-v1.png",
+        "fatebreaker-return-frame-03-v1.png"
+      ],
+      "preview": "fatebreaker-return-preview-v1.gif"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "dice-runtime-v1",
+  "status": "complete",
+  "dice": [
+    {
+      "id": "d4",
+      "sides": 4,
+      "file": "combat/dice/runtime-256/d4-icon-v1.png"
+    },
+    {
+      "id": "d6",
+      "sides": 6,
+      "file": "combat/dice/runtime-256/d6-icon-v1.png"
+    },
+    {
+      "id": "d8",
+      "sides": 8,
+      "file": "combat/dice/runtime-256/d8-icon-v1.png"
+    },
+    {
+      "id": "d10",
+      "sides": 10,
+      "file": "combat/dice/runtime-256/d10-icon-v1.png"
+    },
+    {
+      "id": "d12",
+      "sides": 12,
+      "file": "combat/dice/runtime-256/d12-icon-v1.png"
+    },
+    {
+      "id": "d20",
+      "sides": 20,
+      "file": "combat/dice/runtime-256/d20-icon-v1.png"
+    }
+  ],
+  "d20_roll": {
+    "frames": [
+      "combat/dice/d20-roll-v1/d20-roll-00-v1.png",
+      "combat/dice/d20-roll-v1/d20-roll-01-v1.png",
+      "combat/dice/d20-roll-v1/d20-roll-02-v1.png",
+      "combat/dice/d20-roll-v1/d20-roll-03-v1.png",
+      "combat/dice/d20-roll-v1/d20-roll-04-v1.png",
+      "combat/dice/d20-roll-v1/d20-roll-05-v1.png",
+      "combat/dice/d20-roll-v1/d20-roll-06-v1.png",
+      "combat/dice/d20-roll-v1/d20-roll-07-v1.png"
+    ],
+    "gif": "combat/dice/animations/d20-roll-v1.gif",
+    "fps": 11,
+    "loop": false
+  }
+}

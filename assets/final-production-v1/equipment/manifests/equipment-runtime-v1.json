@@ -1,0 +1,5844 @@
+{
+  "id": "equipment-runtime-v1",
+  "status": "complete",
+  "weapons": [
+    {
+      "id": "longsword-south-idle",
+      "file": "equipment/weapons/longsword/south/longsword-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-south-walk",
+      "file": "equipment/weapons/longsword/south/longsword-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-south-attack",
+      "file": "equipment/weapons/longsword/south/longsword-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-south-cast",
+      "file": "equipment/weapons/longsword/south/longsword-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-west-idle",
+      "file": "equipment/weapons/longsword/west/longsword-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-west-walk",
+      "file": "equipment/weapons/longsword/west/longsword-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-west-attack",
+      "file": "equipment/weapons/longsword/west/longsword-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-west-cast",
+      "file": "equipment/weapons/longsword/west/longsword-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-east-idle",
+      "file": "equipment/weapons/longsword/east/longsword-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-east-walk",
+      "file": "equipment/weapons/longsword/east/longsword-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-east-attack",
+      "file": "equipment/weapons/longsword/east/longsword-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-east-cast",
+      "file": "equipment/weapons/longsword/east/longsword-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-north-idle",
+      "file": "equipment/weapons/longsword/north/longsword-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-north-walk",
+      "file": "equipment/weapons/longsword/north/longsword-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-north-attack",
+      "file": "equipment/weapons/longsword/north/longsword-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longsword-north-cast",
+      "file": "equipment/weapons/longsword/north/longsword-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-south-idle",
+      "file": "equipment/weapons/battleaxe/south/battleaxe-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-south-walk",
+      "file": "equipment/weapons/battleaxe/south/battleaxe-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-south-attack",
+      "file": "equipment/weapons/battleaxe/south/battleaxe-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-south-cast",
+      "file": "equipment/weapons/battleaxe/south/battleaxe-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-west-idle",
+      "file": "equipment/weapons/battleaxe/west/battleaxe-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-west-walk",
+      "file": "equipment/weapons/battleaxe/west/battleaxe-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-west-attack",
+      "file": "equipment/weapons/battleaxe/west/battleaxe-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-west-cast",
+      "file": "equipment/weapons/battleaxe/west/battleaxe-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-east-idle",
+      "file": "equipment/weapons/battleaxe/east/battleaxe-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-east-walk",
+      "file": "equipment/weapons/battleaxe/east/battleaxe-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-east-attack",
+      "file": "equipment/weapons/battleaxe/east/battleaxe-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-east-cast",
+      "file": "equipment/weapons/battleaxe/east/battleaxe-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-north-idle",
+      "file": "equipment/weapons/battleaxe/north/battleaxe-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-north-walk",
+      "file": "equipment/weapons/battleaxe/north/battleaxe-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-north-attack",
+      "file": "equipment/weapons/battleaxe/north/battleaxe-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "battleaxe-north-cast",
+      "file": "equipment/weapons/battleaxe/north/battleaxe-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-south-idle",
+      "file": "equipment/weapons/spear/south/spear-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-south-walk",
+      "file": "equipment/weapons/spear/south/spear-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-south-attack",
+      "file": "equipment/weapons/spear/south/spear-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-south-cast",
+      "file": "equipment/weapons/spear/south/spear-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-west-idle",
+      "file": "equipment/weapons/spear/west/spear-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-west-walk",
+      "file": "equipment/weapons/spear/west/spear-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-west-attack",
+      "file": "equipment/weapons/spear/west/spear-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-west-cast",
+      "file": "equipment/weapons/spear/west/spear-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-east-idle",
+      "file": "equipment/weapons/spear/east/spear-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-east-walk",
+      "file": "equipment/weapons/spear/east/spear-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-east-attack",
+      "file": "equipment/weapons/spear/east/spear-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-east-cast",
+      "file": "equipment/weapons/spear/east/spear-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-north-idle",
+      "file": "equipment/weapons/spear/north/spear-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-north-walk",
+      "file": "equipment/weapons/spear/north/spear-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-north-attack",
+      "file": "equipment/weapons/spear/north/spear-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "spear-north-cast",
+      "file": "equipment/weapons/spear/north/spear-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-south-idle",
+      "file": "equipment/weapons/longbow/south/longbow-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-south-walk",
+      "file": "equipment/weapons/longbow/south/longbow-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-south-attack",
+      "file": "equipment/weapons/longbow/south/longbow-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-south-cast",
+      "file": "equipment/weapons/longbow/south/longbow-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-west-idle",
+      "file": "equipment/weapons/longbow/west/longbow-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-west-walk",
+      "file": "equipment/weapons/longbow/west/longbow-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-west-attack",
+      "file": "equipment/weapons/longbow/west/longbow-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-west-cast",
+      "file": "equipment/weapons/longbow/west/longbow-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-east-idle",
+      "file": "equipment/weapons/longbow/east/longbow-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-east-walk",
+      "file": "equipment/weapons/longbow/east/longbow-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-east-attack",
+      "file": "equipment/weapons/longbow/east/longbow-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-east-cast",
+      "file": "equipment/weapons/longbow/east/longbow-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-north-idle",
+      "file": "equipment/weapons/longbow/north/longbow-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-north-walk",
+      "file": "equipment/weapons/longbow/north/longbow-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-north-attack",
+      "file": "equipment/weapons/longbow/north/longbow-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "longbow-north-cast",
+      "file": "equipment/weapons/longbow/north/longbow-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-south-idle",
+      "file": "equipment/weapons/wizard-staff/south/wizard-staff-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-south-walk",
+      "file": "equipment/weapons/wizard-staff/south/wizard-staff-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-south-attack",
+      "file": "equipment/weapons/wizard-staff/south/wizard-staff-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-south-cast",
+      "file": "equipment/weapons/wizard-staff/south/wizard-staff-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-west-idle",
+      "file": "equipment/weapons/wizard-staff/west/wizard-staff-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-west-walk",
+      "file": "equipment/weapons/wizard-staff/west/wizard-staff-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-west-attack",
+      "file": "equipment/weapons/wizard-staff/west/wizard-staff-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-west-cast",
+      "file": "equipment/weapons/wizard-staff/west/wizard-staff-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-east-idle",
+      "file": "equipment/weapons/wizard-staff/east/wizard-staff-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-east-walk",
+      "file": "equipment/weapons/wizard-staff/east/wizard-staff-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-east-attack",
+      "file": "equipment/weapons/wizard-staff/east/wizard-staff-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-east-cast",
+      "file": "equipment/weapons/wizard-staff/east/wizard-staff-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-north-idle",
+      "file": "equipment/weapons/wizard-staff/north/wizard-staff-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-north-walk",
+      "file": "equipment/weapons/wizard-staff/north/wizard-staff-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-north-attack",
+      "file": "equipment/weapons/wizard-staff/north/wizard-staff-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "wizard-staff-north-cast",
+      "file": "equipment/weapons/wizard-staff/north/wizard-staff-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-south-idle",
+      "file": "equipment/weapons/round-shield/south/round-shield-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-south-walk",
+      "file": "equipment/weapons/round-shield/south/round-shield-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-south-attack",
+      "file": "equipment/weapons/round-shield/south/round-shield-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-south-cast",
+      "file": "equipment/weapons/round-shield/south/round-shield-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-west-idle",
+      "file": "equipment/weapons/round-shield/west/round-shield-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-west-walk",
+      "file": "equipment/weapons/round-shield/west/round-shield-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-west-attack",
+      "file": "equipment/weapons/round-shield/west/round-shield-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-west-cast",
+      "file": "equipment/weapons/round-shield/west/round-shield-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-east-idle",
+      "file": "equipment/weapons/round-shield/east/round-shield-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-east-walk",
+      "file": "equipment/weapons/round-shield/east/round-shield-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-east-attack",
+      "file": "equipment/weapons/round-shield/east/round-shield-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-east-cast",
+      "file": "equipment/weapons/round-shield/east/round-shield-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-north-idle",
+      "file": "equipment/weapons/round-shield/north/round-shield-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-north-walk",
+      "file": "equipment/weapons/round-shield/north/round-shield-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-north-attack",
+      "file": "equipment/weapons/round-shield/north/round-shield-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "round-shield-north-cast",
+      "file": "equipment/weapons/round-shield/north/round-shield-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    }
+  ],
+  "wearables": [
+    {
+      "id": "traveler-helmet-south-idle",
+      "file": "equipment/wearables/helmet/traveler/south/traveler-helmet-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-south-walk",
+      "file": "equipment/wearables/helmet/traveler/south/traveler-helmet-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-south-attack",
+      "file": "equipment/wearables/helmet/traveler/south/traveler-helmet-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-south-cast",
+      "file": "equipment/wearables/helmet/traveler/south/traveler-helmet-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-west-idle",
+      "file": "equipment/wearables/helmet/traveler/west/traveler-helmet-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-west-walk",
+      "file": "equipment/wearables/helmet/traveler/west/traveler-helmet-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-west-attack",
+      "file": "equipment/wearables/helmet/traveler/west/traveler-helmet-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-west-cast",
+      "file": "equipment/wearables/helmet/traveler/west/traveler-helmet-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-east-idle",
+      "file": "equipment/wearables/helmet/traveler/east/traveler-helmet-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-east-walk",
+      "file": "equipment/wearables/helmet/traveler/east/traveler-helmet-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-east-attack",
+      "file": "equipment/wearables/helmet/traveler/east/traveler-helmet-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-east-cast",
+      "file": "equipment/wearables/helmet/traveler/east/traveler-helmet-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-north-idle",
+      "file": "equipment/wearables/helmet/traveler/north/traveler-helmet-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-north-walk",
+      "file": "equipment/wearables/helmet/traveler/north/traveler-helmet-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-north-attack",
+      "file": "equipment/wearables/helmet/traveler/north/traveler-helmet-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-helmet-north-cast",
+      "file": "equipment/wearables/helmet/traveler/north/traveler-helmet-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-south-idle",
+      "file": "equipment/wearables/torso/traveler/south/traveler-torso-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-south-walk",
+      "file": "equipment/wearables/torso/traveler/south/traveler-torso-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-south-attack",
+      "file": "equipment/wearables/torso/traveler/south/traveler-torso-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-south-cast",
+      "file": "equipment/wearables/torso/traveler/south/traveler-torso-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-west-idle",
+      "file": "equipment/wearables/torso/traveler/west/traveler-torso-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-west-walk",
+      "file": "equipment/wearables/torso/traveler/west/traveler-torso-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-west-attack",
+      "file": "equipment/wearables/torso/traveler/west/traveler-torso-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-west-cast",
+      "file": "equipment/wearables/torso/traveler/west/traveler-torso-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-east-idle",
+      "file": "equipment/wearables/torso/traveler/east/traveler-torso-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-east-walk",
+      "file": "equipment/wearables/torso/traveler/east/traveler-torso-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-east-attack",
+      "file": "equipment/wearables/torso/traveler/east/traveler-torso-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-east-cast",
+      "file": "equipment/wearables/torso/traveler/east/traveler-torso-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-north-idle",
+      "file": "equipment/wearables/torso/traveler/north/traveler-torso-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-north-walk",
+      "file": "equipment/wearables/torso/traveler/north/traveler-torso-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-north-attack",
+      "file": "equipment/wearables/torso/traveler/north/traveler-torso-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-torso-north-cast",
+      "file": "equipment/wearables/torso/traveler/north/traveler-torso-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-south-idle",
+      "file": "equipment/wearables/boots/traveler/south/traveler-boots-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-south-walk",
+      "file": "equipment/wearables/boots/traveler/south/traveler-boots-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-south-attack",
+      "file": "equipment/wearables/boots/traveler/south/traveler-boots-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-south-cast",
+      "file": "equipment/wearables/boots/traveler/south/traveler-boots-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-west-idle",
+      "file": "equipment/wearables/boots/traveler/west/traveler-boots-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-west-walk",
+      "file": "equipment/wearables/boots/traveler/west/traveler-boots-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-west-attack",
+      "file": "equipment/wearables/boots/traveler/west/traveler-boots-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-west-cast",
+      "file": "equipment/wearables/boots/traveler/west/traveler-boots-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-east-idle",
+      "file": "equipment/wearables/boots/traveler/east/traveler-boots-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-east-walk",
+      "file": "equipment/wearables/boots/traveler/east/traveler-boots-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-east-attack",
+      "file": "equipment/wearables/boots/traveler/east/traveler-boots-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-east-cast",
+      "file": "equipment/wearables/boots/traveler/east/traveler-boots-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-north-idle",
+      "file": "equipment/wearables/boots/traveler/north/traveler-boots-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-north-walk",
+      "file": "equipment/wearables/boots/traveler/north/traveler-boots-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-north-attack",
+      "file": "equipment/wearables/boots/traveler/north/traveler-boots-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-boots-north-cast",
+      "file": "equipment/wearables/boots/traveler/north/traveler-boots-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-south-idle",
+      "file": "equipment/wearables/cloak/traveler/south/traveler-cloak-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-south-walk",
+      "file": "equipment/wearables/cloak/traveler/south/traveler-cloak-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-south-attack",
+      "file": "equipment/wearables/cloak/traveler/south/traveler-cloak-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-south-cast",
+      "file": "equipment/wearables/cloak/traveler/south/traveler-cloak-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-west-idle",
+      "file": "equipment/wearables/cloak/traveler/west/traveler-cloak-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-west-walk",
+      "file": "equipment/wearables/cloak/traveler/west/traveler-cloak-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-west-attack",
+      "file": "equipment/wearables/cloak/traveler/west/traveler-cloak-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-west-cast",
+      "file": "equipment/wearables/cloak/traveler/west/traveler-cloak-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-east-idle",
+      "file": "equipment/wearables/cloak/traveler/east/traveler-cloak-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-east-walk",
+      "file": "equipment/wearables/cloak/traveler/east/traveler-cloak-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-east-attack",
+      "file": "equipment/wearables/cloak/traveler/east/traveler-cloak-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-east-cast",
+      "file": "equipment/wearables/cloak/traveler/east/traveler-cloak-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-north-idle",
+      "file": "equipment/wearables/cloak/traveler/north/traveler-cloak-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-north-walk",
+      "file": "equipment/wearables/cloak/traveler/north/traveler-cloak-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-north-attack",
+      "file": "equipment/wearables/cloak/traveler/north/traveler-cloak-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-cloak-north-cast",
+      "file": "equipment/wearables/cloak/traveler/north/traveler-cloak-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-south-idle",
+      "file": "equipment/wearables/accessory/traveler/south/traveler-accessory-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-south-walk",
+      "file": "equipment/wearables/accessory/traveler/south/traveler-accessory-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-south-attack",
+      "file": "equipment/wearables/accessory/traveler/south/traveler-accessory-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-south-cast",
+      "file": "equipment/wearables/accessory/traveler/south/traveler-accessory-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-west-idle",
+      "file": "equipment/wearables/accessory/traveler/west/traveler-accessory-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-west-walk",
+      "file": "equipment/wearables/accessory/traveler/west/traveler-accessory-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-west-attack",
+      "file": "equipment/wearables/accessory/traveler/west/traveler-accessory-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-west-cast",
+      "file": "equipment/wearables/accessory/traveler/west/traveler-accessory-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-east-idle",
+      "file": "equipment/wearables/accessory/traveler/east/traveler-accessory-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-east-walk",
+      "file": "equipment/wearables/accessory/traveler/east/traveler-accessory-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-east-attack",
+      "file": "equipment/wearables/accessory/traveler/east/traveler-accessory-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-east-cast",
+      "file": "equipment/wearables/accessory/traveler/east/traveler-accessory-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-north-idle",
+      "file": "equipment/wearables/accessory/traveler/north/traveler-accessory-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-north-walk",
+      "file": "equipment/wearables/accessory/traveler/north/traveler-accessory-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-north-attack",
+      "file": "equipment/wearables/accessory/traveler/north/traveler-accessory-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-accessory-north-cast",
+      "file": "equipment/wearables/accessory/traveler/north/traveler-accessory-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-south-idle",
+      "file": "equipment/wearables/back-gear/traveler/south/traveler-back-gear-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-south-walk",
+      "file": "equipment/wearables/back-gear/traveler/south/traveler-back-gear-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-south-attack",
+      "file": "equipment/wearables/back-gear/traveler/south/traveler-back-gear-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-south-cast",
+      "file": "equipment/wearables/back-gear/traveler/south/traveler-back-gear-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-west-idle",
+      "file": "equipment/wearables/back-gear/traveler/west/traveler-back-gear-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-west-walk",
+      "file": "equipment/wearables/back-gear/traveler/west/traveler-back-gear-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-west-attack",
+      "file": "equipment/wearables/back-gear/traveler/west/traveler-back-gear-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-west-cast",
+      "file": "equipment/wearables/back-gear/traveler/west/traveler-back-gear-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-east-idle",
+      "file": "equipment/wearables/back-gear/traveler/east/traveler-back-gear-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-east-walk",
+      "file": "equipment/wearables/back-gear/traveler/east/traveler-back-gear-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-east-attack",
+      "file": "equipment/wearables/back-gear/traveler/east/traveler-back-gear-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-east-cast",
+      "file": "equipment/wearables/back-gear/traveler/east/traveler-back-gear-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-north-idle",
+      "file": "equipment/wearables/back-gear/traveler/north/traveler-back-gear-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-north-walk",
+      "file": "equipment/wearables/back-gear/traveler/north/traveler-back-gear-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-north-attack",
+      "file": "equipment/wearables/back-gear/traveler/north/traveler-back-gear-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "traveler-back-gear-north-cast",
+      "file": "equipment/wearables/back-gear/traveler/north/traveler-back-gear-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-south-idle",
+      "file": "equipment/wearables/helmet/ranger/south/ranger-helmet-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-south-walk",
+      "file": "equipment/wearables/helmet/ranger/south/ranger-helmet-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-south-attack",
+      "file": "equipment/wearables/helmet/ranger/south/ranger-helmet-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-south-cast",
+      "file": "equipment/wearables/helmet/ranger/south/ranger-helmet-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-west-idle",
+      "file": "equipment/wearables/helmet/ranger/west/ranger-helmet-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-west-walk",
+      "file": "equipment/wearables/helmet/ranger/west/ranger-helmet-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-west-attack",
+      "file": "equipment/wearables/helmet/ranger/west/ranger-helmet-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-west-cast",
+      "file": "equipment/wearables/helmet/ranger/west/ranger-helmet-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-east-idle",
+      "file": "equipment/wearables/helmet/ranger/east/ranger-helmet-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-east-walk",
+      "file": "equipment/wearables/helmet/ranger/east/ranger-helmet-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-east-attack",
+      "file": "equipment/wearables/helmet/ranger/east/ranger-helmet-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-east-cast",
+      "file": "equipment/wearables/helmet/ranger/east/ranger-helmet-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-north-idle",
+      "file": "equipment/wearables/helmet/ranger/north/ranger-helmet-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-north-walk",
+      "file": "equipment/wearables/helmet/ranger/north/ranger-helmet-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-north-attack",
+      "file": "equipment/wearables/helmet/ranger/north/ranger-helmet-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-helmet-north-cast",
+      "file": "equipment/wearables/helmet/ranger/north/ranger-helmet-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-south-idle",
+      "file": "equipment/wearables/torso/ranger/south/ranger-torso-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-south-walk",
+      "file": "equipment/wearables/torso/ranger/south/ranger-torso-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-south-attack",
+      "file": "equipment/wearables/torso/ranger/south/ranger-torso-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-south-cast",
+      "file": "equipment/wearables/torso/ranger/south/ranger-torso-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-west-idle",
+      "file": "equipment/wearables/torso/ranger/west/ranger-torso-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-west-walk",
+      "file": "equipment/wearables/torso/ranger/west/ranger-torso-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-west-attack",
+      "file": "equipment/wearables/torso/ranger/west/ranger-torso-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-west-cast",
+      "file": "equipment/wearables/torso/ranger/west/ranger-torso-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-east-idle",
+      "file": "equipment/wearables/torso/ranger/east/ranger-torso-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-east-walk",
+      "file": "equipment/wearables/torso/ranger/east/ranger-torso-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-east-attack",
+      "file": "equipment/wearables/torso/ranger/east/ranger-torso-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-east-cast",
+      "file": "equipment/wearables/torso/ranger/east/ranger-torso-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-north-idle",
+      "file": "equipment/wearables/torso/ranger/north/ranger-torso-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-north-walk",
+      "file": "equipment/wearables/torso/ranger/north/ranger-torso-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-north-attack",
+      "file": "equipment/wearables/torso/ranger/north/ranger-torso-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-torso-north-cast",
+      "file": "equipment/wearables/torso/ranger/north/ranger-torso-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-south-idle",
+      "file": "equipment/wearables/boots/ranger/south/ranger-boots-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-south-walk",
+      "file": "equipment/wearables/boots/ranger/south/ranger-boots-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-south-attack",
+      "file": "equipment/wearables/boots/ranger/south/ranger-boots-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-south-cast",
+      "file": "equipment/wearables/boots/ranger/south/ranger-boots-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-west-idle",
+      "file": "equipment/wearables/boots/ranger/west/ranger-boots-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-west-walk",
+      "file": "equipment/wearables/boots/ranger/west/ranger-boots-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-west-attack",
+      "file": "equipment/wearables/boots/ranger/west/ranger-boots-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-west-cast",
+      "file": "equipment/wearables/boots/ranger/west/ranger-boots-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-east-idle",
+      "file": "equipment/wearables/boots/ranger/east/ranger-boots-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-east-walk",
+      "file": "equipment/wearables/boots/ranger/east/ranger-boots-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-east-attack",
+      "file": "equipment/wearables/boots/ranger/east/ranger-boots-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-east-cast",
+      "file": "equipment/wearables/boots/ranger/east/ranger-boots-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-north-idle",
+      "file": "equipment/wearables/boots/ranger/north/ranger-boots-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-north-walk",
+      "file": "equipment/wearables/boots/ranger/north/ranger-boots-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-north-attack",
+      "file": "equipment/wearables/boots/ranger/north/ranger-boots-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-boots-north-cast",
+      "file": "equipment/wearables/boots/ranger/north/ranger-boots-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-south-idle",
+      "file": "equipment/wearables/cloak/ranger/south/ranger-cloak-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-south-walk",
+      "file": "equipment/wearables/cloak/ranger/south/ranger-cloak-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-south-attack",
+      "file": "equipment/wearables/cloak/ranger/south/ranger-cloak-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-south-cast",
+      "file": "equipment/wearables/cloak/ranger/south/ranger-cloak-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-west-idle",
+      "file": "equipment/wearables/cloak/ranger/west/ranger-cloak-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-west-walk",
+      "file": "equipment/wearables/cloak/ranger/west/ranger-cloak-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-west-attack",
+      "file": "equipment/wearables/cloak/ranger/west/ranger-cloak-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-west-cast",
+      "file": "equipment/wearables/cloak/ranger/west/ranger-cloak-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-east-idle",
+      "file": "equipment/wearables/cloak/ranger/east/ranger-cloak-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-east-walk",
+      "file": "equipment/wearables/cloak/ranger/east/ranger-cloak-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-east-attack",
+      "file": "equipment/wearables/cloak/ranger/east/ranger-cloak-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-east-cast",
+      "file": "equipment/wearables/cloak/ranger/east/ranger-cloak-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-north-idle",
+      "file": "equipment/wearables/cloak/ranger/north/ranger-cloak-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-north-walk",
+      "file": "equipment/wearables/cloak/ranger/north/ranger-cloak-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-north-attack",
+      "file": "equipment/wearables/cloak/ranger/north/ranger-cloak-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-cloak-north-cast",
+      "file": "equipment/wearables/cloak/ranger/north/ranger-cloak-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-south-idle",
+      "file": "equipment/wearables/accessory/ranger/south/ranger-accessory-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-south-walk",
+      "file": "equipment/wearables/accessory/ranger/south/ranger-accessory-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-south-attack",
+      "file": "equipment/wearables/accessory/ranger/south/ranger-accessory-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-south-cast",
+      "file": "equipment/wearables/accessory/ranger/south/ranger-accessory-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-west-idle",
+      "file": "equipment/wearables/accessory/ranger/west/ranger-accessory-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-west-walk",
+      "file": "equipment/wearables/accessory/ranger/west/ranger-accessory-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-west-attack",
+      "file": "equipment/wearables/accessory/ranger/west/ranger-accessory-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-west-cast",
+      "file": "equipment/wearables/accessory/ranger/west/ranger-accessory-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-east-idle",
+      "file": "equipment/wearables/accessory/ranger/east/ranger-accessory-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-east-walk",
+      "file": "equipment/wearables/accessory/ranger/east/ranger-accessory-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-east-attack",
+      "file": "equipment/wearables/accessory/ranger/east/ranger-accessory-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-east-cast",
+      "file": "equipment/wearables/accessory/ranger/east/ranger-accessory-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-north-idle",
+      "file": "equipment/wearables/accessory/ranger/north/ranger-accessory-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-north-walk",
+      "file": "equipment/wearables/accessory/ranger/north/ranger-accessory-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-north-attack",
+      "file": "equipment/wearables/accessory/ranger/north/ranger-accessory-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-accessory-north-cast",
+      "file": "equipment/wearables/accessory/ranger/north/ranger-accessory-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-south-idle",
+      "file": "equipment/wearables/back-gear/ranger/south/ranger-back-gear-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-south-walk",
+      "file": "equipment/wearables/back-gear/ranger/south/ranger-back-gear-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-south-attack",
+      "file": "equipment/wearables/back-gear/ranger/south/ranger-back-gear-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-south-cast",
+      "file": "equipment/wearables/back-gear/ranger/south/ranger-back-gear-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-west-idle",
+      "file": "equipment/wearables/back-gear/ranger/west/ranger-back-gear-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-west-walk",
+      "file": "equipment/wearables/back-gear/ranger/west/ranger-back-gear-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-west-attack",
+      "file": "equipment/wearables/back-gear/ranger/west/ranger-back-gear-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-west-cast",
+      "file": "equipment/wearables/back-gear/ranger/west/ranger-back-gear-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-east-idle",
+      "file": "equipment/wearables/back-gear/ranger/east/ranger-back-gear-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-east-walk",
+      "file": "equipment/wearables/back-gear/ranger/east/ranger-back-gear-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-east-attack",
+      "file": "equipment/wearables/back-gear/ranger/east/ranger-back-gear-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-east-cast",
+      "file": "equipment/wearables/back-gear/ranger/east/ranger-back-gear-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-north-idle",
+      "file": "equipment/wearables/back-gear/ranger/north/ranger-back-gear-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-north-walk",
+      "file": "equipment/wearables/back-gear/ranger/north/ranger-back-gear-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-north-attack",
+      "file": "equipment/wearables/back-gear/ranger/north/ranger-back-gear-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "ranger-back-gear-north-cast",
+      "file": "equipment/wearables/back-gear/ranger/north/ranger-back-gear-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-south-idle",
+      "file": "equipment/wearables/helmet/knight/south/knight-helmet-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-south-walk",
+      "file": "equipment/wearables/helmet/knight/south/knight-helmet-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-south-attack",
+      "file": "equipment/wearables/helmet/knight/south/knight-helmet-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-south-cast",
+      "file": "equipment/wearables/helmet/knight/south/knight-helmet-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-west-idle",
+      "file": "equipment/wearables/helmet/knight/west/knight-helmet-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-west-walk",
+      "file": "equipment/wearables/helmet/knight/west/knight-helmet-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-west-attack",
+      "file": "equipment/wearables/helmet/knight/west/knight-helmet-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-west-cast",
+      "file": "equipment/wearables/helmet/knight/west/knight-helmet-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-east-idle",
+      "file": "equipment/wearables/helmet/knight/east/knight-helmet-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-east-walk",
+      "file": "equipment/wearables/helmet/knight/east/knight-helmet-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-east-attack",
+      "file": "equipment/wearables/helmet/knight/east/knight-helmet-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-east-cast",
+      "file": "equipment/wearables/helmet/knight/east/knight-helmet-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-north-idle",
+      "file": "equipment/wearables/helmet/knight/north/knight-helmet-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-north-walk",
+      "file": "equipment/wearables/helmet/knight/north/knight-helmet-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-north-attack",
+      "file": "equipment/wearables/helmet/knight/north/knight-helmet-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-helmet-north-cast",
+      "file": "equipment/wearables/helmet/knight/north/knight-helmet-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-south-idle",
+      "file": "equipment/wearables/torso/knight/south/knight-torso-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-south-walk",
+      "file": "equipment/wearables/torso/knight/south/knight-torso-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-south-attack",
+      "file": "equipment/wearables/torso/knight/south/knight-torso-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-south-cast",
+      "file": "equipment/wearables/torso/knight/south/knight-torso-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-west-idle",
+      "file": "equipment/wearables/torso/knight/west/knight-torso-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-west-walk",
+      "file": "equipment/wearables/torso/knight/west/knight-torso-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-west-attack",
+      "file": "equipment/wearables/torso/knight/west/knight-torso-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-west-cast",
+      "file": "equipment/wearables/torso/knight/west/knight-torso-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-east-idle",
+      "file": "equipment/wearables/torso/knight/east/knight-torso-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-east-walk",
+      "file": "equipment/wearables/torso/knight/east/knight-torso-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-east-attack",
+      "file": "equipment/wearables/torso/knight/east/knight-torso-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-east-cast",
+      "file": "equipment/wearables/torso/knight/east/knight-torso-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-north-idle",
+      "file": "equipment/wearables/torso/knight/north/knight-torso-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-north-walk",
+      "file": "equipment/wearables/torso/knight/north/knight-torso-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-north-attack",
+      "file": "equipment/wearables/torso/knight/north/knight-torso-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-torso-north-cast",
+      "file": "equipment/wearables/torso/knight/north/knight-torso-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-south-idle",
+      "file": "equipment/wearables/boots/knight/south/knight-boots-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-south-walk",
+      "file": "equipment/wearables/boots/knight/south/knight-boots-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-south-attack",
+      "file": "equipment/wearables/boots/knight/south/knight-boots-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-south-cast",
+      "file": "equipment/wearables/boots/knight/south/knight-boots-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-west-idle",
+      "file": "equipment/wearables/boots/knight/west/knight-boots-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-west-walk",
+      "file": "equipment/wearables/boots/knight/west/knight-boots-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-west-attack",
+      "file": "equipment/wearables/boots/knight/west/knight-boots-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-west-cast",
+      "file": "equipment/wearables/boots/knight/west/knight-boots-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-east-idle",
+      "file": "equipment/wearables/boots/knight/east/knight-boots-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-east-walk",
+      "file": "equipment/wearables/boots/knight/east/knight-boots-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-east-attack",
+      "file": "equipment/wearables/boots/knight/east/knight-boots-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-east-cast",
+      "file": "equipment/wearables/boots/knight/east/knight-boots-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-north-idle",
+      "file": "equipment/wearables/boots/knight/north/knight-boots-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-north-walk",
+      "file": "equipment/wearables/boots/knight/north/knight-boots-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-north-attack",
+      "file": "equipment/wearables/boots/knight/north/knight-boots-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-boots-north-cast",
+      "file": "equipment/wearables/boots/knight/north/knight-boots-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-south-idle",
+      "file": "equipment/wearables/cloak/knight/south/knight-cloak-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-south-walk",
+      "file": "equipment/wearables/cloak/knight/south/knight-cloak-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-south-attack",
+      "file": "equipment/wearables/cloak/knight/south/knight-cloak-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-south-cast",
+      "file": "equipment/wearables/cloak/knight/south/knight-cloak-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-west-idle",
+      "file": "equipment/wearables/cloak/knight/west/knight-cloak-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-west-walk",
+      "file": "equipment/wearables/cloak/knight/west/knight-cloak-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-west-attack",
+      "file": "equipment/wearables/cloak/knight/west/knight-cloak-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-west-cast",
+      "file": "equipment/wearables/cloak/knight/west/knight-cloak-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-east-idle",
+      "file": "equipment/wearables/cloak/knight/east/knight-cloak-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-east-walk",
+      "file": "equipment/wearables/cloak/knight/east/knight-cloak-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-east-attack",
+      "file": "equipment/wearables/cloak/knight/east/knight-cloak-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-east-cast",
+      "file": "equipment/wearables/cloak/knight/east/knight-cloak-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-north-idle",
+      "file": "equipment/wearables/cloak/knight/north/knight-cloak-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-north-walk",
+      "file": "equipment/wearables/cloak/knight/north/knight-cloak-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-north-attack",
+      "file": "equipment/wearables/cloak/knight/north/knight-cloak-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-cloak-north-cast",
+      "file": "equipment/wearables/cloak/knight/north/knight-cloak-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-south-idle",
+      "file": "equipment/wearables/accessory/knight/south/knight-accessory-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-south-walk",
+      "file": "equipment/wearables/accessory/knight/south/knight-accessory-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-south-attack",
+      "file": "equipment/wearables/accessory/knight/south/knight-accessory-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-south-cast",
+      "file": "equipment/wearables/accessory/knight/south/knight-accessory-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-west-idle",
+      "file": "equipment/wearables/accessory/knight/west/knight-accessory-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-west-walk",
+      "file": "equipment/wearables/accessory/knight/west/knight-accessory-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-west-attack",
+      "file": "equipment/wearables/accessory/knight/west/knight-accessory-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-west-cast",
+      "file": "equipment/wearables/accessory/knight/west/knight-accessory-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-east-idle",
+      "file": "equipment/wearables/accessory/knight/east/knight-accessory-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-east-walk",
+      "file": "equipment/wearables/accessory/knight/east/knight-accessory-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-east-attack",
+      "file": "equipment/wearables/accessory/knight/east/knight-accessory-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-east-cast",
+      "file": "equipment/wearables/accessory/knight/east/knight-accessory-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-north-idle",
+      "file": "equipment/wearables/accessory/knight/north/knight-accessory-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-north-walk",
+      "file": "equipment/wearables/accessory/knight/north/knight-accessory-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-north-attack",
+      "file": "equipment/wearables/accessory/knight/north/knight-accessory-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-accessory-north-cast",
+      "file": "equipment/wearables/accessory/knight/north/knight-accessory-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-south-idle",
+      "file": "equipment/wearables/back-gear/knight/south/knight-back-gear-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-south-walk",
+      "file": "equipment/wearables/back-gear/knight/south/knight-back-gear-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-south-attack",
+      "file": "equipment/wearables/back-gear/knight/south/knight-back-gear-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-south-cast",
+      "file": "equipment/wearables/back-gear/knight/south/knight-back-gear-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-west-idle",
+      "file": "equipment/wearables/back-gear/knight/west/knight-back-gear-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-west-walk",
+      "file": "equipment/wearables/back-gear/knight/west/knight-back-gear-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-west-attack",
+      "file": "equipment/wearables/back-gear/knight/west/knight-back-gear-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-west-cast",
+      "file": "equipment/wearables/back-gear/knight/west/knight-back-gear-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-east-idle",
+      "file": "equipment/wearables/back-gear/knight/east/knight-back-gear-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-east-walk",
+      "file": "equipment/wearables/back-gear/knight/east/knight-back-gear-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-east-attack",
+      "file": "equipment/wearables/back-gear/knight/east/knight-back-gear-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-east-cast",
+      "file": "equipment/wearables/back-gear/knight/east/knight-back-gear-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-north-idle",
+      "file": "equipment/wearables/back-gear/knight/north/knight-back-gear-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-north-walk",
+      "file": "equipment/wearables/back-gear/knight/north/knight-back-gear-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-north-attack",
+      "file": "equipment/wearables/back-gear/knight/north/knight-back-gear-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "knight-back-gear-north-cast",
+      "file": "equipment/wearables/back-gear/knight/north/knight-back-gear-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-south-idle",
+      "file": "equipment/wearables/helmet/arcane/south/arcane-helmet-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-south-walk",
+      "file": "equipment/wearables/helmet/arcane/south/arcane-helmet-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-south-attack",
+      "file": "equipment/wearables/helmet/arcane/south/arcane-helmet-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-south-cast",
+      "file": "equipment/wearables/helmet/arcane/south/arcane-helmet-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-west-idle",
+      "file": "equipment/wearables/helmet/arcane/west/arcane-helmet-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-west-walk",
+      "file": "equipment/wearables/helmet/arcane/west/arcane-helmet-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-west-attack",
+      "file": "equipment/wearables/helmet/arcane/west/arcane-helmet-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-west-cast",
+      "file": "equipment/wearables/helmet/arcane/west/arcane-helmet-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-east-idle",
+      "file": "equipment/wearables/helmet/arcane/east/arcane-helmet-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-east-walk",
+      "file": "equipment/wearables/helmet/arcane/east/arcane-helmet-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-east-attack",
+      "file": "equipment/wearables/helmet/arcane/east/arcane-helmet-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-east-cast",
+      "file": "equipment/wearables/helmet/arcane/east/arcane-helmet-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-north-idle",
+      "file": "equipment/wearables/helmet/arcane/north/arcane-helmet-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-north-walk",
+      "file": "equipment/wearables/helmet/arcane/north/arcane-helmet-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-north-attack",
+      "file": "equipment/wearables/helmet/arcane/north/arcane-helmet-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-helmet-north-cast",
+      "file": "equipment/wearables/helmet/arcane/north/arcane-helmet-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-south-idle",
+      "file": "equipment/wearables/torso/arcane/south/arcane-torso-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-south-walk",
+      "file": "equipment/wearables/torso/arcane/south/arcane-torso-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-south-attack",
+      "file": "equipment/wearables/torso/arcane/south/arcane-torso-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-south-cast",
+      "file": "equipment/wearables/torso/arcane/south/arcane-torso-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-west-idle",
+      "file": "equipment/wearables/torso/arcane/west/arcane-torso-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-west-walk",
+      "file": "equipment/wearables/torso/arcane/west/arcane-torso-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-west-attack",
+      "file": "equipment/wearables/torso/arcane/west/arcane-torso-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-west-cast",
+      "file": "equipment/wearables/torso/arcane/west/arcane-torso-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-east-idle",
+      "file": "equipment/wearables/torso/arcane/east/arcane-torso-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-east-walk",
+      "file": "equipment/wearables/torso/arcane/east/arcane-torso-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-east-attack",
+      "file": "equipment/wearables/torso/arcane/east/arcane-torso-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-east-cast",
+      "file": "equipment/wearables/torso/arcane/east/arcane-torso-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-north-idle",
+      "file": "equipment/wearables/torso/arcane/north/arcane-torso-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-north-walk",
+      "file": "equipment/wearables/torso/arcane/north/arcane-torso-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-north-attack",
+      "file": "equipment/wearables/torso/arcane/north/arcane-torso-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-torso-north-cast",
+      "file": "equipment/wearables/torso/arcane/north/arcane-torso-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-south-idle",
+      "file": "equipment/wearables/boots/arcane/south/arcane-boots-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-south-walk",
+      "file": "equipment/wearables/boots/arcane/south/arcane-boots-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-south-attack",
+      "file": "equipment/wearables/boots/arcane/south/arcane-boots-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-south-cast",
+      "file": "equipment/wearables/boots/arcane/south/arcane-boots-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-west-idle",
+      "file": "equipment/wearables/boots/arcane/west/arcane-boots-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-west-walk",
+      "file": "equipment/wearables/boots/arcane/west/arcane-boots-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-west-attack",
+      "file": "equipment/wearables/boots/arcane/west/arcane-boots-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-west-cast",
+      "file": "equipment/wearables/boots/arcane/west/arcane-boots-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-east-idle",
+      "file": "equipment/wearables/boots/arcane/east/arcane-boots-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-east-walk",
+      "file": "equipment/wearables/boots/arcane/east/arcane-boots-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-east-attack",
+      "file": "equipment/wearables/boots/arcane/east/arcane-boots-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-east-cast",
+      "file": "equipment/wearables/boots/arcane/east/arcane-boots-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-north-idle",
+      "file": "equipment/wearables/boots/arcane/north/arcane-boots-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-north-walk",
+      "file": "equipment/wearables/boots/arcane/north/arcane-boots-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-north-attack",
+      "file": "equipment/wearables/boots/arcane/north/arcane-boots-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-boots-north-cast",
+      "file": "equipment/wearables/boots/arcane/north/arcane-boots-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-south-idle",
+      "file": "equipment/wearables/cloak/arcane/south/arcane-cloak-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-south-walk",
+      "file": "equipment/wearables/cloak/arcane/south/arcane-cloak-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-south-attack",
+      "file": "equipment/wearables/cloak/arcane/south/arcane-cloak-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-south-cast",
+      "file": "equipment/wearables/cloak/arcane/south/arcane-cloak-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-west-idle",
+      "file": "equipment/wearables/cloak/arcane/west/arcane-cloak-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-west-walk",
+      "file": "equipment/wearables/cloak/arcane/west/arcane-cloak-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-west-attack",
+      "file": "equipment/wearables/cloak/arcane/west/arcane-cloak-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-west-cast",
+      "file": "equipment/wearables/cloak/arcane/west/arcane-cloak-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-east-idle",
+      "file": "equipment/wearables/cloak/arcane/east/arcane-cloak-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-east-walk",
+      "file": "equipment/wearables/cloak/arcane/east/arcane-cloak-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-east-attack",
+      "file": "equipment/wearables/cloak/arcane/east/arcane-cloak-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-east-cast",
+      "file": "equipment/wearables/cloak/arcane/east/arcane-cloak-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-north-idle",
+      "file": "equipment/wearables/cloak/arcane/north/arcane-cloak-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-north-walk",
+      "file": "equipment/wearables/cloak/arcane/north/arcane-cloak-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-north-attack",
+      "file": "equipment/wearables/cloak/arcane/north/arcane-cloak-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-cloak-north-cast",
+      "file": "equipment/wearables/cloak/arcane/north/arcane-cloak-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-south-idle",
+      "file": "equipment/wearables/accessory/arcane/south/arcane-accessory-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-south-walk",
+      "file": "equipment/wearables/accessory/arcane/south/arcane-accessory-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-south-attack",
+      "file": "equipment/wearables/accessory/arcane/south/arcane-accessory-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-south-cast",
+      "file": "equipment/wearables/accessory/arcane/south/arcane-accessory-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-west-idle",
+      "file": "equipment/wearables/accessory/arcane/west/arcane-accessory-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-west-walk",
+      "file": "equipment/wearables/accessory/arcane/west/arcane-accessory-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-west-attack",
+      "file": "equipment/wearables/accessory/arcane/west/arcane-accessory-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-west-cast",
+      "file": "equipment/wearables/accessory/arcane/west/arcane-accessory-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-east-idle",
+      "file": "equipment/wearables/accessory/arcane/east/arcane-accessory-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-east-walk",
+      "file": "equipment/wearables/accessory/arcane/east/arcane-accessory-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-east-attack",
+      "file": "equipment/wearables/accessory/arcane/east/arcane-accessory-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-east-cast",
+      "file": "equipment/wearables/accessory/arcane/east/arcane-accessory-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-north-idle",
+      "file": "equipment/wearables/accessory/arcane/north/arcane-accessory-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-north-walk",
+      "file": "equipment/wearables/accessory/arcane/north/arcane-accessory-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-north-attack",
+      "file": "equipment/wearables/accessory/arcane/north/arcane-accessory-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-accessory-north-cast",
+      "file": "equipment/wearables/accessory/arcane/north/arcane-accessory-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-south-idle",
+      "file": "equipment/wearables/back-gear/arcane/south/arcane-back-gear-south-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-south-walk",
+      "file": "equipment/wearables/back-gear/arcane/south/arcane-back-gear-south-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-south-attack",
+      "file": "equipment/wearables/back-gear/arcane/south/arcane-back-gear-south-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-south-cast",
+      "file": "equipment/wearables/back-gear/arcane/south/arcane-back-gear-south-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-west-idle",
+      "file": "equipment/wearables/back-gear/arcane/west/arcane-back-gear-west-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-west-walk",
+      "file": "equipment/wearables/back-gear/arcane/west/arcane-back-gear-west-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-west-attack",
+      "file": "equipment/wearables/back-gear/arcane/west/arcane-back-gear-west-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-west-cast",
+      "file": "equipment/wearables/back-gear/arcane/west/arcane-back-gear-west-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-east-idle",
+      "file": "equipment/wearables/back-gear/arcane/east/arcane-back-gear-east-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-east-walk",
+      "file": "equipment/wearables/back-gear/arcane/east/arcane-back-gear-east-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-east-attack",
+      "file": "equipment/wearables/back-gear/arcane/east/arcane-back-gear-east-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-east-cast",
+      "file": "equipment/wearables/back-gear/arcane/east/arcane-back-gear-east-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-north-idle",
+      "file": "equipment/wearables/back-gear/arcane/north/arcane-back-gear-north-idle-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-north-walk",
+      "file": "equipment/wearables/back-gear/arcane/north/arcane-back-gear-north-walk-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-north-attack",
+      "file": "equipment/wearables/back-gear/arcane/north/arcane-back-gear-north-attack-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    },
+    {
+      "id": "arcane-back-gear-north-cast",
+      "file": "equipment/wearables/back-gear/arcane/north/arcane-back-gear-north-cast-v1.png",
+      "anchor": [
+        128,
+        150
+      ]
+    }
+  ],
+  "dropped_loot": [
+    {
+      "id": "01-leather-hood",
+      "file": "equipment/dropped-loot/01-leather-hood-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "02-iron-helmet",
+      "file": "equipment/dropped-loot/02-iron-helmet-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "03-ranger-cowl",
+      "file": "equipment/dropped-loot/03-ranger-cowl-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "04-wizard-hat",
+      "file": "equipment/dropped-loot/04-wizard-hat-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "05-temple-circlet",
+      "file": "equipment/dropped-loot/05-temple-circlet-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "06-obsidian-blackguard-helmet",
+      "file": "equipment/dropped-loot/06-obsidian-blackguard-helmet-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "07-padded-vest",
+      "file": "equipment/dropped-loot/07-padded-vest-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "08-chainmail-shirt",
+      "file": "equipment/dropped-loot/08-chainmail-shirt-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "09-steel-plate-cuirass",
+      "file": "equipment/dropped-loot/09-steel-plate-cuirass-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "10-ranger-leather",
+      "file": "equipment/dropped-loot/10-ranger-leather-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "11-arcane-robe",
+      "file": "equipment/dropped-loot/11-arcane-robe-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "12-cleric-vestment",
+      "file": "equipment/dropped-loot/12-cleric-vestment-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "13-leather-trousers-boots",
+      "file": "equipment/dropped-loot/13-leather-trousers-boots-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "14-chain-greaves",
+      "file": "equipment/dropped-loot/14-chain-greaves-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "15-plate-greaves",
+      "file": "equipment/dropped-loot/15-plate-greaves-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "16-ranger-boots",
+      "file": "equipment/dropped-loot/16-ranger-boots-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "17-mage-boots",
+      "file": "equipment/dropped-loot/17-mage-boots-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "18-volcanic-plate-boots",
+      "file": "equipment/dropped-loot/18-volcanic-plate-boots-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "19-red-travel-cloak",
+      "file": "equipment/dropped-loot/19-red-travel-cloak-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "20-green-forest-cloak",
+      "file": "equipment/dropped-loot/20-green-forest-cloak-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "21-arrow-quiver",
+      "file": "equipment/dropped-loot/21-arrow-quiver-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "22-utility-belt",
+      "file": "equipment/dropped-loot/22-utility-belt-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "23-silver-moon-amulet",
+      "file": "equipment/dropped-loot/23-silver-moon-amulet-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "24-gold-signet-ring",
+      "file": "equipment/dropped-loot/24-gold-signet-ring-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "01-health-potion",
+      "file": "equipment/dropped-loot/01-health-potion-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "02-mana-potion",
+      "file": "equipment/dropped-loot/02-mana-potion-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "03-antidote",
+      "file": "equipment/dropped-loot/03-antidote-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "04-stamina-tonic",
+      "file": "equipment/dropped-loot/04-stamina-tonic-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "05-invisibility-flask",
+      "file": "equipment/dropped-loot/05-invisibility-flask-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "06-fire-resistance-potion",
+      "file": "equipment/dropped-loot/06-fire-resistance-potion-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "07-bread",
+      "file": "equipment/dropped-loot/07-bread-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "08-cheese",
+      "file": "equipment/dropped-loot/08-cheese-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "09-meat-ration",
+      "file": "equipment/dropped-loot/09-meat-ration-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "10-apple",
+      "file": "equipment/dropped-loot/10-apple-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "11-water-flask",
+      "file": "equipment/dropped-loot/11-water-flask-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "12-ration-bag",
+      "file": "equipment/dropped-loot/12-ration-bag-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "13-spell-scroll",
+      "file": "equipment/dropped-loot/13-spell-scroll-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "14-rune-stone",
+      "file": "equipment/dropped-loot/14-rune-stone-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "15-skeleton-key",
+      "file": "equipment/dropped-loot/15-skeleton-key-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "16-lockpick-tools",
+      "file": "equipment/dropped-loot/16-lockpick-tools-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "17-alchemical-bomb",
+      "file": "equipment/dropped-loot/17-alchemical-bomb-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "18-healing-herbs",
+      "file": "equipment/dropped-loot/18-healing-herbs-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "19-gold-coins",
+      "file": "equipment/dropped-loot/19-gold-coins-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "20-ruby",
+      "file": "equipment/dropped-loot/20-ruby-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "21-sapphire",
+      "file": "equipment/dropped-loot/21-sapphire-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "22-magic-crystal",
+      "file": "equipment/dropped-loot/22-magic-crystal-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "23-eye-relic",
+      "file": "equipment/dropped-loot/23-eye-relic-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "24-dragon-egg",
+      "file": "equipment/dropped-loot/24-dragon-egg-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "01-iron-shortsword",
+      "file": "equipment/dropped-loot/01-iron-shortsword-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "02-steel-longsword",
+      "file": "equipment/dropped-loot/02-steel-longsword-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "03-greatsword",
+      "file": "equipment/dropped-loot/03-greatsword-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "04-desert-scimitar",
+      "file": "equipment/dropped-loot/04-desert-scimitar-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "05-rapier",
+      "file": "equipment/dropped-loot/05-rapier-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "06-rogue-dagger",
+      "file": "equipment/dropped-loot/06-rogue-dagger-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "07-hand-axe",
+      "file": "equipment/dropped-loot/07-hand-axe-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "08-battleaxe",
+      "file": "equipment/dropped-loot/08-battleaxe-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "09-greataxe",
+      "file": "equipment/dropped-loot/09-greataxe-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "10-iron-mace",
+      "file": "equipment/dropped-loot/10-iron-mace-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "11-warhammer",
+      "file": "equipment/dropped-loot/11-warhammer-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "12-spiked-flail",
+      "file": "equipment/dropped-loot/12-spiked-flail-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "13-shortbow",
+      "file": "equipment/dropped-loot/13-shortbow-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "14-longbow",
+      "file": "equipment/dropped-loot/14-longbow-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "15-crossbow",
+      "file": "equipment/dropped-loot/15-crossbow-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "16-leaf-spear",
+      "file": "equipment/dropped-loot/16-leaf-spear-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "17-quarterstaff",
+      "file": "equipment/dropped-loot/17-quarterstaff-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "18-crystal-wand",
+      "file": "equipment/dropped-loot/18-crystal-wand-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "19-round-shield",
+      "file": "equipment/dropped-loot/19-round-shield-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "20-kite-shield",
+      "file": "equipment/dropped-loot/20-kite-shield-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "21-tower-shield",
+      "file": "equipment/dropped-loot/21-tower-shield-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "22-arcane-spellbook",
+      "file": "equipment/dropped-loot/22-arcane-spellbook-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "23-adventurer-torch",
+      "file": "equipment/dropped-loot/23-adventurer-torch-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "24-obsidian-eye-sword",
+      "file": "equipment/dropped-loot/24-obsidian-eye-sword-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "01-bedroll",
+      "file": "equipment/dropped-loot/01-bedroll-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "02-canvas-tent",
+      "file": "equipment/dropped-loot/02-canvas-tent-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "03-firewood-and-tinder",
+      "file": "equipment/dropped-loot/03-firewood-and-tinder-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "04-cooking-pot",
+      "file": "equipment/dropped-loot/04-cooking-pot-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "05-iron-skillet",
+      "file": "equipment/dropped-loot/05-iron-skillet-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "06-waterskin",
+      "file": "equipment/dropped-loot/06-waterskin-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "07-fishing-rod",
+      "file": "equipment/dropped-loot/07-fishing-rod-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "08-hunting-trap",
+      "file": "equipment/dropped-loot/08-hunting-trap-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "09-repair-hammer",
+      "file": "equipment/dropped-loot/09-repair-hammer-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "10-sewing-kit",
+      "file": "equipment/dropped-loot/10-sewing-kit-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "11-whetstone",
+      "file": "equipment/dropped-loot/11-whetstone-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "12-shovel",
+      "file": "equipment/dropped-loot/12-shovel-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "13-pickaxe",
+      "file": "equipment/dropped-loot/13-pickaxe-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "14-lantern",
+      "file": "equipment/dropped-loot/14-lantern-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "15-lamp-oil",
+      "file": "equipment/dropped-loot/15-lamp-oil-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "16-compass",
+      "file": "equipment/dropped-loot/16-compass-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "17-map-case",
+      "file": "equipment/dropped-loot/17-map-case-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "18-climbing-rope",
+      "file": "equipment/dropped-loot/18-climbing-rope-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "19-grappling-hook",
+      "file": "equipment/dropped-loot/19-grappling-hook-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "20-spyglass",
+      "file": "equipment/dropped-loot/20-spyglass-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "21-mortar-and-pestle",
+      "file": "equipment/dropped-loot/21-mortar-and-pestle-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "22-herbalist-pouch",
+      "file": "equipment/dropped-loot/22-herbalist-pouch-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "23-alchemy-kit",
+      "file": "equipment/dropped-loot/23-alchemy-kit-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "24-adventurer-backpack",
+      "file": "equipment/dropped-loot/24-adventurer-backpack-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "01-firewood",
+      "file": "equipment/dropped-loot/01-firewood-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "02-rough-stone",
+      "file": "equipment/dropped-loot/02-rough-stone-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "03-iron-ore",
+      "file": "equipment/dropped-loot/03-iron-ore-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "04-silver-ore",
+      "file": "equipment/dropped-loot/04-silver-ore-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "05-gold-ore",
+      "file": "equipment/dropped-loot/05-gold-ore-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "06-obsidian-shard",
+      "file": "equipment/dropped-loot/06-obsidian-shard-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "07-cured-leather",
+      "file": "equipment/dropped-loot/07-cured-leather-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "08-wolf-fur",
+      "file": "equipment/dropped-loot/08-wolf-fur-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "09-linen-cloth",
+      "file": "equipment/dropped-loot/09-linen-cloth-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "10-silk-bundle",
+      "file": "equipment/dropped-loot/10-silk-bundle-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "11-monster-bone",
+      "file": "equipment/dropped-loot/11-monster-bone-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "12-beast-horn",
+      "file": "equipment/dropped-loot/12-beast-horn-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "13-eagle-feathers",
+      "file": "equipment/dropped-loot/13-eagle-feathers-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "14-healing-herbs",
+      "file": "equipment/dropped-loot/14-healing-herbs-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "15-cave-mushrooms",
+      "file": "equipment/dropped-loot/15-cave-mushrooms-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "16-venom-sac",
+      "file": "equipment/dropped-loot/16-venom-sac-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "17-crystal-dust",
+      "file": "equipment/dropped-loot/17-crystal-dust-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "18-coal",
+      "file": "equipment/dropped-loot/18-coal-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "19-salt-pouch",
+      "file": "equipment/dropped-loot/19-salt-pouch-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "20-tree-resin",
+      "file": "equipment/dropped-loot/20-tree-resin-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "21-hemp-rope",
+      "file": "equipment/dropped-loot/21-hemp-rope-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "22-brass-parts",
+      "file": "equipment/dropped-loot/22-brass-parts-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "23-empty-vial",
+      "file": "equipment/dropped-loot/23-empty-vial-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "24-blank-parchment",
+      "file": "equipment/dropped-loot/24-blank-parchment-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "01-eye-tower-key",
+      "file": "equipment/dropped-loot/01-eye-tower-key-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "02-eye-sigil",
+      "file": "equipment/dropped-loot/02-eye-sigil-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "03-royal-seal",
+      "file": "equipment/dropped-loot/03-royal-seal-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "04-ancient-tablet",
+      "file": "equipment/dropped-loot/04-ancient-tablet-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "05-broken-black-crown",
+      "file": "equipment/dropped-loot/05-broken-black-crown-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "06-dragon-scale",
+      "file": "equipment/dropped-loot/06-dragon-scale-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "07-phoenix-feather",
+      "file": "equipment/dropped-loot/07-phoenix-feather-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "08-moon-shard",
+      "file": "equipment/dropped-loot/08-moon-shard-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "09-sun-medallion",
+      "file": "equipment/dropped-loot/09-sun-medallion-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "10-swamp-idol",
+      "file": "equipment/dropped-loot/10-swamp-idol-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "11-glacier-rune",
+      "file": "equipment/dropped-loot/11-glacier-rune-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "12-volcanic-core",
+      "file": "equipment/dropped-loot/12-volcanic-core-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "13-storm-pearl",
+      "file": "equipment/dropped-loot/13-storm-pearl-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "14-haunted-locket",
+      "file": "equipment/dropped-loot/14-haunted-locket-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "15-cursed-mirror",
+      "file": "equipment/dropped-loot/15-cursed-mirror-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "16-celestial-compass",
+      "file": "equipment/dropped-loot/16-celestial-compass-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "17-shadow-orb",
+      "file": "equipment/dropped-loot/17-shadow-orb-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "18-forest-seed",
+      "file": "equipment/dropped-loot/18-forest-seed-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "19-desert-scarab",
+      "file": "equipment/dropped-loot/19-desert-scarab-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "20-abyss-chain",
+      "file": "equipment/dropped-loot/20-abyss-chain-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "21-sealed-letter",
+      "file": "equipment/dropped-loot/21-sealed-letter-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "22-blood-contract",
+      "file": "equipment/dropped-loot/22-blood-contract-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "23-chained-grimoire",
+      "file": "equipment/dropped-loot/23-chained-grimoire-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "24-world-map-fragment",
+      "file": "equipment/dropped-loot/24-world-map-fragment-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "rarity-frame-common",
+      "file": "equipment/dropped-loot/rarity-frame-common-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "rarity-frame-epic",
+      "file": "equipment/dropped-loot/rarity-frame-epic-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "rarity-frame-legendary",
+      "file": "equipment/dropped-loot/rarity-frame-legendary-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "rarity-frame-quest",
+      "file": "equipment/dropped-loot/rarity-frame-quest-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "rarity-frame-rare",
+      "file": "equipment/dropped-loot/rarity-frame-rare-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    },
+    {
+      "id": "rarity-frame-uncommon",
+      "file": "equipment/dropped-loot/rarity-frame-uncommon-drop-v1.png",
+      "pivot": [
+        48,
+        76
+      ]
+    }
+  ],
+  "anchor_profiles": {
+    "human-female": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "human-male": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "elf-female": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "elf-male": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "dwarf-female": {
+      "hand": {
+        "south": [
+          128,
+          159
+        ],
+        "west": [
+          103,
+          160
+        ],
+        "east": [
+          153,
+          160
+        ],
+        "north": [
+          128,
+          155
+        ]
+      },
+      "head": [
+        128,
+        76
+      ],
+      "torso": [
+        128,
+        132
+      ],
+      "feet": [
+        128,
+        229
+      ],
+      "back": [
+        128,
+        125
+      ]
+    },
+    "dwarf-male": {
+      "hand": {
+        "south": [
+          128,
+          159
+        ],
+        "west": [
+          103,
+          160
+        ],
+        "east": [
+          153,
+          160
+        ],
+        "north": [
+          128,
+          155
+        ]
+      },
+      "head": [
+        128,
+        76
+      ],
+      "torso": [
+        128,
+        132
+      ],
+      "feet": [
+        128,
+        229
+      ],
+      "back": [
+        128,
+        125
+      ]
+    },
+    "halfling-female": {
+      "hand": {
+        "south": [
+          128,
+          168
+        ],
+        "west": [
+          103,
+          169
+        ],
+        "east": [
+          153,
+          169
+        ],
+        "north": [
+          128,
+          164
+        ]
+      },
+      "head": [
+        128,
+        85
+      ],
+      "torso": [
+        128,
+        141
+      ],
+      "feet": [
+        128,
+        238
+      ],
+      "back": [
+        128,
+        134
+      ]
+    },
+    "halfling-male": {
+      "hand": {
+        "south": [
+          128,
+          168
+        ],
+        "west": [
+          103,
+          169
+        ],
+        "east": [
+          153,
+          169
+        ],
+        "north": [
+          128,
+          164
+        ]
+      },
+      "head": [
+        128,
+        85
+      ],
+      "torso": [
+        128,
+        141
+      ],
+      "feet": [
+        128,
+        238
+      ],
+      "back": [
+        128,
+        134
+      ]
+    },
+    "gnome-female": {
+      "hand": {
+        "south": [
+          128,
+          170
+        ],
+        "west": [
+          103,
+          171
+        ],
+        "east": [
+          153,
+          171
+        ],
+        "north": [
+          128,
+          166
+        ]
+      },
+      "head": [
+        128,
+        87
+      ],
+      "torso": [
+        128,
+        143
+      ],
+      "feet": [
+        128,
+        240
+      ],
+      "back": [
+        128,
+        136
+      ]
+    },
+    "gnome-male": {
+      "hand": {
+        "south": [
+          128,
+          170
+        ],
+        "west": [
+          103,
+          171
+        ],
+        "east": [
+          153,
+          171
+        ],
+        "north": [
+          128,
+          166
+        ]
+      },
+      "head": [
+        128,
+        87
+      ],
+      "torso": [
+        128,
+        143
+      ],
+      "feet": [
+        128,
+        240
+      ],
+      "back": [
+        128,
+        136
+      ]
+    },
+    "half-elf-female": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "half-elf-male": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "drow-female": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "drow-male": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "half-orc-female": {
+      "hand": {
+        "south": [
+          128,
+          146
+        ],
+        "west": [
+          103,
+          147
+        ],
+        "east": [
+          153,
+          147
+        ],
+        "north": [
+          128,
+          142
+        ]
+      },
+      "head": [
+        128,
+        63
+      ],
+      "torso": [
+        128,
+        119
+      ],
+      "feet": [
+        128,
+        216
+      ],
+      "back": [
+        128,
+        112
+      ]
+    },
+    "half-orc-male": {
+      "hand": {
+        "south": [
+          128,
+          146
+        ],
+        "west": [
+          103,
+          147
+        ],
+        "east": [
+          153,
+          147
+        ],
+        "north": [
+          128,
+          142
+        ]
+      },
+      "head": [
+        128,
+        63
+      ],
+      "torso": [
+        128,
+        119
+      ],
+      "feet": [
+        128,
+        216
+      ],
+      "back": [
+        128,
+        112
+      ]
+    },
+    "tiefling-female": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "tiefling-male": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "dragonborn-female": {
+      "hand": {
+        "south": [
+          128,
+          144
+        ],
+        "west": [
+          103,
+          145
+        ],
+        "east": [
+          153,
+          145
+        ],
+        "north": [
+          128,
+          140
+        ]
+      },
+      "head": [
+        128,
+        61
+      ],
+      "torso": [
+        128,
+        117
+      ],
+      "feet": [
+        128,
+        214
+      ],
+      "back": [
+        128,
+        110
+      ]
+    },
+    "dragonborn-male": {
+      "hand": {
+        "south": [
+          128,
+          144
+        ],
+        "west": [
+          103,
+          145
+        ],
+        "east": [
+          153,
+          145
+        ],
+        "north": [
+          128,
+          140
+        ]
+      },
+      "head": [
+        128,
+        61
+      ],
+      "torso": [
+        128,
+        117
+      ],
+      "feet": [
+        128,
+        214
+      ],
+      "back": [
+        128,
+        110
+      ]
+    },
+    "githyanki-female": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    },
+    "githyanki-male": {
+      "hand": {
+        "south": [
+          128,
+          150
+        ],
+        "west": [
+          103,
+          151
+        ],
+        "east": [
+          153,
+          151
+        ],
+        "north": [
+          128,
+          146
+        ]
+      },
+      "head": [
+        128,
+        67
+      ],
+      "torso": [
+        128,
+        123
+      ],
+      "feet": [
+        128,
+        220
+      ],
+      "back": [
+        128,
+        116
+      ]
+    }
+  }
+}
