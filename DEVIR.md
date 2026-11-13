@@ -13,7 +13,7 @@ Bu dosya projeye yeni başlayan biri (insan ya da yapay zekâ) için durum belge
 - Pencere başlığı `Retro RPG`; ana menüdeki merkez ve flama göz logolarının tamamı kaldırıldı.
 - `world-map-parchment-2d-v1.png` üstten bakışlı 2D dünya resmi gerçekçi piksel-art parşömen üzerinde gösterilir. Parşömenin iç harita alanına hizalanmış 15 x 12, toplam 180 tıklanabilir hex varsayılan olarak görünmez; `HEX: KAPALI/AÇIK` düğmesi veya `H` tuşu çizgileri açıp kapatır. Seçim, rota ve görev ayrı katmanlarda çizilir; tehlike ve düşman haritada gösterilmez. Oyuncu hedefi seçer, BFS rotasını görür, onaylar ve token küçük komşu hexler arasında yumuşak animasyonla yürür. Gizli tehlikeli hexe girerken d20 + Bilgelik encounter kontrolü oynar.
 - İki düz bariyer kaldırıldı. Engeller mor bölge sınırı, dağ kayalıkları, lav gölleri, bataklık çukurları, çöl kanyonları, buz uçurumları ve mağara çökmeleri biçiminde düzensiz kümelerdir. Mor bölgenin tek girişi `(-5,-3)` güney kapısıdır (`(-3,-4)` editör engelidir); kapı üç Yol Taşı tamamlanınca açılır. Keşiş/halat köprü kısa dağ geçidini; maden asansörü yeraltı kısayolunu açar.
-- **Hiç commit yok.** Git deposunun kökü `game_design` değil, bir üst klasör olan `C:\Users\VECTUS\Documents\pc`. Bu depoda başka dosyalar da var.
+- **Git:** Depo kökü `game_design`, uzak depo `https://github.com/RudblestThe2nd/RetroRPG` (`main`). Word belgeleri, `qa/`, `handoff/`, `prompts/`, `dist/` ve derleme çıktıları `.gitignore` ile dışarıda; diskte durur ama repoya girmez. Üst klasördeki (`Documents\pc`) eski boş depo bu projeyi takip etmez.
 
 ## 1 Kasım — Ana hikâye koda bağlandı
 
@@ -205,7 +205,7 @@ dist\RetroRpg.Game.exe --screenshots C:\bir\klasor
 1. Ana hikâye prologdan dört finale kadar oynanabilir. Hikâye II ve III yuvaları kilitlidir. Kaderbozan Zırhı'nın ve Vaelor'un özel runtime görselleri üretilmediği için yukarıdaki geçici görseller kullanılır.
 2. BÜYÜ düğmesi için sınıfa özel büyü kuralları tasarlanmadığından pasiftir; mevcut ödev kapsamındaki d20 saldırı sistemi tam çalışır.
 3. Yerelleştirme/string tablosu zorunlu oynanış eksiği değildir; çalışma zamanı metinleri Türkçedir.
-4. Kod, görsel ve test tarafında bilinen kritik eksik yoktur. İlk git commit'i kullanıcı kararı olarak bırakılmıştır; üst depodaki diğer dosyalar karıştırılmamalıdır.
+4. Kod, görsel ve test tarafında bilinen kritik eksik yoktur.
 
 ## Tuzaklar
 
