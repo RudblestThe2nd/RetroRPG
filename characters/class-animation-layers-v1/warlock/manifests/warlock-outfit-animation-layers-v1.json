@@ -1,0 +1,441 @@
+{
+  "id": "warlock-outfit-animation-layers-v1",
+  "class": "warlock",
+  "class_name_tr": "Antlaşmalı Büyücü",
+  "frame_size": [
+    256,
+    256
+  ],
+  "frame_count": 24,
+  "genders": [
+    "male",
+    "female"
+  ],
+  "actions": [
+    "walk",
+    "attack",
+    "cast"
+  ],
+  "directions": [
+    "front",
+    "right",
+    "back",
+    "left"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "runtime_note": "Composite over the normalized base-body frame using the bottom-center anchor, before held weapons and spell VFX.",
+  "atlas": "atlases/warlock-outfit-animation-layers-atlas-v1.png",
+  "frames": [
+    {
+      "id": "warlock-male-walk-front",
+      "class": "warlock",
+      "gender": "male",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/male/walk/warlock-male-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-walk-right",
+      "class": "warlock",
+      "gender": "male",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/male/walk/warlock-male-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-walk-back",
+      "class": "warlock",
+      "gender": "male",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/male/walk/warlock-male-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-walk-left",
+      "class": "warlock",
+      "gender": "male",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/male/walk/warlock-male-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-attack-front",
+      "class": "warlock",
+      "gender": "male",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/male/attack/warlock-male-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-attack-right",
+      "class": "warlock",
+      "gender": "male",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/male/attack/warlock-male-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-attack-back",
+      "class": "warlock",
+      "gender": "male",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/male/attack/warlock-male-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-attack-left",
+      "class": "warlock",
+      "gender": "male",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/male/attack/warlock-male-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-cast-front",
+      "class": "warlock",
+      "gender": "male",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/male/cast/warlock-male-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-cast-right",
+      "class": "warlock",
+      "gender": "male",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/male/cast/warlock-male-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-cast-back",
+      "class": "warlock",
+      "gender": "male",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/male/cast/warlock-male-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-male-cast-left",
+      "class": "warlock",
+      "gender": "male",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/male/cast/warlock-male-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-walk-front",
+      "class": "warlock",
+      "gender": "female",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/female/walk/warlock-female-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-walk-right",
+      "class": "warlock",
+      "gender": "female",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/female/walk/warlock-female-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-walk-back",
+      "class": "warlock",
+      "gender": "female",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/female/walk/warlock-female-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-walk-left",
+      "class": "warlock",
+      "gender": "female",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/female/walk/warlock-female-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-attack-front",
+      "class": "warlock",
+      "gender": "female",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/female/attack/warlock-female-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-attack-right",
+      "class": "warlock",
+      "gender": "female",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/female/attack/warlock-female-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-attack-back",
+      "class": "warlock",
+      "gender": "female",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/female/attack/warlock-female-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-attack-left",
+      "class": "warlock",
+      "gender": "female",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/female/attack/warlock-female-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-cast-front",
+      "class": "warlock",
+      "gender": "female",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/female/cast/warlock-female-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-cast-right",
+      "class": "warlock",
+      "gender": "female",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/female/cast/warlock-female-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-cast-back",
+      "class": "warlock",
+      "gender": "female",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/female/cast/warlock-female-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "warlock-female-cast-left",
+      "class": "warlock",
+      "gender": "female",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/female/cast/warlock-female-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "id": "monk-outfit-animation-layers-v1",
+  "class": "monk",
+  "class_name_tr": "Keşiş",
+  "frame_size": [
+    256,
+    256
+  ],
+  "frame_count": 24,
+  "genders": [
+    "male",
+    "female"
+  ],
+  "actions": [
+    "walk",
+    "attack",
+    "cast"
+  ],
+  "directions": [
+    "front",
+    "right",
+    "back",
+    "left"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "runtime_note": "Composite over the normalized base-body frame using the bottom-center anchor, before held weapons and spell VFX.",
+  "atlas": "atlases/monk-outfit-animation-layers-atlas-v1.png",
+  "frames": [
+    {
+      "id": "monk-male-walk-front",
+      "class": "monk",
+      "gender": "male",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/male/walk/monk-male-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-walk-right",
+      "class": "monk",
+      "gender": "male",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/male/walk/monk-male-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-walk-back",
+      "class": "monk",
+      "gender": "male",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/male/walk/monk-male-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-walk-left",
+      "class": "monk",
+      "gender": "male",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/male/walk/monk-male-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-attack-front",
+      "class": "monk",
+      "gender": "male",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/male/attack/monk-male-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-attack-right",
+      "class": "monk",
+      "gender": "male",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/male/attack/monk-male-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-attack-back",
+      "class": "monk",
+      "gender": "male",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/male/attack/monk-male-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-attack-left",
+      "class": "monk",
+      "gender": "male",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/male/attack/monk-male-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-cast-front",
+      "class": "monk",
+      "gender": "male",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/male/cast/monk-male-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-cast-right",
+      "class": "monk",
+      "gender": "male",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/male/cast/monk-male-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-cast-back",
+      "class": "monk",
+      "gender": "male",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/male/cast/monk-male-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-male-cast-left",
+      "class": "monk",
+      "gender": "male",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/male/cast/monk-male-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-walk-front",
+      "class": "monk",
+      "gender": "female",
+      "action": "walk",
+      "direction": "front",
+      "file": "frames/female/walk/monk-female-walk-front-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-walk-right",
+      "class": "monk",
+      "gender": "female",
+      "action": "walk",
+      "direction": "right",
+      "file": "frames/female/walk/monk-female-walk-right-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-walk-back",
+      "class": "monk",
+      "gender": "female",
+      "action": "walk",
+      "direction": "back",
+      "file": "frames/female/walk/monk-female-walk-back-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-walk-left",
+      "class": "monk",
+      "gender": "female",
+      "action": "walk",
+      "direction": "left",
+      "file": "frames/female/walk/monk-female-walk-left-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-attack-front",
+      "class": "monk",
+      "gender": "female",
+      "action": "attack",
+      "direction": "front",
+      "file": "frames/female/attack/monk-female-attack-front-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-attack-right",
+      "class": "monk",
+      "gender": "female",
+      "action": "attack",
+      "direction": "right",
+      "file": "frames/female/attack/monk-female-attack-right-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-attack-back",
+      "class": "monk",
+      "gender": "female",
+      "action": "attack",
+      "direction": "back",
+      "file": "frames/female/attack/monk-female-attack-back-outfit-layer-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-attack-left",
+      "class": "monk",
+      "gender": "female",
+      "action": "attack",
+      "direction": "left",
+      "file": "frames/female/attack/monk-female-attack-left-outfit-layer-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-cast-front",
+      "class": "monk",
+      "gender": "female",
+      "action": "cast",
+      "direction": "front",
+      "file": "frames/female/cast/monk-female-cast-front-outfit-layer-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-cast-right",
+      "class": "monk",
+      "gender": "female",
+      "action": "cast",
+      "direction": "right",
+      "file": "frames/female/cast/monk-female-cast-right-outfit-layer-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-cast-back",
+      "class": "monk",
+      "gender": "female",
+      "action": "cast",
+      "direction": "back",
+      "file": "frames/female/cast/monk-female-cast-back-outfit-layer-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    },
+    {
+      "id": "monk-female-cast-left",
+      "class": "monk",
+      "gender": "female",
+      "action": "cast",
+      "direction": "left",
+      "file": "frames/female/cast/monk-female-cast-left-outfit-layer-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        236
+      ],
+      "layer_order": "body_outfit"
+    }
+  ]
+}

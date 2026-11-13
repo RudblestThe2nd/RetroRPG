@@ -1,0 +1,282 @@
+{
+  "id": "halfling-face-variants-v1",
+  "title": "Halfling Face Variants V1",
+  "race": "halfling",
+  "portrait_size": [
+    256,
+    256
+  ],
+  "male_count": 12,
+  "female_count": 12,
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "portraits": [
+    {
+      "id": "halfling-male-face-01",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 1,
+      "file": "portraits/male/halfling-male-face-01-v1.png",
+      "source_cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "halfling-male-face-02",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 2,
+      "file": "portraits/male/halfling-male-face-02-v1.png",
+      "source_cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "halfling-male-face-03",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 3,
+      "file": "portraits/male/halfling-male-face-03-v1.png",
+      "source_cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "halfling-male-face-04",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 4,
+      "file": "portraits/male/halfling-male-face-04-v1.png",
+      "source_cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "halfling-male-face-05",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 5,
+      "file": "portraits/male/halfling-male-face-05-v1.png",
+      "source_cell": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "halfling-male-face-06",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 6,
+      "file": "portraits/male/halfling-male-face-06-v1.png",
+      "source_cell": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "halfling-male-face-07",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 7,
+      "file": "portraits/male/halfling-male-face-07-v1.png",
+      "source_cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "halfling-male-face-08",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 8,
+      "file": "portraits/male/halfling-male-face-08-v1.png",
+      "source_cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "halfling-male-face-09",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 9,
+      "file": "portraits/male/halfling-male-face-09-v1.png",
+      "source_cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "halfling-male-face-10",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 10,
+      "file": "portraits/male/halfling-male-face-10-v1.png",
+      "source_cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "halfling-male-face-11",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 11,
+      "file": "portraits/male/halfling-male-face-11-v1.png",
+      "source_cell": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "halfling-male-face-12",
+      "race": "halfling",
+      "gender": "male",
+      "variant": 12,
+      "file": "portraits/male/halfling-male-face-12-v1.png",
+      "source_cell": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "halfling-female-face-01",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 1,
+      "file": "portraits/female/halfling-female-face-01-v1.png",
+      "source_cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "halfling-female-face-02",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 2,
+      "file": "portraits/female/halfling-female-face-02-v1.png",
+      "source_cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "halfling-female-face-03",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 3,
+      "file": "portraits/female/halfling-female-face-03-v1.png",
+      "source_cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "halfling-female-face-04",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 4,
+      "file": "portraits/female/halfling-female-face-04-v1.png",
+      "source_cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "halfling-female-face-05",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 5,
+      "file": "portraits/female/halfling-female-face-05-v1.png",
+      "source_cell": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "halfling-female-face-06",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 6,
+      "file": "portraits/female/halfling-female-face-06-v1.png",
+      "source_cell": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": "halfling-female-face-07",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 7,
+      "file": "portraits/female/halfling-female-face-07-v1.png",
+      "source_cell": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "halfling-female-face-08",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 8,
+      "file": "portraits/female/halfling-female-face-08-v1.png",
+      "source_cell": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "halfling-female-face-09",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 9,
+      "file": "portraits/female/halfling-female-face-09-v1.png",
+      "source_cell": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "halfling-female-face-10",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 10,
+      "file": "portraits/female/halfling-female-face-10-v1.png",
+      "source_cell": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "halfling-female-face-11",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 11,
+      "file": "portraits/female/halfling-female-face-11-v1.png",
+      "source_cell": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "halfling-female-face-12",
+      "race": "halfling",
+      "gender": "female",
+      "variant": 12,
+      "file": "portraits/female/halfling-female-face-12-v1.png",
+      "source_cell": [
+        5,
+        3
+      ]
+    }
+  ],
+  "atlas": "atlases/halfling-face-variants-transparent-atlas-v1.png"
+}

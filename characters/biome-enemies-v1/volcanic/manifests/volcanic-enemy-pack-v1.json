@@ -1,0 +1,420 @@
+{
+  "id": "volcanic-enemy-pack-v1",
+  "biome": "volcanic",
+  "enemy_count": 12,
+  "pose_count": 2,
+  "sprite_count": 24,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "enemies": [
+    "ash-hound",
+    "lava-beetle",
+    "cinder-bat",
+    "magma-serpent",
+    "ash-raider",
+    "fire-cultist",
+    "charred-skeleton",
+    "smoke-wraith",
+    "magma-elemental",
+    "obsidian-golem",
+    "flame-shaman",
+    "lava-troll"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/volcanic-enemies-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "volcanic-ash-hound-idle",
+      "biome": "volcanic",
+      "enemy": "ash-hound",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/ash-hound/volcanic-ash-hound-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-lava-beetle-idle",
+      "biome": "volcanic",
+      "enemy": "lava-beetle",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/lava-beetle/volcanic-lava-beetle-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-cinder-bat-idle",
+      "biome": "volcanic",
+      "enemy": "cinder-bat",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/cinder-bat/volcanic-cinder-bat-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-magma-serpent-idle",
+      "biome": "volcanic",
+      "enemy": "magma-serpent",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/magma-serpent/volcanic-magma-serpent-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-ash-raider-idle",
+      "biome": "volcanic",
+      "enemy": "ash-raider",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/ash-raider/volcanic-ash-raider-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-fire-cultist-idle",
+      "biome": "volcanic",
+      "enemy": "fire-cultist",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/fire-cultist/volcanic-fire-cultist-idle-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-ash-hound-attack",
+      "biome": "volcanic",
+      "enemy": "ash-hound",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/ash-hound/volcanic-ash-hound-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-lava-beetle-attack",
+      "biome": "volcanic",
+      "enemy": "lava-beetle",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/lava-beetle/volcanic-lava-beetle-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-cinder-bat-attack",
+      "biome": "volcanic",
+      "enemy": "cinder-bat",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/cinder-bat/volcanic-cinder-bat-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-magma-serpent-attack",
+      "biome": "volcanic",
+      "enemy": "magma-serpent",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/magma-serpent/volcanic-magma-serpent-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-ash-raider-attack",
+      "biome": "volcanic",
+      "enemy": "ash-raider",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/ash-raider/volcanic-ash-raider-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-fire-cultist-attack",
+      "biome": "volcanic",
+      "enemy": "fire-cultist",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/fire-cultist/volcanic-fire-cultist-attack-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-charred-skeleton-idle",
+      "biome": "volcanic",
+      "enemy": "charred-skeleton",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/charred-skeleton/volcanic-charred-skeleton-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-smoke-wraith-idle",
+      "biome": "volcanic",
+      "enemy": "smoke-wraith",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/smoke-wraith/volcanic-smoke-wraith-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-magma-elemental-idle",
+      "biome": "volcanic",
+      "enemy": "magma-elemental",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/magma-elemental/volcanic-magma-elemental-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-obsidian-golem-idle",
+      "biome": "volcanic",
+      "enemy": "obsidian-golem",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/obsidian-golem/volcanic-obsidian-golem-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-flame-shaman-idle",
+      "biome": "volcanic",
+      "enemy": "flame-shaman",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/flame-shaman/volcanic-flame-shaman-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-lava-troll-idle",
+      "biome": "volcanic",
+      "enemy": "lava-troll",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/lava-troll/volcanic-lava-troll-idle-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-charred-skeleton-attack",
+      "biome": "volcanic",
+      "enemy": "charred-skeleton",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/charred-skeleton/volcanic-charred-skeleton-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-smoke-wraith-attack",
+      "biome": "volcanic",
+      "enemy": "smoke-wraith",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/smoke-wraith/volcanic-smoke-wraith-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-magma-elemental-attack",
+      "biome": "volcanic",
+      "enemy": "magma-elemental",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/magma-elemental/volcanic-magma-elemental-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-obsidian-golem-attack",
+      "biome": "volcanic",
+      "enemy": "obsidian-golem",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/obsidian-golem/volcanic-obsidian-golem-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-flame-shaman-attack",
+      "biome": "volcanic",
+      "enemy": "flame-shaman",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/flame-shaman/volcanic-flame-shaman-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "volcanic-lava-troll-attack",
+      "biome": "volcanic",
+      "enemy": "lava-troll",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/lava-troll/volcanic-lava-troll-attack-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}

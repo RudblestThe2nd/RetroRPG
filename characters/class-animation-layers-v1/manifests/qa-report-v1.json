@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checked_classes": 12,
+  "checked_frames": 288,
+  "expected_classes": 12,
+  "expected_frames": 288,
+  "frame_size": [256, 256],
+  "anchor": [128, 236],
+  "errors": []
+}

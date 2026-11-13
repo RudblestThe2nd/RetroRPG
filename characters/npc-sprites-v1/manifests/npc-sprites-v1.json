@@ -1,0 +1,23 @@
+{
+  "id": "civilian-profession-npc-sprites-v1",
+  "status": "complete",
+  "sprite_size": [256, 256],
+  "anchor": [128, 238],
+  "packs": [
+    {
+      "id": "civilian",
+      "count": 24,
+      "manifest": "civilian-npc-sprites-v1.json",
+      "qa": "civilian-qa-report-v1.json"
+    },
+    {
+      "id": "profession",
+      "count": 24,
+      "manifest": "profession-npc-sprites-v1.json",
+      "qa": "profession-qa-report-v1.json"
+    }
+  ],
+  "total_count": 48,
+  "genders": ["male", "female"],
+  "runtime_uses": ["settlement_population", "shopkeeper", "quest_giver", "dialogue_actor", "ambient_crowd"]
+}

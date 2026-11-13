@@ -1,0 +1,26 @@
+{
+  "id": "boss-sprites-v1",
+  "status": "complete",
+  "biome_count": 10,
+  "mini_boss_count": 10,
+  "main_boss_count": 10,
+  "boss_count": 20,
+  "poses": ["idle", "attack"],
+  "sprite_count": 40,
+  "sprite_size": [256, 256],
+  "pivot": [128, 240],
+  "groups": [
+    "manifests/boss-pack-group-a-v1.json",
+    "manifests/boss-pack-group-b-v1.json"
+  ],
+  "qa_reports": [
+    "manifests/qa-report-group-a-v1.json",
+    "manifests/qa-report-group-b-v1.json"
+  ],
+  "qa": {
+    "status": "pass",
+    "checked": 40,
+    "failed": 0
+  },
+  "story_content_included": false
+}

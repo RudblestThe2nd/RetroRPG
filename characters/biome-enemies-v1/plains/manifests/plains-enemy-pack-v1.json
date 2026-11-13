@@ -1,0 +1,420 @@
+{
+  "id": "plains-enemy-pack-v1",
+  "biome": "plains",
+  "enemy_count": 12,
+  "pose_count": 2,
+  "sprite_count": 24,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "enemies": [
+    "wild-dog",
+    "charging-boar",
+    "giant-hawk",
+    "grass-serpent",
+    "highway-bandit",
+    "plains-raider",
+    "scarecrow-husk",
+    "field-zombie",
+    "wind-wraith",
+    "hay-elemental",
+    "war-ogre",
+    "storm-brute"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/plains-enemies-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "plains-wild-dog-idle",
+      "biome": "plains",
+      "enemy": "wild-dog",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/wild-dog/plains-wild-dog-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-charging-boar-idle",
+      "biome": "plains",
+      "enemy": "charging-boar",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/charging-boar/plains-charging-boar-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-giant-hawk-idle",
+      "biome": "plains",
+      "enemy": "giant-hawk",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/giant-hawk/plains-giant-hawk-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-grass-serpent-idle",
+      "biome": "plains",
+      "enemy": "grass-serpent",
+      "pose": "idle",
+      "threat_tier": "common",
+      "file": "sprites/grass-serpent/plains-grass-serpent-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-highway-bandit-idle",
+      "biome": "plains",
+      "enemy": "highway-bandit",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/highway-bandit/plains-highway-bandit-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-plains-raider-idle",
+      "biome": "plains",
+      "enemy": "plains-raider",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/plains-raider/plains-plains-raider-idle-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-wild-dog-attack",
+      "biome": "plains",
+      "enemy": "wild-dog",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/wild-dog/plains-wild-dog-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-charging-boar-attack",
+      "biome": "plains",
+      "enemy": "charging-boar",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/charging-boar/plains-charging-boar-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-giant-hawk-attack",
+      "biome": "plains",
+      "enemy": "giant-hawk",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/giant-hawk/plains-giant-hawk-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-grass-serpent-attack",
+      "biome": "plains",
+      "enemy": "grass-serpent",
+      "pose": "attack",
+      "threat_tier": "common",
+      "file": "sprites/grass-serpent/plains-grass-serpent-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-highway-bandit-attack",
+      "biome": "plains",
+      "enemy": "highway-bandit",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/highway-bandit/plains-highway-bandit-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-plains-raider-attack",
+      "biome": "plains",
+      "enemy": "plains-raider",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/plains-raider/plains-plains-raider-attack-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-scarecrow-husk-idle",
+      "biome": "plains",
+      "enemy": "scarecrow-husk",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/scarecrow-husk/plains-scarecrow-husk-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-field-zombie-idle",
+      "biome": "plains",
+      "enemy": "field-zombie",
+      "pose": "idle",
+      "threat_tier": "uncommon",
+      "file": "sprites/field-zombie/plains-field-zombie-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-wind-wraith-idle",
+      "biome": "plains",
+      "enemy": "wind-wraith",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/wind-wraith/plains-wind-wraith-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-hay-elemental-idle",
+      "biome": "plains",
+      "enemy": "hay-elemental",
+      "pose": "idle",
+      "threat_tier": "elite",
+      "file": "sprites/hay-elemental/plains-hay-elemental-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-war-ogre-idle",
+      "biome": "plains",
+      "enemy": "war-ogre",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/war-ogre/plains-war-ogre-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-storm-brute-idle",
+      "biome": "plains",
+      "enemy": "storm-brute",
+      "pose": "idle",
+      "threat_tier": "rare",
+      "file": "sprites/storm-brute/plains-storm-brute-idle-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-scarecrow-husk-attack",
+      "biome": "plains",
+      "enemy": "scarecrow-husk",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/scarecrow-husk/plains-scarecrow-husk-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-field-zombie-attack",
+      "biome": "plains",
+      "enemy": "field-zombie",
+      "pose": "attack",
+      "threat_tier": "uncommon",
+      "file": "sprites/field-zombie/plains-field-zombie-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-wind-wraith-attack",
+      "biome": "plains",
+      "enemy": "wind-wraith",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/wind-wraith/plains-wind-wraith-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-hay-elemental-attack",
+      "biome": "plains",
+      "enemy": "hay-elemental",
+      "pose": "attack",
+      "threat_tier": "elite",
+      "file": "sprites/hay-elemental/plains-hay-elemental-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-war-ogre-attack",
+      "biome": "plains",
+      "enemy": "war-ogre",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/war-ogre/plains-war-ogre-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "plains-storm-brute-attack",
+      "biome": "plains",
+      "enemy": "storm-brute",
+      "pose": "attack",
+      "threat_tier": "rare",
+      "file": "sprites/storm-brute/plains-storm-brute-attack-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}

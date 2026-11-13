@@ -1,0 +1,390 @@
+{
+  "id": "boss-pack-group-b-v1",
+  "group": "group-b",
+  "biomes": [
+    "tropical",
+    "volcanic",
+    "corrupted",
+    "underground",
+    "plains"
+  ],
+  "boss_count": 10,
+  "sprite_count": 20,
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/bosses-group-b-transparent-atlas-v1.png",
+  "bosses": {
+    "tropical": {
+      "mini": "blood-orchid-queen",
+      "main": "sun-temple-behemoth"
+    },
+    "volcanic": {
+      "mini": "cinder-wyrm",
+      "main": "heart-of-caldera-titan"
+    },
+    "corrupted": {
+      "mini": "eye-bishop",
+      "main": "abyssal-crown"
+    },
+    "underground": {
+      "mini": "crystal-broodmother",
+      "main": "deepstone-leviathan"
+    },
+    "plains": {
+      "mini": "warband-khan",
+      "main": "tempest-giant"
+    }
+  },
+  "sprites": [
+    {
+      "id": "tropical-blood-orchid-queen-idle",
+      "biome": "tropical",
+      "boss": "blood-orchid-queen",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/tropical/blood-orchid-queen/tropical-blood-orchid-queen-idle-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "volcanic-cinder-wyrm-idle",
+      "biome": "volcanic",
+      "boss": "cinder-wyrm",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/volcanic/cinder-wyrm/volcanic-cinder-wyrm-idle-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "corrupted-eye-bishop-idle",
+      "biome": "corrupted",
+      "boss": "eye-bishop",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/corrupted/eye-bishop/corrupted-eye-bishop-idle-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "underground-crystal-broodmother-idle",
+      "biome": "underground",
+      "boss": "crystal-broodmother",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/underground/crystal-broodmother/underground-crystal-broodmother-idle-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "plains-warband-khan-idle",
+      "biome": "plains",
+      "boss": "warband-khan",
+      "boss_class": "mini",
+      "pose": "idle",
+      "file": "sprites/plains/warband-khan/plains-warband-khan-idle-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "tropical-blood-orchid-queen-attack",
+      "biome": "tropical",
+      "boss": "blood-orchid-queen",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/tropical/blood-orchid-queen/tropical-blood-orchid-queen-attack-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "volcanic-cinder-wyrm-attack",
+      "biome": "volcanic",
+      "boss": "cinder-wyrm",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/volcanic/cinder-wyrm/volcanic-cinder-wyrm-attack-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "corrupted-eye-bishop-attack",
+      "biome": "corrupted",
+      "boss": "eye-bishop",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/corrupted/eye-bishop/corrupted-eye-bishop-attack-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "underground-crystal-broodmother-attack",
+      "biome": "underground",
+      "boss": "crystal-broodmother",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/underground/crystal-broodmother/underground-crystal-broodmother-attack-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "plains-warband-khan-attack",
+      "biome": "plains",
+      "boss": "warband-khan",
+      "boss_class": "mini",
+      "pose": "attack",
+      "file": "sprites/plains/warband-khan/plains-warband-khan-attack-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "large"
+    },
+    {
+      "id": "tropical-sun-temple-behemoth-idle",
+      "biome": "tropical",
+      "boss": "sun-temple-behemoth",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/tropical/sun-temple-behemoth/tropical-sun-temple-behemoth-idle-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "volcanic-heart-of-caldera-titan-idle",
+      "biome": "volcanic",
+      "boss": "heart-of-caldera-titan",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/volcanic/heart-of-caldera-titan/volcanic-heart-of-caldera-titan-idle-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "corrupted-abyssal-crown-idle",
+      "biome": "corrupted",
+      "boss": "abyssal-crown",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/corrupted/abyssal-crown/corrupted-abyssal-crown-idle-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "underground-deepstone-leviathan-idle",
+      "biome": "underground",
+      "boss": "deepstone-leviathan",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/underground/deepstone-leviathan/underground-deepstone-leviathan-idle-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "plains-tempest-giant-idle",
+      "biome": "plains",
+      "boss": "tempest-giant",
+      "boss_class": "main",
+      "pose": "idle",
+      "file": "sprites/plains/tempest-giant/plains-tempest-giant-idle-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "tropical-sun-temple-behemoth-attack",
+      "biome": "tropical",
+      "boss": "sun-temple-behemoth",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/tropical/sun-temple-behemoth/tropical-sun-temple-behemoth-attack-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "volcanic-heart-of-caldera-titan-attack",
+      "biome": "volcanic",
+      "boss": "heart-of-caldera-titan",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/volcanic/heart-of-caldera-titan/volcanic-heart-of-caldera-titan-attack-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "corrupted-abyssal-crown-attack",
+      "biome": "corrupted",
+      "boss": "abyssal-crown",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/corrupted/abyssal-crown/corrupted-abyssal-crown-attack-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "underground-deepstone-leviathan-attack",
+      "biome": "underground",
+      "boss": "deepstone-leviathan",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/underground/deepstone-leviathan/underground-deepstone-leviathan-attack-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    },
+    {
+      "id": "plains-tempest-giant-attack",
+      "biome": "plains",
+      "boss": "tempest-giant",
+      "boss_class": "main",
+      "pose": "attack",
+      "file": "sprites/plains/tempest-giant/plains-tempest-giant-attack-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "collision_profile": "huge"
+    }
+  ]
+}

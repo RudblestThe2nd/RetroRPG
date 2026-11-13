@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "checked_packs": 2,
+  "checked_sprites": 48,
+  "expected_sprites": 48,
+  "sprite_size": [256, 256],
+  "anchor": [128, 238],
+  "errors": []
+}

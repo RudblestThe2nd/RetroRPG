@@ -1,0 +1,90 @@
+{
+  "id": "class-animation-layers-v1",
+  "version": 1,
+  "status": "complete",
+  "frame_size": [256, 256],
+  "anchor": [128, 236],
+  "layer_order": "body_outfit",
+  "actions": ["walk", "attack", "cast"],
+  "directions": ["front", "right", "back", "left"],
+  "genders": ["male", "female"],
+  "frames_per_class": 24,
+  "completed_classes": [
+    {
+      "id": "barbarian",
+      "name_tr": "Barbar",
+      "manifest": "../barbarian/manifests/barbarian-outfit-animation-layers-v1.json",
+      "qa": "../barbarian/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "bard",
+      "name_tr": "Ozan",
+      "manifest": "../bard/manifests/bard-outfit-animation-layers-v1.json",
+      "qa": "../bard/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "cleric",
+      "name_tr": "Ruhban",
+      "manifest": "../cleric/manifests/cleric-outfit-animation-layers-v1.json",
+      "qa": "../cleric/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "druid",
+      "name_tr": "Druid",
+      "manifest": "../druid/manifests/druid-outfit-animation-layers-v1.json",
+      "qa": "../druid/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "fighter",
+      "name_tr": "Savaşçı",
+      "manifest": "../fighter/manifests/fighter-outfit-animation-layers-v1.json",
+      "qa": "../fighter/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "monk",
+      "name_tr": "Keşiş",
+      "manifest": "../monk/manifests/monk-outfit-animation-layers-v1.json",
+      "qa": "../monk/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "paladin",
+      "name_tr": "Paladin",
+      "manifest": "../paladin/manifests/paladin-outfit-animation-layers-v1.json",
+      "qa": "../paladin/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "ranger",
+      "name_tr": "Korucu",
+      "manifest": "../ranger/manifests/ranger-outfit-animation-layers-v1.json",
+      "qa": "../ranger/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "rogue",
+      "name_tr": "Haydut",
+      "manifest": "../rogue/manifests/rogue-outfit-animation-layers-v1.json",
+      "qa": "../rogue/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "sorcerer",
+      "name_tr": "Büyü Kaynaklı",
+      "manifest": "../sorcerer/manifests/sorcerer-outfit-animation-layers-v1.json",
+      "qa": "../sorcerer/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "warlock",
+      "name_tr": "Antlaşmalı Büyücü",
+      "manifest": "../warlock/manifests/warlock-outfit-animation-layers-v1.json",
+      "qa": "../warlock/manifests/qa-report-v1.json"
+    },
+    {
+      "id": "wizard",
+      "name_tr": "Sihirbaz",
+      "manifest": "../wizard/manifests/wizard-outfit-animation-layers-v1.json",
+      "qa": "../wizard/manifests/qa-report-v1.json"
+    }
+  ],
+  "remaining_classes": [],
+  "completed_frame_count": 288,
+  "target_frame_count": 288,
+  "runtime_composite_order": ["base_body", "body_outfit", "armor_accessory", "held_item", "vfx", "ui_overlay"]
+}

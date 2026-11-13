@@ -1,0 +1,63 @@
+{
+  "id": "character-customization-icons-v1",
+  "icon_size": [128, 128],
+  "total_icons": 120,
+  "categories": [
+    {
+      "id": "hair",
+      "count": 24,
+      "manifest": "hair-icons-v1.json",
+      "allowed_races": ["human", "elf", "dwarf", "halfling", "gnome", "half-elf", "drow", "half-orc", "tiefling", "githyanki"]
+    },
+    {
+      "id": "beard",
+      "count": 24,
+      "manifest": "beard-icons-v1.json",
+      "allowed_races": ["human", "elf", "dwarf", "halfling", "gnome", "half-elf", "drow", "half-orc", "tiefling", "githyanki"]
+    },
+    {
+      "id": "skin-tone",
+      "count": 24,
+      "manifest": "skin-tone-icons-v1.json",
+      "allowed_races": ["human", "elf", "dwarf", "halfling", "gnome", "half-elf", "drow", "half-orc", "tiefling", "dragonborn", "githyanki"]
+    },
+    {
+      "id": "horn",
+      "count": 24,
+      "manifest": "horn-icons-v1.json",
+      "allowed_races": ["tiefling", "dragonborn"]
+    },
+    {
+      "id": "marking",
+      "count": 24,
+      "manifest": "marking-icons-v1.json",
+      "allowed_races": ["human", "elf", "dwarf", "halfling", "gnome", "half-elf", "drow", "half-orc", "tiefling", "dragonborn", "githyanki"]
+    }
+  ],
+  "skin_tones": [
+    {"id": "porcelain", "hex": "#F7D9C4"},
+    {"id": "fair-rose", "hex": "#F0C6AF"},
+    {"id": "peach", "hex": "#EAB18F"},
+    {"id": "light-tan", "hex": "#D99A70"},
+    {"id": "golden", "hex": "#C9864F"},
+    {"id": "warm-tan", "hex": "#B8754D"},
+    {"id": "olive", "hex": "#A47C4D"},
+    {"id": "medium-brown", "hex": "#8C5A3C"},
+    {"id": "deep-brown", "hex": "#643D2C"},
+    {"id": "ebony", "hex": "#3B2725"},
+    {"id": "orc-sage", "hex": "#7E8B57"},
+    {"id": "orc-olive", "hex": "#667343"},
+    {"id": "orc-green", "hex": "#4E6A45"},
+    {"id": "gith-yellow", "hex": "#C6A33C"},
+    {"id": "tiefling-crimson", "hex": "#9E3B37"},
+    {"id": "tiefling-red", "hex": "#B95243"},
+    {"id": "tiefling-purple", "hex": "#76517F"},
+    {"id": "infernal-gray", "hex": "#6E6470"},
+    {"id": "drow-slate", "hex": "#4C5267"},
+    {"id": "drow-violet", "hex": "#66537B"},
+    {"id": "lavender", "hex": "#88759D"},
+    {"id": "ice-blue", "hex": "#8DA9B7"},
+    {"id": "dragon-gold", "hex": "#B98735"},
+    {"id": "dragon-obsidian", "hex": "#34343B"}
+  ]
+}

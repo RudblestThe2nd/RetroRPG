@@ -1,0 +1,398 @@
+{
+  "id": "civilian-npc-sprites-v1",
+  "pack": "civilian",
+  "sprite_size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    238
+  ],
+  "count": 24,
+  "roles": [
+    "villager-young",
+    "villager-adult",
+    "villager-elder",
+    "traveler",
+    "refugee",
+    "minor-noble",
+    "dockworker",
+    "stablehand",
+    "street-vendor",
+    "pilgrim",
+    "entertainer",
+    "household-servant"
+  ],
+  "genders": [
+    "male",
+    "female"
+  ],
+  "source_alpha_extrema": [
+    0,
+    254
+  ],
+  "atlas": "atlases/civilian-npc-transparent-atlas-v1.png",
+  "sprites": [
+    {
+      "id": "civilian-villager-young-male",
+      "pack": "civilian",
+      "role": "villager-young",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-villager-young-male-npc-v1.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-villager-adult-male",
+      "pack": "civilian",
+      "role": "villager-adult",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-villager-adult-male-npc-v1.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-villager-elder-male",
+      "pack": "civilian",
+      "role": "villager-elder",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-villager-elder-male-npc-v1.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-traveler-male",
+      "pack": "civilian",
+      "role": "traveler",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-traveler-male-npc-v1.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-refugee-male",
+      "pack": "civilian",
+      "role": "refugee",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-refugee-male-npc-v1.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-minor-noble-male",
+      "pack": "civilian",
+      "role": "minor-noble",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-minor-noble-male-npc-v1.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-dockworker-male",
+      "pack": "civilian",
+      "role": "dockworker",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-dockworker-male-npc-v1.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-stablehand-male",
+      "pack": "civilian",
+      "role": "stablehand",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-stablehand-male-npc-v1.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-street-vendor-male",
+      "pack": "civilian",
+      "role": "street-vendor",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-street-vendor-male-npc-v1.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-pilgrim-male",
+      "pack": "civilian",
+      "role": "pilgrim",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-pilgrim-male-npc-v1.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-entertainer-male",
+      "pack": "civilian",
+      "role": "entertainer",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-entertainer-male-npc-v1.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-household-servant-male",
+      "pack": "civilian",
+      "role": "household-servant",
+      "gender": "male",
+      "file": "sprites/civilian/male/civilian-household-servant-male-npc-v1.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-villager-young-female",
+      "pack": "civilian",
+      "role": "villager-young",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-villager-young-female-npc-v1.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-villager-adult-female",
+      "pack": "civilian",
+      "role": "villager-adult",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-villager-adult-female-npc-v1.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-villager-elder-female",
+      "pack": "civilian",
+      "role": "villager-elder",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-villager-elder-female-npc-v1.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-traveler-female",
+      "pack": "civilian",
+      "role": "traveler",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-traveler-female-npc-v1.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-refugee-female",
+      "pack": "civilian",
+      "role": "refugee",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-refugee-female-npc-v1.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-minor-noble-female",
+      "pack": "civilian",
+      "role": "minor-noble",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-minor-noble-female-npc-v1.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-dockworker-female",
+      "pack": "civilian",
+      "role": "dockworker",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-dockworker-female-npc-v1.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-stablehand-female",
+      "pack": "civilian",
+      "role": "stablehand",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-stablehand-female-npc-v1.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-street-vendor-female",
+      "pack": "civilian",
+      "role": "street-vendor",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-street-vendor-female-npc-v1.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-pilgrim-female",
+      "pack": "civilian",
+      "role": "pilgrim",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-pilgrim-female-npc-v1.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-entertainer-female",
+      "pack": "civilian",
+      "role": "entertainer",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-entertainer-female-npc-v1.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    },
+    {
+      "id": "civilian-household-servant-female",
+      "pack": "civilian",
+      "role": "household-servant",
+      "gender": "female",
+      "file": "sprites/civilian/female/civilian-household-servant-female-npc-v1.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "anchor": [
+        128,
+        238
+      ]
+    }
+  ]
+}
