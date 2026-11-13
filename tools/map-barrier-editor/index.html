@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retro RPG — Harita Geçiş Editörü</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23e4b75e' d='M16 1 29 8v16l-13 7L3 24V8z'/%3E%3Cpath fill='%23211820' d='m16 6 8 5v10l-8 5-8-5V11z'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #110e14;
+      --panel: #211820;
+      --wood: #3c2418;
+      --wood-light: #694027;
+      --gold: #e4b75e;
+      --gold-bright: #ffe09a;
+      --red: #b1322c;
+      --purple: #4a1f66;
+      --text: #f1dfbd;
+      --muted: #b7a58a;
+      --ok: #66d477;
+      --danger: #ff765c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 0%, #392136 0, transparent 36rem),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.018) 0 1px, transparent 1px 5px),
+        #0e0b10;
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    button, input, textarea { font: inherit; }
+
+    .app {
+      width: min(1500px, 100%);
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 20px;
+      margin-bottom: 14px;
+      border: 2px solid var(--gold);
+      background: linear-gradient(#4b2b1c, #251510);
+      box-shadow: 0 0 0 4px #171017, inset 0 0 0 2px #8a5b2f;
+    }
+
+    h1 { margin: 0; color: var(--gold-bright); font-size: clamp(18px, 2vw, 28px); }
+    header p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+
+    .header-badge {
+      min-width: 190px;
+      padding: 10px 14px;
+      border: 1px solid var(--gold);
+      background: #171117;
+      color: var(--gold-bright);
+      text-align: center;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .panel {
+      border: 2px solid #80562d;
+      background: linear-gradient(135deg, rgba(91,55,34,.96), rgba(27,19,24,.98));
+      box-shadow: 0 0 0 4px #120f13, inset 0 0 0 1px var(--gold);
+    }
+
+    aside { padding: 14px; position: sticky; top: 12px; }
+    .section { padding: 12px 0; border-bottom: 1px solid rgba(228,183,94,.28); }
+    .section:first-child { padding-top: 0; }
+    .section:last-child { border-bottom: 0; padding-bottom: 0; }
+    .section h2 { margin: 0 0 10px; color: var(--gold-bright); font-size: 15px; }
+
+    .mode-grid { display: grid; gap: 8px; }
+    .mode {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 9px;
+      align-items: center;
+      padding: 9px;
+      border: 1px solid #6d4b2e;
+      background: #191319;
+      cursor: pointer;
+    }
+    .mode:hover, .mode:has(input:checked) { border-color: var(--gold-bright); background: #2c1c28; }
+    .mode input { accent-color: var(--red); width: 18px; height: 18px; }
+    .mode strong { display: block; font-size: 13px; }
+    .mode small { color: var(--muted); font-size: 11px; }
+
+    .buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    button, .file-label {
+      min-height: 38px;
+      padding: 8px 10px;
+      color: var(--text);
+      border: 1px solid var(--gold);
+      background: linear-gradient(#5b2a35, #2e1720);
+      cursor: pointer;
+      text-align: center;
+    }
+    button:hover, .file-label:hover { color: white; filter: brightness(1.2); }
+    button:active { transform: translateY(1px); }
+    button.secondary, .file-label.secondary { background: linear-gradient(#3a2c27, #1e1718); }
+    button.wide, .file-label.wide { grid-column: 1 / -1; }
+    input[type="file"] { display: none; }
+
+    .toggle-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 8px 0; }
+    .toggle-row input[type="checkbox"] { accent-color: var(--gold); width: 18px; height: 18px; }
+    input[type="range"] { width: 125px; accent-color: var(--gold); }
+
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+    .stat { padding: 8px; border: 1px solid #5a422c; background: #151116; }
+    .stat span { display: block; color: var(--muted); font-size: 10px; }
+    .stat strong { color: var(--gold-bright); font-size: 16px; }
+
+    .purple-check {
+      margin-top: 8px;
+      padding: 10px;
+      border: 1px solid #8752a5;
+      background: rgba(55,20,74,.7);
+      line-height: 1.4;
+      font-size: 12px;
+    }
+    .purple-check.good { border-color: var(--ok); color: #bff4c6; }
+    .purple-check.bad { border-color: var(--danger); color: #ffc0b5; }
+
+    main { min-width: 0; }
+    .map-shell { padding: 10px; }
+    .canvas-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 800 / 533;
+      overflow: hidden;
+      border: 2px solid var(--gold);
+      background: #09080b;
+      cursor: crosshair;
+      touch-action: none;
+    }
+    canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+
+    .hint {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 4px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .hover-info { color: var(--gold-bright); }
+
+    .output { margin-top: 16px; padding: 14px; }
+    .output-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+    .output h2 { margin: 0; color: var(--gold-bright); font-size: 16px; }
+    textarea {
+      display: block;
+      width: 100%;
+      min-height: 185px;
+      resize: vertical;
+      padding: 12px;
+      color: #d8f3d8;
+      border: 1px solid #72522f;
+      background: #0d0c0f;
+      line-height: 1.45;
+      font-size: 12px;
+    }
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 10;
+      max-width: 360px;
+      padding: 12px 16px;
+      border: 1px solid var(--gold);
+      background: #191218;
+      color: var(--gold-bright);
+      box-shadow: 0 6px 24px #000a;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: .18s ease;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 950px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .mode-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 620px) {
+      .app { padding: 9px; }
+      header { align-items: flex-start; flex-direction: column; }
+      .header-badge { width: 100%; }
+      .mode-grid { grid-template-columns: 1fr; }
+      .hint { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>HARİTA GEÇİŞ EDİTÖRÜ</h1>
+        <p>Hexlere tıklayarak oyuncunun yürüyemeyeceği bölgeleri seç.</p>
+      </div>
+      <div class="header-badge" id="saveState">Yerel kayıt hazır</div>
+    </header>
+
+    <div class="layout">
+      <aside class="panel">
+        <section class="section">
+          <h2>BOYAMA MODU</h2>
+          <div class="mode-grid">
+            <label class="mode">
+              <input type="radio" name="mode" value="blocked" checked>
+              <span><strong>GEÇİLMEZ</strong><small>Yolu kapatır; boş arazide dağ gösterir</small></span>
+            </label>
+            <label class="mode">
+              <input type="radio" name="mode" value="unlockable">
+              <span><strong>AÇILABİLİR</strong><small>Altın ◆, encounter ile açılır</small></span>
+            </label>
+            <label class="mode">
+              <input type="radio" name="mode" value="clear">
+              <span><strong>AÇIK YOL</strong><small>Dağı kaldırır, yürünebilir yapar</small></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>GÖRÜNÜM</h2>
+          <label class="toggle-row"><span>Hex çizgileri</span><input id="showGrid" type="checkbox" checked></label>
+          <label class="toggle-row"><span>Koordinatlar</span><input id="showCoords" type="checkbox"></label>
+          <label class="toggle-row"><span>Dağ görünürlüğü</span><input id="opacity" type="range" min="35" max="100" value="95"></label>
+        </section>
+
+        <section class="section">
+          <h2>DÜZEN</h2>
+          <div class="buttons">
+            <button class="wide" id="loadCurrent">Mevcut oyun düzeni</button>
+            <button id="purpleTemplate">Mor bölge: tek giriş</button>
+            <button class="secondary" id="undo">Geri al</button>
+            <button class="secondary" id="clearAll">Hepsini temizle</button>
+            <button class="secondary" id="saveLocal">Yerel kaydet</button>
+            <label class="file-label secondary" for="importJson">JSON içe aktar</label>
+            <input id="importJson" type="file" accept="application/json,.json">
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>ÖZET</h2>
+          <div class="stats">
+            <div class="stat"><span>Geçilmez</span><strong id="blockedCount">0</strong></div>
+            <div class="stat"><span>Açılabilir</span><strong id="unlockableCount">0</strong></div>
+            <div class="stat"><span>Açık</span><strong id="openCount">180</strong></div>
+            <div class="stat"><span>Toplam hex</span><strong>180</strong></div>
+          </div>
+          <div class="purple-check" id="purpleCheck">Mor bölge kontrol ediliyor…</div>
+        </section>
+
+        <section class="section">
+          <h2>DIŞA AKTAR</h2>
+          <div class="buttons">
+            <button id="downloadJson">JSON indir</button>
+            <button id="copyJson">JSON kopyala</button>
+            <button class="wide" id="copyCSharp">C# koordinatlarını kopyala</button>
+          </div>
+        </section>
+      </aside>
+
+      <main>
+        <section class="panel map-shell">
+          <div class="canvas-wrap" id="canvasWrap">
+            <canvas id="mapCanvas" width="800" height="533" aria-label="Tıklanabilir Retro RPG dünya haritası"></canvas>
+          </div>
+          <div class="hint">
+            <span>Sol tık/sürükle: seçili modu uygula · Sağ tık: yolu aç</span>
+            <span class="hover-info" id="hoverInfo">Hex üzerine gel</span>
+          </div>
+        </section>
+
+        <section class="panel output">
+          <div class="output-head">
+            <h2>CANLI JSON ÇIKTISI</h2>
+            <button class="secondary" id="selectOutput">Metni seç</button>
+          </div>
+          <textarea id="jsonOutput" readonly spellcheck="false"></textarea>
+        </section>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const canvas = document.getElementById('mapCanvas');
+      const ctx = canvas.getContext('2d');
+      const mapImage = new Image();
+      mapImage.src = '../../assets/final-production-v4/maps/world-map-parchment-2d-v1.png';
+      const mountainImage = new Image();
+      mountainImage.src = '../../assets/final-production-v5/maps/obstacles/corrupted-mountain-cluster-v1.png';
+
+      const MAP_CENTER = { x: 400, y: 288 };
+      const STEP_X = 48;
+      const STEP_Y = 39;
+      const RADIUS_X = 24;
+      const RADIUS_Y = 26;
+      const STORAGE_KEY = 'retro-rpg-map-barrier-editor-v1';
+
+      const biomeCenters = [
+        { q: 1, r: 0, biome: 'Plains', label: 'Ova' },
+        { q: -1, r: 0, biome: 'Forest', label: 'Orman' },
+        { q: -4, r: -1, biome: 'Swamp', label: 'Bataklık' },
+        { q: 0, r: 5, biome: 'Tropical', label: 'Tropik' },
+        { q: 3, r: 3, biome: 'Desert', label: 'Çöl' },
+        { q: 0, r: -5, biome: 'Volcanic', label: 'Volkanik' },
+        { q: 4, r: -3, biome: 'Mountain', label: 'Dağ' },
+        { q: 7, r: -5, biome: 'Snow', label: 'Kar' },
+        { q: -3, r: -5, biome: 'Corrupted', label: 'Mor / Yozlaşmış' },
+        { q: -7, r: 0, biome: 'Underground', label: 'Yeraltı' }
+      ];
+
+      // Kullanıcının 01.11.2026 tarihinde kaydettiği mor biyom seçimi.
+      // Diğer biyomlar bilinçli olarak henüz boş bırakılmıştır.
+      const currentPermanent = [
+        [2,-6],[1,-5],[-4,-4],[-3,-4],[-2,-4],[0,-4],[-3,-3],[-2,-3]
+      ];
+      // Bunlar kalıcı dağ değildir; mevcut görevlerle sonradan açılan iki eski geçittir.
+      const currentUnlockable = [[3,-2],[-6,0]];
+      const purpleGate = '-3,-4';
+
+      const tiles = [];
+      const tileByKey = new Map();
+      for (let row = 0; row < 12; row++) {
+        const r = row - 6;
+        for (let column = 0; column < 15; column++) {
+          const offsetColumn = column - 7;
+          const q = offsetColumn - Math.floor(r / 2);
+          const tile = { q, r, key: `${q},${r}` };
+          tile.x = MAP_CENTER.x + STEP_X * (q + r / 2);
+          tile.y = MAP_CENTER.y + STEP_Y * r;
+          tile.biome = biomeAt(q, r);
+          tiles.push(tile);
+          tileByKey.set(tile.key, tile);
+        }
+      }
+
+      const state = new Map();
+      const undoStack = [];
+      let hovered = null;
+      let painting = false;
+      let lastPainted = null;
+      let imageReady = false;
+      let mountainReady = false;
+
+      const showGrid = document.getElementById('showGrid');
+      const showCoords = document.getElementById('showCoords');
+      const opacity = document.getElementById('opacity');
+      const hoverInfo = document.getElementById('hoverInfo');
+      const output = document.getElementById('jsonOutput');
+      const toast = document.getElementById('toast');
+
+      function key(q, r) { return `${q},${r}`; }
+      function distance(aq, ar, bq, br) {
+        const dq = aq - bq, dr = ar - br;
+        return (Math.abs(dq) + Math.abs(dr) + Math.abs(dq + dr)) / 2;
+      }
+      function biomeAt(q, r) {
+        return biomeCenters.reduce((best, candidate) =>
+          distance(q, r, candidate.q, candidate.r) < distance(q, r, best.q, best.r) ? candidate : best
+        ).biome;
+      }
+      function biomeLabel(id) { return biomeCenters.find(x => x.biome === id)?.label ?? id; }
+      function needsMountainOverlay(tile) {
+        // Volkan, karlı zirve ve doğal dağlık alan zaten kendi görseliyle geçilmez görünür.
+        return !['Volcanic', 'Mountain', 'Snow'].includes(tile.biome);
+      }
+      function neighbors(tile) {
+        return [[1,0],[1,-1],[0,-1],[-1,0],[-1,1],[0,1]]
+          .map(([dq,dr]) => tileByKey.get(key(tile.q + dq, tile.r + dr)))
+          .filter(Boolean);
+      }
+      function polygon(tile) {
+        return [
+          [tile.x, tile.y - RADIUS_Y], [tile.x + RADIUS_X, tile.y - RADIUS_Y/2],
+          [tile.x + RADIUS_X, tile.y + RADIUS_Y/2], [tile.x, tile.y + RADIUS_Y],
+          [tile.x - RADIUS_X, tile.y + RADIUS_Y/2], [tile.x - RADIUS_X, tile.y - RADIUS_Y/2]
+        ];
+      }
+      function traceHex(tile) {
+        const points = polygon(tile);
+        ctx.beginPath();
+        ctx.moveTo(points[0][0], points[0][1]);
+        for (let i = 1; i < points.length; i++) ctx.lineTo(points[i][0], points[i][1]);
+        ctx.closePath();
+      }
+      function getMode() { return document.querySelector('input[name="mode"]:checked').value; }
+      function snapshot() { return [...state.entries()]; }
+      function pushUndo() {
+        undoStack.push(snapshot());
+        if (undoStack.length > 60) undoStack.shift();
+      }
+      function setStateFrom(entries, addUndo = true) {
+        if (addUndo) pushUndo();
+        state.clear();
+        for (const [k, value] of entries) if (tileByKey.has(k) && ['blocked','unlockable'].includes(value)) state.set(k, value);
+        changed();
+      }
+      function applyPreset() {
+        const entries = [
+          ...currentPermanent.map(([q,r]) => [key(q,r), 'blocked']),
+          ...currentUnlockable.map(([q,r]) => [key(q,r), 'unlockable'])
+        ];
+        setStateFrom(entries);
+        notify('Mevcut oyun düzeni yüklendi.');
+      }
+      function applyPurpleTemplate() {
+        pushUndo();
+        for (const tile of tiles) {
+          if (tile.biome !== 'Corrupted') continue;
+          const isBoundary = neighbors(tile).some(n => n.biome !== 'Corrupted');
+          if (!isBoundary) continue;
+          if (tile.key === purpleGate) state.delete(tile.key);
+          else state.set(tile.key, 'blocked');
+        }
+        changed();
+        notify('Mor bölge tek güney girişine ayarlandı.');
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.imageSmoothingEnabled = false;
+        if (imageReady) ctx.drawImage(mapImage, 0, 0, canvas.width, canvas.height);
+        else {
+          ctx.fillStyle = '#151017';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.fillStyle = '#f1dfbd';
+          ctx.font = '18px Consolas';
+          ctx.textAlign = 'center';
+          ctx.fillText('Harita görseli yükleniyor…', 400, 266);
+        }
+
+        const alpha = Number(opacity.value) / 100;
+        for (const tile of tiles) {
+          const value = state.get(tile.key);
+          if (value) {
+            if (value === 'blocked') {
+              if (mountainReady && needsMountainOverlay(tile)) {
+                ctx.save();
+                ctx.globalAlpha = alpha;
+                // Dağın tabanı hex merkezine oturur; yakın dağlar doğal bir sırada üst üste biner.
+                ctx.drawImage(mountainImage, tile.x - 29, tile.y - 29, 58, 51);
+                ctx.restore();
+              }
+            } else {
+              traceHex(tile);
+              ctx.fillStyle = `rgba(104, 72, 13, ${alpha})`;
+              ctx.strokeStyle = '#ffe09a';
+              ctx.lineWidth = 2.5;
+              ctx.fill();
+              ctx.stroke();
+              ctx.save();
+              ctx.translate(tile.x, tile.y);
+              ctx.textAlign = 'center';
+              ctx.textBaseline = 'middle';
+              ctx.font = 'bold 19px Consolas';
+              ctx.fillStyle = '#ffe09a';
+              ctx.shadowColor = '#000';
+              ctx.shadowBlur = 3;
+              ctx.fillText('◆', 0, 1);
+              ctx.restore();
+            }
+          }
+
+          if (showGrid.checked) {
+            traceHex(tile);
+            ctx.strokeStyle = value ? (value === 'blocked' ? 'rgba(166,104,199,.82)' : '#e3b85f') : 'rgba(228,183,94,.55)';
+            ctx.lineWidth = value ? 1.5 : 0.75;
+            ctx.stroke();
+          }
+
+          if (showCoords.checked) {
+            ctx.font = '9px Consolas';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = '#fff4d6';
+            ctx.shadowColor = '#000';
+            ctx.shadowBlur = 2;
+            ctx.fillText(tile.key, tile.x, tile.y + 13);
+            ctx.shadowBlur = 0;
+          }
+        }
+
+        if (hovered) {
+          traceHex(hovered);
+          ctx.strokeStyle = '#5ff1f5';
+          ctx.lineWidth = 3;
+          ctx.stroke();
+        }
+      }
+
+      function tileAt(event) {
+        const rect = canvas.getBoundingClientRect();
+        const x = (event.clientX - rect.left) * canvas.width / rect.width;
+        const y = (event.clientY - rect.top) * canvas.height / rect.height;
+        let nearest = null, best = Infinity;
+        for (const tile of tiles) {
+          const d = Math.hypot(tile.x - x, tile.y - y);
+          if (d < best) { best = d; nearest = tile; }
+        }
+        return best <= 31 ? nearest : null;
+      }
+
+      function paint(tile, forceClear = false) {
+        if (!tile || tile.key === lastPainted) return;
+        const mode = forceClear ? 'clear' : getMode();
+        if (mode === 'clear') state.delete(tile.key);
+        else state.set(tile.key, mode);
+        lastPainted = tile.key;
+        changed();
+      }
+
+      function changed() {
+        updateStats();
+        updateOutput();
+        draw();
+        document.getElementById('saveState').textContent = 'Kaydedilmemiş değişiklik';
+      }
+
+      function updateStats() {
+        const blocked = [...state.values()].filter(x => x === 'blocked').length;
+        const unlockable = [...state.values()].filter(x => x === 'unlockable').length;
+        document.getElementById('blockedCount').textContent = blocked;
+        document.getElementById('unlockableCount').textContent = unlockable;
+        document.getElementById('openCount').textContent = 180 - blocked - unlockable;
+
+        const corruptedBoundary = tiles.filter(tile => tile.biome === 'Corrupted' && neighbors(tile).some(n => n.biome !== 'Corrupted'));
+        const entrances = corruptedBoundary.filter(tile => !state.has(tile.key));
+        const check = document.getElementById('purpleCheck');
+        check.className = `purple-check ${entrances.length === 1 ? 'good' : 'bad'}`;
+        check.textContent = entrances.length === 1
+          ? `✓ Mor bölgenin tek girişi: ${entrances[0].key}`
+          : `! Mor bölgenin açık giriş sayısı: ${entrances.length}. Tek giriş bırakmalısın.`;
+      }
+
+      function sortedCoordinates(type) {
+        return [...state.entries()]
+          .filter(([,value]) => value === type)
+          .map(([k]) => tileByKey.get(k))
+          .sort((a,b) => a.r - b.r || a.q - b.q)
+          .map(({q,r}) => ({q,r}));
+      }
+
+      function exportObject() {
+        const purpleBoundary = tiles.filter(tile => tile.biome === 'Corrupted' && neighbors(tile).some(n => n.biome !== 'Corrupted'));
+        const purpleEntrances = purpleBoundary.filter(tile => !state.has(tile.key)).map(({q,r}) => ({q,r}));
+        return {
+          format: 'retro-rpg-map-barriers-v1',
+          grid: { columns: 15, rows: 12, orientation: 'pointy-top-visual', totalHexes: 180 },
+          permanentObstacles: sortedCoordinates('blocked'),
+          unlockableGates: sortedCoordinates('unlockable'),
+          purpleRegionEntrances: purpleEntrances,
+          notes: 'Geçilmez hexler rotada daima kapalıdır. Volkan ve doğal dağlarda ek görsel bindirilmez; boş arazide mor dağ kümesi gösterilir.'
+        };
+      }
+
+      function updateOutput() { output.value = JSON.stringify(exportObject(), null, 2); }
+      function csharpOutput() {
+        const format = (items) => items.length
+          ? items.map(x => `    new(${x.q}, ${x.r})`).join(',\n')
+          : '    // boş';
+        return `HexCoordinate[] permanentObstacles =\n[\n${format(sortedCoordinates('blocked'))}\n];\n\nHexCoordinate[] unlockableGates =\n[\n${format(sortedCoordinates('unlockable'))}\n];`;
+      }
+
+      async function copyText(text, message) {
+        try {
+          await navigator.clipboard.writeText(text);
+          notify(message);
+        } catch {
+          output.value = text;
+          output.focus();
+          output.select();
+          document.execCommand('copy');
+          updateOutput();
+          notify(message);
+        }
+      }
+
+      function notify(message) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        clearTimeout(notify.timer);
+        notify.timer = setTimeout(() => toast.classList.remove('show'), 1800);
+      }
+
+      function saveLocal() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(exportObject()));
+        document.getElementById('saveState').textContent = 'Yerel kayıt güncel';
+        notify('Seçim tarayıcıya kaydedildi.');
+      }
+
+      function loadObject(data, addUndo = true) {
+        if (!data || data.format !== 'retro-rpg-map-barriers-v1') throw new Error('Geçersiz harita dosyası.');
+        const entries = [];
+        for (const p of data.permanentObstacles ?? []) entries.push([key(p.q,p.r), 'blocked']);
+        for (const p of data.unlockableGates ?? []) entries.push([key(p.q,p.r), 'unlockable']);
+        setStateFrom(entries, addUndo);
+      }
+
+      canvas.addEventListener('contextmenu', e => e.preventDefault());
+      canvas.addEventListener('pointerdown', event => {
+        event.preventDefault();
+        canvas.setPointerCapture(event.pointerId);
+        painting = true;
+        lastPainted = null;
+        pushUndo();
+        paint(tileAt(event), event.button === 2);
+      });
+      canvas.addEventListener('pointermove', event => {
+        hovered = tileAt(event);
+        hoverInfo.textContent = hovered
+          ? `${hovered.key} · ${biomeLabel(hovered.biome)} · ${state.get(hovered.key) ?? 'açık'}`
+          : 'Hex üzerine gel';
+        if (painting && (event.buttons & 1 || event.buttons & 2)) paint(hovered, Boolean(event.buttons & 2));
+        else draw();
+      });
+      canvas.addEventListener('pointerup', () => { painting = false; lastPainted = null; });
+      canvas.addEventListener('pointercancel', () => { painting = false; lastPainted = null; });
+      canvas.addEventListener('pointerleave', () => { hovered = null; hoverInfo.textContent = 'Hex üzerine gel'; draw(); });
+
+      showGrid.addEventListener('change', draw);
+      showCoords.addEventListener('change', draw);
+      opacity.addEventListener('input', draw);
+      document.getElementById('loadCurrent').addEventListener('click', applyPreset);
+      document.getElementById('purpleTemplate').addEventListener('click', applyPurpleTemplate);
+      document.getElementById('clearAll').addEventListener('click', () => { setStateFrom([]); notify('Bütün işaretler temizlendi.'); });
+      document.getElementById('undo').addEventListener('click', () => {
+        const previous = undoStack.pop();
+        if (!previous) return notify('Geri alınacak işlem yok.');
+        state.clear();
+        for (const [k,v] of previous) state.set(k,v);
+        changed();
+      });
+      document.getElementById('saveLocal').addEventListener('click', saveLocal);
+      document.getElementById('downloadJson').addEventListener('click', () => {
+        const blob = new Blob([JSON.stringify(exportObject(), null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'retro-rpg-map-barriers.json';
+        a.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        notify('JSON indirildi.');
+      });
+      document.getElementById('copyJson').addEventListener('click', () => copyText(JSON.stringify(exportObject(), null, 2), 'JSON kopyalandı.'));
+      document.getElementById('copyCSharp').addEventListener('click', () => copyText(csharpOutput(), 'C# koordinatları kopyalandı.'));
+      document.getElementById('selectOutput').addEventListener('click', () => { output.focus(); output.select(); });
+      document.getElementById('importJson').addEventListener('change', async event => {
+        const file = event.target.files?.[0];
+        if (!file) return;
+        try { loadObject(JSON.parse(await file.text())); notify('JSON düzeni içe aktarıldı.'); }
+        catch (error) { notify(error.message); }
+        event.target.value = '';
+      });
+
+      mapImage.addEventListener('load', () => { imageReady = true; draw(); });
+      mapImage.addEventListener('error', () => {
+        imageReady = false;
+        notify('Harita görseli bulunamadı; HTML dosyasını proje içindeki yerinde aç.');
+        draw();
+      });
+      mountainImage.addEventListener('load', () => { mountainReady = true; draw(); });
+      mountainImage.addEventListener('error', () => {
+        mountainReady = false;
+        notify('Dağ aseti bulunamadı; proje klasör yapısını koru.');
+        draw();
+      });
+
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          loadObject(JSON.parse(saved), false);
+          document.getElementById('saveState').textContent = 'Yerel kayıt yüklendi';
+        } else {
+          const entries = [
+            ...currentPermanent.map(([q,r]) => [key(q,r), 'blocked']),
+            ...currentUnlockable.map(([q,r]) => [key(q,r), 'unlockable'])
+          ];
+          setStateFrom(entries, false);
+          document.getElementById('saveState').textContent = 'Mevcut düzen yüklü';
+        }
+      } catch {
+        setStateFrom([], false);
+      }
+      updateStats();
+      updateOutput();
+      draw();
+    })();
+  </script>
+</body>
+</html>

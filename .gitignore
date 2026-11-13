@@ -1,0 +1,49 @@
+# Build output
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+TestResults/
+
+# Published exe (dotnet publish ... -o dist ile yeniden uretilir)
+dist/
+
+# QA, render and browser automation output
+qa/
+qa_*/
+render_character_system_*/
+.playwright-cli/
+output/
+
+# Local runtime data
+qa-saves/
+missing-assets.log
+text-overflow-report.txt
+text-overflow.log
+
+# Word / office documents and their generators
+*.docx
+*.doc
+~$*
+documents/word/
+tools/legacy-document-generation/
+tools/build_mega_prompt_docx.py
+tools/update_mega_prompt_v9.py
+tools/render_docx_fallback_html.py
+documents/CLEANUP_REPORT_*.md
+
+# External handoff packages and AI prompt notes
+handoff/
+prompts/
+**/prompts-used.md
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Archives and OS junk
+*.zip
+Thumbs.db
+desktop.ini
+.DS_Store
