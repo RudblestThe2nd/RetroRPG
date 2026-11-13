@@ -1,0 +1,76 @@
+{
+  "packageId": "main-story-cinematics-v1",
+  "title": "Kader Yolları: Göz Kulesi — Ana Hikâye Sinematikleri",
+  "status": "final-game-assets",
+  "frameSize": { "width": 800, "height": 800 },
+  "rendering": "nearest-neighbor",
+  "embeddedText": false,
+  "protagonistRule": "Ana karakter tüm sahnelerde özelliksiz saf siyah silüettir; yalnız Kaderbozan Zırhı ayrı mavi-altın katman olarak görünebilir.",
+  "sequences": [
+    {
+      "id": "caravan-prologue-v1",
+      "storyEventId": "prologue-broken-caravan",
+      "directory": "01-caravan-prologue-v1",
+      "contactSheet": "caravan-prologue-contact-sheet-v1.png",
+      "preview": "caravan-prologue-preview-v1.gif",
+      "frames": ["caravan-prologue-frame-00-v1.png", "caravan-prologue-frame-01-v1.png", "caravan-prologue-frame-02-v1.png", "caravan-prologue-frame-03-v1.png"]
+    },
+    {
+      "id": "root-waystone-v1",
+      "storyEventId": "waystone-root-activation",
+      "directory": "02-root-waystone-v1",
+      "contactSheet": "root-waystone-contact-sheet-v1.png",
+      "preview": "root-waystone-preview-v1.gif",
+      "frames": ["root-waystone-frame-00-v1.png", "root-waystone-frame-01-v1.png", "root-waystone-frame-02-v1.png", "root-waystone-frame-03-v1.png"]
+    },
+    {
+      "id": "sky-waystone-v1",
+      "storyEventId": "waystone-sky-activation",
+      "directory": "03-sky-waystone-v1",
+      "contactSheet": "sky-waystone-contact-sheet-v1.png",
+      "preview": "sky-waystone-preview-v1.gif",
+      "frames": ["sky-waystone-frame-00-v1.png", "sky-waystone-frame-01-v1.png", "sky-waystone-frame-02-v1.png", "sky-waystone-frame-03-v1.png"]
+    },
+    {
+      "id": "sun-waystone-v1",
+      "storyEventId": "waystone-sun-activation",
+      "directory": "04-sun-waystone-v1",
+      "contactSheet": "sun-waystone-contact-sheet-v1.png",
+      "preview": "sun-waystone-preview-v1.gif",
+      "frames": ["sun-waystone-frame-00-v1.png", "sun-waystone-frame-01-v1.png", "sun-waystone-frame-02-v1.png", "sun-waystone-frame-03-v1.png"]
+    },
+    {
+      "id": "archive-gate-v1",
+      "storyEventId": "broken-archive-and-purple-gate",
+      "directory": "05-archive-gate-v1",
+      "contactSheet": "archive-gate-contact-sheet-v1.png",
+      "preview": "archive-gate-preview-v1.gif",
+      "frames": ["archive-gate-frame-00-v1.png", "archive-gate-frame-01-v1.png", "archive-gate-frame-02-v1.png", "archive-gate-frame-03-v1.png"]
+    },
+    {
+      "id": "corrupted-region-v1",
+      "storyEventId": "corrupted-region-story-encounters",
+      "directory": "06-corrupted-region-v1",
+      "contactSheet": "corrupted-region-contact-sheet-v1.png",
+      "preview": "corrupted-region-preview-v1.gif",
+      "frames": ["corrupted-region-frame-00-v1.png", "corrupted-region-frame-01-v1.png", "corrupted-region-frame-02-v1.png", "corrupted-region-frame-03-v1.png"],
+      "frameMeanings": ["forgotten-refugees", "erased-patrol", "eye-bishop", "memory-echo"]
+    },
+    {
+      "id": "fate-lens-v1",
+      "storyEventId": "fate-lens-and-vaelor-final-form",
+      "directory": "07-fate-lens-v1",
+      "contactSheet": "fate-lens-contact-sheet-v1.png",
+      "preview": "fate-lens-preview-v1.gif",
+      "frames": ["fate-lens-frame-00-v1.png", "fate-lens-frame-01-v1.png", "fate-lens-frame-02-v1.png", "fate-lens-frame-03-v1.png"]
+    },
+    {
+      "id": "endings-v1",
+      "storyEventId": "ending-epilogues",
+      "directory": "08-endings-v1",
+      "contactSheet": "endings-contact-sheet-v1.png",
+      "frames": ["endings-frame-00-v1.png", "endings-frame-01-v1.png", "endings-frame-02-v1.png", "endings-frame-03-v1.png"],
+      "frameMeanings": ["restore-old-roads", "share-roads", "destroy-fate-lens", "become-new-watcher"]
+    }
+  ]
+}

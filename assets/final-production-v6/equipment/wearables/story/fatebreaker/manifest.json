@@ -1,0 +1,15 @@
+{
+  "id": "fatebreaker-story-layer-v1",
+  "status": "complete",
+  "slot": "StoryLayer",
+  "size": [256, 256],
+  "anchor": [128, 150],
+  "layers": [
+    {
+      "direction": "south",
+      "animation": "idle",
+      "file": "south/fatebreaker-story-layer-south-idle-v1.png"
+    }
+  ],
+  "inventory_icon": "items/item-pack-01/icons/armor/25-fatebreaker-armor-v1.png"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "combat-indicators-v1",
+  "status": "complete",
+  "icons": [
+    {
+      "id": "movement",
+      "file": "ui/combat-indicators/runtime-128/movement-icon-v1.png"
+    },
+    {
+      "id": "action",
+      "file": "ui/combat-indicators/runtime-128/action-icon-v1.png"
+    },
+    {
+      "id": "bonus-action",
+      "file": "ui/combat-indicators/runtime-128/bonus-action-icon-v1.png"
+    },
+    {
+      "id": "reaction",
+      "file": "ui/combat-indicators/runtime-128/reaction-icon-v1.png"
+    },
+    {
+      "id": "advantage",
+      "file": "ui/combat-indicators/runtime-128/advantage-icon-v1.png"
+    },
+    {
+      "id": "disadvantage",
+      "file": "ui/combat-indicators/runtime-128/disadvantage-icon-v1.png"
+    },
+    {
+      "id": "armor-class",
+      "file": "ui/combat-indicators/runtime-128/armor-class-icon-v1.png"
+    },
+    {
+      "id": "saving-throw",
+      "file": "ui/combat-indicators/runtime-128/saving-throw-icon-v1.png"
+    },
+    {
+      "id": "concentration",
+      "file": "ui/combat-indicators/runtime-128/concentration-icon-v1.png"
+    },
+    {
+      "id": "death-save-success",
+      "file": "ui/combat-indicators/runtime-128/death-save-success-icon-v1.png"
+    },
+    {
+      "id": "death-save-failure",
+      "file": "ui/combat-indicators/runtime-128/death-save-failure-icon-v1.png"
+    },
+    {
+      "id": "initiative",
+      "file": "ui/combat-indicators/runtime-128/initiative-icon-v1.png"
+    }
+  ]
+}

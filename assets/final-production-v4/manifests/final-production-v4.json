@@ -1,0 +1,65 @@
+{
+  "id": "final-production-v4",
+  "status": "complete",
+  "asset_policy": "All files are production game assets, not concepts or temporary placeholders.",
+  "style": "medieval wood, crimson heraldry, retro pixel art",
+  "maps": {
+    "world_parchment_2d": {
+      "id": "map.world.parchment-2d",
+      "path": "maps/world-map-parchment-2d-v1.png",
+      "resolution": [1536, 1024],
+      "projection": "top-down-2d",
+      "hex_grid_baked_in": false,
+      "status": "production"
+    }
+  },
+  "combat": {
+    "forest_background": {
+      "id": "scene.combat.forest.pixel-v2",
+      "path": "scenes/combat-backgrounds/forest-combat-background-pixel-v2.png",
+      "resolution": [800, 800],
+      "status": "production"
+    },
+    "forest_wolf": {
+      "idle_project_path": "characters/biome-enemies-v1/forest/sprites/wolf/forest-wolf-idle-v2.png",
+      "attack_project_path": "characters/biome-enemies-v1/forest/sprites/wolf/forest-wolf-attack-v2.png",
+      "resolution": [256, 256],
+      "transparent": true,
+      "status": "production"
+    }
+  },
+  "ui": {
+    "main_menu_background": {
+      "id": "ui.main-menu.background.wood-red-v1",
+      "path": "ui/screens/runtime-800/main-menu-background-wood-red-v1.png",
+      "resolution": [800, 800],
+      "text_baked_in": false,
+      "buttons_baked_in": false,
+      "status": "production"
+    },
+    "main_menu_buttons": {
+      "base_path": "ui/controls/buttons/large/button-large",
+      "resolution": [192, 68],
+      "states": ["normal", "hover", "pressed", "disabled"],
+      "text_baked_in": false,
+      "status": "production"
+    },
+    "character_creation_background": {
+      "id": "ui.character-creation.wood-red-v1",
+      "path": "ui/screens/runtime-800/character-creation-wood-red-v1.png",
+      "resolution": [800, 800],
+      "text_baked_in": false,
+      "buttons_baked_in": true,
+      "status": "production"
+    },
+    "runtime_font": {
+      "project_path": "ui/assets/fonts/PixelifySans-Variable.ttf",
+      "family": "Pixelify Sans",
+      "license": "SIL Open Font License 1.1"
+    }
+  },
+  "qa": {
+    "checked_png": 8,
+    "errors": []
+  }
+}

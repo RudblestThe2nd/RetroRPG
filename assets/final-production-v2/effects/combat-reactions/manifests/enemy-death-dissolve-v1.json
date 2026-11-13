@@ -1,0 +1,21 @@
+{
+  "id": "enemy-death-dissolve-v1",
+  "status": "complete",
+  "pivot": [
+    128,
+    224
+  ],
+  "fps": 9,
+  "loop": false,
+  "frames": [
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-00-v1.png",
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-01-v1.png",
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-02-v1.png",
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-03-v1.png",
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-04-v1.png",
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-05-v1.png",
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-06-v1.png",
+    "effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-07-v1.png"
+  ],
+  "gif": "effects/combat-reactions/animations/enemy-death-dissolve-v1.gif"
+}

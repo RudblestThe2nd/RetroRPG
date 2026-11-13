@@ -1,0 +1,61 @@
+{
+  "id": "final-production-v3",
+  "status": "complete",
+  "asset_policy": "All files are production game assets, not concepts or temporary placeholders.",
+  "story_scope": "Visual asset only. Narrative text and encounter outcomes are deferred.",
+  "encounters": [
+    {
+      "id": "encounter.kalpakli-suvari",
+      "display_name": "Kalpaklı Süvari",
+      "asset_id": "scene.encounter.kalpakli-suvari",
+      "path": "scenes/encounters/kalpakli-suvari-encounter-v1.png",
+      "resolution": [
+        800,
+        800
+      ],
+      "style": "retro-pixel-art",
+      "text_baked_in": false,
+      "ui_baked_in": false,
+      "status": "production"
+    }
+  ],
+  "ui": {
+    "main_menu_background": {
+      "id": "ui.main-menu.background.pixel-v2",
+      "path": "ui/screens/runtime-800/main-menu-background-pixel-v2.png",
+      "resolution": [
+        800,
+        800
+      ],
+      "style": "retro-pixel-art",
+      "text_baked_in": false,
+      "buttons_baked_in": false,
+      "runtime_layer": "background",
+      "status": "production"
+    },
+    "main_menu_screen": {
+      "id": "ui.main-menu.screen.pixel-v2",
+      "path": "ui/screens/runtime-800/main-menu-screen-pixel-v2.png",
+      "resolution": [
+        800,
+        800
+      ],
+      "background_asset_id": "ui.main-menu.background.pixel-v2",
+      "button_source": "ui/assets/controls/buttons/large",
+      "default_selection": "new-game",
+      "labels": [
+        "YENİ OYUN",
+        "DEVAM ET",
+        "OYUN YÜKLE",
+        "AYARLAR",
+        "ÇIKIŞ"
+      ],
+      "status": "production"
+    }
+  },
+  "qa": {
+    "status": "pass",
+    "checked_png": 3,
+    "errors": []
+  }
+}
