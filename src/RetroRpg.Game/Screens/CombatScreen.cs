@@ -9,12 +9,14 @@ using RetroRpg.Core.World;
 
 namespace RetroRpg.Game.Screens;
 
-internal enum CombatModal { None, Attack, Dice, Inventory, Escape, FleeDice, Victory, FateStrike }
+internal enum CombatModal { None, Attack, Power, Dice, Inventory, Escape, FleeDice, Victory, FateStrike }
 
 // Eylemler önce kendi penceresini açar. Eşya saldırı yapmaz; kaçıştan önce düşman vurur.
 // Hikâye savaşları (Göz Piskoposu, Vaelor) aynı ekranı CombatStoryEvent ile kullanır.
 internal sealed class CombatScreen : GameScreen
 {
+    private const int FeedbackDuration = 12;
+    private const int ImpactTick = 7;
     private const string DiceFolder = "assets/final-production-v2/combat/dice/";
     private static readonly Rectangle Scene = new(16, 203, 594, 454);
     private static readonly Color StatsInk = Color.FromArgb(14, 14, 14);
@@ -34,12 +36,16 @@ internal sealed class CombatScreen : GameScreen
     private readonly List<PixelButton> _modalActions = [];
     private readonly bool _playerFirst;
     private CombatModal _modal;
-    private int _turn = 1, _rollTicks, _deathTicks = -1, _lastRoll = 20, _lastDamage, _hoveredInitiative = -1;
+    private int _turn = 1, _rollTicks, _feedbackTicks, _deathTicks = -1, _lastRoll = 20, _lastDamage, _hoveredInitiative = -1;
     private string _lastAttackName = "NORMAL SALDIRI";
     private AttackRoll? _lastAttack;
     private D20Roll? _fleeRoll;
     private int _fleeDamage;
-    private bool _enemyAttacked, _defending;
+    private bool _defending, _pendingPlayerFeedback;
+    private bool _feedbackFromPlayer, _feedbackHit, _feedbackCritical, _feedbackBlocked, _feedbackSoundPlayed;
+    private int _feedbackDamage;
+    private Action? _afterFeedback;
+    private int _victoryExperience, _levelsGained;
 
     public CombatScreen(MainGameForm host, GameSession session, HexTile tile) : this(host, session, tile, null) { }
 
@@ -55,7 +61,7 @@ internal sealed class CombatScreen : GameScreen
         _actions =
         [
             AddButton(new PixelButton(new Rectangle(55, 682, 128, 86), "", () => OpenModal(CombatModal.Attack))),
-            AddButton(new PixelButton(new Rectangle(195, 682, 126, 86), "", () => { }) { Enabled = false }),
+            AddButton(new PixelButton(new Rectangle(195, 682, 126, 86), "", () => OpenModal(CombatModal.Power))),
             AddButton(new PixelButton(new Rectangle(332, 682, 126, 86), "", () => OpenModal(CombatModal.Inventory))),
             AddButton(new PixelButton(new Rectangle(470, 682, 128, 86), "", Defend)),
             AddButton(new PixelButton(new Rectangle(612, 682, 124, 86), "", () => OpenModal(CombatModal.Escape)))
@@ -73,11 +79,13 @@ internal sealed class CombatScreen : GameScreen
         AddModal(battle is null ? "HARİTAYA DÖN" : "DEVAM ET", new(304, 520, 192, 68), LeaveAfterVictory);
         AddModal("KAÇIŞI TAMAMLA", new(285, 540, 230, 62), FinishFlee);
         AddModal("DEVAM ET", new(300, 528, 200, 62), () => Host.FinishStory(_battle!));
+        AddModal("KULLAN", new(210, 500, 180, 62), UsePower);
+        AddModal("GERİ", new(410, 500, 180, 62), CloseModal);
         InitiativeRoll mine = _combat.RollInitiative(Player), theirs = _combat.RollInitiative(_enemy);
         // Scripted savaşta oyuncu en az bir gerçek eylem yapabilsin diye ilk sıra her zaman oyuncudadır.
         _playerFirst = battle?.FateStrikeEventId is not null || mine.Total >= theirs.Total;
         AddLog($"İNİSİYATİF {mine.Total}-{theirs.Total}");
-        if (!_playerFirst) EnemyTurn();
+        if (!_playerFirst) EnemyTurn(UpdateActions);
         UpdateActions();
     }
 
@@ -124,6 +132,7 @@ internal sealed class CombatScreen : GameScreen
     }
     private void OpenModal(CombatModal modal) { _modal = modal; ModalOpen = true; ConfigureModalButtons(); UpdateActions(); }
     internal void OpenAttackForQa() => OpenModal(CombatModal.Attack);
+    internal void OpenPowerForQa() => OpenModal(CombatModal.Power);
     internal void ShowDiceResultForQa()
     {
         _lastAttackName = "NORMAL SALDIRI";
@@ -136,6 +145,23 @@ internal sealed class CombatScreen : GameScreen
         ConfigureModalButtons();
         UpdateActions();
     }
+    internal void ShowImpactForQa()
+    {
+        _log.Clear();
+        _lastRoll = 20;
+        _enemy.ReceiveDamage(Math.Min(8, _enemy.Health));
+        AddLog($"SEN d20:20+{Player.AttackBonus}={20 + Player.AttackBonus}");
+        AddLog($"AC {_enemy.ArmorClass}: KRİTİK -8");
+        _modal = CombatModal.None;
+        ModalOpen = false;
+        _feedbackTicks = ImpactTick - 1;
+        _feedbackFromPlayer = true;
+        _feedbackHit = true;
+        _feedbackCritical = true;
+        _feedbackDamage = 8;
+        _feedbackSoundPlayed = true;
+        ConfigureModalButtons();
+    }
     private void CloseModal()
     {
         if (_timer.Enabled) return;
@@ -147,6 +173,10 @@ internal sealed class CombatScreen : GameScreen
         switch (_modal)
         {
             case CombatModal.Attack: for (int i = 0; i <= 4; i++) _modalActions[i].Visible = true; break;
+            case CombatModal.Power:
+                _modalActions[13].Visible = _modalActions[14].Visible = true;
+                _modalActions[13].Enabled = Player.PowerPoints >= ClassPowerCatalog.For(Player.Class).Cost;
+                break;
             case CombatModal.Dice: _modalActions[5].Visible = _rollTicks <= 0; break;
             case CombatModal.Inventory:
                 _modalActions[6].Visible = _modalActions[7].Visible = true;
@@ -160,44 +190,119 @@ internal sealed class CombatScreen : GameScreen
     }
     private void ChooseAttack(string name, int attackAdjust, int damageDie, int damageAdjust)
     {
-        _lastAttackName = name; _enemyAttacked = false;
+        _lastAttackName = name;
         int before = _enemy.Health;
         _lastAttack = _combat.Attack(Player, _enemy, attackAdjust + StoryAttackBonus, damageDie, damageAdjust + StoryDamageBonus);
         _lastDamage = before - _enemy.Health; _lastRoll = _lastAttack.RawValue;
         LogRoll("SEN", _lastAttack, _lastDamage);
+        _pendingPlayerFeedback = true;
+        CombatAudio.Play(CombatSound.Dice);
         _modal = CombatModal.Dice; _rollTicks = 24; ConfigureModalButtons(); _timer.Start(); UpdateActions();
     }
+
+    private void UsePower()
+    {
+        ClassPower power = ClassPowerCatalog.For(Player.Class);
+        if (!Player.TrySpendPowerPoint(power.Cost)) return;
+        if (power is AttackClassPower attack)
+        {
+            _lastAttackName = attack.Name.ToUpper(Turkish);
+            int before = _enemy.Health;
+            _lastAttack = _combat.Attack(Player, _enemy,
+                attack.AttackAdjustment + StoryAttackBonus,
+                attack.DamageDie(Player),
+                attack.DamageBonusAdjustment + StoryDamageBonus);
+            _lastDamage = before - _enemy.Health;
+            _lastRoll = _lastAttack.RawValue;
+            LogRoll("SEN", _lastAttack, _lastDamage);
+            _pendingPlayerFeedback = true;
+            CombatAudio.Play(CombatSound.Dice);
+            _modal = CombatModal.Dice;
+            _rollTicks = 24;
+            ConfigureModalButtons();
+            _timer.Start();
+            Host.Autosave();
+            UpdateActions();
+            return;
+        }
+
+        if (power is HealingClassPower healing)
+        {
+            int before = Player.Health;
+            int amount = _dice.Roll(healing.DieSides) + healing.FixedBonus + Math.Max(0, PrimaryAbilityModifier());
+            Player.Heal(amount);
+            AddLog($"{power.Name.ToUpper(Turkish)}: +{Player.Health - before} CAN");
+        }
+        else if (power is GuardClassPower guard)
+        {
+            Player.DefenseBonus = guard.ArmorBonus;
+            AddLog($"{power.Name.ToUpper(Turkish)}: AC +{guard.ArmorBonus}");
+        }
+
+        CombatAudio.Play(CombatSound.Heal);
+        EnemyTurn(() =>
+        {
+            Player.DefenseBonus = 0;
+            if (EnemyTurnEndedCombat()) return;
+            Host.Autosave();
+            _turn++;
+            CloseModal();
+        });
+    }
+
+    private int PrimaryAbilityModifier() => Player.Class.PrimaryAbility switch
+    {
+        "Strength" => CharacterStats.Modifier(Player.Stats.Strength),
+        "Dexterity" => CharacterStats.Modifier(Player.Stats.Dexterity),
+        "Constitution" => CharacterStats.Modifier(Player.Stats.Constitution),
+        "Intelligence" => CharacterStats.Modifier(Player.Stats.Intelligence),
+        "Wisdom" => CharacterStats.Modifier(Player.Stats.Wisdom),
+        "Charisma" => CharacterStats.Modifier(Player.Stats.Charisma),
+        _ => 0
+    };
     private void CompletePlayerResolution()
     {
         if (_rollTicks > 0) return;
         if (!_enemy.IsAlive)
         {
             Player.Gold += _enemy.RewardGold;
+            _victoryExperience = _enemy.RewardExperience;
+            _levelsGained = Player.AddExperience(_victoryExperience);
             // Hikâye zaferi sonucu yazar; autosave olay bitince FinishStory içinde alınır.
             if (_battle is null) { _session.ClearDanger(_tile.Coordinate); Host.Autosave(); }
             else _battle.Victory(_session);
             _modal = CombatModal.Victory; _deathTicks = _battle?.EnemyRemainsOnDefeat == true ? -1 : 0;
+            CombatAudio.Play(CombatSound.Victory);
             ConfigureModalButtons(); _timer.Start(); return;
         }
-        EnemyTurn();
-        if (EnemyTurnEndedCombat()) return;
-        Player.DefenseBonus = 0; _turn++; CloseModal();
+        EnemyTurn(() =>
+        {
+            if (EnemyTurnEndedCombat()) return;
+            Player.DefenseBonus = 0; _turn++; CloseModal();
+        });
     }
     private void UsePotion()
     {
         if (Player.Inventory.Find<Consumable>() is not Consumable potion) return;
         int before = Player.Health; potion.Use(Player); Player.Inventory.Remove(potion);
-        AddLog($"İKSİR: +{Player.Health - before} CAN"); EnemyTurn();
-        if (EnemyTurnEndedCombat()) return;
-        Host.Autosave();
-        _turn++; CloseModal();
+        AddLog($"İKSİR: +{Player.Health - before} CAN");
+        CombatAudio.Play(CombatSound.Heal);
+        EnemyTurn(() =>
+        {
+            if (EnemyTurnEndedCombat()) return;
+            Host.Autosave();
+            _turn++; CloseModal();
+        });
     }
     private void Defend()
     {
-        _defending = true; Player.DefenseBonus = 2; AddLog("SAVUNMA: AC +2"); EnemyTurn();
-        Player.DefenseBonus = 0; _defending = false;
-        if (EnemyTurnEndedCombat()) return;
-        _turn++; UpdateActions(); Invalidate();
+        _defending = true; Player.DefenseBonus = 2; AddLog("SAVUNMA: AC +2");
+        EnemyTurn(() =>
+        {
+            Player.DefenseBonus = 0; _defending = false;
+            if (EnemyTurnEndedCombat()) return;
+            _turn++; UpdateActions(); Invalidate();
+        });
     }
 
     // Düşman sırasından sonra savaş bitti mi? Kaderin Hükmü hikâye penceresini, gerçek yenilgi ölüm ekranını açar.
@@ -215,6 +320,7 @@ internal sealed class CombatScreen : GameScreen
         _fleeDamage = 0;
         _modal = CombatModal.FleeDice;
         _rollTicks = 24;
+        CombatAudio.Play(CombatSound.Dice);
         ConfigureModalButtons();
         _timer.Start();
         UpdateActions();
@@ -228,18 +334,22 @@ internal sealed class CombatScreen : GameScreen
         Player.ReceiveDamage(_fleeDamage);
         AddLog($"KAÇIŞ DAYANIKLILIK: {_fleeRoll.Total}/12");
         AddLog($"YORGUNLUK: -{_fleeDamage} CAN");
+        void LeaveCombat()
+        {
+            if (EnemyTurnEndedCombat()) return;
+            _battle?.Flee(_session);
+            Host.Autosave();
+            Host.ShowMap();
+        }
         if (!success && Player.IsAlive)
         {
             AddLog("BAŞARISIZ: SERBEST SALDIRI");
-            EnemyTurn();
+            EnemyTurn(LeaveCombat);
+            return;
         }
-        if (EnemyTurnEndedCombat()) return;
-        // Hikâye savaşından kaçış olayı tamamlamaz; olay tekrar denenebilir.
-        _battle?.Flee(_session);
-        Host.Autosave();
-        Host.ShowMap();
+        LeaveCombat();
     }
-    private void EnemyTurn()
+    private void EnemyTurn(Action afterFeedback)
     {
         int before = Player.Health, lastStand = LastStandCharges();
         AttackRoll roll;
@@ -250,13 +360,15 @@ internal sealed class CombatScreen : GameScreen
             if (result.Kind == EnemyTurnKind.ScriptedDefeat)
             {
                 AddLog("VAELOR: KADERİN HÜKMÜ");
-                _enemyAttacked = true; _modal = CombatModal.FateStrike; ModalOpen = true; ConfigureModalButtons(); UpdateActions();
+                _modal = CombatModal.FateStrike; ModalOpen = true; ConfigureModalButtons(); UpdateActions();
                 return;
             }
             roll = result.Roll!;
         }
-        LogRoll("DÜŞMAN", roll, before - Player.Health); _enemyAttacked = true;
+        int damage = before - Player.Health;
+        LogRoll("DÜŞMAN", roll, damage);
         if (LastStandCharges() < lastStand) AddLog("KADERBOZAN: 1 CAN'DA DURDU");
+        BeginFeedback(false, roll, damage, afterFeedback);
     }
     private int LastStandCharges() => (Player.Equipment.Get(EquipmentSlot.StoryLayer) as FatebreakerArmor)?.LastStandCharges ?? 0;
     private void LogRoll(string who, AttackRoll roll, int damage)
@@ -268,15 +380,76 @@ internal sealed class CombatScreen : GameScreen
     private void AddLog(string line) { _log.Add(line); if (_log.Count > 6) _log.RemoveAt(0); }
     private void Tick()
     {
-        if (_rollTicks > 0) { _rollTicks--; if (_rollTicks == 0) { _timer.Stop(); ConfigureModalButtons(); } }
+        if (_rollTicks > 0)
+        {
+            _rollTicks--;
+            if (_rollTicks == 0)
+            {
+                if (_pendingPlayerFeedback && _lastAttack is not null)
+                {
+                    _pendingPlayerFeedback = false;
+                    BeginFeedback(true, _lastAttack, _lastDamage, ShowPlayerResult);
+                }
+                else { _timer.Stop(); ConfigureModalButtons(); }
+            }
+        }
+        else if (_feedbackTicks > 0)
+        {
+            _feedbackTicks--;
+            if (!_feedbackSoundPlayed && _feedbackTicks <= ImpactTick) PlayImpactSound();
+            if (_feedbackTicks == 0)
+            {
+                Action? finished = _afterFeedback;
+                _afterFeedback = null;
+                _timer.Stop();
+                finished?.Invoke();
+            }
+        }
         else if (_deathTicks >= 0 && _deathTicks < 8) _deathTicks++;
         else _timer.Stop();
         Invalidate();
     }
+
+    private void BeginFeedback(bool fromPlayer, AttackRoll roll, int damage, Action finished)
+    {
+        _feedbackFromPlayer = fromPlayer;
+        _feedbackHit = roll.IsHit;
+        _feedbackCritical = roll.IsCritical;
+        _feedbackBlocked = !fromPlayer && !roll.IsHit && _defending;
+        _feedbackDamage = damage;
+        _feedbackSoundPlayed = false;
+        _feedbackTicks = FeedbackDuration;
+        _afterFeedback = finished;
+        _modal = CombatModal.None;
+        ModalOpen = false;
+        ConfigureModalButtons();
+        CombatAudio.Play(CombatSound.Swing);
+        _timer.Start();
+        UpdateActions();
+    }
+
+    private void ShowPlayerResult()
+    {
+        _modal = CombatModal.Dice;
+        ModalOpen = true;
+        ConfigureModalButtons();
+        UpdateActions();
+    }
+
+    private void PlayImpactSound()
+    {
+        _feedbackSoundPlayed = true;
+        CombatAudio.Play(_feedbackBlocked ? CombatSound.Block
+            : !_feedbackHit ? CombatSound.Miss
+            : _feedbackCritical ? CombatSound.Critical
+            : CombatSound.Hit);
+    }
     private void UpdateActions()
     {
         bool ready = !_timer.Enabled && _enemy.IsAlive && Player.IsAlive && !ModalOpen;
-        _actions[0].Enabled = ready; _actions[2].Enabled = ready; _actions[3].Enabled = ready;
+        _actions[0].Enabled = ready;
+        _actions[1].Enabled = ready && Player.PowerPoints > 0;
+        _actions[2].Enabled = ready; _actions[3].Enabled = ready;
         _actions[4].Enabled = ready && (_battle?.FleeAllowed ?? true); Invalidate();
     }
 
@@ -295,21 +468,71 @@ internal sealed class CombatScreen : GameScreen
         if (Images.Get(background) is Image scene)
         { g.InterpolationMode = InterpolationMode.NearestNeighbor; g.DrawImage(scene, Scene, new Rectangle(10, 150, 780, 596), GraphicsUnit.Pixel); }
         else UiTheme.DrawMissingBox(g, Scene);
-        bool animating = _rollTicks > 0;
-        CharacterAnimation pose = !Player.IsAlive ? CharacterAnimation.Death : _defending ? CharacterAnimation.Defend : animating ? CharacterAnimation.Attack : CharacterAnimation.Idle;
-        string frame = CharacterArt.FramePath(Host, Player.Race.Id, Player.Gender, pose, Direction.East, animating ? (24 - _rollTicks) / 6 : 0);
-        UiTheme.DrawPixelatedSprite(g, Images.Get(frame), new Rectangle(70, 392, 256, 256), 4);
+        bool animating = _feedbackTicks > 0;
+        bool impact = animating && _feedbackTicks <= ImpactTick && _feedbackHit;
+        if (impact) g.TranslateTransform(_feedbackTicks % 2 == 0 ? 3 : -3, _feedbackTicks % 3 == 0 ? 2 : -2);
+        int elapsed = FeedbackDuration - _feedbackTicks;
+        CharacterAnimation pose = !Player.IsAlive ? CharacterAnimation.Death
+            : animating && _feedbackFromPlayer ? CharacterAnimation.Attack
+            : animating && !_feedbackFromPlayer && _feedbackHit ? CharacterAnimation.Hit
+            : _defending ? CharacterAnimation.Defend : CharacterAnimation.Idle;
+        string frame = CharacterArt.FramePath(Host, Player.Race.Id, Player.Gender, pose, Direction.East, animating ? elapsed / 3 : 0);
+        int lunge = animating && _feedbackFromPlayer ? (elapsed <= 6 ? elapsed : 12 - elapsed) * 5 : 0;
+        var playerRect = new Rectangle(70 + lunge, 392, 256, 256);
+        UiTheme.DrawPixelatedSprite(g, Images.Get(frame), playerRect, 4);
         var enemyRect = new Rectangle(340, 384, 256, 256);
         if (_enemy.IsAlive || _deathTicks < 0)
         {
-            string enemyPose = _enemyAttacked && !animating ? "attack" : "idle";
+            string enemyPose = animating && !_feedbackFromPlayer ? "attack" : "idle";
             if (EnemyImage(enemyPose) is Image sprite)
                 UiTheme.DrawPixelatedSprite(g, sprite, _battle is null ? enemyRect : FitBottom(sprite, enemyRect), 3);
         }
         else if (_deathTicks < 8)
             UiTheme.DrawImage(g, Images.Get($"assets/final-production-v2/effects/combat-reactions/enemy-death-dissolve-v1/enemy-death-dissolve-{_deathTicks:00}-v1.png"), enemyRect);
+        if (animating) DrawImpactFeedback(g, playerRect, enemyRect);
         // Sprite üstlerinde can barı yok; can yalnız HUD ve sıra incelemesindedir.
         g.Restore(state);
+    }
+
+    private void DrawImpactFeedback(Graphics g, Rectangle playerRect, Rectangle enemyRect)
+    {
+        if (_feedbackTicks > ImpactTick) return;
+        Rectangle target = _feedbackFromPlayer ? enemyRect : playerRect;
+        int age = ImpactTick - _feedbackTicks;
+
+        if (_feedbackHit)
+        {
+            Point center = new(target.Left + target.Width / 2, target.Top + target.Height / 2);
+            Color main = _feedbackCritical ? Color.FromArgb(255, 245, 95) : Color.White;
+            Color edge = _feedbackCritical ? Color.FromArgb(230, 55, 30) : Color.FromArgb(255, 160, 55);
+            int size = 52 + age * 8;
+            using var edgePen = new Pen(edge, 10);
+            using var mainPen = new Pen(main, 4);
+            g.DrawLine(edgePen, center.X - size, center.Y - size / 2, center.X + size, center.Y + size / 2);
+            g.DrawLine(mainPen, center.X - size, center.Y - size / 2, center.X + size, center.Y + size / 2);
+            g.DrawLine(edgePen, center.X - size / 2, center.Y + size, center.X + size / 2, center.Y - size);
+            g.DrawLine(mainPen, center.X - size / 2, center.Y + size, center.X + size / 2, center.Y - size);
+            using var particle = new SolidBrush(edge);
+            for (int i = 0; i < 8; i++)
+            {
+                double angle = i * Math.PI / 4;
+                int distance = 28 + age * 10;
+                int x = center.X + (int)(Math.Cos(angle) * distance);
+                int y = center.Y + (int)(Math.Sin(angle) * distance);
+                g.FillRectangle(particle, x - 3, y - 3, 7, 7);
+            }
+        }
+
+        string result = _feedbackBlocked ? "BLOK"
+            : !_feedbackHit ? "ISKA"
+            : _feedbackCritical ? $"KRİTİK!  -{_feedbackDamage}"
+            : $"-{_feedbackDamage} CAN";
+        Color color = _feedbackBlocked ? Color.LightSteelBlue
+            : !_feedbackHit ? UiTheme.Muted
+            : _feedbackCritical ? Color.FromArgb(255, 230, 75) : Color.White;
+        int rise = age * 4;
+        UiTheme.DrawTextCentered(g, result, _feedbackCritical ? UiTheme.Title : UiTheme.Heading, color,
+            new Rectangle(target.X - 25, target.Y - 34 - rise, target.Width + 50, 42));
     }
     private void DrawPlayerPanel(Graphics g)
     {
@@ -376,7 +599,7 @@ internal sealed class CombatScreen : GameScreen
         UiTheme.Shade(g, CanvasRectangle, 170);
         string asset = _modal switch
         {
-            CombatModal.Attack => "assets/final-production-v5/ui/modals/runtime-800/attack-selection-panel-v1.png",
+            CombatModal.Attack or CombatModal.Power => "assets/final-production-v5/ui/modals/runtime-800/attack-selection-panel-v1.png",
             CombatModal.Inventory => "assets/final-production-v5/ui/modals/runtime-800/combat-inventory-panel-v1.png",
             CombatModal.Escape or CombatModal.FateStrike => "assets/final-production-v5/ui/modals/runtime-800/escape-confirm-panel-v1.png",
             _ => "assets/final-production-v5/ui/modals/runtime-800/dice-result-panel-v1.png"
@@ -386,6 +609,23 @@ internal sealed class CombatScreen : GameScreen
         {
             UiTheme.DrawTextCentered(g, "SALDIRI SEÇ", UiTheme.Title, UiTheme.Gold, new(200, 185, 400, 50));
             UiTheme.DrawTextCentered(g, "İsabet için d20, hasar için gösterilen zar atılır.", UiTheme.Small, UiTheme.Text, new(190, 250, 420, 36));
+        }
+        else if (_modal == CombatModal.Power)
+        {
+            ClassPower power = ClassPowerCatalog.For(Player.Class);
+            UiTheme.DrawTextCentered(g, "SINIF GÜCÜ", UiTheme.Title, UiTheme.Gold, new(200, 175, 400, 50));
+            UiTheme.DrawTextCentered(g, power.Name.ToUpper(Turkish), UiTheme.Heading, UiTheme.Success, new(205, 245, 390, 42));
+            UiTheme.DrawWrappedCentered(g, power.Description, UiTheme.Body, UiTheme.Text, new(225, 305, 350, 90));
+            string detail = power switch
+            {
+                AttackClassPower a => $"İSABET {Player.AttackBonus + a.AttackAdjustment + StoryAttackBonus:+#;-#;0} · HASAR d{a.DamageDie(Player)}",
+                HealingClassPower h => $"İYİLEŞTİRME d{h.DieSides}+{h.FixedBonus + Math.Max(0, PrimaryAbilityModifier())}",
+                GuardClassPower guard => $"BİR SALDIRI BOYUNCA AC +{guard.ArmorBonus}",
+                _ => ""
+            };
+            UiTheme.DrawTextCentered(g, detail, UiTheme.Small, UiTheme.Gold, new(205, 410, 390, 34));
+            UiTheme.DrawTextCentered(g, $"GÜÇ {Player.PowerPoints}/{Player.MaxPowerPoints} · BEDEL {power.Cost}",
+                UiTheme.Small, Player.PowerPoints >= power.Cost ? UiTheme.Success : UiTheme.Danger, new(205, 450, 390, 30));
         }
         else if (_modal == CombatModal.Dice)
         {
@@ -425,7 +665,8 @@ internal sealed class CombatScreen : GameScreen
             bool kneels = _battle?.EnemyRemainsOnDefeat == true;
             UiTheme.DrawTextCentered(g, kneels ? "DİZ ÇÖKTÜ" : "ZAFER", UiTheme.Title, UiTheme.Gold, new(200, 190, 400, 50));
             string text = kneels ? $"{_enemy.Name} sıfır cana indi ama ölmedi. Kaderine sen karar vereceksin."
-                : $"{_enemy.Name} yenildi. +{_enemy.RewardGold} altın";
+                : $"{_enemy.Name} yenildi. +{_enemy.RewardGold} altın · +{_victoryExperience} XP";
+            if (_levelsGained > 0) text += $"\nSEVİYE {Player.Level}! CAN ve sınıf gücü arttı.";
             UiTheme.DrawWrappedCentered(g, text, UiTheme.Body, UiTheme.Success, new(215, 300, 370, 120));
         }
         else if (_modal == CombatModal.FateStrike)
@@ -444,7 +685,7 @@ internal sealed class CombatScreen : GameScreen
     internal void ShowFateStrikeForQa()
     {
         if (_battle?.FateStrikeEventId is null) return;
-        EnemyTurn();
+        EnemyTurn(() => { });
     }
     protected override void Dispose(bool disposing) { if (disposing) _timer.Dispose(); base.Dispose(disposing); }
 }

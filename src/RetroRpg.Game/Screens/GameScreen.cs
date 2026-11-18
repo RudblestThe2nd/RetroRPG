@@ -1,4 +1,5 @@
 using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 
 namespace RetroRpg.Game.Screens;
 
@@ -10,6 +11,7 @@ internal abstract class GameScreen : Control
     protected static readonly Size CanvasSize = new(MainGameForm.ScreenSize, MainGameForm.ScreenSize);
     private readonly List<PixelButton> _buttons = [];
     private readonly List<PixelButton> _modalButtons = [];
+    private readonly Bitmap _logicalCanvas = new(MainGameForm.ScreenSize, MainGameForm.ScreenSize, PixelFormat.Format32bppPArgb);
     private PixelButton? _pressed;
 
     protected GameScreen(MainGameForm host)
@@ -19,7 +21,8 @@ internal abstract class GameScreen : Control
         BackColor = UiTheme.Background;
         Cursor = host.GameCursor;
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint |
-                 ControlStyles.OptimizedDoubleBuffer | ControlStyles.Selectable, true);
+                 ControlStyles.OptimizedDoubleBuffer | ControlStyles.Selectable |
+                 ControlStyles.ResizeRedraw, true);
     }
 
     protected MainGameForm Host { get; }
@@ -66,26 +69,37 @@ internal abstract class GameScreen : Control
 
     protected override void OnPaint(PaintEventArgs e)
     {
-        Graphics g = e.Graphics;
-        g.Clear(UiTheme.Background);
-        float scale = CanvasScale();
-        float offsetX = (ClientSize.Width - MainGameForm.ScreenSize * scale) / 2f;
-        float offsetY = (ClientSize.Height - MainGameForm.ScreenSize * scale) / 2f;
-        GraphicsState state = g.Save();
-        using var transform = new Matrix(scale, 0, 0, scale, offsetX, offsetY);
-        g.Transform = transform;
-        g.SetClip(CanvasRectangle);
-        UiTheme.Prepare(g);
-        Draw(g);
-        foreach (PixelButton button in _buttons.Where(x => x.Visible)) UiTheme.DrawButton(g, Images, button);
-        DrawTop(g);
-        if (ModalOpen)
+        // Önce her şeyi tam 800x800 piksel tuvale çizeriz. Metinleri doğrudan kesirli ölçekli
+        // Graphics üzerine çizmek piksel fontunun siyah kenarlarını kaydırıyordu.
+        using (Graphics logical = Graphics.FromImage(_logicalCanvas))
         {
-            DrawModal(g);
-            foreach (PixelButton button in _modalButtons.Where(x => x.Visible)) UiTheme.DrawButton(g, Images, button);
+            logical.Clear(UiTheme.Background);
+            logical.SetClip(CanvasRectangle);
+            UiTheme.Prepare(logical);
+            Draw(logical);
+            foreach (PixelButton button in _buttons.Where(x => x.Visible)) UiTheme.DrawButton(logical, Images, button);
+            DrawTop(logical);
+            if (ModalOpen)
+            {
+                DrawModal(logical);
+                foreach (PixelButton button in _modalButtons.Where(x => x.Visible)) UiTheme.DrawButton(logical, Images, button);
+            }
+            UiTheme.DrawMissingAssets(logical, Images.Missing, CanvasSize);
         }
-        UiTheme.DrawMissingAssets(g, Images.Missing, CanvasSize);
-        g.Restore(state);
+
+        Graphics output = e.Graphics;
+        output.Clear(UiTheme.Background);
+        float scale = CanvasScale();
+        int width = Math.Max(1, (int)MathF.Round(MainGameForm.ScreenSize * scale));
+        int height = Math.Max(1, (int)MathF.Round(MainGameForm.ScreenSize * scale));
+        int x = (ClientSize.Width - width) / 2;
+        int y = (ClientSize.Height - height) / 2;
+        output.CompositingMode = CompositingMode.SourceCopy;
+        output.CompositingQuality = CompositingQuality.HighSpeed;
+        output.InterpolationMode = InterpolationMode.NearestNeighbor;
+        output.PixelOffsetMode = PixelOffsetMode.Half;
+        output.SmoothingMode = SmoothingMode.None;
+        output.DrawImage(_logicalCanvas, new Rectangle(x, y, width, height), CanvasRectangle, GraphicsUnit.Pixel);
     }
 
     private IEnumerable<PixelButton> ActiveButtons => ModalOpen ? _modalButtons : _buttons;
@@ -137,5 +151,11 @@ internal abstract class GameScreen : Control
         Invalidate();
         // OnClick ekranı değiştirebilir; bu satırdan sonra bu ekrana dokunulmaz.
         if (pressed.Enabled && ButtonAt(e.Location) == pressed) pressed.OnClick();
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing) _logicalCanvas.Dispose();
+        base.Dispose(disposing);
     }
 }

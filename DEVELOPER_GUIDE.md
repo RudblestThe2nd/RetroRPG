@@ -1,6 +1,6 @@
 # Retro RPG — Geliştirici Rehberi
 
-Son güncelleme: 1 Kasım 2026
+Son güncelleme: 18 Kasım 2026
 
 Bu belge, projeyi devralan geliştiricinin oyunu bozmadan nasıl derleyeceğini, yeni içerik ekleyeceğini ve ana hikâyeyi koda bağlayacağını anlatır. İlk kez gelen biri şu sırayla okumalıdır:
 
@@ -11,7 +11,7 @@ Bu belge, projeyi devralan geliştiricinin oyunu bozmadan nasıl derleyeceğini,
 
 ## 1. Projenin amacı ve değişmez kurallar
 
-Bu proje C# ve .NET 9 ile yazılmış, Windows Forms üzerinde çalışan 800x800 mantıksal çözünürlüklü retro bir CRPG'dir. Aynı zamanda bir sınıf/kalıtım ödevidir. Kodun öğretici, basit ve okunabilir olması; gereksiz mimari karmaşıklıktan daha önemlidir.
+Bu proje C# ve .NET 9 ile yazılmış, Windows Forms üzerinde çalışan 800x800 mantıksal çözünürlüklü retro bir CRPG'dir. Fiziksel pencere monitöre göre yaklaşık %120–%200 büyür; `GameScreen` önce 800×800 ara tuvale çizip tuvali tek parça ölçekler. Aynı zamanda bir sınıf/kalıtım ödevidir. Kodun öğretici, basit ve okunabilir olması; gereksiz mimari karmaşıklıktan daha önemlidir.
 
 Değişmez kurallar:
 
@@ -36,7 +36,7 @@ Değişmez kurallar:
 
 ## 3. Derleme, test ve çalıştırma
 
-Komutları `C:\Users\VECTUS\Documents\pc\game_design` içinde çalıştır:
+Komutları `C:\Users\VECTUS\Documents\pc\game_design\RetroRPG` içinde çalıştır:
 
 ```powershell
 dotnet build RetroRpg.sln
@@ -120,6 +120,11 @@ DiceRoll
 │   ├── AttackRoll
 │   └── InitiativeRoll
 
+ClassPower
+├── AttackClassPower
+├── HealingClassPower
+└── GuardClassPower
+
 GameScreen
 ├── MainMenuScreen
 ├── CharacterCreationScreen
@@ -169,6 +174,10 @@ Yeni ekran ekleme adımları:
 6. Ekran görüntüsü moduna yeni ekranı ekle.
 7. 800x800 ve tam ekran renderını kontrol et.
 
+Metin veya assetleri fiziksel pencere boyutuna göre elle büyütme. Bütün ekranlar mantıksal 800×800
+koordinatlarını kullanır. `GameScreen` ara tuvali monitöre göre ölçekler; böylece piksel fontunun gölge
+ve mürekkep kenarları kesirli koordinata düşmez. `Ctrl + / -` pencere ölçeğini, `F11` tam ekranı değiştirir.
+
 Metinler küçük kutuya sığmıyorsa fontu rastgele küçültme. Önce kısa metin, satır kırma, iç boşluk ve kutu boyutu düzenlenmelidir. Metin çizimi tam piksel koordinatına oturmalıdır.
 
 ## 7. Dünya haritası ve hareket
@@ -196,6 +205,9 @@ Oyun tam D&D kopyası değildir; basit d20 çekirdeği kullanır:
 - Saldırı seçilmeden önce isabet bonusu ve hasar aralığı görünür.
 - Kaçış Dayanıklılık kontrolüdür; başarısızlıkta düşman serbest saldırı yapar.
 - Scripted yenilgi normal ölüm değildir ve `DeathScreen` açmamalıdır.
+- Zafer, düşmanın canı ve altın ödülünden türetilen XP verir. Seviye sınırı 10'dur.
+- Her alt sınıf `ClassPowerCatalog` üzerinden saldırı, iyileştirme veya koruma gücü alır.
+- Sınıf gücü puanları uzun dinlenmede ve seviye atlamada yenilenir.
 
 Yeni zar kuralı eklerken üretim kodu `IDiceRoller`, test kodu `FixedDiceRoller` kullanmalıdır. UI kendi başına ikinci bir rastgele sayı üretmemelidir.
 
@@ -203,7 +215,7 @@ Yeni zar kuralı eklerken üretim kodu `IDiceRoller`, test kodu `FixedDiceRoller
 
 Kayıt yolu: `%LocalAppData%\RetroRpg\Saves\slot-1.json`.
 
-Mevcut kayıt sürümü 3'tür (`GameSession.SaveVersion`). `GameSession.Flags` küçük dünya durumları içindir; ana hikâye `GameSaveData.Story` (`StoryProgressSaveData`) alanına yazılır. Eski sürüm dosyasının üzerine ilk kez yazılmadan önce `slot-1.v{N}-backup.json` yedeği alınır.
+Mevcut kayıt sürümü 4'tür (`GameSession.SaveVersion`). Sürüm 4; seviye, XP ve kalan sınıf gücü puanlarını ekler. `GameSession.Flags` küçük dünya durumları içindir; ana hikâye `GameSaveData.Story` (`StoryProgressSaveData`) alanına yazılır. Eski sürüm dosyasının üzerine ilk kez yazılmadan önce `slot-1.v{N}-backup.json` yedeği alınır.
 
 Önerilen `StoryProgress` alanları:
 
@@ -363,7 +375,7 @@ Her anlamlı değişiklikten sonra:
 
 ## 15. Önerilen geliştirme sırası
 
-1. Hikâye çekirdek sınıfları ve kayıt sürümü 3.
+1. Hikâye çekirdek sınıfları ve kayıt sürümü 4.
 2. `StorySceneScreen` ve PNG kare oynatıcı.
 3. Kervan prologu ve Kara Harita Parçası.
 4. Yeşilgeçit/Kızılburç görev zinciri.

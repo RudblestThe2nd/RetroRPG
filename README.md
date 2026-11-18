@@ -1,6 +1,13 @@
 # Kader Yolları: Göz Kulesi
 
 C# / .NET 9 WinForms ile geliştirilen, sade sınıf kalıtımı ve d20 tabanlı mekanikler kullanan retro RPG projesi.
+Arayüz 800×800 mantıksal pikselde hazırlanır; oyun monitöre göre daha büyük bir pencerede açılır ve
+tek parça nearest-neighbor ölçeklenir. `Ctrl + / -` pencere boyutunu, `F11` tam ekranı değiştirir.
+
+Karakterler savaşlardan XP kazanır, 10. seviyeye kadar gelişir ve seçilen 24 alt sınıfın her biri
+kendine özgü saldırı, iyileştirme veya koruma gücü kullanır. Sınıf gücü uzun dinlenmede yenilenir.
+Savaşlarda zar sesi, saldırı hamlesi, isabet/ıskalama/blok sesi, ekran sarsıntısı, darbe parlaması
+ve yükselen hasar yazısı birlikte çalışır. Savaş sesleri AYARLAR ekranından kapatılabilir.
 
 ## Hızlı başlangıç
 
