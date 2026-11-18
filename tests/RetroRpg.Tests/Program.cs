@@ -46,6 +46,9 @@ internal static class Program
         Run("EnemyNpc bir Npc'dir, CharacterClass'a sahiptir", EnemyNpcHasCharacterClass);
         Run("Alt sınıf ana sınıfı override eder", SubclassOverridesMainClass);
         Run("MainBossNpc EnemyNpc can davranışını kullanır", MainBossUsesEnemyHealth);
+        Run("XP seviye ve can artışı sağlar", ExperienceRaisesLevel);
+        Run("24 alt sınıf aktif sınıf gücü taşır", EverySubclassHasClassPower);
+        Run("Seviye ve sınıf gücü kayıtta korunur", ProgressionSaveRoundTrip);
         Run("Smoke: oluştur, yürü, savaş, kaydet, yükle", SmokeFlowWorks);
         Run("Düşman ve hex karo görselleri çözülür", EnemyAndTileAssetsResolve);
         Run("Geçmiş yolu yedi aşamayı ve kaydı korur", BackgroundPathHasSevenStages);
@@ -77,7 +80,7 @@ internal static class Program
         Run("Kaderbozan göğüs ekipmanını kaybettirmez", FatebreakerKeepsChestArmor);
         Run("Kaderbozan ikinci Kaderin Hükmü'nü engeller", FatebreakerBlocksSecondFateStrike);
         Run("İkinci Vaelor savaşı kazanılabilir ve normal ölüm kullanır", SecondVaelorFightIsWinnableWithNormalDeath);
-        Run("Sürüm 1 ve 2 kayıtları sürüm 3 modeline yüklenir", OldSavesLoadIntoVersionThree);
+        Run("Sürüm 1-3 kayıtları sürüm 4 modeline yüklenir", OldSavesLoadIntoVersionFour);
         Run("Kayıt/yükleme tek-seferlik olayları tekrarlamaz", SaveLoadDoesNotRepeatOneShotEvents);
         Run("Dört final belirlenmiş durumlarla açılır", AllFourEndingsAreReachable);
         Run("Paylaştırma finali uzlaşma ve güven ister", ShareEndingRequiresCompromiseAndTrust);
@@ -187,6 +190,43 @@ internal static class Program
         Assert(roll.IsHit && boss.Health < boss.MaxHealth, "Boss, EnemyNpc'den gelen can davranışıyla hasar almalıdır.");
         boss.ReceiveDamage(boss.Health - boss.MaxHealth / 2);
         Assert(boss.CurrentPhase == 2 && boss.AttackBonus == firstPhaseBonus + 2, "Boss canı yarıya inince ikinci aşamaya geçmelidir.");
+    }
+
+    private static void ExperienceRaisesLevel()
+    {
+        PlayerCharacter player = Player("Acemi");
+        int oldHealth = player.MaxHealth;
+        int levels = player.AddExperience(100);
+        Assert(levels == 1 && player.Level == 2, "100 XP ilk seviyeyi artırmalıdır.");
+        Assert(player.MaxHealth > oldHealth && player.Experience == 0, "Seviye atlamak azami canı artırıp XP eşiğini tüketmelidir.");
+        Assert(player.PowerPoints == player.MaxPowerPoints, "Seviye atlayınca sınıf gücü yenilenmelidir.");
+    }
+
+    private static void EverySubclassHasClassPower()
+    {
+        ClassPower[] powers = ClassCatalog.Subclasses.Select(ClassPowerCatalog.For).ToArray();
+        Assert(powers.Length == 24 && powers.All(x => x.Name.Length > 0 && x.Description.Length > 0),
+            "24 alt sınıfın tamamında açıklamalı aktif güç bulunmalıdır.");
+        Assert(powers.Any(x => x is AttackClassPower) && powers.Any(x => x is HealingClassPower) && powers.Any(x => x is GuardClassPower),
+            "Saldırı, iyileştirme ve koruma güçleri kalıtım ailesinde birlikte bulunmalıdır.");
+
+        PlayerCharacter player = Player("Güç Kullanıcısı");
+        int before = player.PowerPoints;
+        Assert(player.TrySpendPowerPoint() && player.PowerPoints == before - 1, "Sınıf gücü puanı harcanmalıdır.");
+        player.RestorePowerPoints();
+        Assert(player.PowerPoints == player.MaxPowerPoints, "Uzun dinlenme sınıf gücünü yenilemelidir.");
+    }
+
+    private static void ProgressionSaveRoundTrip()
+    {
+        PlayerCharacter player = Player("Tecrübeli");
+        player.AddExperience(250);
+        player.TrySpendPowerPoint();
+        GameSession loaded = GameSession.FromSaveData(new GameSession(player).ToSaveData());
+        Assert(loaded.Player.Level == player.Level && loaded.Player.Experience == player.Experience,
+            "Seviye ve XP kayıt/yüklemede korunmalıdır.");
+        Assert(loaded.Player.PowerPoints == player.PowerPoints && loaded.Player.MaxHealth == player.MaxHealth,
+            "Sınıf gücü ve azami can kayıt/yüklemede korunmalıdır.");
     }
 
     private static void SmokeFlowWorks()
@@ -781,14 +821,14 @@ internal static class Program
             "Gerçek savaşta ölüm ölüm ekranını açmalı ve autosave final savaşından devam etmelidir.");
     }
 
-    private static void OldSavesLoadIntoVersionThree()
+    private static void OldSavesLoadIntoVersionFour()
     {
         string directory = Path.Combine(Path.GetTempPath(), "retro-rpg-test-" + Guid.NewGuid().ToString("N"));
         try
         {
             var saves = new SaveGameService(directory);
             GameSaveData current = new GameSession(Player("Eski")).ToSaveData();
-            foreach (int version in new[] { 1, 2 })
+            foreach (int version in new[] { 1, 2, 3 })
             {
                 GameSaveData old = current with
                 {
@@ -796,16 +836,24 @@ internal static class Program
                     Character = version == 1 ? current.Character with { Items = null } : current.Character
                 };
                 JsonObject json = JsonSerializer.SerializeToNode(old, JsonOptions.Default)!.AsObject();
-                json.Remove("Story");
+                if (version <= 2) json.Remove("Story");
                 if (version == 1) json["Character"]!.AsObject().Remove("Items");
+                json["Character"]!.AsObject().Remove("Level");
+                json["Character"]!.AsObject().Remove("Experience");
+                json["Character"]!.AsObject().Remove("PowerPoints");
                 Directory.CreateDirectory(directory);
                 File.WriteAllText(Path.Combine(directory, "slot-1.json"), json.ToJsonString());
 
                 GameSession loaded = GameSession.FromSaveData(saves.Load());
-                Assert(loaded.Story.CompletedEvents.Count == 0 && loaded.Story.Quests.Values.All(x => x.Status == QuestStatus.NotStarted),
-                    $"Sürüm {version} kaydı güvenli hikâye varsayılanlarıyla açılmalıdır.");
-                Assert(StoryDirector.ResumeEvent(loaded)?.Id == StoryCatalog.PrologueId, $"Sürüm {version} kaydı prologdan başlamalıdır.");
-                Assert(loaded.ToSaveData() is { Version: 3, Story: not null }, "Yeni kayıt sürüm 3 olmalıdır.");
+                if (version <= 2)
+                {
+                    Assert(loaded.Story.CompletedEvents.Count == 0 && loaded.Story.Quests.Values.All(x => x.Status == QuestStatus.NotStarted),
+                        $"Sürüm {version} kaydı güvenli hikâye varsayılanlarıyla açılmalıdır.");
+                    Assert(StoryDirector.ResumeEvent(loaded)?.Id == StoryCatalog.PrologueId, $"Sürüm {version} kaydı prologdan başlamalıdır.");
+                }
+                Assert(loaded.ToSaveData() is { Version: 4, Story: not null }, "Yeni kayıt sürüm 4 olmalıdır.");
+                Assert(loaded.Player is { Level: 1, Experience: 0 } && loaded.Player.PowerPoints == loaded.Player.MaxPowerPoints,
+                    $"Sürüm {version} kaydı güvenli gelişim varsayılanlarıyla açılmalıdır.");
                 Assert(loaded.Player.Equipment.Get(EquipmentSlot.MainHand) is Weapon, $"Sürüm {version} kaydı silahı korumalı veya başlangıç paketi almalıdır.");
             }
         }

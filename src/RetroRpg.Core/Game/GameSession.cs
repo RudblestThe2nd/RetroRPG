@@ -67,14 +67,14 @@ public sealed class GameSession(PlayerCharacter player)
         }
     }
 
-    public const int SaveVersion = 3;
+    public const int SaveVersion = 4;
 
     public GameSaveData ToSaveData() => new(
         SaveVersion,
         new CharacterSaveData(Player.Name, Player.Gender, Player.Race.Id, Player.Class.Id, Player.Class.SubclassId,
             Player.Background.Id, Player.Stats.Strength, Player.Stats.Dexterity, Player.Stats.Constitution,
             Player.Stats.Intelligence, Player.Stats.Wisdom, Player.Stats.Charisma, Player.Health, Player.Gold,
-            ItemSaveMapper.ToSaveData(Player.Inventory, Player.Equipment)),
+            ItemSaveMapper.ToSaveData(Player.Inventory, Player.Equipment), Player.Level, Player.Experience, Player.PowerPoints),
         CurrentHex.Q,
         CurrentHex.R,
         Map.Tiles.Values.Where(x => x.Discovery == Common.DiscoveryState.Discovered)
@@ -99,6 +99,7 @@ public sealed class GameSession(PlayerCharacter player)
         var player = new PlayerCharacter(data.Name, data.Gender, RaceCatalog.Find(data.RaceId),
             ClassCatalog.FindSubclass(data.SubclassId),
             BackgroundCatalog.Find(data.BackgroundId), stats, applyRaceBonuses: false);
+        player.RestoreProgression(data.Level, data.Experience, data.PowerPoints);
         player.RestoreState(data.Health, data.Gold);
         if (data.Items is null) ItemCatalog.GiveStartingKit(player, save.StorySlotId);
         else ItemSaveMapper.Restore(data.Items, player.Inventory, player.Equipment);

@@ -14,7 +14,10 @@ public sealed record CharacterSaveData(
     string Name, Gender Gender, string RaceId, string ClassId, string SubclassId, string BackgroundId,
     int Strength, int Dexterity, int Constitution, int Intelligence, int Wisdom, int Charisma,
     int Health, int Gold,
-    IReadOnlyList<ItemSaveData>? Items = null);
+    IReadOnlyList<ItemSaveData>? Items = null,
+    int Level = 1,
+    int Experience = 0,
+    int PowerPoints = -1);
 
 // Story, sürüm 1 ve 2 kayıtlarında yoktur ve null okunur; oyun güvenli başlangıç değerlerini kurar.
 public sealed record GameSaveData(
@@ -31,7 +34,7 @@ public sealed record GameSaveData(
 public sealed record QuestSaveData(
     string Id, QuestStatus Status, IReadOnlyList<string>? CompletedObjectives, string? Note, bool UsedAlternative);
 
-// Sürüm 3 hikâye kaydı. Açık alanlar kayıt dosyasını okunur tutar; Flags küçük hikâye ayrıntılarını taşır.
+// Sürüm 3 ile gelen hikâye kaydı. Sürüm 4 karakter seviyesi ve sınıf gücünü ekler.
 public sealed record StoryProgressSaveData(
     int Chapter,
     string? ActiveNodeId,

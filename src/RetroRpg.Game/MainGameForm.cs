@@ -12,19 +12,24 @@ namespace RetroRpg.Game;
 internal sealed class MainGameForm : Form
 {
     public const int ScreenSize = 800;
+    private static readonly int[] WindowSizes = [800, 960, 1200, 1600];
     private GameScreen? _currentScreen;
     private Rectangle _windowedBounds;
+    private readonly bool _qaMode;
 
-    // saveDirectory yalnız ekran görüntüsü QA'sında verilir; böylece QA oyuncunun gerçek kaydına yazmaz.
-    public MainGameForm(string? saveDirectory = null)
+    // saveDirectory QA'nın oyuncunun gerçek kaydına yazmasını engeller; fixedLogicalSize 800x800 karşılaştırma üretir.
+    public MainGameForm(string? saveDirectory = null, bool fixedLogicalSize = false)
     {
+        _qaMode = fixedLogicalSize;
         GameDesignRoot = GameDesignRootLocator.Locate();
         UiTheme.Initialize(GameDesignRoot);
         Text = "Retro RPG";
         AutoScaleMode = AutoScaleMode.None;
-        FormBorderStyle = FormBorderStyle.FixedSingle;
-        ClientSize = new Size(ScreenSize, ScreenSize);
-        MaximizeBox = false;
+        FormBorderStyle = _qaMode ? FormBorderStyle.FixedSingle : FormBorderStyle.Sizable;
+        int initialSize = _qaMode ? ScreenSize : LargestComfortableWindowSize();
+        ClientSize = new Size(initialSize, initialSize);
+        MinimumSize = new Size(ScreenSize + 16, ScreenSize + 39);
+        MaximizeBox = !_qaMode;
         StartPosition = FormStartPosition.CenterScreen;
         BackColor = UiTheme.Background;
         KeyPreview = true;
@@ -48,6 +53,18 @@ internal sealed class MainGameForm : Form
                 e.SuppressKeyPress = true;
                 return;
             }
+            if (e.Control && e.KeyCode is Keys.Oemplus or Keys.Add)
+            {
+                ResizeWindow(1);
+                e.Handled = true;
+                return;
+            }
+            if (e.Control && e.KeyCode is Keys.OemMinus or Keys.Subtract)
+            {
+                ResizeWindow(-1);
+                e.Handled = true;
+                return;
+            }
             _currentScreen?.HandleKey(e.KeyCode);
         };
         KeyPress += (_, e) => _currentScreen?.HandleChar(e.KeyChar);
@@ -65,6 +82,7 @@ internal sealed class MainGameForm : Form
     public GameSession? Session { get; private set; }
     public GameScreen? CurrentScreen => _currentScreen;
     public bool IsFullscreen { get; private set; }
+    public int WindowScalePercent => (int)Math.Round(ClientSize.Width * 100d / ScreenSize);
 
     public bool HasSave => File.Exists(Path.Combine(Saves.SaveDirectory, "slot-1.json"));
 
@@ -163,6 +181,50 @@ internal sealed class MainGameForm : Form
         }
         ResumeLayout();
         _currentScreen?.Invalidate();
+    }
+
+    public void ResizeWindow(int direction)
+    {
+        if (_qaMode || IsFullscreen || direction == 0) return;
+        int current = Math.Min(ClientSize.Width, ClientSize.Height);
+        int[] available = AvailableWindowSizes();
+        int index = direction > 0
+            ? Array.FindIndex(available, x => x > current)
+            : Array.FindLastIndex(available, x => x < current);
+        if (index < 0) return;
+        int size = available[index];
+        ClientSize = new Size(size, size);
+        CenterToScreen();
+        _currentScreen?.Invalidate();
+    }
+
+    public bool CanResizeWindow(int direction)
+    {
+        if (_qaMode || IsFullscreen || direction == 0) return false;
+        int current = Math.Min(ClientSize.Width, ClientSize.Height);
+        return direction > 0
+            ? AvailableWindowSizes().Any(x => x > current)
+            : AvailableWindowSizes().Any(x => x < current);
+    }
+
+    private int[] AvailableWindowSizes()
+    {
+        int maximum = MaximumClientSize();
+        return WindowSizes.Where(x => x <= maximum).Append(maximum).Distinct().Order().ToArray();
+    }
+
+    private int LargestComfortableWindowSize()
+    {
+        int maximum = MaximumClientSize();
+        int preset = WindowSizes.LastOrDefault(x => x <= maximum);
+        // 1080p ekranda 800'e geri düşmek yerine kullanılabilir alanı dolduran yaklaşık 960px kullanılır.
+        return preset > ScreenSize ? preset : Math.Max(ScreenSize, maximum);
+    }
+
+    private int MaximumClientSize()
+    {
+        Rectangle area = Screen.FromPoint(Cursor.Position).WorkingArea;
+        return Math.Max(ScreenSize, Math.Min(1600, Math.Min(area.Width - 80, area.Height - 64)));
     }
 
     private GameSession RequireSession() => Session ?? throw new InvalidOperationException("Oturum yok.");

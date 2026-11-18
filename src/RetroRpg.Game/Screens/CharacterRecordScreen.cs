@@ -39,6 +39,11 @@ internal sealed class CharacterRecordScreen : GameScreen
         for (int i = 0; i < derived.Length; i++)
             UiTheme.DrawTextCentered(g, derived[i], UiTheme.Small, i == 5 ? UiTheme.Gold : UiTheme.Text, new Rectangle(563, 116 + i * 60, 154, 48));
 
+        string xp = p.Level >= PlayerCharacter.MaximumLevel ? "MAKS." : $"{p.Experience}/{p.ExperienceToNextLevel}";
+        UiTheme.DrawTextCentered(g, $"SV {p.Level}", UiTheme.Small, UiTheme.Gold, new Rectangle(557, 470, 50, 42));
+        UiTheme.DrawTextCentered(g, $"XP {xp}", UiTheme.Small, UiTheme.Text, new Rectangle(610, 470, 54, 42));
+        UiTheme.DrawTextCentered(g, $"GÜÇ {p.PowerPoints}/{p.MaxPowerPoints}", UiTheme.Small, UiTheme.Success, new Rectangle(667, 470, 54, 42));
+
         for (int i = 0; i < p.Background.Choices.Count; i++)
         {
             BackgroundStageChoice choice = p.Background.Choices[i];

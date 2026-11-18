@@ -15,19 +15,20 @@ internal static class Program
     private static void Main(string[] args)
     {
         ApplicationConfiguration.Initialize();
-        if (args.Length == 2 && args[0] == "--screenshots")
+        if (args.Length == 2 && args[0] is "--screenshots" or "--screenshots-large")
         {
-            SaveScreenshots(args[1]);
+            CombatAudio.SuppressPlayback = true;
+            SaveScreenshots(args[1], fixedLogicalSize: args[0] == "--screenshots");
             return;
         }
         Application.Run(new MainGameForm());
     }
 
     // Geliştirme kontrolü: her ekranı açıp 800 x 800 PNG olarak kaydeder.
-    private static void SaveScreenshots(string folder)
+    private static void SaveScreenshots(string folder, bool fixedLogicalSize)
     {
         Directory.CreateDirectory(folder);
-        using var form = new MainGameForm(Path.Combine(folder, "qa-saves")) { Opacity = 0, ShowInTaskbar = false };
+        using var form = new MainGameForm(Path.Combine(folder, "qa-saves"), fixedLogicalSize) { Opacity = 0, ShowInTaskbar = false };
         form.Show();
 
         Capture(form, folder, "01-ana-menu");
@@ -103,8 +104,12 @@ internal static class Program
         Capture(form, folder, "19-savas");
         ((CombatScreen)form.CurrentScreen!).OpenAttackForQa();
         Capture(form, folder, "20-saldiri-secimi");
+        ((CombatScreen)form.CurrentScreen!).OpenPowerForQa();
+        Capture(form, folder, "20a-sinif-gucu");
         ((CombatScreen)form.CurrentScreen!).ShowDiceResultForQa();
         Capture(form, folder, "20b-zar-sonucu");
+        ((CombatScreen)form.CurrentScreen!).ShowImpactForQa();
+        Capture(form, folder, "20c-vurus-hissi");
         form.ShowDeath("QA karşılaşması");
         Capture(form, folder, "21-olum");
 

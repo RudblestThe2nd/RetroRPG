@@ -1,15 +1,18 @@
 # DEVIR — Retro RPG
 
-Son güncelleme: 1 Kasım 2026
+Son güncelleme: 18 Kasım 2026
 
 Bu dosya projeye yeni başlayan biri (insan ya da yapay zekâ) için durum belgesidir. Önce bunu, sonra kökteki `DEVELOPER_GUIDE.md` dosyasını oku.
 
 ## Durum özeti
 
-- C# / .NET 9 Windows Forms, 800 x 800 pencere, sınıf ve kalıtım ödevi olarak yazılan retro piksel RPG.
+- C# / .NET 9 Windows Forms, 800 x 800 mantıksal tuval kullanan, monitöre göre büyük açılan ve yeniden boyutlandırılabilen retro piksel RPG.
 - Oynanabilir akış: ana menü → kimlik → ırk → sınıf/alt sınıf → 7 aşamalı geçmiş → 3 puanlık özellik dağıtımı → karakter özeti → 3 yuvalı hikâye seçimi → **Kader Yolları: Göz Kulesi prologu** → hex dünya haritası → Bölüm I → üç Yol Taşı → mor bölge → Göz Kulesi → scripted yenilgi → Kalpaklı Süvari → gerçek Vaelor savaşı → dört finalden biri.
 - Bütün ekranlar hazır assetlerle çiziliyor. Windows Forms kontrolü kullanılmıyor; her şey 800 x 800 alana çiziliyor.
-- Derleme 0 hata, 0 uyarı. 56 testin hepsi geçiyor (33 eski + 23 hikâye, biri prologdan finale uçtan uca smoke testi). Ekran görüntüsü modu 80 PNG üretir; eksik asset logu ve metin taşma raporu boş.
+- Derleme 0 hata, 0 uyarı. 59 testin hepsi geçiyor; bunlardan biri prologdan finale uçtan uca smoke testidir. Ekran görüntüsü modu 82 PNG üretir.
+- **Karakter Gelişimi 2.0:** savaş zaferleri XP verir; oyuncu 10. seviyeye kadar çıkar, azami canı ve sınıf gücü kapasitesi artar. 12 ana sınıfın ve 24 alt sınıfın tamamında saldırı, iyileştirme veya koruma türünde aktif sınıf gücü vardır.
+- **Okunabilirlik yenilemesi:** oyun varsayılan 800px yerine çalışma alanını dolduran büyük kare pencerede açılır. Bütün ekran önce 800×800 ara tuvale çizilip nearest-neighbor ile büyütüldüğü için font, siyah mürekkep ve gölge katmanları artık kesirli piksele kaymaz. Ayarlarda küçült/büyüt, `Ctrl + / -` ve `F11` bulunur.
+- **Savaş geri bildirimi:** d20 yuvarlanmasından sonra modal kapanır; saldıran karakter hedefe hamle yapar. Darbe anında kısa ekran sarsıntısı, kesme/kritik parlaması, parçacıklar ve yükselen `ISKA / BLOK / -CAN / KRİTİK` yazısı oynar. Zar, savurma, isabet, kritik, ıskalama, blok, iyileştirme ve zafer için ayrı retro sesler vardır. Düşman saldırıları da aynı zamanlanmış akışı kullanır; savaş sesi AYARLAR'dan kapatılabilir.
 - Pencere başlığı `Retro RPG`; ana menüdeki merkez ve flama göz logolarının tamamı kaldırıldı.
 - `world-map-parchment-2d-v1.png` üstten bakışlı 2D dünya resmi gerçekçi piksel-art parşömen üzerinde gösterilir. Parşömenin iç harita alanına hizalanmış 15 x 12, toplam 180 tıklanabilir hex varsayılan olarak görünmez; `HEX: KAPALI/AÇIK` düğmesi veya `H` tuşu çizgileri açıp kapatır. Seçim, rota ve görev ayrı katmanlarda çizilir; tehlike ve düşman haritada gösterilmez. Oyuncu hedefi seçer, BFS rotasını görür, onaylar ve token küçük komşu hexler arasında yumuşak animasyonla yürür. Gizli tehlikeli hexe girerken d20 + Bilgelik encounter kontrolü oynar.
 - İki düz bariyer kaldırıldı. Engeller mor bölge sınırı, dağ kayalıkları, lav gölleri, bataklık çukurları, çöl kanyonları, buz uçurumları ve mağara çökmeleri biçiminde düzensiz kümelerdir. Mor bölgenin tek girişi `(-5,-3)` güney kapısıdır (`(-3,-4)` editör engelidir); kapı üç Yol Taşı tamamlanınca açılır. Keşiş/halat köprü kısa dağ geçidini; maden asansörü yeraltı kısayolunu açar.
@@ -21,7 +24,7 @@ Bu dosya projeye yeni başlayan biri (insan ya da yapay zekâ) için durum belge
 - **Tetikler:** `Start` (prolog), `Arrive` (rota o hexte biterse veya ÇEVREYİ ARA), `Pass` (geçerken, mor bölge ve kule), `Search` (kervan enkazı), `Inn` (Yeşilgeçit hanı, `TANIKLARI DİNLE`), `Chain` (önceki olayın ardından). Yarım kalan zincir `StoryProgress.ActiveNodeId` ile kayda yazılır; autosave'den yükleyince aynı düğümden sürer.
 - **Koordinatlar:** Yeşilgeçit `(0,0)`, kervan enkazı `(1,0)`, Kızılburç `(2,-1)`, Kök Taşı `(-4,-1)`, Gök Taşı `(4,-3)`, Güneş Taşı `(3,3)`, mor kapı `(-5,-3)`, devriye `(-5,-4)`, köprü/anı/Piskopos `(-4,-5)`, Göz Kulesi `(-3,-5)`.
 - **Mor bölge:** Eski kodda mor bölgeye üç yerden girilebiliyordu. Artık editör engelleri (8 hex, test sabit) dışındaki bütün mor hexler `HexTile.IsSealed` ile mühürlü. Üç taş tamamlanınca `HexMap.OpenPurpleGate()` yalnız `(-5,-3) → (-5,-4) → (-4,-5)` yolunu açar; diğer mor sınırlar kapalı kalır, kapı yolunda rastgele savaş yoktur.
-- **Kayıt sürüm 3:** `GameSaveData.Story` (`StoryProgressSaveData`). Sürüm 1/2 kayıtlar güvenli varsayılanlarla açılır ve prologdan başlar. Eski sürüm dosyasının üzerine ilk kez yazılmadan önce `slot-1.v{N}-backup.json` yedeği alınır; eski dosya içeriği hiç değiştirilmez.
+- **Kayıt sürüm 4:** `GameSaveData.Story` yanında seviye, XP ve sınıf gücü kaydedilir. Sürüm 1/2/3 kayıtlar güvenli varsayılanlarla açılır. Eski sürüm dosyasının üzerine ilk kez yazılmadan önce `slot-1.v{N}-backup.json` yedeği alınır; eski dosya içeriği hiç değiştirilmez.
 - **Ekranlar:** `StorySceneScreen` (PNG kare oynatıcı, metin kutusu, seçenek, d20, sonuç; tıklama/Enter sonraki kare), `EndingScreen` (Vaelor'un kaderi → dört final → epilog), gerçek görevleri gösteren `JournalScreen`. `CombatScreen` hikâye savaşlarını `CombatStoryEvent` ile oynatır; ilk Vaelor savaşında oyuncu ilk eylemi yapar, sonra `Kaderin Hükmü` modalı açılır ve ölüm ekranı açılmaz.
 - **Gök Taşı savaş dalı:** `Muhafızla savaş` seçimi uyanış karelerini oynatmaz (`StoryChoice.PlaysAfterFrames = false`). Uyanış yalnız muhafız yenilince `sky-waystone-seized` olayında oynar; kaçışta oynamaz ve taş seçenekleri yeniden açılır.
 - **Paylaştırma finali:** Yüksek güven yalnız `EndingRules.TrustRegions` içindeki taş bölgelerinde sayılır (`swamp`, `mountain`, `desert`). Yeşilgeçit ve mülteci güveni tutulur ama bölge sayılmaz.
@@ -50,7 +53,7 @@ Bu dosya projeye yeni başlayan biri (insan ya da yapay zekâ) için durum belge
 
 | Ne | Nerede |
 |---|---|
-| Proje kökü (asset kökü) | `C:\Users\VECTUS\Documents\pc\game_design` |
+| Proje kökü (asset kökü) | `C:\Users\VECTUS\Documents\pc\game_design\RetroRPG` |
 | Çözüm | `RetroRpg.sln` |
 | Rehber belgesi (hedef) | `documents\word\Retro_RPG_Mega_Prompt_Asset_Rehberi_v9.docx` (önceki sürümler silinmedi) |
 | Kod notları | `README-CODE.md` |
@@ -87,7 +90,7 @@ Ekran görüntüsü modu, ekranları tıklamadan kontrol etmek için. Her ekran�
 dist\RetroRpg.Game.exe --screenshots C:\bir\klasor
 ```
 
-Çıktı 80 PNG'dir: eski 33 ekran (ana menü/ayarlar/tam ekran, karakter oluşturma, özellik, özet, hikâye seçimi, harita, envanter, karakter, günlük, kamp, encounter, kasaba, mağaza, han, muhafız, savaş, zar, ölüm) ve `22-` ile `42-` arası ana hikâye: prolog (anlatım, seçim, zar, sonuç), han tanığı, kervan enkazı, Kızılburç arşivi, görev günlüğü, üç Yol Taşı, zirve muhafızı savaşı, Kırık Arşiv, mor kapı, mor bölge olayları, Göz Piskoposu, kule katları, ilk Vaelor savaşı ve Kaderin Hükmü, kuleden düşüş, Süvari, Kaderbozan envanteri, zırhlı dönüş, Vaelor ikinci form ve final savaşı, final kararı ve dört epilog. `01c-tam-ekran.png` bilinçli olarak tam ekran çözünürlüğündedir.
+Çıktı 82 PNG'dir: eski ekranlar (ana menü/ayarlar/tam ekran, karakter oluşturma, özellik, özet, hikâye seçimi, harita, envanter, karakter, günlük, kamp, encounter, kasaba, mağaza, han, muhafız, savaş, zar, darbe geri bildirimi, ölüm) ve `22-` ile `42-` arası ana hikâye: prolog (anlatım, seçim, zar, sonuç), han tanığı, kervan enkazı, Kızılburç arşivi, görev günlüğü, üç Yol Taşı, zirve muhafızı savaşı, Kırık Arşiv, mor kapı, mor bölge olayları, Göz Piskoposu, kule katları, ilk Vaelor savaşı ve Kaderin Hükmü, kuleden düşüş, Süvari, Kaderbozan envanteri, zırhlı dönüş, Vaelor ikinci form ve final savaşı, final kararı ve dört epilog. `01c-tam-ekran.png` bilinçli olarak tam ekran çözünürlüğündedir.
 
 **Exe neden yerinden taşınmamalı:** Exe `game_design` klasörünün içinde durmalı. Açılırken üst klasörlerde `assets` ve `characters` klasörlerini arar. Başka yerde çalışacaksa `RETRO_RPG_ASSET_ROOT` ortam değişkeni proje kökünü göstermeli. Exe .NET 9 runtime ister.
 
@@ -130,7 +133,7 @@ dist\RetroRpg.Game.exe --screenshots C:\bir\klasor
 **`Story\`** — ana hikâye; ayrıntı yukarıdaki 1 Kasım bölümünde.
 
 **`Persistence\`**
-- Kayıt modeli sürüm 3 (hikâye ilerlemesi `StoryProgressSaveData`); sürüm 1/2 açılır.
+- Kayıt modeli sürüm 4 (hikâye ilerlemesi, seviye, XP ve sınıf gücü); sürüm 1/2/3 açılır.
 - `ItemSaveMapper` envanteri ve takılı eşyayı kayda yazıyor.
 - Eşya bilgisi olmayan sürüm 1 kayıtlar yüklenince karakter başlangıç eşyalarını alıyor.
 
@@ -147,7 +150,7 @@ dist\RetroRpg.Game.exe --screenshots C:\bir\klasor
 
 | Dosya | Ne yapar |
 |---|---|
-| `MainGameForm.cs` | 800 x 800 mantıksal pencere; ekran değiştirme; katalogları yükleme ve `F11` tam ekran geçişi. Tam ekranda kare oyun alanı oranı bozulmadan büyür ve siyah yan boşluklarla ortalanır. |
+| `MainGameForm.cs` | 800 x 800 mantıksal tuval; büyük/yeniden boyutlandırılabilir pencere; ekran değiştirme; `Ctrl + / -` ölçek ve `F11` tam ekran geçişi. Kare oyun alanı oranı bozulmadan büyür ve boşluklarda ortalanır. |
 | `Program.cs` | Giriş noktası; `--screenshots` modu. |
 | `UiImages.cs` | Görsel önbelleği. Eksik dosyayı loglar ve ekranda gösterir. Şeffaf kenardaki kırıntıları kırpar. İmleci oluşturur. |
 | `PixelButton.cs` | Çizilen düğme: normal, hover, pressed ve disabled durumları. Ana menüde Final Production V4 ahşap-kırmızı setini kullanır. |
@@ -155,10 +158,11 @@ dist\RetroRpg.Game.exe --screenshots C:\bir\klasor
 | `CharacterArt.cs` | Oyuncu portresi, token ve runtime animasyon karesi yolları. |
 | `Screens\GameScreen.cs` | Bütün ekranların tabanı; fare ve düğme durumu, modal pencere desteği. |
 | `Screens\MainMenuScreen.cs` | Ana menü. |
-| `Screens\SettingsScreen.cs` | AYARLAR menüsündeki tam ekran aç/kapat düğmesi ve F11 bilgisini gösterir. |
+| `CombatAudio.cs` | Zar, savurma, isabet, kritik, ıskalama, blok, iyileştirme ve zafer için bellekte üretilen kısa retro sesler. Ses aygıtı yoksa savaş kesilmez. |
+| `Screens\SettingsScreen.cs` | Pencere boyutu, tam ekran ve savaş sesi aç/kapat ayarlarını gösterir. |
 | `Screens\CharacterCreationScreen.cs` | Kimlik → saç/sakal-yüz detayı → ırk → sınıf → 7 aşamalı geçmiş. Ana menüyle aynı V4 ahşap, demir, altın ve kırmızı kumaş çerçevesini kullanır; ayrıntı panellerinde portre gösterir. |
 | `Screens\MapScreen.cs` | Tek parça dünya görseli üstünde görünmez/toggle edilebilir 180 küçük hex; rota ve smoothstep yürüyüş; envanter/karakter/günlük/kamp/çevre araştırma. Düşman ve tehlike işareti çizmez. |
-| `Screens\CombatScreen.cs` | Önceden görünen isabet/hasar, maskeli d20 animasyonu, savaş envanteri, savunma ve Dayanıklılık kontrollü kaçış. Oyuncu ve düşman sprite'ının üstünde can barı yoktur; can HUD/sıra incelemesindedir. |
+| `Screens\CombatScreen.cs` | Önceden görünen isabet/hasar, maskeli d20, zamanlanmış saldırı hamlesi, darbe sarsıntısı/parçacığı/hasar yazısı, savaş envanteri, savunma ve Dayanıklılık kontrollü kaçış. Oyuncu ve düşman sprite'ının üstünde can barı yoktur; can HUD/sıra incelemesindedir. |
 | `Screens\EncounterScreen.cs` | 50 savaş dışı encounterı oynatır; her olayda iki stat/zorluk seçeneği, ayrı ödül/ceza, d20 animasyonu ve autosave vardır. |
 | `Screens\LocationScreen.cs` | Köy/kasaba/kale ve hizmet sahneleri; han, mağaza, iyileştirme ve muhafızlı alanlara yönlendirme. `InnScreen`, `ShopScreen` ve `GuardDialogueScreen` ayrı sorumluluk taşır. |
 | `Screens\ShopScreen.cs` | Pazar ve demirci ürünlerini fiyat, ikon ve açıklamayla gösterir; satın alınanı envantere ekler. |
@@ -168,7 +172,7 @@ dist\RetroRpg.Game.exe --screenshots C:\bir\klasor
 
 ### Diğer projeler
 
-- **`tests\RetroRpg.Tests\Program.cs`:** 56 test (23'ü ana hikâye: prologdan finale uçtan uca smoke testi, prolog, hatırlanan kişi, taş sırası, Gök Taşı savaş dalı, mülteci güveni, arşiv mesajı, mor kapı, kilitlenmeme, Piskopos, scripted yenilgi, Süvari, Kaderbozan, gerçek boss, kayıt göçü, tek-sefer olaylar, dört final, manifest kareleri). Kalıtım, açık harita/BFS, zorunlu geçitler, kayıt, atlaslar, 50 encounter seçeneği/sonucu, alış/satış, eşya çıkarma, başlangıç paketleri, muhafız yaklaşımı, rota açılması, yerleşimler, Göz Kulesi ve saldırı varyantları doğrulanır.
+- **`tests\RetroRpg.Tests\Program.cs`:** 59 test. Ana hikâyenin uçtan uca akışına ek olarak XP/seviye, 24 alt sınıf gücü, kayıt sürümü 4 ve eski kayıt göçü doğrulanır.
 - **`tools\RetroRpg.AtlasTool`:** 22 karakter atlasını `characters\runtime-v1` altında 256 x 256 karelere bölen araç.
 
 ## Ekran ↔ asset eşleşmesi
@@ -197,13 +201,13 @@ dist\RetroRpg.Game.exe --screenshots C:\bir\klasor
 - **`Name`:** Belge onu `Npc`'ye koyuyor, kodda `GameEntity`'de duruyor. Eşyalar ve dünya nesneleri de ad kullanıyor.
 - **`RewardGold`:** Belge onu yalnız `MiniBossNpc`'ye koyuyor, kodda `EnemyNpc`'de. Bütün düşmanlar altın veriyor.
 - **Karakter oluşturma çerçevesi:** Yeni V4 görselinde yazı gömülü değildir. Başlıklar, seçenekler ve ayrıntılar çalışma zamanında Türkçe piksel fontuyla çizilir.
-- **Savaştaki BİTİR düğmesi:** Kaçış onayı açar; düşman bir serbest saldırı yaptıktan sonra hayattaysa oyuncu haritaya döner. BÜYÜ düğmesi pasif.
+- **Savaştaki BİTİR düğmesi:** Kaçış onayı açar; düşman bir serbest saldırı yaptıktan sonra hayattaysa oyuncu haritaya döner. Eski BÜYÜ alanı artık sınıfa göre değişen `SINIF GÜCÜ` penceresini açar.
 - **Yenilgi:** Can sıfıra indiğinde ölüm ekranı açılır; otomatik iyileştirme yapılmaz.
 
 ## Bilinçli kapsam sınırı
 
 1. Ana hikâye prologdan dört finale kadar oynanabilir. Hikâye II ve III yuvaları kilitlidir. Kaderbozan Zırhı'nın ve Vaelor'un özel runtime görselleri üretilmediği için yukarıdaki geçici görseller kullanılır.
-2. BÜYÜ düğmesi için sınıfa özel büyü kuralları tasarlanmadığından pasiftir; mevcut ödev kapsamındaki d20 saldırı sistemi tam çalışır.
+2. Tam D&D büyü listesi yoktur. Bunun yerine ödev için daha okunabilir olan üç alt türden oluşan sade `ClassPower` sistemi kullanılır.
 3. Yerelleştirme/string tablosu zorunlu oynanış eksiği değildir; çalışma zamanı metinleri Türkçedir.
 4. Kod, görsel ve test tarafında bilinen kritik eksik yoktur.
 

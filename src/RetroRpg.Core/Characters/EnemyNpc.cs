@@ -21,6 +21,7 @@ public class EnemyNpc : Npc, ICombatant
     public int ArmorClass { get; }
     public CharacterClass Class { get; }
     public int RewardGold { get; }
+    public int RewardExperience => Math.Max(10, MaxHealth * 2 + RewardGold);
     public Weapon? Weapon { get; set; }
     public bool IsAlive => Health > 0;
 

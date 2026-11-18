@@ -51,7 +51,7 @@ internal static class UiTheme
     public static void Prepare(Graphics g)
     {
         g.InterpolationMode = InterpolationMode.NearestNeighbor;
-        g.PixelOffsetMode = PixelOffsetMode.Half;
+        g.PixelOffsetMode = PixelOffsetMode.None;
         g.SmoothingMode = SmoothingMode.None;
         g.TextRenderingHint = TextRenderingHint.SingleBitPerPixelGridFit;
     }
@@ -60,8 +60,9 @@ internal static class UiTheme
     {
         using var shadow = new SolidBrush(Color.FromArgb(220, 0, 0, 0));
         using var brush = new SolidBrush(color);
-        g.DrawString(text, font, shadow, x + 2, y + 2);
-        g.DrawString(text, font, brush, x, y);
+        int px = (int)MathF.Round(x), py = (int)MathF.Round(y);
+        g.DrawString(text, font, shadow, px + 1, py + 1);
+        g.DrawString(text, font, brush, px, py);
     }
 
     public static void DrawTextCentered(Graphics g, string text, Font font, Color color, Rectangle area)
@@ -75,7 +76,7 @@ internal static class UiTheme
         };
         using var shadow = new SolidBrush(Color.FromArgb(220, 0, 0, 0));
         using var brush = new SolidBrush(color);
-        var shadowArea = new RectangleF(area.X + 2, area.Y + 2, area.Width, area.Height);
+        var shadowArea = new RectangleF(area.X + 1, area.Y + 1, area.Width, area.Height);
         g.DrawString(text, font, shadow, shadowArea, format);
         g.DrawString(text, font, brush, area, format);
     }
@@ -96,7 +97,7 @@ internal static class UiTheme
         };
         using var shadow = new SolidBrush(Color.FromArgb(220, 0, 0, 0));
         using var brush = new SolidBrush(color);
-        g.DrawString(text, font, shadow, new RectangleF(area.X + 2, area.Y + 2, area.Width, area.Height), format);
+        g.DrawString(text, font, shadow, new RectangleF(area.X + 1, area.Y + 1, area.Width, area.Height), format);
         g.DrawString(text, font, brush, area, format);
     }
 
@@ -120,11 +121,15 @@ internal static class UiTheme
         using var format = new StringFormat(StringFormat.GenericTypographic)
         {
             Alignment = StringAlignment.Center,
-            LineAlignment = StringAlignment.Center,
+            LineAlignment = StringAlignment.Near,
             Trimming = StringTrimming.EllipsisWord
         };
         using var brush = new SolidBrush(color);
-        g.DrawString(text, font, brush, area, format);
+        int measuredHeight = Math.Min(area.Height,
+            (int)Math.Ceiling(g.MeasureString(text, font, area.Width, format).Height));
+        int y = area.Y + (area.Height - measuredHeight) / 2;
+        // Dikey başlangıcı tam piksele sabitlemek parşömendeki siyah harflerin kaymasını engeller.
+        g.DrawString(text, font, brush, new Rectangle(area.X, y, area.Width, measuredHeight), format);
     }
 
     private static bool Fits(Graphics g, string text, Font font, Rectangle area, StringFormat format) =>

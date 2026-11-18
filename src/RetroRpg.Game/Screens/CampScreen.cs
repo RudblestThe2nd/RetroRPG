@@ -22,7 +22,11 @@ internal sealed class CampScreen : GameScreen
     {
         int healed = _session.Player.MaxHealth - _session.Player.Health;
         _session.Player.Heal(_session.Player.MaxHealth);
-        _message = healed > 0 ? $"Dinlendin. +{healed} CAN." : "Zaten tamamen dinlenmişsin.";
+        int power = _session.Player.MaxPowerPoints - _session.Player.PowerPoints;
+        _session.Player.RestorePowerPoints();
+        _message = healed > 0 || power > 0
+            ? $"Dinlendin. +{healed} CAN, +{power} SINIF GÜCÜ."
+            : "Zaten tamamen dinlenmişsin.";
         Host.Autosave();
         Invalidate();
     }
@@ -55,8 +59,9 @@ internal sealed class CampScreen : GameScreen
         UiTheme.DrawText(g, $"CAN {p.Health}/{p.MaxHealth}", UiTheme.Body, UiTheme.Text, 600, 292);
         UiTheme.DrawText(g, $"ALTIN {p.Gold}", UiTheme.Body, UiTheme.Gold, 600, 334);
         UiTheme.DrawText(g, $"EŞYA {p.Inventory.Items.Count}", UiTheme.Body, UiTheme.Text, 600, 376);
+        UiTheme.DrawText(g, $"GÜÇ {p.PowerPoints}/{p.MaxPowerPoints}", UiTheme.Small, UiTheme.Success, 600, 410);
         int ingredients = p.Inventory.Items.OfType<Consumable>().Count(x => x.Name.Contains("Azık") || x.Name.Contains("Bal") || x.Name.Contains("Ot"));
-        UiTheme.DrawText(g, $"MALZEME {ingredients}", UiTheme.Small, UiTheme.Success, 600, 410);
+        UiTheme.DrawText(g, $"MALZEME {ingredients}", UiTheme.Small, UiTheme.Success, 600, 434);
         UiTheme.DrawWrapped(g, _message, UiTheme.Body, UiTheme.Text, new Rectangle(250, 560, 470, 95));
     }
 }

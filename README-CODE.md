@@ -17,7 +17,7 @@ Bu çözüm bir eğitim projesidir. Ana hedef, temel ve okunabilir C# koduyla `c
 ```powershell
 dotnet build RetroRpg.sln
 dotnet run --project tests/RetroRpg.Tests
-dotnet run --project tools/RetroRpg.AtlasTool -- "C:\Users\VECTUS\Documents\pc\game_design"
+dotnet run --project tools/RetroRpg.AtlasTool -- "C:\Users\VECTUS\Documents\pc\game_design\RetroRPG"
 dotnet run --project src/RetroRpg.Game
 ```
 
@@ -33,10 +33,18 @@ dotnet run --project src/RetroRpg.Game
 - `Quest → MainQuest / WaystoneQuest / SideQuest`
 - `StoryConsequence → FlagConsequence / ItemConsequence / ReputationConsequence / RouteConsequence / EndingConsequence / QuestConsequence / CostConsequence`
 - `DiceRoll → D20Roll → AttackRoll / InitiativeRoll`
+- `ClassPower → AttackClassPower / HealingClassPower / GuardClassPower`
 - `SceneNode → TravelScene / CombatScene / CampScene / ShopScene`
 - `GameScreen → MainMenuScreen / CharacterCreationScreen / MapScreen / CombatScreen / StorySceneScreen / EndingScreen`
 
 `EnemyNpc` bir `CharacterClass` değildir; sınıfını `Class` özelliğinde taşır. `PlayerCharacter` ve `EnemyNpc` savaşa `ICombatant` arayüzüyle girer. Bu arayüzün iki gerçek uygulaması vardır; `IDiceRoller` için de aynısı geçerlidir (`DiceRoller` ve testlerdeki `FixedDiceRoller`).
+
+## Seviye ve sınıf gücü
+
+Savaş zaferleri altının yanında XP verir. `PlayerCharacter` 10. seviyeye kadar çıkar; seviye atlayınca
+azami canı ve sınıf gücü kapasitesi artar. `ClassPowerCatalog`, 12 ana sınıf ve 24 alt sınıf için
+tek bir aktif güç seçer. Güçler yalnız üç açık alt tür kullanır: saldırı, iyileştirme ve koruma.
+Bu sade aile hem kalıtımı görünür tutar hem savaş ekranını sınıflardan bağımsız bırakır.
 
 ## Basit d20 kuralı
 
