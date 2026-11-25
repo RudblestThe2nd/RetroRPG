@@ -67,7 +67,7 @@ public sealed class GameSession(PlayerCharacter player)
         }
     }
 
-    public const int SaveVersion = 4;
+    public const int SaveVersion = 5;
 
     public GameSaveData ToSaveData() => new(
         SaveVersion,

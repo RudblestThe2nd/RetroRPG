@@ -3,6 +3,7 @@
   "assets": [
     { "id": "map.world.2d", "path": "maps/hex/world-map-hex-2d-v1.png", "type": "map" },
     { "id": "map.world.isometric", "path": "assets/final-production-v1/maps/world-map-hex-isometric-v1.png", "type": "map" },
+    { "id": "map.world.continuous", "path": "maps/hex/world-map-continuous.png", "type": "map" },
     { "id": "map.world.parchment-2d", "path": "assets/final-production-v4/maps/world-map-parchment-2d-v1.png", "type": "map" },
     { "id": "map.obstacle.corrupted-mountain", "path": "assets/final-production-v5/maps/obstacles/corrupted-mountain-cluster-v1.png", "type": "map-obstacle" },
     { "id": "ui.combat.simple", "path": "assets/final-production-v2/ui/screens/runtime-800/combat-screen-simple-d20-v1.png", "type": "screen" },

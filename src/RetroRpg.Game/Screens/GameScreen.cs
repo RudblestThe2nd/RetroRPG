@@ -11,7 +11,7 @@ internal abstract class GameScreen : Control
     protected static readonly Size CanvasSize = new(MainGameForm.ScreenSize, MainGameForm.ScreenSize);
     private readonly List<PixelButton> _buttons = [];
     private readonly List<PixelButton> _modalButtons = [];
-    private readonly Bitmap _logicalCanvas = new(MainGameForm.ScreenSize, MainGameForm.ScreenSize, PixelFormat.Format32bppPArgb);
+    private Bitmap _logicalCanvas = new(MainGameForm.ScreenSize, MainGameForm.ScreenSize, PixelFormat.Format32bppPArgb);
     private PixelButton? _pressed;
 
     protected GameScreen(MainGameForm host)
@@ -63,6 +63,16 @@ internal abstract class GameScreen : Control
         Math.Min((float)Math.Max(1, ClientSize.Width) / MainGameForm.ScreenSize,
                  (float)Math.Max(1, ClientSize.Height) / MainGameForm.ScreenSize));
 
+    protected virtual bool WideCanvas => false;
+    protected Rectangle VisibleCanvas
+    {
+        get
+        {
+            int width = WideCanvas ? Math.Max(800, (int)Math.Round(ClientSize.Width / CanvasScale())) : 800;
+            return new((800 - width) / 2, 0, width, 800);
+        }
+    }
+
     protected abstract void Draw(Graphics g);
     protected virtual void DrawModal(Graphics g) { }
     protected virtual void DrawTop(Graphics g) { }
@@ -71,10 +81,17 @@ internal abstract class GameScreen : Control
     {
         // Önce her şeyi tam 800x800 piksel tuvale çizeriz. Metinleri doğrudan kesirli ölçekli
         // Graphics üzerine çizmek piksel fontunun siyah kenarlarını kaydırıyordu.
+        Rectangle view = VisibleCanvas;
+        if (_logicalCanvas.Width != view.Width)
+        {
+            _logicalCanvas.Dispose();
+            _logicalCanvas = new Bitmap(view.Width, view.Height, PixelFormat.Format32bppPArgb);
+        }
         using (Graphics logical = Graphics.FromImage(_logicalCanvas))
         {
             logical.Clear(UiTheme.Background);
-            logical.SetClip(CanvasRectangle);
+            logical.TranslateTransform(-view.Left, 0);
+            logical.SetClip(view);
             UiTheme.Prepare(logical);
             Draw(logical);
             foreach (PixelButton button in _buttons.Where(x => x.Visible)) UiTheme.DrawButton(logical, Images, button);
@@ -90,7 +107,7 @@ internal abstract class GameScreen : Control
         Graphics output = e.Graphics;
         output.Clear(UiTheme.Background);
         float scale = CanvasScale();
-        int width = Math.Max(1, (int)MathF.Round(MainGameForm.ScreenSize * scale));
+        int width = Math.Max(1, (int)MathF.Round(view.Width * scale));
         int height = Math.Max(1, (int)MathF.Round(MainGameForm.ScreenSize * scale));
         int x = (ClientSize.Width - width) / 2;
         int y = (ClientSize.Height - height) / 2;
@@ -99,7 +116,18 @@ internal abstract class GameScreen : Control
         output.InterpolationMode = InterpolationMode.NearestNeighbor;
         output.PixelOffsetMode = PixelOffsetMode.Half;
         output.SmoothingMode = SmoothingMode.None;
-        output.DrawImage(_logicalCanvas, new Rectangle(x, y, width, height), CanvasRectangle, GraphicsUnit.Pixel);
+        if (x > 0 || y > 0)
+        {
+            var backdrop = Images.Get(AssetPath("ui.main-menu.background.wood-red-v1"));
+            if (backdrop is not null)
+            {
+                int side = Math.Max(ClientSize.Width, ClientSize.Height);
+                output.DrawImage(backdrop, new Rectangle((ClientSize.Width-side)/2, (ClientSize.Height-side)/2, side, side));
+                output.CompositingMode = CompositingMode.SourceOver;
+                UiTheme.Shade(output, ClientRectangle, 150);
+            }
+        }
+        output.DrawImage(_logicalCanvas, new Rectangle(x, y, width, height), new Rectangle(0,0,view.Width,view.Height), GraphicsUnit.Pixel);
     }
 
     private IEnumerable<PixelButton> ActiveButtons => ModalOpen ? _modalButtons : _buttons;

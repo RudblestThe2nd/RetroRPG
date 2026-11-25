@@ -1,4 +1,5 @@
 using RetroRpg.Core.Game;
+using RetroRpg.Core.Common;
 using RetroRpg.Core.Items;
 using RetroRpg.Core.World;
 
@@ -77,7 +78,7 @@ internal sealed class ShopScreen : GameScreen
             else if (_mode == ShopMode.Sell && i < sellable.Count)
             {
                 Item item = sellable[i];
-                row.Text = $"{item.Name} · {_shop.SellPrice(item)} ALTIN";
+                row.Text = $"{LootGenerator.RarityLabel(item.Rarity)} · {item.Name} · {_shop.SellPrice(item)} ALTIN";
                 row.Visible = row.Enabled = true;
             }
             else row.Visible = row.Enabled = false;
@@ -149,16 +150,21 @@ internal sealed class ShopScreen : GameScreen
         {
             Item item = SellableItems[_selected];
             string equipped = _session.Player.Equipment.IsEquipped(item) ? "Kuşanılmış; satılırsa otomatik çıkarılır." : "Envanter eşyası.";
-            DrawDetails(g, item.Name, equipped, InventoryScreen.ItemIcon(item), $"SATIŞ: {_shop.SellPrice(item)} ALTIN", UiTheme.Success);
+            string detail = $"{LootGenerator.RarityLabel(item.Rarity)} · {equipped}";
+            if (item is Weapon weapon) detail += $" {weapon.Technique.Name}: {weapon.Technique.Description}";
+            DrawDetails(g, item.Name, detail, InventoryScreen.ItemIcon(item), $"SATIŞ: {_shop.SellPrice(item)} ALTIN",
+                UiTheme.Success, item.Rarity);
         }
         else UiTheme.DrawTextCentered(g, "SATILABİLİR EŞYA YOK", UiTheme.Heading, UiTheme.Muted, new Rectangle(438, 250, 298, 80));
 
         UiTheme.DrawWrappedCentered(g, _message, UiTheme.Small, UiTheme.Text, new Rectangle(445, 628, 286, 42));
     }
 
-    private void DrawDetails(Graphics g, string name, string description, string icon, string price, Color priceColor)
+    private void DrawDetails(Graphics g, string name, string description, string icon, string price, Color priceColor,
+        ItemRarity rarity = ItemRarity.Common)
     {
-        UiTheme.DrawTextCentered(g, name.ToUpperInvariant(), UiTheme.Heading, UiTheme.Gold, new Rectangle(438, 145, 298, 42));
+        UiTheme.DrawTextCentered(g, name.ToUpperInvariant(), UiTheme.Heading,
+            rarity == ItemRarity.Common ? UiTheme.Gold : InventoryScreen.RarityColor(rarity), new Rectangle(438, 145, 298, 42));
         UiTheme.DrawImageFit(g, Images.Get(icon), new Rectangle(494, 204, 186, 186));
         UiTheme.DrawWrappedCentered(g, description, UiTheme.Body, UiTheme.Text, new Rectangle(450, 405, 274, 78));
         UiTheme.DrawTextCentered(g, price, UiTheme.Heading, priceColor, new Rectangle(450, 485, 274, 40));

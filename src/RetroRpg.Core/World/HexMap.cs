@@ -72,7 +72,7 @@ public sealed class HexMap
         (new(-7, 0), Biome.Underground)
     ];
 
-    public static HexMap CreateDemoMap(int columns = 15, int rows = 12)
+    public static HexMap CreateDemoMap(int columns = 45, int rows = 12)
     {
         var map = new HexMap();
         var start = new HexCoordinate(0, 0);
@@ -85,7 +85,14 @@ public sealed class HexMap
                 int offsetColumn = column - halfColumns;
                 int q = offsetColumn - (int)Math.Floor(r / 2d);
                 var coordinate = new HexCoordinate(q, r);
-                Biome biome = BiomeCenters.MinBy(x => x.Center.DistanceTo(coordinate)).Biome;
+                Biome biome = offsetColumn switch
+                {
+                    < -7 => r <= -3 ? Biome.Underground : r <= 1 ? Biome.Swamp : Biome.Forest,
+                    > 7 => r <= -3 ? Biome.Snow : r <= 1 ? Biome.Plains : Biome.Desert,
+                    _ => BiomeCenters.MinBy(x => x.Center.DistanceTo(coordinate)).Biome
+                };
+                // Batıdan eklenen topraklar kule koridoruna ikinci bir giriş açmasın.
+                if (offsetColumn == -8 && r <= -2) biome = Biome.Corrupted;
                 int distance = coordinate.DistanceTo(start);
                 var tile = new HexTile(coordinate, biome, 1 + Math.Abs(q + r) % 3)
                 {

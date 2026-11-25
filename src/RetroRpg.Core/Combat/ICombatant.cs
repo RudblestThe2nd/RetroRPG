@@ -12,5 +12,6 @@ public interface ICombatant
     int DamageBonus { get; }
     int DamageDie { get; }
     bool IsAlive { get; }
+    StatusEffectCollection StatusEffects { get; }
     void ReceiveDamage(int amount);
 }

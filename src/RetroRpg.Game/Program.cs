@@ -15,6 +15,55 @@ internal static class Program
     private static void Main(string[] args)
     {
         ApplicationConfiguration.Initialize();
+        if (args.Length == 2 && args[0] == "--dice-qa")
+        {
+            Directory.CreateDirectory(args[1]);
+            using var image = new Bitmap(240, 240);
+            using var g = Graphics.FromImage(image);
+            for (int face = 1; face <= 20; face++)
+            for (int ticks = 24; ticks >= 0; ticks--)
+            {
+                g.Clear(Color.FromArgb(30, 23, 34));
+                int visible = RollingD20.Draw(g, new(16, 16, 208, 208), face, ticks);
+                if (RollingD20.Landed(ticks) && visible != face)
+                    throw new InvalidOperationException($"d20: {face} beklendi, görünen yüz {visible}.");
+                if (face == 17 || ticks == 0)
+                    image.Save(Path.Combine(args[1], $"d20-{face:00}-{24 - ticks:00}.png"), System.Drawing.Imaging.ImageFormat.Png);
+            }
+            return;
+        }
+        if (args.Length == 2 && args[0] is "--combat-motion" or "--formation" or "--wounds" or "--dodge")
+        {
+            Directory.CreateDirectory(args[1]);
+            using var form = new MainGameForm(Path.Combine(args[1], "qa-saves"), true) { Opacity = 0, ShowInTaskbar = false };
+            form.Show();
+            var player = new PlayerCharacter("Gezgin", Gender.Female, RaceCatalog.Find("elf"), ClassCatalog.FindSubclass("champion"),
+                BackgroundCatalog.Create(BackgroundCatalog.DefaultPath()), new CharacterStats());
+            var session = new GameSession(player);
+            form.UseSessionForQa(session);
+            if (args[0] == "--dodge")
+            {
+                form.ShowCombat(session.Map.Tiles.Values.First(x => x.IsDangerous && x.Coordinate.DistanceTo(default) <= 2), new DiceRoller(new Random(31)));
+                ((CombatScreen)form.CurrentScreen!).CheckDodge(name => Capture(form, args[1], name));
+            }
+            if (args[0] is "--formation" or "--wounds" or "--dodge")
+            {
+                player.AddExperience(10000);
+                var tile = session.Map.Tiles.Values.Where(x => x.IsDangerous && !x.IsLocked && x.Coordinate != HexMap.EyeTower
+                    && x.Coordinate.DistanceTo(default) >= 5 && Math.Abs(x.Coordinate.Q * 31 + x.Coordinate.R * 17) % 6 is 2 or 4)
+                    .OrderByDescending(x => x.Biome is Biome.Forest or Biome.Plains or Biome.Tropical).First();
+                form.ShowCombat(tile, new DiceRoller(new Random(31)));
+                var screen = (CombatScreen)form.CurrentScreen!;
+                void SaveFrame(string name) => Capture(form, args[1], name);
+                if (args[0] == "--dodge") screen.CheckDodge(SaveFrame);
+                else if (args[0] == "--wounds") screen.CheckWounds(SaveFrame);
+                else screen.CheckFormation(SaveFrame);
+                return;
+            }
+            form.ShowCombat(session.Map.Tiles.Values.First(x => x.IsDangerous && x.Coordinate.DistanceTo(default) <= 2));
+            ((CombatScreen)form.CurrentScreen!).CaptureWeaponMotion(name => Capture(form, args[1], name));
+            return;
+        }
         if (args.Length == 2 && args[0] is "--screenshots" or "--screenshots-large")
         {
             CombatAudio.SuppressPlayback = true;
@@ -73,11 +122,20 @@ internal static class Program
         Capture(form, folder, "12-harita");
         ((MapScreen)form.CurrentScreen!).ShowGridForQa();
         Capture(form, folder, "12b-harita-hex-acik");
+        form.ToggleFullscreen();
+        ((MapScreen)form.CurrentScreen!).CheckProvinceForQa(-1);
+        Capture(form, folder, "12d-bati-tam-ekran");
+        ((MapScreen)form.CurrentScreen!).CheckProvinceForQa(1);
+        Capture(form, folder, "12e-dogu-tam-ekran");
+        form.ToggleFullscreen();
+        form.ShowMap();
         ((MapScreen)form.CurrentScreen!).OpenLocationForQa(new CastleLocation("qa-castle", "Kızılburç Kalesi"));
         Capture(form, folder, "12c-yerlesim-giris-penceresi");
 
         form.ShowInventory();
-        ((InventoryScreen)form.CurrentScreen!).SelectFirstForQa();
+        Item qaLoot = LootGenerator.Create(ItemRarity.Epic, 8);
+        session.Player.Inventory.Add(qaLoot);
+        ((InventoryScreen)form.CurrentScreen!).SelectItemForQa(qaLoot);
         Capture(form, folder, "13-envanter");
         form.ShowCharacterRecord();
         Capture(form, folder, "14-karakter-kaydi");
@@ -99,7 +157,7 @@ internal static class Program
         form.ShowGuardDialogue(castle, LocationService.WarRoom);
         Capture(form, folder, "18e-muhafiz-konusmasi");
 
-        HexTile danger = session.Map.Tiles.Values.First(x => x.IsDangerous);
+        HexTile danger = session.Map.Tiles.Values.First(x => x.IsDangerous && x.Coordinate.DistanceTo(default) <= 2);
         form.ShowCombat(danger);
         Capture(form, folder, "19-savas");
         ((CombatScreen)form.CurrentScreen!).OpenAttackForQa();
@@ -110,6 +168,10 @@ internal static class Program
         Capture(form, folder, "20b-zar-sonucu");
         ((CombatScreen)form.CurrentScreen!).ShowImpactForQa();
         Capture(form, folder, "20c-vurus-hissi");
+        ((CombatScreen)form.CurrentScreen!).ShowStatusesForQa();
+        Capture(form, folder, "20d-durum-ve-niyet");
+        ((CombatScreen)form.CurrentScreen!).ShowLootVictoryForQa();
+        Capture(form, folder, "20e-nadir-ganimet");
         form.ShowDeath("QA karşılaşması");
         Capture(form, folder, "21-olum");
 

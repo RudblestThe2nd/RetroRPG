@@ -70,6 +70,7 @@ internal sealed class MainMenuScreen : GameScreen
     protected override void Draw(Graphics g)
     {
         UiTheme.DrawImage(g, Images.Get(AssetPath("ui.main-menu.background.wood-red-v1")), CanvasRectangle);
+        UiTheme.DrawPanel(g, Images, PanelStyle.StoneWood, new Rectangle(276, 190, 248, 484));
         UiTheme.DrawTextCentered(g, "ANA MENÜ", UiTheme.Title, UiTheme.Gold, new Rectangle(274, 204, 240, 42));
         Rectangle selected = _menu[_selected].Bounds;
         int y = selected.Y + selected.Height / 2;

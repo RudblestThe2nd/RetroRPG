@@ -11,7 +11,7 @@ public sealed class FatebreakerArmor : Armor
     public const string ItemName = "Kaderbozan Zırhı";
 
     public FatebreakerArmor(int lastStandCharges = 1)
-        : base(ItemName, 0, 6, 1, EquipmentSlot.StoryLayer)
+        : base(ItemName, 0, 6, 1, EquipmentSlot.StoryLayer, ItemRarity.Legendary)
     {
         LastStandCharges = Math.Clamp(lastStandCharges, 0, 1);
     }

@@ -9,10 +9,10 @@ internal enum PanelStyle { PurpleHeader, Stone, StoneWood, GoldFrame }
 // Ortak renkler, yazı tipleri ve çizim yardımcıları. Çerçeveler ui/assets/frames içindeki gerçek görsellerdir.
 internal static class UiTheme
 {
-    public static readonly Color Background = Color.FromArgb(16, 13, 22);
-    public static readonly Color Gold = Color.FromArgb(240, 200, 120);
-    public static readonly Color Text = Color.FromArgb(242, 230, 205);
-    public static readonly Color Muted = Color.FromArgb(160, 150, 170);
+    public static readonly Color Background = Color.FromArgb(30, 29, 28);
+    public static readonly Color Gold = Color.FromArgb(230, 181, 128);
+    public static readonly Color Text = Color.FromArgb(243, 226, 201);
+    public static readonly Color Muted = Color.FromArgb(179, 164, 148);
     public static readonly Color Danger = Color.FromArgb(214, 54, 54);
     public static readonly Color Success = Color.FromArgb(92, 200, 110);
     public static readonly Color Ink = Color.FromArgb(18, 16, 20);
@@ -135,22 +135,38 @@ internal static class UiTheme
     private static bool Fits(Graphics g, string text, Font font, Rectangle area, StringFormat format) =>
         g.MeasureString(text, font, area.Width, format).Height <= area.Height;
 
-    // Çerçeveyi dokuz parçaya bölerek çizer; köşeler bozulmadan panel istenen boyuta uzar.
     public static void DrawPanel(Graphics g, UiImages images, PanelStyle style, Rectangle dest)
     {
-        (string path, int left, int top, int right, int bottom) = style switch
+        DrawFrame(g, dest, style == PanelStyle.StoneWood ? Color.FromArgb(45, 36, 31) : Background,
+            Color.FromArgb(156, 108, 74), style != PanelStyle.Stone);
+    }
+
+    // Tek ve çift piksel basamakları çerçevenin boyutundan bağımsız kalır.
+    private static void DrawFrame(Graphics g, Rectangle area, Color fill, Color edge, bool ornament)
+    {
+        int l = area.Left, r = area.Right - 1, t = area.Top, b = area.Bottom - 1;
+        Point[] corners = [new(l + 4,t), new(r - 4,t), new(r,t + 4), new(r,b - 4),
+            new(r - 4,b), new(l + 4,b), new(l,b - 4), new(l,t + 4)];
+        using var surface = new SolidBrush(fill);
+        using var bronze = new Pen(edge);
+        using var bevel = new Pen(Color.FromArgb(88, 63, 51));
+        using var glint = new SolidBrush(ControlPaint.Light(edge));
+        g.FillPolygon(surface, corners);
+        g.DrawPolygon(bronze, corners);
+        g.DrawRectangle(bevel, l + 3, t + 3, area.Width - 7, area.Height - 7);
+        foreach (int x in new[] { l + 4, r - 5 })
+            foreach (int y in new[] { t + 4, b - 5 })
+                g.FillRectangle(glint, x, y, 2, 2);
+        if (!ornament || area.Width < 120 || area.Height < 36) return;
+        int mid = (l + r) / 2;
+        for (int hand = -1; hand <= 1; hand += 2)
         {
-            PanelStyle.PurpleHeader => ("ui/assets/frames/panels/panel-purple-header.png", 30, 62, 30, 30),
-            PanelStyle.StoneWood => ("ui/assets/frames/panels/panel-wide-stone-wood.png", 34, 30, 34, 36),
-            PanelStyle.GoldFrame => ("ui/assets/frames/tooltips/tooltip-black-gold-small.png", 14, 14, 14, 14),
-            _ => ("ui/assets/frames/panels/panel-square-stone.png", 30, 30, 30, 30)
-        };
-        if (images.Get(path, trim: true) is not Image image)
-        {
-            DrawMissingBox(g, dest);
-            return;
+            Point[] scroll = [new(mid,t + 7), new(mid + hand * 4,t + 3), new(mid + hand * 8,t + 6),
+                new(mid + hand * 12,t + 2), new(mid + hand * 20,t + 2), new(mid + hand * 23,t + 4),
+                new(mid + hand * 31,t + 4)];
+            g.DrawLines(bronze, scroll);
+            g.FillRectangle(glint, mid + hand * 13, t + 1, 3, 1);
         }
-        DrawNineSlice(g, image, dest, left, top, right, bottom);
     }
 
     public static void DrawNineSlice(Graphics g, Image image, Rectangle dest, int left, int top, int right, int bottom)
@@ -194,7 +210,7 @@ internal static class UiTheme
     }
 
     // Eski, daha yumuşak karakter karelerini sahnede iki kat piksel ızgarasına oturtur.
-    public static void DrawPixelatedSprite(Graphics g, Image? image, Rectangle area, int pixelScale = 2)
+    public static void DrawPixelatedSprite(Graphics g, Image? image, Rectangle area, int pixelScale = 2, BattleWounds wounds = default)
     {
         if (image is null)
         {
@@ -214,6 +230,7 @@ internal static class UiTheme
             buffer.DrawImage(image, new Rectangle(0, 0, lowWidth, lowHeight));
         }
 
+        int top = low.Height, bottom = -1;
         for (int y = 0; y < low.Height; y++)
             for (int x = 0; x < low.Width; x++)
             {
@@ -226,8 +243,20 @@ internal static class UiTheme
                 int r = color.R / 16 * 16;
                 int green = color.G / 16 * 16;
                 int b = color.B / 16 * 16;
+                if (wounds.Stage > 0)
+                {
+                    top = Math.Min(top, y);
+                    bottom = y;
+                }
+                if (wounds.Flash > 0)
+                {
+                    r += (240 - r) * wounds.Flash / 4;
+                    green += (16 - green) * wounds.Flash / 4;
+                    b += (24 - b) * wounds.Flash / 4;
+                }
                 low.SetPixel(x, y, Color.FromArgb(255, r, green, b));
             }
+        wounds.DrawMarks(low, top, bottom);
 
         InterpolationMode previous = g.InterpolationMode;
         g.InterpolationMode = InterpolationMode.NearestNeighbor;
@@ -237,13 +266,19 @@ internal static class UiTheme
 
     public static void DrawBar(Graphics g, Rectangle area, int value, int max, Color fill)
     {
-        using var back = new SolidBrush(Color.FromArgb(40, 34, 38));
+        using var back = new SolidBrush(Color.FromArgb(36, 29, 27));
         using var front = new SolidBrush(fill);
-        using var border = new Pen(Color.FromArgb(120, 100, 70), 2);
+        using var light = new Pen(ControlPaint.Light(fill));
+        using var border = new Pen(Gold);
         g.FillRectangle(back, area);
-        int width = max <= 0 ? 0 : area.Width * Math.Clamp(value, 0, max) / max;
-        g.FillRectangle(front, area.X, area.Y, width, area.Height);
-        g.DrawRectangle(border, area);
+        var inner = Rectangle.Inflate(area, -2, -2);
+        int width = max <= 0 ? 0 : inner.Width * Math.Clamp(value, 0, max) / max;
+        if (width > 0)
+        {
+            g.FillRectangle(front, inner.X, inner.Y, width, inner.Height);
+            g.DrawLine(light, inner.Left, inner.Top, inner.Left + width - 1, inner.Top);
+        }
+        g.DrawRectangle(border, area.X, area.Y, area.Width - 1, area.Height - 1);
     }
 
     public static void DrawDiceQuestion(Graphics g, Rectangle area)
@@ -276,7 +311,16 @@ internal static class UiTheme
         PixelButtonState state = button.State;
         if (button.Skin is not null)
         {
-            DrawImage(g, images.Get(button.Skin + PixelButton.StateSuffix(state), trim: true), button.Bounds);
+            Color fill = state switch
+            {
+                PixelButtonState.Hover => Color.FromArgb(81, 53, 37),
+                PixelButtonState.Pressed => Color.FromArgb(49, 31, 24),
+                PixelButtonState.Disabled => Color.FromArgb(37, 35, 33),
+                _ => Color.FromArgb(56, 42, 34)
+            };
+            Color edge = state == PixelButtonState.Disabled ? Color.FromArgb(96, 82, 69)
+                : state == PixelButtonState.Normal ? Color.FromArgb(163, 116, 82) : Gold;
+            DrawFrame(g, button.Bounds, fill, edge, state is PixelButtonState.Hover or PixelButtonState.Pressed);
         }
         else if (button.Icon is not null)
         {

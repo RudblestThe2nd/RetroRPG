@@ -142,12 +142,8 @@ internal sealed class EncounterScreen : GameScreen
         UiTheme.Shade(g, CanvasRectangle, 165);
         UiTheme.DrawImage(g, Images.Get("assets/final-production-v5/ui/modals/runtime-800/dice-result-panel-v1.png"),
             new Rectangle(170, 115, 460, 570));
-        bool reveal = _ticks <= 6;
-        string die = reveal ? "assets/final-production-v2/combat/dice/runtime-256/d20-icon-v1.png"
-            : $"assets/final-production-v2/combat/dice/d20-roll-v1/d20-roll-{_ticks % 8:00}-v1.png";
-        UiTheme.DrawImageFit(g, Images.Get(die), new Rectangle(300, 245, 200, 200));
-        if (reveal) UiTheme.DrawDiceValue(g, new Rectangle(340, 310, 120, 70), _roll.RawValue);
-        else UiTheme.DrawDiceQuestion(g, new Rectangle(340, 310, 120, 70));
+        bool reveal = RollingD20.Landed(_ticks);
+        RollingD20.Draw(g, new(300, 245, 200, 200), _roll.RawValue, _ticks, 24);
         UiTheme.DrawTextCentered(g, reveal ? $"TOPLAM {_roll.Total} / ZORLUK {_selectedChoice!.Difficulty}" : "ZAR ATILIYOR...", UiTheme.Heading,
             reveal ? UiTheme.Success : UiTheme.Gold, new Rectangle(245, 468, 310, 45));
     }

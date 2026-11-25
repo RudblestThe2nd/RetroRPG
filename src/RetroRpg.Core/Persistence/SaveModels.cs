@@ -7,7 +7,8 @@ namespace RetroRpg.Core.Persistence;
 // Kaderbozan Zırhı'nda kalan son direniş hakkı.
 public sealed record ItemSaveData(
     string Kind, string Name, int Value, double Weight,
-    string? AssetId = null, int Amount = 0, EquipmentSlot? Slot = null, string? QuestKey = null, bool Equipped = false);
+    string? AssetId = null, int Amount = 0, EquipmentSlot? Slot = null, string? QuestKey = null, bool Equipped = false,
+    ItemRarity Rarity = ItemRarity.Common, int Bonus = 0, string? EffectId = null);
 
 // Items, sürüm 1 kayıtlarında yoktur ve null okunur.
 public sealed record CharacterSaveData(

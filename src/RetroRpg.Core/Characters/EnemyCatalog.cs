@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using RetroRpg.Core.Assets;
+using RetroRpg.Core.Combat;
 using RetroRpg.Core.Common;
 using RetroRpg.Core.Items;
 
@@ -65,7 +66,8 @@ public sealed class EnemyCatalog
         string visualAssetId = $"enemy.{enemy.Biome.ToString().ToLowerInvariant()}.{enemy.Id}";
         return new BiomeEnemyNpc(enemy.Name, visualAssetId, health, armorClass, characterClass, gold, enemy.Biome)
         {
-            Weapon = new Weapon("natural-attack", "Doğal Saldırı", 0, 0, damageDie)
+            Weapon = new Weapon("natural-attack", "Doğal Saldırı", 0, 0, damageDie),
+            Behavior = EnemyBehaviorCatalog.For(enemy)
         };
     }
 }

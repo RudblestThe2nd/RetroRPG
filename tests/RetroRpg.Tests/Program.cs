@@ -33,6 +33,7 @@ internal static class Program
         Run("Natural 1 kesin başarısızlık", NaturalOneAlwaysMisses);
         Run("Saldırı hasarı uygular", AttackDealsDamage);
         Run("Hex yalnızca komşuya hareket eder", HexMovementUsesNeighbors);
+        Run("Merkez haritadaki 180 biyom yerini korur", OriginalBiomesStayInPlace);
         Run("Harita tamamen açık ve rota bulur", OpenMapFindsWalkingRoute);
         Run("Irk ve sınıf kalıtımı çalışır", InheritanceCatalogsWork);
         Run("Eşya yuvası doğrulanır", EquipmentSlotsAreValidated);
@@ -49,8 +50,13 @@ internal static class Program
         Run("XP seviye ve can artışı sağlar", ExperienceRaisesLevel);
         Run("24 alt sınıf aktif sınıf gücü taşır", EverySubclassHasClassPower);
         Run("Seviye ve sınıf gücü kayıtta korunur", ProgressionSaveRoundTrip);
+        Run("Sekiz durum etkisi ortak kalıtımla çalışır", StatusEffectsWork);
+        Run("Silah türleri farklı teknikler uygular", WeaponTechniquesWork);
+        Run("Düşman davranışları farklı hamle seçer", EnemyBehaviorsWork);
+        Run("Nadir ganimet kayıt ve yüklemede korunur", LootRaritySaveRoundTrip);
         Run("Smoke: oluştur, yürü, savaş, kaydet, yükle", SmokeFlowWorks);
         Run("Düşman ve hex karo görselleri çözülür", EnemyAndTileAssetsResolve);
+        Run("Her savaş karakterinin üç yaralı pozu vardır", WoundedPosesCoverCombatRoster);
         Run("Geçmiş yolu yedi aşamayı ve kaydı korur", BackgroundPathHasSevenStages);
         Run("50 savaş dışı encounter ve görselleri hazır", EncounterCatalogIsComplete);
         Run("Yerleşimler ortak sınıftan türer ve hizmet taşır", LocationInheritanceWorks);
@@ -80,7 +86,7 @@ internal static class Program
         Run("Kaderbozan göğüs ekipmanını kaybettirmez", FatebreakerKeepsChestArmor);
         Run("Kaderbozan ikinci Kaderin Hükmü'nü engeller", FatebreakerBlocksSecondFateStrike);
         Run("İkinci Vaelor savaşı kazanılabilir ve normal ölüm kullanır", SecondVaelorFightIsWinnableWithNormalDeath);
-        Run("Sürüm 1-3 kayıtları sürüm 4 modeline yüklenir", OldSavesLoadIntoVersionFour);
+        Run("Sürüm 1-4 kayıtları sürüm 5 modeline yüklenir", OldSavesLoadIntoVersionFive);
         Run("Kayıt/yükleme tek-seferlik olayları tekrarlamaz", SaveLoadDoesNotRepeatOneShotEvents);
         Run("Dört final belirlenmiş durumlarla açılır", AllFourEndingsAreReachable);
         Run("Paylaştırma finali uzlaşma ve güven ister", ShareEndingRequiresCompromiseAndTrust);
@@ -128,9 +134,42 @@ internal static class Program
         Assert(!session.TryMove(new HexCoordinate(3, 0)), "Uzak hexe tek adımda yürünmemelidir.");
     }
 
+    private static void OriginalBiomesStayInPlace()
+    {
+        // One row per original map row, west to east, captured before the expansion.
+        string[] rows =
+        [
+            "Corrupted Corrupted Corrupted Volcanic Volcanic Volcanic Volcanic Volcanic Mountain Mountain Snow Snow Snow Snow Snow",
+            "Corrupted Corrupted Corrupted Volcanic Volcanic Volcanic Volcanic Volcanic Mountain Mountain Snow Snow Snow Snow Snow",
+            "Corrupted Corrupted Corrupted Volcanic Volcanic Volcanic Volcanic Volcanic Mountain Mountain Mountain Snow Snow Snow Snow",
+            "Corrupted Swamp Swamp Swamp Volcanic Volcanic Plains Mountain Mountain Mountain Mountain Mountain Snow Snow Snow",
+            "Underground Swamp Swamp Swamp Swamp Forest Forest Plains Plains Mountain Mountain Mountain Mountain Snow Snow",
+            "Underground Swamp Swamp Swamp Forest Forest Forest Plains Plains Plains Mountain Mountain Desert Desert Desert",
+            "Underground Underground Swamp Swamp Forest Forest Forest Plains Plains Plains Plains Plains Desert Desert Desert",
+            "Underground Swamp Swamp Swamp Forest Forest Forest Plains Plains Plains Desert Desert Desert Desert Desert",
+            "Underground Underground Swamp Swamp Forest Forest Forest Plains Plains Plains Desert Desert Desert Desert Desert",
+            "Underground Underground Swamp Forest Forest Forest Plains Plains Tropical Tropical Desert Desert Desert Desert Desert",
+            "Underground Underground Underground Forest Forest Forest Plains Tropical Tropical Tropical Tropical Desert Desert Desert Desert",
+            "Underground Underground Underground Forest Forest Tropical Tropical Tropical Tropical Tropical Tropical Tropical Desert Desert Desert",
+        ];
+        HexMap map = HexMap.CreateDemoMap();
+        for (int row = 0; row < rows.Length; row++)
+        {
+            int r = row - 6;
+            string[] biomes = rows[row].Split(' ');
+            for (int col = 0; col < biomes.Length; col++)
+            {
+                var coordinate = new HexCoordinate(col - 7 - (int)Math.Floor(r / 2d), r);
+                Assert(map.Get(coordinate)?.Biome.ToString() == biomes[col], $"Eski biyom değişti: {coordinate}");
+            }
+        }
+    }
+
     private static void OpenMapFindsWalkingRoute()
     {
         HexMap map = HexMap.CreateDemoMap();
+        Assert(map.Tiles.Count == 540, "Üç bölge 540 hex içermelidir.");
+        Assert(map.FindPath(new(-22,0), new(22,0)).Count >= 45, "Batı ve doğu uçları bağlı olmalıdır.");
         Assert(map.Tiles.Values.All(x => x.Discovery == DiscoveryState.Discovered), "Fog of war kaldırılmalı; bütün hexler açık olmalıdır.");
 
         var start = new HexCoordinate(0, 0);
@@ -217,6 +256,73 @@ internal static class Program
         Assert(player.PowerPoints == player.MaxPowerPoints, "Uzun dinlenme sınıf gücünü yenilemelidir.");
     }
 
+    private static void StatusEffectsWork()
+    {
+        StatusEffect[] effects =
+        [
+            new PoisonEffect(), new BleedingEffect(), new BurningEffect(), new StunEffect(),
+            new FrozenEffect(), new ArmorBreakEffect(), new BlessingEffect(), new CurseEffect()
+        ];
+        Assert(effects.Length == 8 && effects.All(x => x is StatusEffect), "Sekiz etkinin tamamı StatusEffect tabanından gelmelidir.");
+        Assert(effects.OfType<DamageStatusEffect>().Count() == 3, "Zehir, kanama ve yanma hasar ailesinde olmalıdır.");
+        Assert(effects.OfType<ControlStatusEffect>().Count() == 2, "Sersemleme ve donma kontrol ailesinde olmalıdır.");
+        Assert(effects.OfType<StatStatusEffect>().Count() == 3, "Zırh kırma, kutsama ve lanet stat ailesinde olmalıdır.");
+
+        PlayerCharacter player = Player("Durum Hedefi");
+        player.StatusEffects.Add(new PoisonEffect());
+        player.StatusEffects.Add(new StunEffect());
+        int before = player.Health;
+        IReadOnlyList<StatusTurnResult> results = player.StatusEffects.AdvanceTurn(player);
+        Assert(player.Health == before - 2, "Zehir tur başında 2 hasar vermelidir.");
+        Assert(results.Any(x => x.SkipsTurn), "Sersemleme bir turu engellemelidir.");
+        Assert(!player.StatusEffects.Has<StunEffect>() && player.StatusEffects.Has<PoisonEffect>(), "Süreleri farklı etkiler ayrı ayrı bitmelidir.");
+
+        new Consumable("Panzehir", 8, 0.2, 0, curesStatusId: "poison").Use(player);
+        Assert(!player.StatusEffects.Has<PoisonEffect>(), "Panzehir zehir durumunu temizlemelidir.");
+    }
+
+    private static void WeaponTechniquesWork()
+    {
+        var dagger = new Weapon("dagger", "Hançer", 8, 1, 4);
+        var rapier = new Weapon("rapier", "İnce Kılıç", 20, 2, 8);
+        var hammer = new Weapon("warhammer", "Savaş Çekici", 18, 5, 8);
+        var crossbow = new Weapon("light-crossbow", "Hafif Arbalet", 25, 5, 8);
+        var greatsword = new Weapon("greatsword", "Büyük Kılıç", 30, 7, 12);
+        Assert(new AttackRoll(19, 0, 30, dagger.CriticalThreshold).IsCritical, "Hançer 19 zarında kritik vurmalıdır.");
+        Assert(rapier.Technique.EffectOnHit(new AttackRoll(17, 0, 10)) is BleedingEffect, "İnce kılıç kanama uygulamalıdır.");
+        Assert(hammer.Technique.EffectOnHit(new AttackRoll(15, 0, 10)) is ArmorBreakEffect, "Çekiç zırh kırmalıdır.");
+        Assert(crossbow.AttackBonus == 2 && crossbow.DamageBonus == -1, "Menzilli silah isabet karşılığında hasardan vazgeçmelidir.");
+        Assert(greatsword.AttackBonus == -1 && greatsword.DamageBonus == 2, "Büyük kılıç ağır darbe tekniğini kullanmalıdır.");
+    }
+
+    private static void EnemyBehaviorsWork()
+    {
+        PlayerCharacter target = Player("Hedef");
+        var enemy = new BiomeEnemyNpc("Goblin", "enemy.test", 12, 10, new FighterClass(), 3, Biome.Forest);
+        enemy.ReceiveDamage(10);
+        Assert(new CowardlyBehavior().Choose(enemy, target, 2).Kind == EnemyActionKind.Flee, "Yaralı korkak düşman kaçmalıdır.");
+        Assert(new GuardianBehavior().Choose(enemy, target, 1).Kind == EnemyActionKind.Guard, "Muhafız ilk döngüde siper almalıdır.");
+        Assert(new CasterBehavior(Biome.Volcanic).Choose(enemy, target, 2).EffectOnHit?.Invoke() is BurningEffect,
+            "Volkanik büyücü yanma uygulamalıdır.");
+        target.ReceiveDamage(target.Health / 2 + 1);
+        Assert(new PredatorBehavior().Choose(enemy, target, 2).AttackAdjustment > 0, "Avcı yaralı hedefe daha isabetli saldırmalıdır.");
+    }
+
+    private static void LootRaritySaveRoundTrip()
+    {
+        PlayerCharacter player = Player("Ganimetçi");
+        Item loot = LootGenerator.Create(ItemRarity.Epic, 8);
+        player.Inventory.Add(loot);
+        if (loot is Weapon weapon) player.Equipment.Equip(weapon, weapon.Slot);
+        GameSession loaded = GameSession.FromSaveData(JsonRoundTrip(new GameSession(player).ToSaveData()));
+        Item restored = loaded.Player.Inventory.Items.First(x => x.Name == loot.Name);
+        Assert(restored.Rarity == ItemRarity.Epic, "Nadirlik kayıtta korunmalıdır.");
+        if (loot is Weapon original && restored is Weapon copy)
+            Assert(copy.EnhancementBonus == original.EnhancementBonus, "Silah geliştirme bonusu kayıtta korunmalıdır.");
+        Assert(Enum.GetValues<ItemRarity>().All(x => LootGenerator.Create(x, (int)x + 10).Rarity == x),
+            "Beş nadirlik seviyesinin tamamı üretilebilmelidir.");
+    }
+
     private static void ProgressionSaveRoundTrip()
     {
         PlayerCharacter player = Player("Tecrübeli");
@@ -295,6 +401,33 @@ internal static class Program
         Assert(loaded.Equipment.Get(EquipmentSlot.MainHand) is Weapon { AssetId: "greatsword" },
             "Eşyasız eski kayıt sınıfın başlangıç silahını almalıdır.");
         Assert(loaded.Inventory.Find<Consumable>() is not null, "Eşyasız eski kayıt iksir almalıdır.");
+    }
+
+    private static void WoundedPosesCoverCombatRoster()
+    {
+        string folder = Path.Combine("characters", "wounded-poses-v1");
+        var hands = JsonNode.Parse(File.ReadAllText(Path.Combine(folder, "weapon-hands.json")))!;
+        var ids = new HashSet<string>();
+        foreach (var race in RaceCatalog.All)
+        foreach (var gender in Enum.GetValues<Gender>())
+        {
+            string id = $"{race.Id}-{gender.ToString().ToLowerInvariant()}";
+            ids.Add(id);
+            Assert(hands[id] is JsonArray { Count: 3 }, $"{id} el ankrajları eksik.");
+            foreach (var point in hands[id]!.AsArray())
+                Assert((int)point!["X"]! is >= 4 and <= 249 && (int)point["Y"]! is >= 4 and <= 249, $"{id} el ankrajı sınır dışında.");
+        }
+        var catalog = EnemyCatalog.Load(Path.Combine("Content", "definitions", "enemies-v1.json"));
+        foreach (var enemy in catalog.Enemies)
+            ids.Add($"{enemy.Biome.ToString().ToLowerInvariant()}-{enemy.Id}");
+        foreach (var battle in StoryCatalog.All.OfType<CombatStoryEvent>())
+            ids.Add(Path.GetFileNameWithoutExtension(battle.EnemySprite).Replace("-idle-v1", ""));
+        foreach (string id in ids)
+        for (int stage = 1; stage <= 3; stage++)
+        {
+            string path = Path.Combine(folder, $"{id}-injured-{stage}.png");
+            Assert(File.Exists(path) && PngSize(path) == (256, 256), $"Yaralı kare eksik veya ölçüsü yanlış: {path}");
+        }
     }
 
     private static void EnemyAndTileAssetsResolve()
@@ -821,14 +954,14 @@ internal static class Program
             "Gerçek savaşta ölüm ölüm ekranını açmalı ve autosave final savaşından devam etmelidir.");
     }
 
-    private static void OldSavesLoadIntoVersionFour()
+    private static void OldSavesLoadIntoVersionFive()
     {
         string directory = Path.Combine(Path.GetTempPath(), "retro-rpg-test-" + Guid.NewGuid().ToString("N"));
         try
         {
             var saves = new SaveGameService(directory);
             GameSaveData current = new GameSession(Player("Eski")).ToSaveData();
-            foreach (int version in new[] { 1, 2, 3 })
+            foreach (int version in new[] { 1, 2, 3, 4 })
             {
                 GameSaveData old = current with
                 {
@@ -841,6 +974,9 @@ internal static class Program
                 json["Character"]!.AsObject().Remove("Level");
                 json["Character"]!.AsObject().Remove("Experience");
                 json["Character"]!.AsObject().Remove("PowerPoints");
+                if (json["Character"]!["Items"] is JsonArray oldItems)
+                    foreach (JsonNode? node in oldItems)
+                        if (node is JsonObject item) { item.Remove("Rarity"); item.Remove("Bonus"); }
                 Directory.CreateDirectory(directory);
                 File.WriteAllText(Path.Combine(directory, "slot-1.json"), json.ToJsonString());
 
@@ -851,7 +987,7 @@ internal static class Program
                         $"Sürüm {version} kaydı güvenli hikâye varsayılanlarıyla açılmalıdır.");
                     Assert(StoryDirector.ResumeEvent(loaded)?.Id == StoryCatalog.PrologueId, $"Sürüm {version} kaydı prologdan başlamalıdır.");
                 }
-                Assert(loaded.ToSaveData() is { Version: 4, Story: not null }, "Yeni kayıt sürüm 4 olmalıdır.");
+                Assert(loaded.ToSaveData() is { Version: 5, Story: not null }, "Yeni kayıt sürüm 5 olmalıdır.");
                 Assert(loaded.Player is { Level: 1, Experience: 0 } && loaded.Player.PowerPoints == loaded.Player.MaxPowerPoints,
                     $"Sürüm {version} kaydı güvenli gelişim varsayılanlarıyla açılmalıdır.");
                 Assert(loaded.Player.Equipment.Get(EquipmentSlot.MainHand) is Weapon, $"Sürüm {version} kaydı silahı korumalı veya başlangıç paketi almalıdır.");

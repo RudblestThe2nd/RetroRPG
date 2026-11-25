@@ -1,4 +1,5 @@
 using System.Media;
+using System.IO;
 
 namespace RetroRpg.Game;
 
@@ -9,11 +10,27 @@ internal enum CombatSound { Dice, Swing, Hit, Critical, Miss, Block, Heal, Victo
 internal static class CombatAudio
 {
     private const int SampleRate = 11_025;
+    public static int Volume { get; private set; } = 75;
     private static readonly List<MemoryStream> Streams = [];
-    private static readonly Dictionary<CombatSound, SoundPlayer> Players = CreatePlayers();
+    private static Dictionary<CombatSound, SoundPlayer> Players = CreatePlayers();
 
-    public static bool Enabled { get; set; } = true;
+    public static bool Enabled
+    {
+        get => Volume > 0;
+        set => SetVolume(value ? 75 : 0);
+    }
     internal static bool SuppressPlayback { get; set; }
+
+    public static void SetVolume(int volume)
+    {
+        volume = Math.Clamp(volume, 0, 100);
+        if (Volume == volume) return;
+        Volume = volume;
+        foreach (SoundPlayer player in Players.Values) player.Dispose();
+        foreach (MemoryStream stream in Streams) stream.Dispose();
+        Streams.Clear();
+        Players = CreatePlayers();
+    }
 
     public static void Play(CombatSound sound)
     {
@@ -58,7 +75,7 @@ internal static class CombatAudio
             double progress = i / (double)Math.Max(1, count - 1);
             double envelope = Math.Pow(1 - progress, sound is CombatSound.Heal or CombatSound.Victory ? 0.45 : 1.8);
             double value = Sample(sound, t, progress) * envelope;
-            samples[i] = (short)(Math.Clamp(value, -1, 1) * short.MaxValue * 0.34);
+            samples[i] = (short)(Math.Clamp(value, -1, 1) * short.MaxValue * 0.34 * Volume / 100d);
         }
 
         using var output = new MemoryStream();

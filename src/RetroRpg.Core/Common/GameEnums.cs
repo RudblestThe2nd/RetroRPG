@@ -9,3 +9,4 @@ public enum CharacterAnimation { Idle, Walk, Attack, Cast, Defend, Hit, Death, T
 public enum EquipmentSlot { Head, Torso, Feet, Cloak, Accessory, MainHand, OffHand, Back, StoryLayer }
 public enum QuestStatus { NotStarted, Active, Completed, Failed }
 public enum SceneKind { MainMenu, CharacterCreation, Map, Travel, Combat, Camp, Inventory }
+public enum ItemRarity { Common, Uncommon, Rare, Epic, Legendary }

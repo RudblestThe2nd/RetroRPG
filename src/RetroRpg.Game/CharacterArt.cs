@@ -8,6 +8,8 @@ internal static class CharacterArt
 {
     public const int PortraitCount = 12;
     private static readonly Dictionary<string, CharacterAtlasRuntime?> Runtimes = [];
+    public const string WoundFolder = "characters/wounded-poses-v1";
+    public static string InjuredFrame(string bodyId, int stage) => $"{WoundFolder}/{bodyId}-injured-{stage}.png";
 
     public static string PortraitPath(string raceId, Gender gender, int index)
     {

@@ -18,10 +18,12 @@ public sealed class CombatService(IDiceRoller dice)
         => Attack(attacker, defender, 0, attacker.DamageDie, 0);
 
     public AttackRoll Attack(ICombatant attacker, ICombatant defender, int attackAdjustment,
-        int damageDie, int damageBonusAdjustment = 0)
+        int damageDie, int damageBonusAdjustment = 0, int criticalThreshold = 20)
     {
-        var raw = _dice.RollD20(attacker.AttackBonus + attackAdjustment);
-        var attack = new AttackRoll(raw.RawValue, raw.Bonus, defender.ArmorClass);
+        int attackBonus = attacker.AttackBonus + attacker.StatusEffects.AttackModifier + attackAdjustment;
+        int armorClass = Math.Max(1, defender.ArmorClass + defender.StatusEffects.ArmorModifier);
+        var raw = _dice.RollD20(attackBonus);
+        var attack = new AttackRoll(raw.RawValue, raw.Bonus, armorClass, criticalThreshold);
         _log.Add(new CombatLogEntry(
             $"{attacker.Name}: d20 {attack.RawValue} + {attack.Bonus} = {attack.Total} / AC {attack.TargetArmorClass}",
             attack.RawValue, attack.Bonus, attack.TargetArmorClass, attack.IsHit));
@@ -29,7 +31,7 @@ public sealed class CombatService(IDiceRoller dice)
         if (attack.IsHit)
         {
             DamageResult damage = new(_dice.Roll(Math.Max(2, damageDie)),
-                Math.Max(0, attacker.DamageBonus + damageBonusAdjustment), attack.IsCritical);
+                Math.Max(0, attacker.DamageBonus + attacker.StatusEffects.DamageModifier + damageBonusAdjustment), attack.IsCritical);
             defender.ReceiveDamage(damage.Total);
             _log.Add(new CombatLogEntry($"Hasar: {damage.Total}", damage.DieValue, damage.Bonus, 0, true));
         }

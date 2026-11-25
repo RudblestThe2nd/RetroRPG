@@ -1,10 +1,11 @@
 namespace RetroRpg.Game.Screens;
 
-// Pencere ölçeği, tam ekran ve savaş sesi tek yerde tutulur. F11 her ekrandan çalışır.
+// Pencere ölçeği, tam ekran, müzik/ortam ve efekt sesi tek yerde tutulur. F11 her ekrandan çalışır.
 internal sealed class SettingsScreen : GameScreen
 {
     private readonly PixelButton _fullscreenButton;
     private readonly PixelButton _soundButton;
+    private readonly PixelButton _musicButton;
     private readonly PixelButton _smallerButton;
     private readonly PixelButton _largerButton;
 
@@ -20,17 +21,22 @@ internal sealed class SettingsScreen : GameScreen
             Skin = PixelButton.MedievalLarge,
             Font = UiTheme.Body
         });
-        _fullscreenButton = AddButton(new PixelButton(new Rectangle(270, 380, 260, 62), "", ToggleFullscreen)
+        _fullscreenButton = AddButton(new PixelButton(new Rectangle(270, 368, 260, 58), "", ToggleFullscreen)
         {
             Skin = PixelButton.MedievalLarge,
             Font = UiTheme.Body
         });
-        _soundButton = AddButton(new PixelButton(new Rectangle(270, 458, 260, 62), "", ToggleSound)
+        _musicButton = AddButton(new PixelButton(new Rectangle(270, 438, 260, 58), "", ToggleMusic)
         {
             Skin = PixelButton.MedievalLarge,
             Font = UiTheme.Body
         });
-        AddButton(new PixelButton(new Rectangle(304, 548, 192, 64), "GERİ", () => Host.ShowMainMenu())
+        _soundButton = AddButton(new PixelButton(new Rectangle(270, 508, 260, 58), "", ToggleSound)
+        {
+            Skin = PixelButton.MedievalLarge,
+            Font = UiTheme.Body
+        });
+        AddButton(new PixelButton(new Rectangle(304, 588, 192, 60), "GERİ", () => Host.ShowMainMenu())
         {
             Skin = PixelButton.MedievalLarge,
             Font = UiTheme.Heading
@@ -54,8 +60,15 @@ internal sealed class SettingsScreen : GameScreen
 
     private void ToggleSound()
     {
-        CombatAudio.Enabled = !CombatAudio.Enabled;
-        if (CombatAudio.Enabled) CombatAudio.Play(CombatSound.Hit);
+        Host.CycleEffectsVolume();
+        if (Host.EffectsVolume > 0) CombatAudio.Play(CombatSound.Hit);
+        UpdateLabel();
+        Invalidate();
+    }
+
+    private void ToggleMusic()
+    {
+        Host.CycleMusicVolume();
         UpdateLabel();
         Invalidate();
     }
@@ -65,7 +78,8 @@ internal sealed class SettingsScreen : GameScreen
         _smallerButton.Enabled = Host.CanResizeWindow(-1);
         _largerButton.Enabled = Host.CanResizeWindow(1);
         _fullscreenButton.Text = Host.IsFullscreen ? "TAM EKRAN: AÇIK" : "TAM EKRAN: KAPALI";
-        _soundButton.Text = CombatAudio.Enabled ? "SAVAŞ SESİ: AÇIK" : "SAVAŞ SESİ: KAPALI";
+        _musicButton.Text = $"MÜZİK: %{Host.MusicVolume}";
+        _soundButton.Text = $"EFEKT: %{Host.EffectsVolume}";
     }
 
     public override void HandleKey(Keys key)
@@ -82,6 +96,6 @@ internal sealed class SettingsScreen : GameScreen
         UiTheme.DrawTextCentered(g, $"PENCERE BOYUTU: %{Host.WindowScalePercent}", UiTheme.Body, UiTheme.Text,
             new Rectangle(250, 258, 300, 34));
         UiTheme.DrawTextCentered(g, "CTRL + / -: BOYUT  ·  F11: TAM EKRAN", UiTheme.Small, UiTheme.Text,
-            new Rectangle(220, 650, 360, 34));
+            new Rectangle(220, 678, 360, 30));
     }
 }

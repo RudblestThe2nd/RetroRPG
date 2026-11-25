@@ -102,12 +102,8 @@ internal sealed class GuardDialogueScreen : GameScreen
         int dc = AccessApproachCatalog.Difficulty(_service);
         if (_roll is not null)
         {
-            bool reveal = _ticks <= 5;
-            UiTheme.DrawImageFit(g, Images.Get("assets/final-production-v2/combat/dice/runtime-256/d20-icon-v1.png"), new Rectangle(320, 330, 160, 120));
-            if (reveal || _ticks <= 0)
-                UiTheme.DrawDiceValue(g, new Rectangle(355, 360, 90, 55), _roll.RawValue);
-            else UiTheme.DrawDiceQuestion(g, new Rectangle(355, 360, 90, 55));
-            UiTheme.DrawTextCentered(g, $"d20 {_roll.Bonus:+#;-#;0} · ZORLUK {dc}", UiTheme.Small, UiTheme.Gold, new Rectangle(290, 430, 220, 30));
+            RollingD20.Draw(g, new(320, 320, 160, 120), _roll.RawValue, _ticks, 22);
+        UiTheme.DrawTextCentered(g, $"d20 {_roll.Bonus:+#;-#;0} · ZORLUK {dc}", UiTheme.Small, UiTheme.Gold, new Rectangle(290, 430, 220, 30));
         }
         else if (!_success)
             UiTheme.DrawTextCentered(g, $"İKNA: KARİZMA · GÖZDAĞI: GÜÇ · ZORLUK {dc}", UiTheme.Small, UiTheme.Gold, new Rectangle(190, 400, 420, 30));

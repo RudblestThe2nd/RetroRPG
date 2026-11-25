@@ -1,6 +1,6 @@
 # Retro RPG — Geliştirici Rehberi
 
-Son güncelleme: 18 Kasım 2026
+Son güncelleme: 22 Kasım 2026
 
 Bu belge, projeyi devralan geliştiricinin oyunu bozmadan nasıl derleyeceğini, yeni içerik ekleyeceğini ve ana hikâyeyi koda bağlayacağını anlatır. İlk kez gelen biri şu sırayla okumalıdır:
 
@@ -102,8 +102,37 @@ CharacterClass
 Item
 ├── Weapon
 ├── Armor
+│   └── FatebreakerArmor
 ├── Consumable
 └── QuestItem
+
+StatusEffect
+├── DamageStatusEffect
+│   ├── PoisonEffect
+│   ├── BleedingEffect
+│   └── BurningEffect
+├── ControlStatusEffect
+│   ├── StunEffect
+│   └── FrozenEffect
+└── StatStatusEffect
+    ├── ArmorBreakEffect
+    ├── BlessingEffect
+    └── CurseEffect
+
+EnemyBehavior
+├── AggressiveBehavior
+├── CowardlyBehavior
+├── GuardianBehavior
+├── PredatorBehavior
+└── CasterBehavior
+
+WeaponTechnique
+├── DaggerTechnique
+├── SwordTechnique
+├── CrushingTechnique
+├── GreatWeaponTechnique
+├── RangedTechnique
+└── NaturalTechnique
 
 WorldLocation
 ├── VillageLocation
@@ -208,6 +237,10 @@ Oyun tam D&D kopyası değildir; basit d20 çekirdeği kullanır:
 - Zafer, düşmanın canı ve altın ödülünden türetilen XP verir. Seviye sınırı 10'dur.
 - Her alt sınıf `ClassPowerCatalog` üzerinden saldırı, iyileştirme veya koruma gücü alır.
 - Sınıf gücü puanları uzun dinlenmede ve seviye atlamada yenilenir.
+- Durumlar `StatusEffectCollection` içinde tutulur. Aynı kimlik yeniden uygulanırsa iki kopya oluşturmak yerine süresi yenilenir.
+- Hançer 19–20 kritik; kılıç kanama; çekiç zırh kırma; ağır silah hasar karşılığı isabet; menzilli silah isabet karşılığı hasar takası yapar.
+- Normal düşman turu `EnemyBehavior.Choose` sonucuyla saldırı, korunma veya kaçış seçer. Hikâye savaşlarının özel akışı korunur.
+- Zafer ganimeti `LootGenerator` ile üretilir. Beş `ItemRarity` değeri envanter ve mağazada renkli gösterilir.
 
 Yeni zar kuralı eklerken üretim kodu `IDiceRoller`, test kodu `FixedDiceRoller` kullanmalıdır. UI kendi başına ikinci bir rastgele sayı üretmemelidir.
 
@@ -215,7 +248,7 @@ Yeni zar kuralı eklerken üretim kodu `IDiceRoller`, test kodu `FixedDiceRoller
 
 Kayıt yolu: `%LocalAppData%\RetroRpg\Saves\slot-1.json`.
 
-Mevcut kayıt sürümü 4'tür (`GameSession.SaveVersion`). Sürüm 4; seviye, XP ve kalan sınıf gücü puanlarını ekler. `GameSession.Flags` küçük dünya durumları içindir; ana hikâye `GameSaveData.Story` (`StoryProgressSaveData`) alanına yazılır. Eski sürüm dosyasının üzerine ilk kez yazılmadan önce `slot-1.v{N}-backup.json` yedeği alınır.
+Mevcut kayıt sürümü 5'tir (`GameSession.SaveVersion`). Sürüm 5; eşya nadirliği, silah geliştirme bonusu ve tüketilebilir durum temizleme kimliğini ekler. Seviye, XP ve sınıf gücü sürüm 4'ten; ana hikâye `GameSaveData.Story` (`StoryProgressSaveData`) alanından devam eder. Sürüm 1–4 kayıtları güvenli varsayılanlarla açılır. Eski sürüm dosyasının üzerine ilk kez yazılmadan önce `slot-1.v{N}-backup.json` yedeği alınır.
 
 Önerilen `StoryProgress` alanları:
 
@@ -229,7 +262,7 @@ Mevcut kayıt sürümü 4'tür (`GameSession.SaveVersion`). Sürüm 4; seviye, X
 - Yerleşim güvenleri.
 - Uygun final kimlikleri ve seçilmiş final.
 
-Sürüm 1 ve 2 kayıtları açılmaya devam etmelidir. Eksik hikâye alanları güvenli varsayılanlarla oluşturulmalı; eski save dosyası doğrudan değiştirilmemelidir.
+Sürüm 1–4 kayıtları açılmaya devam etmelidir. Eksik hikâye/eşya alanları güvenli varsayılanlarla oluşturulmalı; eski save dosyası doğrudan değiştirilmemelidir.
 
 Autosave şu noktalarda alınır: rota bitimi, encounter sonucu, yerleşim işlemi, hikâye düğümü sonucu, boss öncesi ve boss sonrası. Sinematik karesinin ortasında kayıt alınmaz.
 
@@ -392,12 +425,13 @@ Bir aşama kabul ölçütlerini geçmeden sonraki aşamaya geçilmemelidir. En k
 
 - Karakter oluşturma, ırk/sınıf/geçmiş, özellik puanı, özet ve hikâye seçimi çalışır.
 - 2D parşömen dünya haritası, küçük görünmez hexler, rota seçimi ve yürüyüş çalışır.
-- Savaş, d20 animasyonu, saldırı türleri, kaçış, ölüm ve autosave çalışır.
+- Savaş, d20 animasyonu, saldırı türleri, sekiz durum etkisi, beş düşman davranışı, silah teknikleri, nadir ganimet, kaçış, ölüm ve autosave çalışır.
+- Menü/biyom/savaş/yerleşim/han/kamp/hikâye/ölüm müzikleri, biyom ve mekân ortam katmanları ile savaş efektleri çalışır; müzik+ortam ve efekt sesleri ayrı ayarlanır. Üretilen WAV döngüleri `%LocalAppData%\RetroRpg\AudioCache` altında tutulur.
 - 50 savaş dışı encounter, yerleşimler, mağaza, han ve muhafız erişimi çalışır.
 - Kader Yolları: Göz Kulesi prologdan dört finale kadar oynanabilir; 46 sinematik karenin tamamı `StorySceneScreen`/`EndingScreen` içinde kullanılır.
 - Hikâye kodu `src/RetroRpg.Core/Story/` altındadır: olaylar ve görevler `StoryCatalog`, tetik/zincir/işaretler `StoryDirector`, final kuralları `EndingRules`, durum `StoryProgress`. Yeni olay eklerken `StoryCatalog` içine aynı kalıpla ekle; aynı hexteki olaylarda liste sırası önceliği belirler.
 - `CombatScreen` hikâye savaşlarını `CombatStoryEvent` ile oynatır. Scripted yenilgi `EnemyTurnResult.OpensDeathScreen == false` döner.
-- Kaderbozan Zırhı mantıksal olarak tamdır (`EquipmentSlot.StoryLayer`); ayrı final ikon ve karakter ekipman katmanı henüz üretilmemiştir. Vaelor savaşta `abyssal-crown` boss sprite'ını kullanır.
+- Kaderbozan Zırhı mantıksal olarak tamdır (`EquipmentSlot.StoryLayer`) ve özel ikon/katman assetine sahiptir; ekipman katmanını oyuncu gövdesiyle çalışma zamanında birleştirme animasyon aşamasına bırakılmıştır. Vaelor iki ayrı final formu sprite'ını kullanır.
 - `StoryModels.cs` artık yalnız hikâye yuvalarını (`StorySlotCatalog`) tutar.
 
 Kod değişikliğine başlamadan önce `git status --short` ile çalışma ağacını kontrol et. Depo kökü bir üst klasördür ve kullanıcının başka dosyalarını da içerir; alakasız dosyalara dokunma.

@@ -21,10 +21,11 @@ public class D20Roll(int rawValue, int bonus) : DiceRoll(20, rawValue, bonus)
     public bool IsNaturalOne => RawValue == 1;
 }
 
-public sealed class AttackRoll(int rawValue, int bonus, int targetArmorClass) : D20Roll(rawValue, bonus)
+public sealed class AttackRoll(int rawValue, int bonus, int targetArmorClass, int criticalThreshold = 20) : D20Roll(rawValue, bonus)
 {
     public int TargetArmorClass { get; } = targetArmorClass;
-    public bool IsCritical => IsNaturalTwenty;
+    public int CriticalThreshold { get; } = Math.Clamp(criticalThreshold, 2, 20);
+    public bool IsCritical => RawValue >= CriticalThreshold;
     public bool IsHit => !IsNaturalOne && (IsNaturalTwenty || Total >= TargetArmorClass);
 }
 

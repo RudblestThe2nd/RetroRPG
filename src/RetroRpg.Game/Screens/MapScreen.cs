@@ -14,7 +14,7 @@ namespace RetroRpg.Game.Screens;
 // Seçim, rota ve görevler ayrı katmanlardır; tehlike ile düşman haritada gösterilmez.
 internal sealed class MapScreen : GameScreen
 {
-    // Parşömenin içindeki düz harita alanı: 15 sütun x 12 satır, toplam 180 hücre.
+    // Batı, merkez ve doğu aynı sürekli hex ızgarasındadır.
     private const float StepX = 48f;
     private const float StepY = 39f;
     private const float HexRadiusX = 24f;
@@ -22,7 +22,26 @@ internal sealed class MapScreen : GameScreen
     private const int MovementFrames = 7;
     private const int EncounterDc = 10;
     private static readonly PointF MapCenter = new(400, 372);
-    private static readonly Rectangle WorldMapBounds = new(0, 84, 800, 533);
+    protected override bool WideCanvas => true;
+    private Rectangle WorldMapBounds => new(VisibleCanvas.Left, 84, VisibleCanvas.Width, 533);
+    private float _cameraX;
+    private int? _dragX;
+    private float ScrollX
+    {
+        get
+        {
+            float limit = Math.Max(0, (2240 - WorldMapBounds.Width) / 2f);
+            return Math.Clamp(_cameraX, -limit, limit);
+        }
+    }
+    private void Pan(float dx)
+    {
+        if (_isTraveling || ModalOpen || _encounterRoll is not null) return;
+        _cameraX = ScrollX + dx;
+        _cameraX = ScrollX;
+        _hovered = null;
+        Invalidate();
+    }
 
     private readonly GameSession _session;
     private readonly Dictionary<string, string> _biomeNames;
@@ -61,6 +80,9 @@ internal sealed class MapScreen : GameScreen
     public MapScreen(MainGameForm host, GameSession session) : base(host)
     {
         _session = session;
+        _cameraX = StepX * (session.CurrentHex.Q + session.CurrentHex.R / 2f);
+        AddButton(new PixelButton(new Rectangle(6,620,102,38), "‹ BATI", () => Pan(-288)) { Skin = PixelButton.Medium });
+        AddButton(new PixelButton(new Rectangle(692,620,102,38), "DOĞU ›", () => Pan(288)) { Skin = PixelButton.Medium });
         _session.Map.RevealAll();
         ContentDefinitionDocument content = new ContentDefinitionLoader().Load(AssetPath("content.game-data"));
         _biomeNames = content.Biomes.ToDictionary(x => x.Id, x => x.Name, StringComparer.OrdinalIgnoreCase);
@@ -107,7 +129,7 @@ internal sealed class MapScreen : GameScreen
     }
 
     private PointF CenterOf(HexCoordinate hex) =>
-        new(MapCenter.X + StepX * (hex.Q + hex.R / 2f), MapCenter.Y + StepY * hex.R);
+        new(MapCenter.X - ScrollX + StepX * (hex.Q + hex.R / 2f), MapCenter.Y + StepY * hex.R);
 
     private PointF[] HexPolygon(HexCoordinate hex)
     {
@@ -126,26 +148,53 @@ internal sealed class MapScreen : GameScreen
     private HexCoordinate? HexAt(Point point)
     {
         if (!WorldMapBounds.Contains(point)) return null;
-        HexTile? nearest = _session.Map.Tiles.Values.MinBy(x => Distance(CenterOf(x.Coordinate), point));
-        return nearest?.Coordinate;
+        // Altıgenin eğik kenarı da tıklama alanına dahildir.
+        foreach (HexTile tile in _session.Map.Tiles.Values)
+        {
+            PointF center = CenterOf(tile.Coordinate);
+            float dx = Math.Abs(center.X - point.X), dy = Math.Abs(center.Y - point.Y);
+            if (dx <= HexRadiusX && dy <= HexRadiusY - dx * .5f * HexRadiusY / HexRadiusX)
+                return tile.Coordinate;
+        }
+        return null;
     }
-
-    private static float Distance(PointF a, PointF b) =>
-        MathF.Sqrt((a.X - b.X) * (a.X - b.X) + (a.Y - b.Y) * (a.Y - b.Y));
 
     protected override void OnMouseMove(MouseEventArgs e)
     {
         base.OnMouseMove(e);
+        if (_dragX is int previous && e.Button == MouseButtons.Right)
+        {
+            int x = ToLogical(e.Location).X;
+            Pan(previous - x);
+            _dragX = x;
+            return;
+        }
         HexCoordinate? hovered = !_isTraveling && ButtonAt(e.Location) is null ? HexAt(ToLogical(e.Location)) : null;
         if (hovered == _hovered) return;
         _hovered = hovered;
         Invalidate();
     }
 
+    protected override void OnMouseDown(MouseEventArgs e)
+    {
+        base.OnMouseDown(e);
+        if (e.Button == MouseButtons.Right && WorldMapBounds.Contains(ToLogical(e.Location)))
+        {
+            _dragX = ToLogical(e.Location).X;
+            Capture = true;
+        }
+    }
+
+    protected override void OnMouseUp(MouseEventArgs e)
+    {
+        base.OnMouseUp(e);
+        if (e.Button == MouseButtons.Right) { _dragX = null; Capture = false; }
+    }
+
     protected override void OnMouseClick(MouseEventArgs e)
     {
         base.OnMouseClick(e);
-        if (_isTraveling || e.Button != MouseButtons.Left || ButtonAt(e.Location) is not null ||
+        if (ModalOpen || _encounterRoll is not null || _isTraveling || e.Button != MouseButtons.Left || ButtonAt(e.Location) is not null ||
             HexAt(ToLogical(e.Location)) is not HexCoordinate target) return;
         SelectRoute(target);
     }
@@ -181,6 +230,15 @@ internal sealed class MapScreen : GameScreen
 
     // Yalnız otomatik 800 x 800 ekran görüntüsü QA akışı tarafından kullanılır.
     internal void PreviewRouteForQa(HexCoordinate target) => SelectRoute(target);
+    internal void CheckProvinceForQa(int direction)
+    {
+        Pan(direction * 2000);
+        var hex = new HexCoordinate(direction * 19, 0);
+        var center = Point.Round(CenterOf(hex));
+        if (HexAt(center) != hex) throw new InvalidOperationException("Dış bölgede hex seçilemedi.");
+        SelectRoute(hex);
+        if (_selectedTarget != hex) throw new InvalidOperationException("Dış bölgeye rota bulunamadı.");
+    }
     internal void ShowGridForQa()
     {
         if (!_showHexGrid) ToggleGrid();
@@ -300,6 +358,8 @@ internal sealed class MapScreen : GameScreen
         }
 
         _movementFrame++;
+        float screenX = AnimatedPlayerCenter().X;
+        _cameraX = ScrollX + screenX - Math.Clamp(screenX, WorldMapBounds.Left + 100, WorldMapBounds.Right - 100);
         Invalidate();
         if (_movementFrame < MovementFrames) return;
 
@@ -407,7 +467,10 @@ internal sealed class MapScreen : GameScreen
 
     public override void HandleKey(Keys key)
     {
-        if (key is Keys.Enter or Keys.Space) ConfirmRoute();
+        if (ModalOpen || _encounterRoll is not null) return;
+        if (key == Keys.Left) Pan(-144);
+        else if (key == Keys.Right) Pan(144);
+        else if (key is Keys.Enter or Keys.Space) ConfirmRoute();
         else if (key == Keys.Escape) CancelRoute();
         else if (key == Keys.H) ToggleGrid();
         else if (key == Keys.I) Host.ShowInventory();
@@ -420,7 +483,10 @@ internal sealed class MapScreen : GameScreen
     protected override void Draw(Graphics g)
     {
         g.Clear(Color.FromArgb(10, 9, 14));
-        UiTheme.DrawImage(g, Images.Get(AssetPath("map.world.parchment-2d")), WorldMapBounds);
+        var state = g.Save();
+        g.SetClip(WorldMapBounds);
+        int scroll = (int)Math.Round(ScrollX);
+        UiTheme.DrawImage(g, Images.Get(AssetPath("map.world.continuous")), new Rectangle(-720 - scroll, 84, 2240, 533));
         DrawTerrainObstacles(g);
 
         if (_showHexGrid) DrawHexGrid(g);
@@ -438,6 +504,7 @@ internal sealed class MapScreen : GameScreen
         UiTheme.DrawImageFit(g, Images.Get(CharacterArt.TokenPath(player.Race.Id, player.Gender)),
             new Rectangle((int)playerCenter.X - 18, (int)playerCenter.Y - 18, 36, 36));
 
+        g.Restore(state);
         DrawHud(g);
     }
 
@@ -547,7 +614,8 @@ internal sealed class MapScreen : GameScreen
     private void DrawHud(Graphics g)
     {
         var player = _session.Player;
-        UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, new Rectangle(6, 6, 788, 76));
+        UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, new Rectangle(VisibleCanvas.Left+6, 6, VisibleCanvas.Width-12, 76));
+        UiTheme.DrawPanel(g, Images, PanelStyle.Stone, new Rectangle(15, 11, 66, 66));
         UiTheme.DrawImageFit(g, Images.Get(CharacterArt.PortraitPath(player.Race.Id, player.Gender, _session.PortraitIndex)), new Rectangle(18, 14, 60, 60));
         UiTheme.DrawText(g, player.Name, UiTheme.Heading, UiTheme.Gold, 88, 14);
         UiTheme.DrawText(g, $"{player.Race.DisplayName} · {player.Class.DisplayName} / {player.Class.SubclassName}", UiTheme.Small, UiTheme.Text, 88, 44);
@@ -567,7 +635,7 @@ internal sealed class MapScreen : GameScreen
         UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, info);
         UiTheme.DrawTextCentered(g, text, UiTheme.Small, _message.Length > 0 ? UiTheme.Success : UiTheme.Text, info);
 
-        UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, new Rectangle(6, 658, 788, 138));
+        UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, new Rectangle(VisibleCanvas.Left+6, 658, VisibleCanvas.Width-12, 138));
     }
 
     private string HoverText()
@@ -592,20 +660,13 @@ internal sealed class MapScreen : GameScreen
     protected override void DrawTop(Graphics g)
     {
         if (_encounterRoll is null) return;
-        UiTheme.Shade(g, CanvasRectangle, 155);
+        UiTheme.Shade(g, VisibleCanvas, 155);
         var panel = new Rectangle(238, 208, 324, 330);
         UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, panel);
         UiTheme.DrawTextCentered(g, "ENCOUNTER ZARI", UiTheme.Title, UiTheme.Gold, new Rectangle(250, 226, 300, 40));
 
-        bool showResult = _encounterAnimationTicks <= 5;
-        string imagePath = showResult
-            ? "assets/final-production-v2/combat/dice/runtime-256/d20-icon-v1.png"
-            : $"assets/final-production-v2/combat/dice/d20-roll-v1/d20-roll-{_encounterAnimationTicks % 8:00}-v1.png";
-        UiTheme.DrawImageFit(g, Images.Get(imagePath), new Rectangle(320, 270, 160, 160));
-        if (showResult)
-            UiTheme.DrawDiceValue(g, new Rectangle(350, 325, 100, 60), _encounterRoll.RawValue);
-        else UiTheme.DrawDiceQuestion(g, new Rectangle(350, 325, 100, 60));
-
+        bool showResult = RollingD20.Landed(_encounterAnimationTicks);
+        RollingD20.Draw(g, new(320, 270, 160, 160), _encounterRoll.RawValue, _encounterAnimationTicks, 20);
         UiTheme.DrawTextCentered(g, $"d20 {FormatBonus(_encounterRoll.Bonus)}  ·  ZORLUK {EncounterDc}", UiTheme.Body, UiTheme.Text, new Rectangle(260, 442, 280, 32));
         string result = showResult ? $"SONUÇ: {_encounterRoll.Total}" : "ZAR ATILIYOR...";
         UiTheme.DrawTextCentered(g, result, UiTheme.Heading, showResult ? UiTheme.Success : UiTheme.Gold, new Rectangle(260, 480, 280, 34));
@@ -614,8 +675,10 @@ internal sealed class MapScreen : GameScreen
     protected override void DrawModal(Graphics g)
     {
         if (_pendingLocation is null) return;
-        UiTheme.Shade(g, CanvasRectangle, 165);
-        UiTheme.DrawImage(g, Images.Get("assets/final-production-v5/ui/modals/runtime-800/poi-entry-panel-v1.png"), CanvasRectangle);
+        UiTheme.Shade(g, VisibleCanvas, 165);
+        UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, new(80, 118, 640, 546));
+        UiTheme.DrawPanel(g, Images, PanelStyle.StoneWood, new(100, 232, 310, 310));
+        UiTheme.DrawPanel(g, Images, PanelStyle.StoneWood, new(418, 232, 282, 310));
         UiTheme.DrawTextCentered(g, _pendingLocation.KindName, UiTheme.Title, UiTheme.Gold, new Rectangle(100, 126, 600, 82));
         UiTheme.DrawImageFit(g, Images.Get(_pendingLocation.SceneAsset), new Rectangle(108, 246, 294, 286));
         UiTheme.DrawWrappedCentered(g, _pendingLocation.Name.ToUpperInvariant(), UiTheme.Heading, UiTheme.Text, new Rectangle(435, 248, 258, 92));

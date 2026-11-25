@@ -94,7 +94,15 @@ internal sealed class InventoryScreen : GameScreen
 
     protected override void Draw(Graphics g)
     {
-        UiTheme.DrawImage(g, Images.Get("assets/final-production-v5/ui/screens/runtime-800/inventory-wood-red-v1.png"), CanvasRectangle);
+        g.Clear(UiTheme.Background);
+        UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, new(32, 16, 736, 72));
+        UiTheme.DrawPanel(g, Images, PanelStyle.StoneWood, new(44, 96, 264, 530));
+        UiTheme.DrawPanel(g, Images, PanelStyle.StoneWood, new(362, 96, 374, 387));
+        UiTheme.DrawTextCentered(g, "ÇANTA", UiTheme.Heading, UiTheme.Gold, new(365, 104, 368, 45));
+        UiTheme.DrawPanel(g, Images, PanelStyle.StoneWood, new(362, 490, 374, 168));
+        UiTheme.DrawPanel(g, Images, PanelStyle.GoldFrame, new(44, 658, 692, 78));
+        foreach (var slot in _slots)
+            UiTheme.DrawPanel(g, Images, PanelStyle.Stone, slot.Bounds);
         UiTheme.DrawTextCentered(g, "ENVANTER VE EKİPMAN", UiTheme.Title, UiTheme.Gold, new Rectangle(160, 30, 480, 48));
         var player = _session.Player;
         UiTheme.DrawImageFit(g, Images.Get(CharacterArt.PortraitPath(player.Race.Id, player.Gender, _session.PortraitIndex)),
@@ -110,6 +118,7 @@ internal sealed class InventoryScreen : GameScreen
         ];
         for (int i = 0; i < equipmentSlots.Length; i++)
         {
+            UiTheme.DrawPanel(g, Images, PanelStyle.Stone, equipmentAreas[i]);
             Item? equipped = player.Equipment.Get(equipmentSlots[i]);
             if (equipped is not null) UiTheme.DrawImageFit(g, Images.Get(ItemIcon(equipped)), Rectangle.Inflate(equipmentAreas[i], -7, -7));
         }
@@ -117,8 +126,11 @@ internal sealed class InventoryScreen : GameScreen
         for (int i = 0; i < Items.Count && i < 25; i++)
         {
             Rectangle area = Rectangle.Inflate(_slots[i].Bounds, -6, -6);
-            string icon = ItemIcon(Items[i]);
+            Item item = Items[i];
+            string icon = ItemIcon(item);
             UiTheme.DrawImageFit(g, Images.Get(icon), area);
+            using var rarityPen = new Pen(RarityColor(item.Rarity), item.Rarity == ItemRarity.Common ? 1 : 3);
+            g.DrawRectangle(rarityPen, Rectangle.Inflate(_slots[i].Bounds, -3, -3));
         }
 
         Item? selected = SelectedItem();
@@ -126,12 +138,43 @@ internal sealed class InventoryScreen : GameScreen
         {
             null => _message,
             FatebreakerArmor armor => $"{armor.Name} · AC +{armor.ArmorBonus}\nHikâye katmanı; göğüs zırhını çıkarmaz. Kaderin Hükmü'nü kırar. Son direniş: {armor.LastStandCharges}",
-            _ => $"{selected.Name}\nDeğer: {selected.Value} altın · Ağırlık: {selected.Weight:0.0}"
+            Weapon weapon => WeaponDescription(weapon),
+            Armor armor => $"{LootGenerator.RarityLabel(armor.Rarity)} · {armor.Name}\nAC +{armor.ArmorBonus} · {CompareArmor(armor)}\nDeğer {armor.Value} · Ağırlık {armor.Weight:0.0}",
+            Consumable consumable => $"{LootGenerator.RarityLabel(consumable.Rarity)} · {consumable.Name}\n+{consumable.Healing} CAN yeniler."
+                + (consumable.CuresStatusId is null ? "" : " Zehri temizler.")
+                + $"\nDeğer {consumable.Value} · Ağırlık {consumable.Weight:0.0}",
+            _ => $"{LootGenerator.RarityLabel(selected.Rarity)} · {selected.Name}\nDeğer: {selected.Value} altın · Ağırlık: {selected.Weight:0.0}"
         };
-        UiTheme.DrawWrapped(g, description, UiTheme.Body, UiTheme.Text, new Rectangle(392, 503, 325, 115));
+        Color descriptionColor = selected is null ? UiTheme.Text : RarityColor(selected.Rarity);
+        UiTheme.DrawWrapped(g, description, UiTheme.Small, descriptionColor, new Rectangle(392, 503, 325, 115));
         UiTheme.DrawTextCentered(g, $"AĞIRLIK {player.Inventory.TotalWeight:0.0}", UiTheme.Small, UiTheme.Text, new Rectangle(392, 625, 185, 30));
         UiTheme.DrawTextCentered(g, $"ALTIN {player.Gold}", UiTheme.Body, UiTheme.Gold, new Rectangle(592, 662, 130, 55));
     }
+
+    private string WeaponDescription(Weapon weapon)
+    {
+        Weapon? equipped = _session.Player.EquippedWeapon;
+        string comparison = equipped is null || ReferenceEquals(equipped, weapon)
+            ? "Kuşanılmış silah."
+            : $"Kuşanılana göre hasar zarı {weapon.DamageDie - equipped.DamageDie:+#;-#;0}, bonus {weapon.DamageBonus - equipped.DamageBonus:+#;-#;0}.";
+        return $"{LootGenerator.RarityLabel(weapon.Rarity)} · {weapon.Name}\nHASAR d{weapon.DamageDie} · BONUS +{weapon.EnhancementBonus}\n{weapon.Technique.Name}: {weapon.Technique.Description}\n{comparison}";
+    }
+
+    private string CompareArmor(Armor armor)
+    {
+        Armor? equipped = _session.Player.Equipment.Get(armor.Slot) as Armor;
+        if (equipped is null || ReferenceEquals(equipped, armor)) return "Kuşanılmış zırh.";
+        return $"Kuşanılana göre AC {armor.ArmorBonus - equipped.ArmorBonus:+#;-#;0}.";
+    }
+
+    internal static Color RarityColor(ItemRarity rarity) => rarity switch
+    {
+        ItemRarity.Uncommon => Color.FromArgb(90, 220, 110),
+        ItemRarity.Rare => Color.FromArgb(80, 155, 255),
+        ItemRarity.Epic => Color.FromArgb(190, 90, 255),
+        ItemRarity.Legendary => Color.FromArgb(255, 176, 45),
+        _ => UiTheme.Text
+    };
 
     internal static string ItemIcon(Item item) => item switch
     {

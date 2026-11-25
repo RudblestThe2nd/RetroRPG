@@ -31,7 +31,7 @@ public static class ShopCatalog
             () => new Consumable("Güçlü İyileştirme İksiri", 22, .6, 12)),
         new("antidote", "Panzehir", 8, "Basit zehirlenmeler için; +2 CAN.",
             "items/item-pack-01/icons/consumables-loot/03-antidote.png",
-            () => new Consumable("Panzehir", 8, .2, 2)),
+            () => new Consumable("Panzehir", 8, .2, 2, curesStatusId: "poison")),
         new("ration", "Yol Azığı", 4, "Kampta veya yolda +3 CAN.",
             "items/item-pack-01/icons/consumables-loot/12-ration-bag.png",
             () => new Consumable("Yol Azığı", 4, .4, 3)),
@@ -61,9 +61,12 @@ public static class ShopCatalog
             () => new Armor("Demir Miğfer", 18, 3, 1, EquipmentSlot.Head))
     ];
 
-    private static ShopOffer WeaponOffer(string id, string name, int price, int damageDie, string icon) =>
-        new(id, name, price, $"Ana el silahı, hasar d{damageDie}.", icon,
+    private static ShopOffer WeaponOffer(string id, string name, int price, int damageDie, string icon)
+    {
+        WeaponTechnique technique = WeaponTechniqueCatalog.For(id);
+        return new(id, name, price, $"Hasar d{damageDie}. {technique.Name}: {technique.Description}", icon,
             () => new Weapon(id, name, price, Math.Max(1, damageDie / 2d), damageDie));
+    }
 }
 
 public sealed class ShopService

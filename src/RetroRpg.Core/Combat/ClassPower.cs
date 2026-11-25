@@ -32,6 +32,8 @@ public sealed class AttackClassPower : ClassPower
     }
 
     public int AttackAdjustment { get; }
+    public bool IsRanged => Id is "marked-shot" or "thorn-burst" or "nature-magic" or "chaos-bolt"
+        or "dragon-breath" or "arcane-bolt" or "hell-ray" or "dark-ray" or "evocation-bolt";
     public int DamageDieAdjustment { get; }
     public int DamageBonusAdjustment { get; }
     public int DamageDie(PlayerCharacter player) => Math.Clamp(player.DamageDie + DamageDieAdjustment, 4, 20);

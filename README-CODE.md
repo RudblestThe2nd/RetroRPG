@@ -29,6 +29,9 @@ dotnet run --project src/RetroRpg.Game
 - `CharacterRace → HumanRace / ElfRace / DwarfRace / ...`
 - `CharacterClass → FighterClass → ChampionClass / BattleMasterClass` (12 ana sınıfın her biri iki alt sınıfla)
 - `Item → Weapon / Armor / Consumable / QuestItem`; `Armor → FatebreakerArmor` (Kaderbozan Zırhı)
+- `StatusEffect → DamageStatusEffect / ControlStatusEffect / StatStatusEffect`
+- `EnemyBehavior → AggressiveBehavior / CowardlyBehavior / GuardianBehavior / PredatorBehavior / CasterBehavior`
+- `WeaponTechnique → DaggerTechnique / SwordTechnique / CrushingTechnique / GreatWeaponTechnique / RangedTechnique / NaturalTechnique`
 - `StoryEvent → DialogueStoryEvent / SkillCheckStoryEvent / CombatStoryEvent / ScriptedDefeatStoryEvent / EndingStoryEvent`
 - `Quest → MainQuest / WaystoneQuest / SideQuest`
 - `StoryConsequence → FlagConsequence / ItemConsequence / ReputationConsequence / RouteConsequence / EndingConsequence / QuestConsequence / CostConsequence`
@@ -45,6 +48,17 @@ Savaş zaferleri altının yanında XP verir. `PlayerCharacter` 10. seviyeye kad
 azami canı ve sınıf gücü kapasitesi artar. `ClassPowerCatalog`, 12 ana sınıf ve 24 alt sınıf için
 tek bir aktif güç seçer. Güçler yalnız üç açık alt tür kullanır: saldırı, iyileştirme ve koruma.
 Bu sade aile hem kalıtımı görünür tutar hem savaş ekranını sınıflardan bağımsız bırakır.
+
+## Yeni savaş sistemleri
+
+- `Combat/StatusEffect.cs`: zehir, kanama, yanma, sersemleme, donma, zırh kırma, kutsama ve lanet.
+- `Combat/EnemyBehavior.cs`: düşmanın canı, turu, sınıfı ve biyomuna göre saldırma, korunma, kaçma veya durum büyüsü kullanma kararı.
+- `Items/WeaponTechnique.cs`: hançer, kılıç, ezici, ağır ve menzilli silahların ortak kalıtımla ayrılan teknikleri.
+- `Items/LootGenerator.cs`: sıradan, sıra dışı, nadir, destansı ve efsanevi ganimet üretimi. Nadirlik ve geliştirme bonusu kayıt dosyasında korunur.
+- `GameMusic.cs`: dışarıdan ses dosyası gerektirmeyen, çalışma zamanında önbelleğe üretilen döngüsel retro müzikler.
+- `GameAmbience.cs`: biyom, yerleşim, han, kamp ve ölüm için müzikten bağımsız düşük sesli rüzgâr, su, ateş ve uğultu döngüleri.
+
+Yeni durum veya davranış eklerken mevcut taban sınıftan tek bir küçük alt sınıf türet. Kararı `CombatScreen` içine yeni bir uzun `if` zinciri olarak gömme; katalogdaki eşleştirmeyi genişlet.
 
 ## Basit d20 kuralı
 

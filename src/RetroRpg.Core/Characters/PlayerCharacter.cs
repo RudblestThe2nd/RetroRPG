@@ -54,11 +54,14 @@ public sealed class PlayerCharacter : GameEntity, ICombatant
     public int Gold { get; set; }
     public Inventory Inventory { get; } = new();
     public EquipmentSet Equipment { get; } = new();
+    public StatusEffectCollection StatusEffects { get; } = new();
     public bool IsAlive => Health > 0;
 
-    public int AttackBonus => CharacterStats.Modifier(Class.UsesDexterity ? Stats.Dexterity : Stats.Strength) + Class.AttackBonus();
+    public Weapon? EquippedWeapon => Equipment.Get(EquipmentSlot.MainHand) as Weapon;
+    public int AttackBonus => CharacterStats.Modifier(Class.UsesDexterity ? Stats.Dexterity : Stats.Strength) +
+        Class.AttackBonus() + (EquippedWeapon?.AttackBonus ?? 0);
     public int InitiativeBonus => Stats.InitiativeBonus;
-    public int DamageBonus => Math.Max(0, CharacterStats.Modifier(Stats.Strength));
+    public int DamageBonus => Math.Max(0, CharacterStats.Modifier(Stats.Strength) + (EquippedWeapon?.DamageBonus ?? 0));
     public int DamageDie => Equipment.Get(EquipmentSlot.MainHand) is Weapon weapon ? weapon.DamageDie : 4;
 
     // XP mevcut seviyenin içindeki ilerlemeyi taşır. Seviye atlamak canı artırır ve gücü yeniler.

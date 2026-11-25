@@ -22,9 +22,9 @@ internal sealed class UiImages : IDisposable
 
     // trim: bazı UI görsellerinin şeffaf kenarlarında komşu parçalardan kalan kırıntılar var.
     // Kırpma, en büyük opak parçanın sınırlarını alır.
-    public Image? Get(string relativePath, bool trim = false)
+    public Image? Get(string relativePath, bool trim = false, bool mirror = false)
     {
-        string key = (trim ? "trim|" : "") + relativePath;
+        string key = (mirror ? "mirror|" : "") + (trim ? "trim|" : "") + relativePath;
         if (_cache.TryGetValue(key, out Image? cached)) return cached;
 
         string fullPath = Path.Combine(_root, relativePath.Replace('/', Path.DirectorySeparatorChar));
@@ -34,6 +34,7 @@ internal sealed class UiImages : IDisposable
             using Image loaded = Image.FromFile(fullPath);
             var bitmap = new Bitmap(loaded);
             image = trim ? TrimToLargestPart(bitmap) : bitmap;
+            if (mirror) image.RotateFlip(RotateFlipType.RotateNoneFlipX);
         }
         else ReportMissing(fullPath);
 
